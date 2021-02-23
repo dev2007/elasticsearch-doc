@@ -6,8 +6,8 @@
 
 文档列表及完成进度：
 
-- :heavy_check_mark: 什么是 Elasticsearch？ [:link:](https://docs.es.shiyueshuyi.xyz/#/README)
-  - :heavy_check_mark: Data in: documents and indices
+- :heavy_check_mark: 什么是 Elasticsearch？ [:link:](https://docs.es.shiyueshuyi.xyz/#/es)
+  - :heavy_check_mark: 数据输入：文档和索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/datain)
   - Information out: search and analyze
   - Scalability and resilience
 - Getting started with Elasticsearch

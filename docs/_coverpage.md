@@ -6,5 +6,5 @@
 
 > 对官方文档的翻译
 
-[GitHub]()
-[点击了解](README.md)
+[GitHub](https://github.com/dev2007/elasticsearch-doc)
+[点击了解](es.md)
