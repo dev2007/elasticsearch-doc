@@ -41,3 +41,5 @@ Elasticsearch 聚合使你能够构建数据的复杂摘要，并深入了解关
 - 群体成员的异常行为
 
 最好的部分呢？你可以这样做，而不必指定算法、模型或其他与科学相关的配置。
+
+?> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-analyze.html)
