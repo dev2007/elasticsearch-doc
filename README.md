@@ -10,8 +10,8 @@
   - :heavy_check_mark: 数据输入：文档和索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/datain)
   - :heavy_check_mark: 信息输出：搜索和分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/inforout)
   - :heavy_check_mark: 可伸缩性和弹性 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/scalability)
-- Getting started with Elasticsearch
-  - Get Elasticsearch up and running
+- :heavy_check_mark: Elasticsearch 入门 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/getting_started)
+  - :heavy_check_mark:启动并运行 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/install)
   - Index some documents
   - Start searching
   - Analyze results with aggregations
