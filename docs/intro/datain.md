@@ -22,4 +22,4 @@ Elasticsearch 也具有无模式能力，这意味着文档无需明确地指定
 
 用于索引期间的全文字段的分析链，也被用于搜索时。当你查询一个全文字段时，在索引中查询词语（`term`）之前，这个查询文本将经历相同的分析。
 
-?> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/documents-indices.html)
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/documents-indices.html)

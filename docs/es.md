@@ -16,4 +16,4 @@ Elasticsearch 为各种数据类型提供接近实时的搜索和分析。不论
 
 我们一直对人们使用搜索的新奇方式感觉惊奇。但是不论你的实例与其中一个相似，还是你正使用 Elasticsearch 来解决一个新的问题，你在 Elasticsearch处理数据、文档和索引的方式是相同的。
 
-?> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html)
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html)

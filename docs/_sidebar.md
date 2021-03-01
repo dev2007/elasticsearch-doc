@@ -2,3 +2,5 @@
   * [数据输入：文档和索引](/intro/datain)
   * [信息输出：搜索和分析](/intro/inforout)
   * [可伸缩性和弹性](/intro/scalability)
+* [Elasticsearch 入门](/getting_started/getting_started)
+  * [启动并运行 Elasticsearch](/getting_started/install)
