@@ -2,7 +2,7 @@
 
 基于官方v7.11文档，翻译为中文，并发布在网站。
 
-[发布网站](https://docs.es.shiyueshuyi.xyz)
+[在网站查看文档](https://docs.es.shiyueshuyi.xyz)
 
 文档列表及完成进度：
 
