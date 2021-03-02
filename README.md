@@ -11,8 +11,8 @@
   - :heavy_check_mark: 信息输出：搜索和分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/inforout)
   - :heavy_check_mark: 可伸缩性和弹性 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/scalability)
 - :heavy_check_mark: Elasticsearch 入门 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/getting_started)
-  - :heavy_check_mark:启动并运行 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/install)
-  - Index some documents
+  - :heavy_check_mark: 启动并运行 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/install)
+  - :heavy_check_mark: 索引一些文档 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/index)
   - Start searching
   - Analyze results with aggregations
   - Where to go from here
