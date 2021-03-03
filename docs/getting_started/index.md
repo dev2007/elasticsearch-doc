@@ -94,3 +94,5 @@ curl "localhost:9200/_cat/indices?v=true"
 health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 yellow open   bank  l7sSYV2cQXmu6_4rJWVIww   5   1       1000            0    128.6kb        128.6kb
 ```
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-index.html)

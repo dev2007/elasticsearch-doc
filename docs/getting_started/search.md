@@ -142,3 +142,5 @@ GET /bank/_search
   }
 }
 ```
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-search.html)
