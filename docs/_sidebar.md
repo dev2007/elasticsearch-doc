@@ -7,3 +7,4 @@
   * [索引一些文档](/getting_started/index)
   * [开始搜索](/getting_started/search)
   * [使用聚合分析结果](/getting_started/aggregations)
+  * [何去何从](getting_started/nextstep)
