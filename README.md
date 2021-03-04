@@ -16,7 +16,7 @@
   - :heavy_check_mark: 开始搜索 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/search)
   - :heavy_check_mark: 使用聚合分析结果  [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/aggregations)
   - :heavy_check_mark: 何去何从 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/nextstep)
-- Set up Elasticsearch
+- :heavy_check_mark: [设置 Elasticsearch] [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/setup)
   - Installing Elasticsearch
     - Install Elasticsearch from archive on Linux or MacOS
     - Install Elasticsearch with .zip on Windows
