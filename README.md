@@ -14,7 +14,7 @@
   - :heavy_check_mark: 启动并运行 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/install)
   - :heavy_check_mark: 索引一些文档 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/index)
   - :heavy_check_mark: 开始搜索 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/search)
-  - Analyze results with aggregations
+  - :heavy_check_mark: 使用聚合分析结果  [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/aggregations)
   - Where to go from here
 - Set up Elasticsearch
   - Installing Elasticsearch
