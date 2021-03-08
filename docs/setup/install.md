@@ -10,8 +10,8 @@ Elasticsearch 用以下包格式提供：
 
 | | |
 |:--|:--|
-|Linux and MacOS `tar.gz` 压缩包|`tar.gz` 压缩包可以安装在任何 Linux 发行版和 MacOS。[在 Linux 或 MacOS 上用压缩包安装 Elasticsearch](/setup/install/linux)|
-|Windows `.zip` 压缩包|`zip`压缩包适用于在 Windows 上安装。[在 Windows 上用 `.zip` 安装 Elasticsearch](/setup/install/windows)|
+|Linux and MacOS `tar.gz` 存档|`tar.gz` 存档可以安装在任何 Linux 发行版和 MacOS。[在 Linux 或 MacOS 上用存档安装 Elasticsearch](/setup/install/linux)|
+|Windows `.zip` 存档|`zip` 存档适用于在 Windows 上安装。[在 Windows 上用 `.zip` 安装 Elasticsearch](/setup/install/windows)|
 |`deb`|`deb` 包适用于 Debian、Ubuntu 和其他基于 Debian 的系统。Debian 包可以从 Elasticsearch 网站或者从我们的 Debian仓库下载。[用 Debian 包安装 Elasticsearch](/setup/install/debian)|
 |`rpm`|`rpm` 包适用于在 Red Hat、Centos、SLES、OpenSuSE以及其他基于 RPM 的系统上安装。RPM 可以从 Elasticsearch 网站或者从我们的 RPM 仓库下载。[用 RPM 安装 Elasticsearch](/setup/install/rpm)|
 |`msi`|[测试] `msi` 包适用于在 安装了不低于 .NET 4.5 framework 的 Windows 64位系统上安装，这是在 Windows 上开始 Elasticsearch 最简单的选择。MSI 可以从 Elasticsearch 网站上下载。[用 Windows MSI Installer 安装 Elasticsearch](/setup/install/windows)|

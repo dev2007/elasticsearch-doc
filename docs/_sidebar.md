@@ -10,3 +10,4 @@
   * [何去何从](getting_started/nextstep)
 * [设置 Elasticsearch](/setup/setup)
   * [安装 Elasticsearch](/setup/install)
+    * [在 Linux 或 MacOS 上用压缩包安装 Elasticsearch](/setup/install/linux)
