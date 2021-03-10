@@ -12,3 +12,4 @@
   * [安装 Elasticsearch](/setup/install)
     * [在 Linux 或 MacOS 上用压缩包安装 Elasticsearch](/setup/install/linux)
     * [在 Windows 上用 `.zip` 安装 Elasticsearch](/setup/install/windows)
+    * [使用 Debian 包安装 Elasticsearch](/setup/install/debian)
