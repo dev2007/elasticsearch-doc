@@ -1,6 +1,8 @@
-# 使用 Debian 包安装 Elasticsearch
+# 使用 RPM 安装 Elasticsearch
 
-Elasticsearch 的 Debian 包可以[从我们的网站](/setup/install/debian?id=手工下载和安装-Debian-包)或者从[我们的 APT 仓库](/setup/install/debian?id=从-APT-仓库安装)下载。它可以用于在任何基于 Debian 的系统（如 Debian 和 Ubuntu）上安装 Elasticsearch。
+Elasticsearch 的 RPM 可以[从我们的网站](/setup/install/rpm?id=手工下载和安装-rpm)或者从[我们的 RPM 仓库](/setup/install/rpm?id=从-rpm-仓库安装)下载。它可以用于在任何基于 RPM 的系统（如 OpenSuSE，SLES，Centos，Red Hat 和 Oracle Enterprise）上安装 Elasticsearch。
+
+?> 老版本的 RPM 发行版本（如 SLES 11 和 CentOS 5）不支持 RPM 安装。请参阅 [在 Linux 或 MacOS 上用存档安装 Elasticsearch](https://docs.es.shiyueshuyi.xyz/#/setup/install/linux)。
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 
@@ -20,51 +22,49 @@ Elasticsearch 的最新稳定版本，能在 [Elasticsearch 下载页面](https:
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 ```
 
-## 从 APT 仓库安装
+## 从 RPM 仓库安装
 
-在继续之前，你可能需要在 Debian 上安装 `apt-transport-https`包：
-
-```bash
-sudo apt-get install apt-transport-https
-```
-
-将仓库定义保存到 `/etc/apt/sources.list.d/elastic-7.x.list`:
+为基于 RedHat 的发行版，在目录 `/etc/yum.repos.d/` 中创建一个命名为 `elasticsearch.repo` 的文件，或者为基于 OpenSuSE 的发行版在目录 `/etc/zypp/repos.d/` 中创建文件，内容包括：
 
 ```bash
-echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list
+[elasticsearch]
+name=Elasticsearch repository for 7.x packages
+baseurl=https://artifacts.elastic.co/packages/7.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=0
+autorefresh=1
+type=rpm-md
 ```
 
-?> 由于以下原因，指南不使用 `add-apt-repository`：
-?> 1. `add-apt-repository` 向系统 `/etc/apt/sources.list` 文件中添加条目，而不是 `/etc/apt/sources.list.d` 中的每个仓库的干净文件
-?> 2. `add-apt-repository` 不是许多发行版本的默认安装部分，需要许多非默认的依赖
-?> 3. 老版本的 `add-apt-repository` 总会添加一个 `deb-src` 条目，由于我们没有提供源包，这会导致错误。如果你已经添加了 `deb-src` 条目，在你删除 `deb-src` 条目前，你会看到如下错误：
-?> `Unable to find expected entry 'main/source/Sources' in Release file
-(Wrong sources.list entry or malformed file)`
-
-你可以这样安装 Elasticsearch Debian 包：
+仓库已准备就绪。现在可以使用以下的任一命令安装 Elasticsearch：
 
 ```bash
-sudo apt-get update && sudo apt-get install elasticsearch
+sudo yum install --enablerepo=elasticsearch elasticsearch
+sudo dnf install --enablerepo=elasticsearch elasticsearch
+sudo zypper modifyrepo --enable elasticsearch && \
+  sudo zypper install elasticsearch; \
+  sudo zypper modifyrepo --disable elasticsearch
 ```
 
-!> 如果 Elasticsearch 仓库中存在两条相同的条目，你在 `apt-get update` 操作时，会看到如下错误：  
-`Duplicate sources.list entry https://artifacts.elastic.co/packages/7.x/apt/ ...`  
-检查 `/etc/apt/sources.list.d/elasticsearch-7.x.list` 的重复条目，或者在 `/etc/apt/sources.list.d/` 中的文件和 `/etc/apt/sources.list` 文件中定位重复条目。
+- `sudo yum install` 在 CentOS 和老的基于 Red Hat 的发行版上使用 `yum`。
+- `sudo dnf install` 在 Fedora 和其他新的 Red Hat 的发行版上使用 `dnf`。
+- `sudo zypper modifyrepo` 在基于 OpenSUSE 的发行版本上使用 `zypper`。
 
-?> 在基于 systemd 的发行版上，安装脚本尝试设置内核参数（如，`vm.max_map_count`）；你可以通过屏蔽 systemd-sysctl.service 单位来跳过这个操作。
+?> 配置的仓库默认是禁用的。这排除了升级系统其他部分时意外升级 Elasticsearch 的可能性。每个安装或者升级命令必须显示启用仓库，如上面的示例命令所示。
 
-## 手工下载和安装 Debian 包
+## 手工下载和安装 RPM
 
-Elasticsearch v7.11.1 的 Debian 包，可以按以下命令从网站下载和安装：
+Elasticsearch v7.11.2 的 RPM，可以按以下命令从网站下载和安装：
 
 ```bash
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.11.1-amd64.deb
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.11.1-amd64.deb.sha512
-shasum -a 512 -c elasticsearch-7.11.1-amd64.deb.sha512
-sudo dpkg -i elasticsearch-7.11.1-amd64.deb
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.11.2-x86_64.rpm
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.11.2-x86_64.rpm.sha512
+shasum -a 512 -c elasticsearch-7.11.2-x86_64.rpm.sha512
+sudo rpm --install elasticsearch-7.11.2-x86_64.rpm
 ```
 
-- `shasum -a 512 -c` 比较下载的 Debian 包 SHA 值和公开的校验值。正常应该输出 `elasticsearch-{version}-amd64.deb: OK`。
+- `shasum -a 512 -c` 比较下载的 RPM SHA 值和公开的校验值。正常应该输出 `elasticsearch-{version}-x86_64.rpm: OK`。
 
 ## 启用系统索引自动创建 [`X-Pack`]
 
@@ -75,6 +75,7 @@ action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-hist
 ```
 
 !> 如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
+
 
 ## SysV `init` 对 `systemd`
 
@@ -168,7 +169,7 @@ GET /
   "cluster_name" : "elasticsearch",
   "cluster_uuid" : "AT69_T_DTp-1qgIJlatQqA",
   "version" : {
-    "number" : "7.11.1",
+    "number" : "7.11.2",
     "build_flavor" : "default",
     "build_type" : "tar",
     "build_hash" : "f27399d",
@@ -190,7 +191,7 @@ GET /
 
 Elasticsearch 默认从 `/etc/elasticsearch/elasticsearch.yml` 文件加载它的配置。在[配置 Elasticsearch](/setup/config) 中解释了配置文件的格式。
 
-Debian 包也有一个系统配置文件（`/etc/default/elasticsearch`），它允许你设置以下的变量：
+RPM 也有一个系统配置文件（`/etc/sysconfig/elasticsearch`），它允许你设置以下的变量：
 
 |||
 |:--|:--|
@@ -204,9 +205,9 @@ Debian 包也有一个系统配置文件（`/etc/default/elasticsearch`），它
 
 ?> 使用 `systemd` 的发行版本要求需要通过 `systemd` 配置系统资源限制，而不是通过 `/etc/sysconfig/elasticsearch` 文件。更多信息，请参阅 [Systemd 配置](/setup/important_system_config/system?id=Systemd-配置)。
 
-## Debian 包目录结构
+## RPM 目录结构
 
-Debian 包将配置文件、日志和数据目录放在基于 Debian 系统的适当位置：
+RPM 包将配置文件、日志和数据目录放在基于 RPM 系统的适当位置：
 
 | 类型 | 描述 | 默认位置 | 设置 |
 | :-- | :-- | :-- | :-- |
@@ -215,7 +216,7 @@ Debian 包将配置文件、日志和数据目录放在基于 Debian 系统的�
 |conf| 配置文件，包括 `elasticsearch.yml`| `/etc/elasticsearch`|[ES_PATH_CONF](/setup/config?id=配置文件位置)|
 |conf| 环境变量，包括堆大小，文件描述符。| `/etc/default/elasticsearch`||
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`/var/lib/elasticsearch`|`path.data`|
-|jdk|用于运行 Elasticsearch 的捆绑 Java 开发工具包。可以通过在 `/etc/default/elasticsearch` 中覆盖 `JAVA_HOME`环境变量。|`/usr/share/elasticsearch/jdk`||
+|jdk|用于运行 Elasticsearch 的捆绑 Java 开发工具包。可以通过在 `/etc/sysconfig/elasticsearch` 中覆盖 `JAVA_HOME`环境变量。|`/usr/share/elasticsearch/jdk`||
 |logs| 日志文件位置| `/var/log/elasticsearch` | `path.logs`|
 |plugins| 插件文件位置。每个插件会包含在一个子目录中。| `/usr/share/elasticsearch/plugins`||
 |repo| 共享文件系统仓库位置。可以有多个位置。文件系统仓库可以放在此处指定的任何目录的任何子目录中。|未配置|`path.repo`|

@@ -16,12 +16,12 @@
   - :heavy_check_mark: 开始搜索 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/search)
   - :heavy_check_mark: 使用聚合分析结果  [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/aggregations)
   - :heavy_check_mark: 何去何从 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/nextstep)
-- :heavy_check_mark: [设置 Elasticsearch] [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/setup)
-  - :heavy_check_mark: [安装 Elasticsearch] [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install)
-    - Install Elasticsearch from archive on Linux or MacOS
-    - Install Elasticsearch with .zip on Windows
-    - Install Elasticsearch with Debian Package
-    - Install Elasticsearch with RPM
+- :heavy_check_mark: 设置 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/setup)
+  - :heavy_check_mark: 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install)
+    - :heavy_check_mark: Linux 或 MacOS 上用存档安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/linux)
+    - :heavy_check_mark: 在 Windows 上用 `.zip` 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/windows)
+    - :heavy_check_mark: 使用 Debian 包安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/debian)
+    - :heavy_check_mark: 使用 RPM 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/rpm)
     - Install Elasticsearch with Windows MSI Installer
     - Install Elasticsearch with Docker
     - Install Elasticsearch on macOS with Homebrew
