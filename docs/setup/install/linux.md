@@ -120,7 +120,7 @@ pkill -F pid
 
 Elasticsearch 默认从 `$ES_HOME/config/elasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/setup/config)中解释。
 
-一些配置可以在配置文件中指定，也能在命令行中指定，如下使用 `-E` 语法：
+在配置文件中可以指定的设置，也能在命令行中指定，如下使用 `-E` 语法：
 
 ```bash
 ./bin/elasticsearch -d -Ecluster.name=my_cluster -Enode.name=node_1

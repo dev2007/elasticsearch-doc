@@ -14,3 +14,5 @@
     * [在 Windows 上用 `.zip` 安装 Elasticsearch](/setup/install/windows)
     * [使用 Debian 包安装 Elasticsearch](/setup/install/debian)
     * [使用 RPM 安装 Elasticsearch](/setup/install/rpm)
+    * [使用 Windows MSI 安装程序安装 Elasticsearch](/setup/install/msi)
+    
