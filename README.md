@@ -23,7 +23,7 @@
     - :heavy_check_mark: 使用 Debian 包安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/debian)
     - :heavy_check_mark: 使用 RPM 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/rpm)
     - :heavy_check_mark: 使用 Windows MSI 安装程序安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/msi)
-    - Install Elasticsearch with Docker
+    - :heavy_check_mark: 使用 Docker 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/docker)
     - Install Elasticsearch on macOS with Homebrew
   - Configuring Elasticsearch
     - Setting JVM options
