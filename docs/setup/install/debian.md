@@ -34,11 +34,11 @@ sudo apt-get install apt-transport-https
 echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-7.x.list
 ```
 
-?> 由于以下原因，指南不使用 `add-apt-repository`：
-?> 1. `add-apt-repository` 向系统 `/etc/apt/sources.list` 文件中添加条目，而不是 `/etc/apt/sources.list.d` 中的每个仓库的干净文件
-?> 2. `add-apt-repository` 不是许多发行版本的默认安装部分，需要许多非默认的依赖
-?> 3. 老版本的 `add-apt-repository` 总会添加一个 `deb-src` 条目，由于我们没有提供源包，这会导致错误。如果你已经添加了 `deb-src` 条目，在你删除 `deb-src` 条目前，你会看到如下错误：
-?> `Unable to find expected entry 'main/source/Sources' in Release file
+> 由于以下原因，指南不使用 `add-apt-repository`:
+> 1. `add-apt-repository` 向系统 `/etc/apt/sources.list` 文件中添加条目，而不是 `/etc/apt/sources.list.d` 中的每个仓库的干净文件  
+> 2. `add-apt-repository` 不是许多发行版本的默认安装部分，需要许多非默认的依赖  
+> 3. 老版本的 `add-apt-repository` 总会添加一个 `deb-src` 条目，由于我们没有提供源包，这会导致错误。如果你已经添加了 `deb-src` 条目，在你删除 `deb-src` 条目前，你会看到如下错误：  
+> `Unable to find expected entry 'main/source/Sources' in Release file
 (Wrong sources.list entry or malformed file)`
 
 你可以这样安装 Elasticsearch Debian 包：

@@ -146,6 +146,7 @@ The service 'elasticsearch-service-x64' has been installed.
 ?> 作为它的核心，`elasticsearch-service.bat` 依赖于  Apache Commons Daemon 项目来安装服务。在服务安装之前设置的环境变量被复制，并在服务生命周期中使用。这意味着除非重装服务，否则在安装后对他们的变更都不会被获取。
 
 ?> 默认情况，Elasticsearch 依据节点的角色和总内存，自动调整 JVM 堆大小。对于大多数生产环境，我们推荐默认调整。如果需要，你可以手动设置堆大小来覆盖默认调整。
+
 ?> 当第一次在 Windows 上安装 Elasticsearch 作为服务或者从命令行运行 Elasticsearch 时，你可以按[JVM 堆大小设置](/setup/config/advanced?id=JVM 堆大小设置)手工设置堆大小。为了调整已安装服务的堆大小，使用服务管理器：`bin\elasticsearch-service.bat manager`。
 
 ?> 该服务会自动配置一个私有临时目录供 Elasticsearch 运行时使用。该私有临时目录配置为用户运行安装的私有临时目录的子目录。如果这个服务要在不同的用户下运行，你可以在执行服务安装之前，通过设置环境变量 `ES_TMPDIR` 配置这个临时目录的优先位置。

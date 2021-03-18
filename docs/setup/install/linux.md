@@ -58,7 +58,7 @@ Elasticsearch 可以如以下从命令行启动：
 ./bin/elasticsearch
 ```
 
-如果你对 Elasticsearch 密码库进行了密码保护，会提示输入密码库密码。查看[安全设置](https://www.elastic.co/guide/en/elasticsearch/reference/current/secure-settings.html)获取更多详情。
+如果你对 Elasticsearch 密钥库进行了密码保护，会提示输入密码库密码。查看[安全设置](https://www.elastic.co/guide/en/elasticsearch/reference/current/secure-settings.html)获取更多详情。
 
 默认情况下，Elasticsearch 在前台运行，从标准输出（`stdout`）打印日志，且可以通过按 `Ctrl-C` 中止。
 

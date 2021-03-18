@@ -274,7 +274,7 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 
 当你在 Docker 中运行时， [Elasticsearch 配置文件](/setup/config?id=配置文件位置)从 `/usr/share/elasticsearch/config/` 加载。为了使用自定义配置文件，你要[绑定挂载文件](/setup/install/docker?id=挂载-Elasticsearch-配置文件)到镜像中的配置文件上。
 
-你可以通过环境变量设置独立的 Elasticsearch 配置参数。[示例 compose 文件](/setup/install/docker?id=使用-Docker- Compose-启动多节点集群)和[单节点示例](/setup/install/docker?id=使用-Docker-启动单节点集群)就用的这种方法。
+你可以通过环境变量设置独立的 Elasticsearch 配置参数。[示例 compose 文件](/setup/install/docker?id=使用-Docker-Compose-启动多节点集群)和[单节点示例](/setup/install/docker?id=使用-Docker-启动单节点集群)就用的这种方法。
 
 要使用文件内容设置环境变量，给环境变量名字加上后缀 `_FILE`。这对于秘密传输配置（如密码）给 Elasticsearch，而不是直接指定它们非常有用。
 
