@@ -104,10 +104,10 @@
   - Reindex before upgrading
     - Reindex in place
     - Reindex from a remote cluster
-- Index modules
-  - Analysis
-  - Index Shard Allocation
-    - Index-level shard allocation filtering
+- :heavy_check_mark: 索引模块 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_modules)
+  - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/analysis)
+  - :heavy_check_mark: 索引分片分配 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_shard_allocation)
+    - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/shard_allocation_filtering)
     - Delaying allocation when a node leaves
     - Index recovery prioritization
     - Total shards per node
