@@ -108,7 +108,7 @@
   - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/analysis)
   - :heavy_check_mark: 索引分片分配 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_shard_allocation)
     - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/shard_allocation_filtering)
-    - Delaying allocation when a node leaves
+    - :heavy_check_mark: 当节点离开时延迟分配 [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/delaying_allocation)
     - Index recovery prioritization
     - Total shards per node
     - Index-level data tier allocation filtering
