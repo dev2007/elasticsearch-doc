@@ -73,7 +73,7 @@ PUT test/_settings
 |`_ip`|匹配 `_host_ip` 或 `_publish_ip`|
 |`_host`|按主机名匹配节点|
 |`_id`|按节点 id 匹配节点|
-|`_tier`|按节点[数据层](/data_management/data_tier)角色匹配节点。参阅[数据层分配过滤](/index_modules/index_shard_allocation/data_tier_allocation_filtering)获取更多详情。|
+|`_tier`|按节点[数据层](/data_management/data_tiers)角色匹配节点。参阅[数据层分配过滤](/index_modules/index_shard_allocation/data_tier_allocation_filtering)获取更多详情。|
 
 当指定属性值时，你可以使用通配符，例如：
 
@@ -83,3 +83,5 @@ PUT test/_settings
   "index.routing.allocation.include._ip": "192.168.2.*"
 }
 ```
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/shard-allocation-filtering.html)

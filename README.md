@@ -109,9 +109,9 @@
   - :heavy_check_mark: 索引分片分配 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_shard_allocation)
     - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/shard_allocation_filtering)
     - :heavy_check_mark: 当节点离开时延迟分配 [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/delaying_allocation)
-    - Index recovery prioritization
-    - Total shards per node
-    - Index-level data tier allocation filtering
+    - :heavy_check_mark: 索引恢复优先级 [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_recovery_prioritization)
+    - :heavy_check_mark: 每节点分片总数  [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/total_shards_per_node)
+    - :heavy_check_mark: 索引级数据层分配过滤 [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/data_tier_allocation_filtering)
   - Index blocks
   - Mapper
   - Merge

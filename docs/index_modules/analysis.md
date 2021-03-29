@@ -6,3 +6,5 @@
 - 由高级查询，如[匹配查询(`match` query)](/query_dsl/full_text_queries/match)用于生成搜索词
 
 参阅[文本分析](/text_analysis/text_analysis)获取配置详情。
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-analysis.html)

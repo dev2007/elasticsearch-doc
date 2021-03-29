@@ -233,3 +233,5 @@ NGramTokenizer 和 NGramTokenFilter的 min_gram 和 max_gram 允许差值。默�
 - [索引生命周期管理](/setup/config/index_lifecycle)
 
 指定的索引的生命周期策略和滚动别名。
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules.html)

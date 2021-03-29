@@ -76,3 +76,5 @@ PUT _all/_settings
 ```
 
 一旦丢失的分片开始恢复，就可以重置超时。
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/delayed-allocation.html)
