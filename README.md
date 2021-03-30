@@ -752,7 +752,7 @@
 - :heavy_check_mark: REST API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/rest_apis)
   - :heavy_check_mark: API 约定 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/api_convention)
     - :heavy_check_mark: 多目标语法 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/multi_target_syntax)
-    - Date math support in index names
+    - :heavy_check_mark: 索引名中的日期数学支持 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/date_math_support_in_index_names)
     - Cron expressions
     - Common options
     - URL-based access control
