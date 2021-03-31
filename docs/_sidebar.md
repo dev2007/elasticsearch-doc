@@ -29,3 +29,4 @@
   * [API 约定](/rest_apis/api_convention/api_convention)
     * [多目标语法](/rest_apis/api_convention/multi_target_syntax)
     * [索引名中的日期数学支持](/rest_apis/api_convention/date_math_support_in_index_names)
+    * [Cron 表达式](/rest_apis/api_convention/cron_expressions)
