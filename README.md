@@ -108,10 +108,10 @@
   - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/analysis)
   - :heavy_check_mark: 索引分片分配 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_shard_allocation)
     - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/shard_allocation_filtering)
-    - :heavy_check_mark: 当节点离开时延迟分配 [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/delaying_allocation)
-    - :heavy_check_mark: 索引恢复优先级 [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_recovery_prioritization)
-    - :heavy_check_mark: 每节点分片总数  [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/total_shards_per_node)
-    - :heavy_check_mark: 索引级数据层分配过滤 [:link](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/data_tier_allocation_filtering)
+    - :heavy_check_mark: 当节点离开时延迟分配 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/delaying_allocation)
+    - :heavy_check_mark: 索引恢复优先级 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_recovery_prioritization)
+    - :heavy_check_mark: 每节点分片总数  [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/total_shards_per_node)
+    - :heavy_check_mark: 索引级数据层分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/data_tier_allocation_filtering)
   - Index blocks
   - Mapper
   - Merge
@@ -753,8 +753,8 @@
   - :heavy_check_mark: API 约定 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/api_convention)
     - :heavy_check_mark: 多目标语法 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/multi_target_syntax)
     - :heavy_check_mark: 索引名中的日期数学支持 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/date_math_support_in_index_names)
-    - :heavy_check_mark:Cron 表达式 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/cron_expressions)
-    - Common options
+    - :heavy_check_mark: Cron 表达式 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/cron_expressions)
+    - :heavy_check_mark: 常用选项 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/common_options)
     - URL-based access control
   - Autoscaling APIs
     - Get autoscaling capacity
