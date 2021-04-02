@@ -755,7 +755,7 @@
     - :heavy_check_mark: 索引名中的日期数学支持 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/date_math_support_in_index_names)
     - :heavy_check_mark: Cron 表达式 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/cron_expressions)
     - :heavy_check_mark: 常用选项 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/common_options)
-    - URL-based access control
+    - :heavy_check_mark: 基于 URL 的访问控制 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/url-based_access_control)
   - Autoscaling APIs
     - Get autoscaling capacity
     - Delete autoscaling policy
