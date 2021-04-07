@@ -112,7 +112,7 @@
     - :heavy_check_mark: 索引恢复优先级 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_recovery_prioritization)
     - :heavy_check_mark: 每节点分片总数  [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/total_shards_per_node)
     - :heavy_check_mark: 索引级数据层分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/data_tier_allocation_filtering)
-  - Index blocks
+  - :heavy_check_mark: 索引块 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_blocks)
   - Mapper
   - Merge
   - Similarity module

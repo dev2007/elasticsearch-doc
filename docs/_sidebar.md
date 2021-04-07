@@ -25,6 +25,8 @@
     * [索引恢复优先级](/index_modules/index_shard_allocation/index_recovery_prioritization)
     * [每节点分片总数](/index_modules/index_shard_allocation/total_shards_per_node)
     * [索引级数据层分配过滤](/index_modules/index_shard_allocation/data_tier_allocation_filtering)
+  * [索引块](/index_modules/index_blocks)
+  * [映射器](/index_modules/mapper)
 * [REST API](/rest_apis/rest_apis)
   * [API 约定](/rest_apis/api_convention/api_convention)
     * [多目标语法](/rest_apis/api_convention/multi_target_syntax)
