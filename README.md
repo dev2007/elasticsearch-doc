@@ -113,7 +113,7 @@
     - :heavy_check_mark: 每节点分片总数  [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/total_shards_per_node)
     - :heavy_check_mark: 索引级数据层分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/data_tier_allocation_filtering)
   - :heavy_check_mark: 索引块 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_blocks)
-  - Mapper
+  - :heavy_check_mark: 映射器  [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/mapper)
   - Merge
   - Similarity module
   - Slow Log
