@@ -846,7 +846,7 @@
     - Execute enrich policy
     - Enrich stats
   - Graph explore API
-  - Index APIs
+  - :heavy_check_mark: 索引 API [:link:](https://docs.es.shiyueshuyi.xyz/#/index_apis/index_apis)
     - Add index alias
     - Analyze
     - Clear cache
