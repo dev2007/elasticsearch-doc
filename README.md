@@ -846,13 +846,13 @@
     - Execute enrich policy
     - Enrich stats
   - Graph explore API
-  - :heavy_check_mark: 索引 API [:link:](https://docs.es.shiyueshuyi.xyz/#/index_apis/index_apis)
+  - :heavy_check_mark: 索引 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_apis)
     - Add index alias
     - Analyze
     - Clear cache
     - Clone index
     - Close index
-    - Create index
+    - :heavy_check_mark: 创建索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_api)
     - Delete index
     - Delete index alias
     - Delete component template

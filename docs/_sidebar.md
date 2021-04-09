@@ -35,3 +35,4 @@
     * [常用选项](/rest_apis/api_convention/common_options)
     * [基于 URL 的访问控制](/rest_apis/api_convention/url-based_access_control)
   * [索引 API](/rest_apis/index_apis/index_apis)
+    * [创建索引](/rest_apis/index_apis/create_api)
