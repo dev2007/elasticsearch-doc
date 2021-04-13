@@ -852,8 +852,8 @@
     - Clear cache
     - Clone index
     - Close index
-    - :heavy_check_mark: 创建索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_api)
-    - Delete index
+    - :heavy_check_mark: 创建索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_index)
+    - :heavy_check_mark: 删除索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index)
     - Delete index alias
     - Delete component template
     - Delete index template
