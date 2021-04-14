@@ -863,7 +863,7 @@
     - Freeze index
     - Get component template
     - Get field mapping
-    - Get index
+    - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
     - Get index alias
     - Get index settings
     - Get index template
