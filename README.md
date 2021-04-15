@@ -870,7 +870,7 @@
     - Get index template (legacy)
     - Get mapping
     - Index alias exists
-    - Index exists
+    - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_exists)
     - Index recovery
     - Index segments
     - Index shard stores

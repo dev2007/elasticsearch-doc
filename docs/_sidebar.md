@@ -38,3 +38,4 @@
     * [创建索引](/rest_apis/index_apis/create_index)
     * [删除索引](/rest_apis/index_apis/delete_index)
     * [获取索引](/rest_apis/index_apis/get_index)
+    * [索引存在](/rest_apis/index_apis/index_exists)
