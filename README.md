@@ -876,7 +876,7 @@
     - Index shard stores
     - Index stats
     - Index template exists (legacy)
-    - Open index
+    - :heavy_check_mark: 开启索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/open_index)
     - Put index template
     - Put index template (legacy)
     - Put component template
