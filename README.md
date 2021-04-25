@@ -883,7 +883,7 @@
     - Put mapping
     - Refresh
     - Rollover index
-    - Shrink index
+    - :heavy_check_mark: 收缩索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/shrink_index)
     - Simulate index
     - Simulate template
     - Split index

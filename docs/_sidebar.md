@@ -42,3 +42,4 @@
       * [索引存在](/rest_apis/index_apis/index_exists)
       * [关闭索引](/rest_apis/index_apis/close_index)
       * [开启索引](/rest_apis/index_apis/open_index)
+      * [收缩索引](/rest_apis/index_apis/shrink_index)
