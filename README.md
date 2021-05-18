@@ -886,7 +886,7 @@
     - :heavy_check_mark: 收缩索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/shrink_index)
     - Simulate index
     - Simulate template
-    - Split index
+    - :heavy_check_mark: 拆分索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/split_index)
     - Synced flush
     - Type exists
     - Unfreeze index
