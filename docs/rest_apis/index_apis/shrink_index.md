@@ -19,7 +19,7 @@ POST /my-index-000001/_shrink/shrunk-my-index-000001
 - 在你能收缩一个索引前：
   - 索引必须是只读的
   - 索引的所有主分片必须位于同一节点上
-  - [健康检查](/rest_apis/cluster_apis/cluster_health)状态必须为 `green`（绿色）
+  - [集群健康](/rest_apis/cluster_apis/cluster_health)状态必须为 `green`（绿色）
 
 为了使分片分配更容易，我们建议你也移除索引的副本分片。你也可以稍后作为收缩操作的一部分，重新添加副本分片。
 

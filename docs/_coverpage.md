@@ -7,4 +7,4 @@
 > 对官方文档的翻译
 
 [GitHub](https://github.com/dev2007/elasticsearch-doc)
-[点击了解](es.md)
+[点击阅读](es.md)

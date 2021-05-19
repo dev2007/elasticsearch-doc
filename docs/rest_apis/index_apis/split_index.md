@@ -23,7 +23,7 @@ POST /my-index-000001/_split/split-my-index-000001
 
 - 在你能拆分一个索引前：
   - 索引必须是只读的
-  - [健康检查](/rest_apis/cluster_apis/cluster_health) 状态必须为 `green`（绿色）
+  - [集群健康](/rest_apis/cluster_apis/cluster_health) 状态必须为 `green`（绿色）
 
 你可以通过以下请求将索引设置为只读：
 
@@ -38,7 +38,7 @@ PUT /my_source_index/_settings
 
 1. 阻止对索引的写操作，同时仍允许元数据修改（如删除索引）
 
-在数据流的当前写索引不能被拆分。为了拆分当前写索引，这个数据流必须先被[滚动](/data_streams/data_streams?id=滚动)，这样一个新的写索引能被创建，这样前一个写索引能被拆分。
+在数据流的当前写索引不能被拆分。为了拆分当前写索引，这个数据流必须先被[滚动](/data_streams/data_streams?id=滚动)，这样一个新的写索引被创建，前一个写索引才能被拆分。
 
 ## 描述
 
@@ -71,7 +71,7 @@ PUT /my-index-000001
 
 如果原始索引包含一个主分片（或者一个多分片索引被[收缩](/rest_apis/index_apis/shrink_index)到一个主分片），那这个索引可以被分为大于 1 的任意数量分片。然后，路由分片的默认数量的属性将用于新拆分的索引。
 
-### 拆分如何工作
+### 拆分的原理
 
 一个拆分操作：
 
