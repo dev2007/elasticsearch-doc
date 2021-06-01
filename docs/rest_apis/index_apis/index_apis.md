@@ -41,7 +41,7 @@
 
 ## 索引模板
 
-索引模板自动为新索引应用设置、映射以及别名。他们通常用于为时序数据配置滚动索引，以确保每个新索引与前一个索引有相同的配置。关联到数据流的索引模板配置了它的和备份指示符。获取更多信息，参阅[索引模板](/index_templates/index_templates)。
+索引模板自动为新索引应用设置、映射以及别名。他们通常用于为时序数据配翻转索引，以确保每个新索引与前一个索引有相同的配置。关联到数据流的索引模板配置了它的和备份指示符。获取更多信息，参阅[索引模板](/index_templates/index_templates)。
 
 - [创建或更新索引模板](/rest_apis/index_apis/create_or_update_index_template)
 - [获取索引模板](/rest_apis/index_apis/get_index_template)

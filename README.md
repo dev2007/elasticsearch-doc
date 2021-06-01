@@ -882,7 +882,7 @@
     - Put component template
     - Put mapping
     - Refresh
-    - Rollover index
+    - :heavy_check_mark: 翻转索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/rollover_index)
     - :heavy_check_mark: 收缩索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/shrink_index)
     - Simulate index
     - Simulate template
