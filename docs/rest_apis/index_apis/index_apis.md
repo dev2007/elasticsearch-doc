@@ -13,7 +13,7 @@
 - [收缩索引](/rest_apis/index_apis/shrink_index)
 - [拆分索引](/rest_apis/index_apis/split_index)
 - [复制索引](/rest_apis/index_apis/clone_index)
-- [翻转](/rest_apis/index_apis/rollover)
+- [翻转](/rest_apis/index_apis/rollover_index)
 - [冻结索引](/rest_apis/index_apis/freeze_index)
 - [解冻索引](/rest_apis/index_apis/unfreeze_index)
 - [解析索引](/rest_apis/index_apis/resolve_index)
