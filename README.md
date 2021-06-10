@@ -860,7 +860,7 @@
     - Delete index template (legacy)
     - Flush
     - Force merge
-    - Freeze index
+    - :heavy_check_mark: 冻结索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/freeze_index)
     - Get component template
     - Get field mapping
     - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
