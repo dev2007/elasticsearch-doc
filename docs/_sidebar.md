@@ -48,3 +48,4 @@
       * [翻转](/rest_apis/index_apis/rollover_index)
       * [冻结索引](/rest_apis/index_apis/freeze_index)
       * [解冻索引](/rest_apis/index_apis/unfreeze_index)
+      * [解析索引](/rest_apis/index_apis/resolve_index)

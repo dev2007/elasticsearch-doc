@@ -892,7 +892,7 @@
     - :heavy_check_mark: 解冻索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/unfreeze_index)
     - Update index alias
     - Update index settings
-    - Resolve index
+    - :heavy_check_mark: 解析索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/resolve_index)
     - List dangling indices
     - Import dangling index
     - Delete dangling index
