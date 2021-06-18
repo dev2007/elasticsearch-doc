@@ -304,7 +304,7 @@ docker run <various parameters> bin/elasticsearch -Ecluster.name=mynewclusternam
 
 ### 挂载 Elasticsearch 密钥库
 
-默认情况下，Elasticsearch 会为安全设置自动生成密钥库文件。这个文件是混淆的，但没有加密。如果你想使用密码加密你的[安全设置]()，你必须使用 `elasticsearch-keystore` 程序去创建一个密码保护的密钥库，然后绑定挂载它到容器中文件 `/usr/share/elasticsearch/config/elasticsearch.keystore`。为了在启动时向 Docker 容器提供密码，将 Docker 的环境变量值 `KEYSTORE_PASSWORD` 设置为密码值。例如，`docker run` 命令可以有以下的选项：
+默认情况下，Elasticsearch 会为安全设置自动生成密钥库文件。这个文件是混淆的，但没有加密。如果你想使用密码加密你的[安全设置](/setup/config/secure_settings)，你必须使用 `elasticsearch-keystore` 程序去创建一个密码保护的密钥库，然后绑定挂载它到容器中文件 `/usr/share/elasticsearch/config/elasticsearch.keystore`。为了在启动时向 Docker 容器提供密码，将 Docker 的环境变量值 `KEYSTORE_PASSWORD` 设置为密码值。例如，`docker run` 命令可以有以下的选项：
 
 ```bash
 -v full_path_to/elasticsearch.keystore:/usr/share/elasticsearch/config/elasticsearch.keystore

@@ -882,6 +882,7 @@
     - Put component template
     - Put mapping
     - Refresh
+    - :heavy_check_mark: 解析索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/resolve_index)
     - :heavy_check_mark: 翻转索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/rollover_index)
     - :heavy_check_mark: 收缩索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/shrink_index)
     - Simulate index
@@ -890,12 +891,8 @@
     - Synced flush
     - Type exists
     - :heavy_check_mark: 解冻索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/unfreeze_index)
-    - Update index alias
     - Update index settings
-    - :heavy_check_mark: 解析索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/resolve_index)
-    - List dangling indices
-    - Import dangling index
-    - Delete dangling index
+    - :heavy_check_mark: 更新映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/update_mapping)
   - Index lifecycle management APIs
     - Create policy
     - Get policy

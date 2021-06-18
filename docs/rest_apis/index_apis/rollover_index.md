@@ -117,7 +117,7 @@ POST my-data-stream/_rollover
 
   （可选，[字节单位](/rest_apis/api_convention/common_options?id=字节大小单位)）当索引达到一定大小时触发翻转。这是索引中所有主分片的总大小。副本不会被计算到最大索引大小。
 
-  ?> 为查看当前索引大小，可以使用 [`_cat indices`]() API。`pri.store.size` 值显示所有主分片的组合大小。
+  ?> 为查看当前索引大小，可以使用 [`_cat indices`](/rest_apis/compact_and_aligned_text_apis/cat_indices) API。`pri.store.size` 值显示所有主分片的组合大小。
 
   - `max_primary_shard_size`
 

@@ -49,3 +49,5 @@
       * [冻结索引](/rest_apis/index_apis/freeze_index)
       * [解冻索引](/rest_apis/index_apis/unfreeze_index)
       * [解析索引](/rest_apis/index_apis/resolve_index)
+    * 映射管理
+      * [更新映射](/rest_apis/index_apis/update_mapping)
