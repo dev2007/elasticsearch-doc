@@ -53,7 +53,7 @@ HEAD /my-index-000001
 
 - `ignore_unavailable`
 
-（可选，布尔值）如果为 `false`，请求不存在的索引将返回错误。默认为 `false`。
+（可选，布尔值）如果为 `true`，请求不存在的索引将返回错误。默认为 `false`。
 
 - `local`
 

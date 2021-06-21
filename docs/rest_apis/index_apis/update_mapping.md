@@ -62,7 +62,7 @@ PUT /my-index-000001/_mapping
 [~~7.0.0~~开始不推荐] （可选，布尔值）如果为 `true`，映射体中需要映射类型。
 
 - `ignore_unavailable`
-（可选，布尔值）如果为 `false`，请求不存在的索引将返回错误。默认为 `false`。
+（可选，布尔值）如果为 `true`，请求不存在的索引将返回错误。默认为 `false`。
 
 - `master_timeout`
 （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。

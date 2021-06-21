@@ -868,7 +868,7 @@
     - Get index settings
     - Get index template
     - Get index template (legacy)
-    - Get mapping
+    - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_mapping)
     - Index alias exists
     - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_exists)
     - Index recovery
