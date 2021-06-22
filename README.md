@@ -862,13 +862,13 @@
     - Force merge
     - :heavy_check_mark: 冻结索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/freeze_index)
     - Get component template
-    - Get field mapping
+    - :heavy_check_mark: 获取字段映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_field_mapping)
     - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
     - Get index alias
     - Get index settings
     - Get index template
     - Get index template (legacy)
-    - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_mapping)
+    - :heavy_check_mark: 获取映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_mapping)
     - Index alias exists
     - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_exists)
     - Index recovery

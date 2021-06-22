@@ -51,3 +51,5 @@
       * [解析索引](/rest_apis/index_apis/resolve_index)
     * 映射管理
       * [更新映射](/rest_apis/index_apis/update_mapping)
+      * [获取映射](/rest_apis/index_apis/get_mapping)
+      * [获取字段映射](/rest_apis/index_apis/get_field_mapping)
