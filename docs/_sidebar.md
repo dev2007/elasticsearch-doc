@@ -53,3 +53,4 @@
       * [更新映射](/rest_apis/index_apis/update_mapping)
       * [获取映射](/rest_apis/index_apis/get_mapping)
       * [获取字段映射](/rest_apis/index_apis/get_field_mapping)
+      * [类型存在](/rest_apis/index_apis/type_exists)

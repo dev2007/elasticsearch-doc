@@ -889,7 +889,7 @@
     - Simulate template
     - :heavy_check_mark: 拆分索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/split_index)
     - Synced flush
-    - Type exists
+    - :heavy_check_mark: 类型存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/type_exists)
     - :heavy_check_mark: 解冻索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/unfreeze_index)
     - Update index settings
     - :heavy_check_mark: 更新映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/update_mapping)
