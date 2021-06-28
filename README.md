@@ -847,7 +847,7 @@
     - Enrich stats
   - Graph explore API
   - :heavy_check_mark: 索引 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_apis)
-    - Add index alias
+    - :heavy_check_mark: 别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/aliases)
     - Analyze
     - Clear cache
     - :heavy_check_mark: 复制索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/clone_index)

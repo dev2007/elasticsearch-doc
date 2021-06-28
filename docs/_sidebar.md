@@ -54,3 +54,5 @@
       * [获取映射](/rest_apis/index_apis/get_mapping)
       * [获取字段映射](/rest_apis/index_apis/get_field_mapping)
       * [类型存在](/rest_apis/index_apis/type_exists)
+    * 别名管理
+      * [别名](/rest_apis/index_apis/aliases)
