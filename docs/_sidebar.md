@@ -57,3 +57,4 @@
     * 别名管理
       * [别名](/rest_apis/index_apis/aliases)
       * [创建或更新索引别名](/rest_apis/index_apis/create_or_update_index_alias)
+      * [获取索引别名API](/rest_apis/index_apis/get_index_alias)

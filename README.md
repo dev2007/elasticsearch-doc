@@ -865,7 +865,7 @@
     - Get component template
     - :heavy_check_mark: 获取字段映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_field_mapping)
     - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
-    - Get index alias
+    - :heavy_check_mark: 获取索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_alias)
     - Get index settings
     - Get index template
     - Get index template (legacy)
