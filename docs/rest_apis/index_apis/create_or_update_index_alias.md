@@ -25,6 +25,7 @@ PUT /my-index-000001/_alias/alias1
 ## 路径参数
 
 - `<index>`
+
 （必需的，字符串）待添加别名的，逗号分隔列表或通配符的索引名。
 
 为了向集群中的所有索引添加别名，使用值 `_all`。
@@ -32,23 +33,28 @@ PUT /my-index-000001/_alias/alias1
 ?> 你不能给[数据流](/datastreams/datastreams)添加索引别名。
 
 - `<alias>`
+
 （必需的，字符串）待创建或升级的索引别名的名字。支持[日期数学](/rest_apis/api_convention/date_math_support_in_index_names)。
 
 ## 查询参数
 
 - `master_timeout`
+
 （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 - `timeout`
+
 （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 请求体
 
 - `filter`
+
 （可选，查询对象）[过滤器查询](/query_dsl/compound_queries/boolean)用于限制索引别名。
 如果指定，索引别名仅用于过滤器返回的文档。
 
 - `routing`
+
 （可选，字符串）用于路由操作到指定分片的自定义值。
 
 ## 示例
