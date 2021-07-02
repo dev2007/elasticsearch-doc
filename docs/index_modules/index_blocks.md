@@ -68,11 +68,13 @@ PUT /my-index-000001/_block/write
 ### 查询参数
 
 - `allow_no_indices`
+
 （可选，布尔值）如果为 `false`，任何通配符、[索引别名](/rest_apis/index_apis/bulk_index_alias)或 `_all` 值只针对丢失或关闭的索引，请求将返回一个错误。即使请求以其他开启索引为目标，此行为也适用。例如，如果一个索引以 `foo` 开头，而没有索引以 `bar` 开头，则以 `foo*,bar*` 为目标的请求将返回错误。
 
 默认为 `true`。
 
 - `expand_wildcards`
+
 （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
 1. `all`
@@ -89,12 +91,15 @@ PUT /my-index-000001/_block/write
 默认为 `open`。
 
 - `ignore_unavailable`
+
 （可选，布尔值）如果为 `true`，丢失的或关闭的索引不包含在响应中。默认为 `false`。
 
 - `master_timeout`
+
 （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 - `timeout`
+
 （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 例子
