@@ -61,3 +61,4 @@
       * [删除索引别名](/rest_apis/index_apis/delete_index_alias)
     * 索引设置
       * [更新索引设置](/rest_apis/index_apis/update_index_settings)
+      * [获取索引设置](/rest_apis/index_apis/get_index_settings)

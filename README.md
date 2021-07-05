@@ -866,7 +866,7 @@
     - :heavy_check_mark: 获取字段映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_field_mapping)
     - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
     - :heavy_check_mark: 获取索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_alias)
-    - Get index settings
+    - :heavy_check_mark: 获取索引设置 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_settings)
     - Get index template
     - Get index template (legacy)
     - :heavy_check_mark: 获取映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_mapping)
@@ -892,7 +892,7 @@
     - Synced flush
     - :heavy_check_mark: 类型存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/type_exists)
     - :heavy_check_mark: 解冻索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/unfreeze_index)
-    - Update index settings
+    - :heavy_check_mark: 更新索引设置 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/update_index_settings)
     - :heavy_check_mark: 更新映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/update_mapping)
   - Index lifecycle management APIs
     - Create policy
