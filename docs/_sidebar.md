@@ -62,3 +62,4 @@
     * 索引设置
       * [更新索引设置](/rest_apis/index_apis/update_index_settings)
       * [获取索引设置](/rest_apis/index_apis/get_index_settings)
+      * [分析](/rest_apis/index_apis/analyze)
