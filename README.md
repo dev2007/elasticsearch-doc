@@ -854,6 +854,7 @@
     - :heavy_check_mark: 关闭索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/close_index)
     - :heavy_check_mark: 创建索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_index)
     - :heavy_check_mark: 创建或更新索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_index_alias)
+    - :heavy_check_mark: 创建或更新索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#//rest_apis/index_apis/create_or_update_index_template)
     - :heavy_check_mark: 删除索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index)
     - :heavy_check_mark: 删除索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_alias)
     - Delete component template

@@ -63,3 +63,5 @@
       * [更新索引设置](/rest_apis/index_apis/update_index_settings)
       * [获取索引设置](/rest_apis/index_apis/get_index_settings)
       * [分析](/rest_apis/index_apis/analyze)
+    * 索引模板
+      * [索引模板](/rest_apis/index_apis/create_or_update_index_template)
