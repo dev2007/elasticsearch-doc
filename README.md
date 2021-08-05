@@ -868,7 +868,7 @@
     - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
     - :heavy_check_mark: 获取索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_alias)
     - :heavy_check_mark: 获取索引设置 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_settings)
-    - Get index template
+    - :heavy_check_mark: 获取索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_template)
     - Get index template (legacy)
     - :heavy_check_mark: 获取映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_mapping)
     - Index alias exists

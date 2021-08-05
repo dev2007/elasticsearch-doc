@@ -65,3 +65,4 @@
       * [分析](/rest_apis/index_apis/analyze)
     * 索引模板
       * [索引模板](/rest_apis/index_apis/create_or_update_index_template)
+      * [获取索引模板](/rest_apis/index_apis/get_index_template)
