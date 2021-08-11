@@ -858,7 +858,7 @@
     - :heavy_check_mark: 删除索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index)
     - :heavy_check_mark: 删除索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_alias)
     - Delete component template
-    - Delete index template
+    - :heavy_check_mark: 删除索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_template)
     - Delete index template (legacy)
     - Flush
     - Force merge
