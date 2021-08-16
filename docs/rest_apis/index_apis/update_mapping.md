@@ -250,7 +250,7 @@ PUT /my-index-000001/_mapping
 
 除了支持[映射参数](/mapping/mapping_parameters/mapping_parameters)，你不能变更已有字段的映射或字段类型。变更已有字段可能导致已被索引的数据无效。
 
-如果你需要变更在数据流备份索引中字段映射，参阅[为数据流变更映射和设置](/data_streams/change_mappings_and_settings_for_a data_stream)。
+如果你需要变更在数据流备份索引中字段映射，参阅[为数据流变更映射和设置](/data_streams/change_mappings_and_settings_for_a_data_stream)。
 
 如果你需要变更其他索引的中的字段的映射，创建一个正确映射的新索引，再把数据[重索引（reindex）](/rest_apis/document_apis/reindex)到这个索引。
 
