@@ -57,7 +57,7 @@
     * 别名管理
       * [别名](/rest_apis/index_apis/aliases)
       * [创建或更新索引别名](/rest_apis/index_apis/create_or_update_index_alias)
-      * [获取索引别名API](/rest_apis/index_apis/get_index_alias)
+      * [获取索引别名](/rest_apis/index_apis/get_index_alias)
       * [删除索引别名](/rest_apis/index_apis/delete_index_alias)
     * 索引设置
       * [更新索引设置](/rest_apis/index_apis/update_index_settings)
@@ -66,3 +66,5 @@
     * 索引模板
       * [索引模板](/rest_apis/index_apis/create_or_update_index_template)
       * [获取索引模板](/rest_apis/index_apis/get_index_template)
+      * [删除索引模板](/rest_apis/index_apis/delete_index_template)
+      * [创建或更新组件模板](/rest_apis/index_apis/create_or_update_component_template)
