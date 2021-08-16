@@ -82,7 +82,7 @@ PUT /my-index-000001/_mapping
 2. [字段数据类型](/mapping/field_data_types)
 3. [映射参数](/mapping/mapping_parameters/mapping_parameters)
 
-对已有字段，参阅 [修改已有字段的映射](/rest_apis/index_apis/update_mapping?id=修改已有字段的映射)。
+对已有字段，参阅 [变更已有字段的映射](/rest_apis/index_apis/update_mapping?id=变更已有字段的映射)。
 
 ## 示例
 
