@@ -903,7 +903,7 @@ Listening at http://localhost:3000
     - Flush
     - Force merge
     - :heavy_check_mark: 冻结索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/freeze_index)
-    - Get component template
+    - :heavy_check_mark: 获取组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_component_template)
     - :heavy_check_mark: 获取字段映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_field_mapping)
     - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
     - :heavy_check_mark: 获取索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_alias)
