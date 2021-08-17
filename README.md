@@ -1,10 +1,49 @@
 # Elasticsearch中文文档——基于v7.11
 
-基于官方v7.11文档，翻译为中文，并发布在网站。
+## 翻译目标及说明
+
+基于官方 v7.11 文档，翻译为中文，并发布在网站查看。
+
+由于官方版本更新比较快，文档虽然是基于 v7.11 开始翻译，但由于官方一直在更新，实际翻译过程中，后续的文档都是翻译时当时的最新版本。
+
+计划在全部翻译完成后，再基于完成时的最新版本，对有差异的老版本文档进行调整。
+
+由于文档过于庞大，不会按照文档先后顺序进行翻译。将优先进行 API 文档、相关使用的翻译，然后是基本配置等，最后再是基础概念、进阶等。
+
+翻译过程中，随着对相应概念的学习与理解，可能存在不同文档中对同一名词翻译时选词不同；或者对不同文档中的相同英文描述，翻译时有不同的中文表述（如一个使用子句，一个使用长句）。这些问题在翻译过程中在所难免，如果大家有发现，欢迎指出，我会将其修改一致。
+
+对某些翻译有疑义或者读起来不符合中文用词、造句，也请大家按照“**信达雅**”的标准提出 `Issue` 指正，让我们大家一起将其完善。
+
+希望在大家的努力下，一起翻译出一份符合中文习惯，且阅读起来令人舒适的文档。这样的好文档才能帮助学习人的进步。这也是我翻译想达到的最高目标。
+
+## 查看文档
 
 [在网站查看文档](https://docs.es.shiyueshuyi.xyz)
 
-文档列表及完成进度：
+## 本地运行
+
+本文档基于 `docsify` 解析。本地通过 `npm` 安装 [`docsify-cli`](https://docsify.js.org/#/zh-cn/quickstart) 工具后，即可本地运行。
+
+> 1. 进入项目目录
+> 2. 进入 `docs` 目录
+> 3. 执行 `docsify serve`
+
+```bash
+cd /elasticsearch-doc
+cd ./docs
+docsify serve
+```
+
+控制台显示如下示例后，即可通过浏览器输入 URL 地址查看文档：
+
+```bash
+Serving XXX\elasticsearch-doc\docs now.
+Listening at http://localhost:3000
+```
+
+## 文档列表及进度
+
+> 已完成的部分标示 :heavy_check_mark:，并添加网站链接。
 
 - :heavy_check_mark: 什么是 Elasticsearch？ [:link:](https://docs.es.shiyueshuyi.xyz/#/es)
   - :heavy_check_mark: 数据输入：文档和索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/datain)
