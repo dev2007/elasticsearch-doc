@@ -70,3 +70,4 @@
       * [创建或更新组件模板](/rest_apis/index_apis/create_or_update_component_template)
       * [获取组件模板](/rest_apis/index_apis/get_component_template)
       * [删除组件模板](/rest_apis/index_apis/delete_component_template)
+      * [模拟索引](/rest_apis/index_apis/simulate_index)
