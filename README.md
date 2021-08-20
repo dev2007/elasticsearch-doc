@@ -928,7 +928,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 翻转索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/rollover_index)
     - :heavy_check_mark: 收缩索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/shrink_index)
     - :heavy_check_mark: 模拟索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/simulate_index)
-    - Simulate template
+    - :heavy_check_mark: 模拟模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/simulate_index_template)
     - :heavy_check_mark: 拆分索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/split_index)
     - Synced flush
     - :heavy_check_mark: 类型存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/type_exists)

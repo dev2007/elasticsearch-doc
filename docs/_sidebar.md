@@ -71,3 +71,4 @@
       * [获取组件模板](/rest_apis/index_apis/get_component_template)
       * [删除组件模板](/rest_apis/index_apis/delete_component_template)
       * [模拟索引](/rest_apis/index_apis/simulate_index)
+      * [模板模板](/rest_apis/index_apis/simulate_index_template)

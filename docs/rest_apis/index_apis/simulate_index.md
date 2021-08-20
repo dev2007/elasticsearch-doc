@@ -51,33 +51,37 @@ POST /_index_template/_simulate_index/my-index-000001
 
     - `aliases`
 
-      （必需，对象）键值是别名名称。对象体包含别名的选项。
+      （对象）索引的别名。如果索引模板包含 `data_stream`，则不支持此参数。
 
-      - `<alias>` 属性
+      - `<alias>`
 
-        - `filter`
+        （必需，对象）键值是别名名称。对象体包含别名的选项。
 
-          （可选，查询 DSL 对象）用于限制别名查询时可以访问的文档。
+        - `<alias>` 属性
 
-        - `index_routing`
+          - `filter`
 
-          （可选，字符串）用于将索引操作路由到特定分片的值。如果指定，这将覆盖索引操作的路由值。
+            （可选，查询 DSL 对象）用于限制别名查询时可以访问的文档。
 
-        - `is_hidden`
+          - `index_routing`
 
-          （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax?id=隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
+            （可选，字符串）用于将索引操作路由到特定分片的值。如果指定，这将覆盖索引操作的路由值。
 
-        - `is_write_index`
+          - `is_hidden`
 
-          （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases?id=写索引)。默认为 `false`。
+            （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax?id=隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
 
-        - `routing`
+          - `is_write_index`
 
-          （可选，字符串）用于将索引和搜索操作路由到特定分片的值。
+            （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases?id=写索引)。默认为 `false`。
 
-        - `search_routing`
+          - `routing`
 
-          （可选，字符串）用于将搜索操作路由到特定分片的值。如果指定，这将覆盖搜索操作的 `routing` 值。
+            （可选，字符串）用于将索引和搜索操作路由到特定分片的值。
+
+          - `search_routing`
+
+            （可选，字符串）用于将搜索操作路由到特定分片的值。如果指定，这将覆盖搜索操作的 `routing` 值。
 
     - `mappings`
 
