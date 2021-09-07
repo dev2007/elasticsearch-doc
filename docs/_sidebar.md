@@ -72,3 +72,5 @@
       * [删除组件模板](/rest_apis/index_apis/delete_component_template)
       * [模拟索引](/rest_apis/index_apis/simulate_index)
       * [模板模板](/rest_apis/index_apis/simulate_template)
+    * 监控
+      * [索引统计](/rest_apis/index_apis/index_stats)

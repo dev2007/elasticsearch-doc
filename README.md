@@ -916,7 +916,7 @@ Listening at http://localhost:3000
     - Index recovery
     - Index segments
     - Index shard stores
-    - Index stats
+    - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#//rest_apis/index_apis/index_stats)
     - Index template exists (legacy)
     - :heavy_check_mark: 开启索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/open_index)
     - Put index template
