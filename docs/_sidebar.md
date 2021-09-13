@@ -74,3 +74,4 @@
       * [模板模板](/rest_apis/index_apis/simulate_template)
     * 监控
       * [索引统计](/rest_apis/index_apis/index_stats)
+      * [索引段](/rest_apis/index_apis/index_segments)
