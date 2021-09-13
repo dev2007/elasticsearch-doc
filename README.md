@@ -18,7 +18,7 @@
 
 ## 查看文档
 
-[在网站查看文档](https://docs.es.shiyueshuyi.xyz)
+[在网站查看文档](https://elasticsearch.bookhub.zone)
 
 ## 本地运行
 
