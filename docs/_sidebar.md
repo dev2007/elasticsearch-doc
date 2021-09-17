@@ -75,3 +75,4 @@
     * 监控
       * [索引统计](/rest_apis/index_apis/index_stats)
       * [索引段](/rest_apis/index_apis/index_segments)
+      * [索引恢复](/rest_apis/index_apis/index_recovery)
