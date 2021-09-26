@@ -915,7 +915,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_exists)
     - :heavy_check_mark: 索引恢复 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_recovery)
     - :heavy_check_mark: 索引段 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_segments)
-    - Index shard stores
+    - :heavy_check_mark: 索引分片存储 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_shard_stores)
     - :heavy_check_mark: 索引统计 [:link:](https://docs.es.shiyueshuyi.xyz/#//rest_apis/index_apis/index_stats)
     - Index template exists (legacy)
     - :heavy_check_mark: 开启索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/open_index)
