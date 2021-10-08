@@ -77,3 +77,5 @@
       * [索引段](/rest_apis/index_apis/index_segments)
       * [索引恢复](/rest_apis/index_apis/index_recovery)
       * [索引分片存储](/rest_apis/index_apis/index_shard_stores)
+    * 状态管理
+      * [清除索引](/rest_apis/index_apis/clear_cache)

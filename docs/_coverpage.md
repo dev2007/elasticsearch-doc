@@ -4,7 +4,9 @@
 
 # Elasticsearch 中文文档 | 基于 v7.11
 
-> 对官方文档的翻译
+> 本文档是对官方文档的翻译，持续翻译中
 
-[GitHub](https://github.com/dev2007/elasticsearch-doc)
+> 如果文档对你有帮助，欢迎点击右上角到 GitHub 给一个 ☆
+
+[更多文档](https://bookhub.zone)
 [点击阅读](es.md)

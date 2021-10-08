@@ -888,7 +888,7 @@ Listening at http://localhost:3000
   - :heavy_check_mark: 索引 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_apis)
     - :heavy_check_mark: 别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/aliases)
     - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/analyze)
-    - Clear cache
+    - :heavy_check_mark: 清除缓存 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/clear_cache)
     - :heavy_check_mark: 复制索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/clone_index)
     - :heavy_check_mark: 关闭索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/close_index)
     - :heavy_check_mark: 创建索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_index)
