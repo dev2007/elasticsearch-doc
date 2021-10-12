@@ -923,7 +923,7 @@ Listening at http://localhost:3000
     - Put index template (legacy)
     - Put component template
     - Put mapping
-    - Refresh
+    - heavy_check_mark: 刷新 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/refresh)
     - :heavy_check_mark: 解析索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/resolve_index)
     - :heavy_check_mark: 翻转索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/rollover_index)
     - :heavy_check_mark: 收缩索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/shrink_index)
