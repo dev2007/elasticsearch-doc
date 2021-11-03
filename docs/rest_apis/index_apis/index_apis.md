@@ -63,8 +63,8 @@
 
 - [清除缓存](/rest_apis/index_apis/clear_cache)
 - [刷新](/rest_apis/index_apis/refresh)
-- [清空](/rest_apis/index_apis/flush)
-- [同步清空](/rest_apis/index_apis/synced_flush)
+- [冲刷](/rest_apis/index_apis/flush)
+- [同步冲刷](/rest_apis/index_apis/synced_flush)
 - [强制合并](/rest_apis/index_apis/force_merge)
 
 ## 悬挂索引
