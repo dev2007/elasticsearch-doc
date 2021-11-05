@@ -80,3 +80,5 @@
     * 状态管理
       * [清除缓存](/rest_apis/index_apis/clear_cache)
       * [刷新](/rest_apis/index_apis/refresh)
+      * [冲刷](/rest_apis/index_apis/flush)
+      * [同步冲刷](/rest_apis/index_apis/synced_flush)
