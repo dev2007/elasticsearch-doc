@@ -901,7 +901,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 删除索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_template)
     - Delete index template (legacy)
     - :heavy_check_mark: 冲刷 [:link:](https://docs.es.shiyueshuyi.xyz/#//rest_apis/index_apis/flush)
-    - Force merge
+    - :heavy_check_mark: 强制合并 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/force_merge)
     - :heavy_check_mark: 冻结索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/freeze_index)
     - :heavy_check_mark: 获取组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_component_template)
     - :heavy_check_mark: 获取字段映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_field_mapping)
