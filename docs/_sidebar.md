@@ -83,3 +83,5 @@
       * [冲刷](/rest_apis/index_apis/flush)
       * [同步冲刷](/rest_apis/index_apis/synced_flush)
       * [强制合并](/rest_apis/index_apis/force_merge)
+    * 悬挂索引
+      * [列出悬挂索引](/rest_apis/index_apis/list_dangling_indices)
