@@ -85,3 +85,4 @@
       * [强制合并](/rest_apis/index_apis/force_merge)
     * 悬挂索引
       * [列出悬挂索引](/rest_apis/index_apis/list_dangling_indices)
+      * [导入悬挂索引](/rest_apis/index_apis/import_dangling_index)

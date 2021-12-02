@@ -911,6 +911,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 获取索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_template)
     - Get index template (legacy)
     - :heavy_check_mark: 获取映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_mapping)
+    - :heavy_check_mark: 导入悬挂索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/import_dangling_index)
     - Index alias exists
     - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_exists)
     - :heavy_check_mark: 索引恢复 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_recovery)
