@@ -895,6 +895,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 创建或更新索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_index_alias)
     - :heavy_check_mark: 创建或更新组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_component_template)
     - :heavy_check_mark: 创建或更新索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_index_template)
+    - :heavy_check_mark: 删除悬挂索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_dangling_index)
     - :heavy_check_mark: 删除索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index)
     - :heavy_check_mark: 删除索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_alias)
     - :heavy_check_mark: 删除组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_component_template)

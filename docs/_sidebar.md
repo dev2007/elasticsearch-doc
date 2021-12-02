@@ -86,3 +86,4 @@
     * 悬挂索引
       * [列出悬挂索引](/rest_apis/index_apis/list_dangling_indices)
       * [导入悬挂索引](/rest_apis/index_apis/import_dangling_index)
+      * [删除悬挂索引](/rest_apis/index_apis/delete_dangling_index)
