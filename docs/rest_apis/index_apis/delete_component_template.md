@@ -24,7 +24,7 @@ DELETE _component_template/template_1
 
 - `<component-template>`
 
-（必需，字符串）用于限制请求的逗号分隔的组件模板名字或通配符表达式。
+（必需，字符串）用于限制请求的，逗号分隔的组件模板名字或通配符表达式。
 
 ## 查询参数
 

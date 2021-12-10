@@ -886,6 +886,7 @@ Listening at http://localhost:3000
     - Enrich stats
   - Graph explore API
   - :heavy_check_mark: 索引 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_apis)
+    - :heavy_check_mark: 别名存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/alias_exists)
     - :heavy_check_mark: 别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/aliases)
     - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/analyze)
     - :heavy_check_mark: 清除缓存 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/clear_cache)

@@ -63,7 +63,7 @@ POST /my-index-000001/_cache/clear
 
 - `index`
 
-  （可选，字符串）逗号分隔的用于限制请求的索引名字。
+  （可选，字符串）用于限制请求的，逗号分隔的索引名字。
 
 - `ignore_unavailable`
 

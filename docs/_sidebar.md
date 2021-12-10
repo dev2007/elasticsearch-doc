@@ -35,6 +35,7 @@
     * [常用选项](/rest_apis/api_convention/common_options)
     * [基于 URL 的访问控制](/rest_apis/api_convention/url-based_access_control)
   * [索引 API](/rest_apis/index_apis/index_apis)
+    * [别名存在](/rest_apis/index_apis/alias_exists)
     * 索引管理
       * [创建索引](/rest_apis/index_apis/create_index)
       * [删除索引](/rest_apis/index_apis/delete_index)
