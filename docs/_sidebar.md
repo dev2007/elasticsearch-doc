@@ -36,6 +36,9 @@
     * [基于 URL 的访问控制](/rest_apis/api_convention/url-based_access_control)
   * [索引 API](/rest_apis/index_apis/index_apis)
     * [别名存在](/rest_apis/index_apis/alias_exists)
+    * [别名](/rest_apis/index_apis/aliases)
+    * [分析](/rest_apis/index_apis/analyze)
+    * [分析索引磁盘的使用](/rest_apis/index_apis/analyze_index_disk_usage)
     * 索引管理
       * [创建索引](/rest_apis/index_apis/create_index)
       * [删除索引](/rest_apis/index_apis/delete_index)
@@ -56,14 +59,12 @@
       * [获取字段映射](/rest_apis/index_apis/get_field_mapping)
       * [类型存在](/rest_apis/index_apis/type_exists)
     * 别名管理
-      * [别名](/rest_apis/index_apis/aliases)
       * [创建或更新索引别名](/rest_apis/index_apis/create_or_update_index_alias)
       * [获取索引别名](/rest_apis/index_apis/get_index_alias)
       * [删除索引别名](/rest_apis/index_apis/delete_index_alias)
     * 索引设置
       * [更新索引设置](/rest_apis/index_apis/update_index_settings)
       * [获取索引设置](/rest_apis/index_apis/get_index_settings)
-      * [分析](/rest_apis/index_apis/analyze)
     * 索引模板
       * [索引模板](/rest_apis/index_apis/create_or_update_index_template)
       * [获取索引模板](/rest_apis/index_apis/get_index_template)

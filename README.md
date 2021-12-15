@@ -889,6 +889,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 别名存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/alias_exists)
     - :heavy_check_mark: 别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/aliases)
     - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/analyze)
+    - :heavy_check_mark: 分析索引磁盘的使用 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/analyze_index_disk_usage)
     - :heavy_check_mark: 清除缓存 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/clear_cache)
     - :heavy_check_mark: 复制索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/clone_index)
     - :heavy_check_mark: 关闭索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/close_index)
