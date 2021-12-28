@@ -796,10 +796,10 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 常用选项 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/common_options)
     - :heavy_check_mark: 基于 URL 的访问控制 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/url-based_access_control)
   - Autoscaling APIs
-    - Get autoscaling capacity
+    - :heavy_check_mark: 创建或更新自动伸缩策略 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/autoscaling_apis/create_or_update_autoscaling_policy)
+    - :heavy_check_mark: 获取自动伸缩策略 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/autoscaling_apis/get_autoscaling_capacity)
     - Delete autoscaling policy
     - Get autoscaling policy
-    - Put autoscaling policy
   - Compact and aligned text (CAT) APIs
     - cat aliases
     - cat allocation
@@ -897,26 +897,28 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 创建或更新索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_index_alias)
     - :heavy_check_mark: 创建或更新组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_component_template)
     - :heavy_check_mark: 创建或更新索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_index_template)
+    - Create or update index template (legacy)
+    - :heavy_check_mark: 删除组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_component_template)
     - :heavy_check_mark: 删除悬挂索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_dangling_index)
     - :heavy_check_mark: 删除索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index)
     - :heavy_check_mark: 删除索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_alias)
-    - :heavy_check_mark: 删除组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_component_template)
     - :heavy_check_mark: 删除索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_template)
     - Delete index template (legacy)
+    - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_exists)
+    - Field usage stats
     - :heavy_check_mark: 冲刷 [:link:](https://docs.es.shiyueshuyi.xyz/#//rest_apis/index_apis/flush)
     - :heavy_check_mark: 强制合并 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/force_merge)
     - :heavy_check_mark: 冻结索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/freeze_index)
+    - :heavy_check_mark: 获取+-别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_alias)
     - :heavy_check_mark: 获取组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_component_template)
     - :heavy_check_mark: 获取字段映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_field_mapping)
     - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
-    - :heavy_check_mark: 获取索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_alias)
     - :heavy_check_mark: 获取索引设置 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_settings)
     - :heavy_check_mark: 获取索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_template)
     - Get index template (legacy)
     - :heavy_check_mark: 获取映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_mapping)
     - :heavy_check_mark: 导入悬挂索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/import_dangling_index)
     - Index alias exists
-    - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_exists)
     - :heavy_check_mark: 索引恢复 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_recovery)
     - :heavy_check_mark: 索引段 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_segments)
     - :heavy_check_mark: 索引分片存储 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_shard_stores)
@@ -924,10 +926,6 @@ Listening at http://localhost:3000
     - Index template exists (legacy)
     - :heavy_check_mark: 列出悬挂索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/list_dangling_indices)
     - :heavy_check_mark: 开启索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/open_index)
-    - Put index template
-    - Put index template (legacy)
-    - Put component template
-    - Put mapping
     - heavy_check_mark: 刷新 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/refresh)
     - :heavy_check_mark: 解析索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/resolve_index)
     - :heavy_check_mark: 翻转索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/rollover_index)
