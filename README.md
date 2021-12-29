@@ -798,7 +798,7 @@ Listening at http://localhost:3000
   - Autoscaling APIs
     - :heavy_check_mark: 创建或更新自动伸缩策略 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/autoscaling_apis/create_or_update_autoscaling_policy)
     - :heavy_check_mark: 获取自动伸缩策略 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/autoscaling_apis/get_autoscaling_capacity)
-    - Delete autoscaling policy
+    - :heavy_check_mark: 删除自动伸缩策略 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/autoscaling_apis/delete_autoscaling_policy)
     - Get autoscaling policy
   - Compact and aligned text (CAT) APIs
     - cat aliases
