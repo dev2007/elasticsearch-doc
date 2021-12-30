@@ -67,10 +67,10 @@
 - [同步冲刷](/rest_apis/index_apis/synced_flush)
 - [强制合并](/rest_apis/index_apis/force_merge)
 
-## 悬挂索引
+## 悬空索引
 
-- [列出悬挂索引](/rest_apis/index_apis/list_dangling_indices)
-- [导入悬挂索引](/rest_apis/index_apis/import_dangling_index)
-- [删除悬挂索引](/rest_apis/index_apis/delete_dangling_index)
+- [列出悬空索引](/rest_apis/index_apis/list_dangling_indices)
+- [导入悬空索引](/rest_apis/index_apis/import_dangling_index)
+- [删除悬空索引](/rest_apis/index_apis/delete_dangling_index)
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices.html)

@@ -133,6 +133,9 @@ Elasticsearch 基于通配符模式来匹配索引名字，将模板应用于相
 
       参阅[映射](/mapping/mapping)。
 
+    - `settings`
+      （可选，[索引设置对象](/index_modules/index_modules?id=索引设置)）索引的配置索引。参阅[索引设置](/index_modules/index_modules?id=索引设置)。
+
 - `version`
 
   （可选，整数）用于外部管理索引模板的版本号。Elasticsearch 不会自动生成此值。
@@ -167,7 +170,7 @@ PUT _index_template/template_1
 
 - `"{index}-alias" : {}`：在索引创建期间，别名中的 `{index}` 占位符将替换为模板应用到的实际索引名称。
 
-### 多匹配模拟
+### 多匹配模板
 
 如果多个索引模板与新索引或数据流的名称匹配，则使用具有最高优先级的模板。例如：
 
