@@ -885,7 +885,7 @@ Listening at http://localhost:3000
     - Execute enrich policy
     - Enrich stats
   - Graph explore API
-  - :heavy_check_mark: 索引 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_apis)
+  - :heavy_check_mark: 索引相关 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_apis)
     - :heavy_check_mark: 别名存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/alias_exists)
     - :heavy_check_mark: 别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/aliases)
     - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/analyze)
@@ -1039,8 +1039,8 @@ Listening at http://localhost:3000
     - Rollup search
     - Start rollup jobs
     - Stop rollup jobs
-  - Search APIs
-    - Search
+  - :heavy_check_mark: 搜索相关 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/search_apis/search_apis)
+    - :heavy_check_mark: 搜索 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/search_apis/search)
     - Async search
     - Point in time
     - Scroll
