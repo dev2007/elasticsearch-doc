@@ -45,25 +45,25 @@ Listening at http://localhost:3000
 
 > 已完成的部分标示 :heavy_check_mark:，并添加网站链接。
 
-- :heavy_check_mark: 什么是 Elasticsearch？ [:link:](https://docs.es.shiyueshuyi.xyz/#/es)
-  - :heavy_check_mark: 数据输入：文档和索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/datain)
-  - :heavy_check_mark: 信息输出：搜索和分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/inforout)
-  - :heavy_check_mark: 可伸缩性和弹性 [:link:](https://docs.es.shiyueshuyi.xyz/#/intro/scalability)
-- :heavy_check_mark: Elasticsearch 入门 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/getting_started)
-  - :heavy_check_mark: 启动并运行 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/install)
-  - :heavy_check_mark: 索引一些文档 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/index)
-  - :heavy_check_mark: 开始搜索 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/search)
-  - :heavy_check_mark: 使用聚合分析结果  [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/aggregations)
-  - :heavy_check_mark: 何去何从 [:link:](https://docs.es.shiyueshuyi.xyz/#/getting_started/nextstep)
-- :heavy_check_mark: 设置 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/setup)
-  - :heavy_check_mark: 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install)
-    - :heavy_check_mark: Linux 或 MacOS 上用存档安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/linux)
-    - :heavy_check_mark: 在 Windows 上用 `.zip` 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/windows)
-    - :heavy_check_mark: 使用 Debian 包安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/debian)
-    - :heavy_check_mark: 使用 RPM 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/rpm)
-    - :heavy_check_mark: 使用 Windows MSI 安装程序安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/msi)
-    - :heavy_check_mark: 使用 Docker 安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/docker)
-    - :heavy_check_mark: 使用 Homebrew 在 macOS 上安装 Elasticsearch [:link:](https://docs.es.shiyueshuyi.xyz/#/setup/install/brew)
+- :heavy_check_mark: 什么是 Elasticsearch？ [:link:](https://elasticsearch.bookhub.zone/#/es)
+  - :heavy_check_mark: 数据输入：文档和索引 [:link:](https://elasticsearch.bookhub.zone/#/intro/datain)
+  - :heavy_check_mark: 信息输出：搜索和分析 [:link:](https://elasticsearch.bookhub.zone/#/intro/inforout)
+  - :heavy_check_mark: 可伸缩性和弹性 [:link:](https://elasticsearch.bookhub.zone/#/intro/scalability)
+- :heavy_check_mark: Elasticsearch 入门 [:link:](https://elasticsearch.bookhub.zone/#/getting_started/getting_started)
+  - :heavy_check_mark: 启动并运行 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/getting_started/install)
+  - :heavy_check_mark: 索引一些文档 [:link:](https://elasticsearch.bookhub.zone/#/getting_started/index)
+  - :heavy_check_mark: 开始搜索 [:link:](https://elasticsearch.bookhub.zone/#/getting_started/search)
+  - :heavy_check_mark: 使用聚合分析结果  [:link:](https://elasticsearch.bookhub.zone/#/getting_started/aggregations)
+  - :heavy_check_mark: 何去何从 [:link:](https://elasticsearch.bookhub.zone/#/getting_started/nextstep)
+- :heavy_check_mark: 设置 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/setup)
+  - :heavy_check_mark: 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/install)
+    - :heavy_check_mark: Linux 或 MacOS 上用存档安装 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/install/linux)
+    - :heavy_check_mark: 在 Windows 上用 `.zip` 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/install/windows)
+    - :heavy_check_mark: 使用 Debian 包安装 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/install/debian)
+    - :heavy_check_mark: 使用 RPM 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/install/rpm)
+    - :heavy_check_mark: 使用 Windows MSI 安装程序安装 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/install/msi)
+    - :heavy_check_mark: 使用 Docker 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/install/docker)
+    - :heavy_check_mark: 使用 Homebrew 在 macOS 上安装 Elasticsearch [:link:](https://elasticsearch.bookhub.zone/#/setup/install/brew)
   - Configuring Elasticsearch
     - Setting JVM options
     - Secure settings
@@ -143,16 +143,16 @@ Listening at http://localhost:3000
   - Reindex before upgrading
     - Reindex in place
     - Reindex from a remote cluster
-- :heavy_check_mark: 索引模块 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_modules)
-  - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/analysis)
-  - :heavy_check_mark: 索引分片分配 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_shard_allocation)
-    - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/shard_allocation_filtering)
-    - :heavy_check_mark: 当节点离开时延迟分配 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/delaying_allocation)
-    - :heavy_check_mark: 索引恢复优先级 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/index_recovery_prioritization)
-    - :heavy_check_mark: 每节点分片总数  [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/total_shards_per_node)
-    - :heavy_check_mark: 索引级数据层分配过滤 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_shard_allocation/data_tier_allocation_filtering)
-  - :heavy_check_mark: 索引块 [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/index_blocks)
-  - :heavy_check_mark: 映射器  [:link:](https://docs.es.shiyueshuyi.xyz/#/index_modules/mapper)
+- :heavy_check_mark: 索引模块 [:link:](https://elasticsearch.bookhub.zone/#/index_modules/index_modules)
+  - :heavy_check_mark: 分析 [:link:](https://elasticsearch.bookhub.zone/#/index_modules/analysis)
+  - :heavy_check_mark: 索引分片分配 [:link:](https://elasticsearch.bookhub.zone/#/index_modules/index_shard_allocation/index_shard_allocation)
+    - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://elasticsearch.bookhub.zone/#/index_modules/index_shard_allocation/shard_allocation_filtering)
+    - :heavy_check_mark: 当节点离开时延迟分配 [:link:](https://elasticsearch.bookhub.zone/#/index_modules/index_shard_allocation/delaying_allocation)
+    - :heavy_check_mark: 索引恢复优先级 [:link:](https://elasticsearch.bookhub.zone/#/index_modules/index_shard_allocation/index_recovery_prioritization)
+    - :heavy_check_mark: 每节点分片总数  [:link:](https://elasticsearch.bookhub.zone/#/index_modules/index_shard_allocation/total_shards_per_node)
+    - :heavy_check_mark: 索引级数据层分配过滤 [:link:](https://elasticsearch.bookhub.zone/#/index_modules/index_shard_allocation/data_tier_allocation_filtering)
+  - :heavy_check_mark: 索引块 [:link:](https://elasticsearch.bookhub.zone/#/index_modules/index_blocks)
+  - :heavy_check_mark: 映射器  [:link:](https://elasticsearch.bookhub.zone/#/index_modules/mapper)
   - Merge
   - Similarity module
   - Slow Log
@@ -788,17 +788,17 @@ Listening at http://localhost:3000
   - Tune for disk usage
   - Size your shards
 - Glossary of terms
-- :heavy_check_mark: REST API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/rest_apis)
-  - :heavy_check_mark: API 约定 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/api_convention)
-    - :heavy_check_mark: 多目标语法 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/multi_target_syntax)
-    - :heavy_check_mark: 索引名中的日期数学支持 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/date_math_support_in_index_names)
-    - :heavy_check_mark: Cron 表达式 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/cron_expressions)
-    - :heavy_check_mark: 常用选项 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/common_options)
-    - :heavy_check_mark: 基于 URL 的访问控制 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/api_convention/url-based_access_control)
+- :heavy_check_mark: REST API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/rest_apis)
+  - :heavy_check_mark: API 约定 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/api_convention/api_convention)
+    - :heavy_check_mark: 多目标语法 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/api_convention/multi_target_syntax)
+    - :heavy_check_mark: 索引名中的日期数学支持 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/api_convention/date_math_support_in_index_names)
+    - :heavy_check_mark: Cron 表达式 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/api_convention/cron_expressions)
+    - :heavy_check_mark: 常用选项 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/api_convention/common_options)
+    - :heavy_check_mark: 基于 URL 的访问控制 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/api_convention/url-based_access_control)
   - Autoscaling APIs
-    - :heavy_check_mark: 创建或更新自动伸缩策略 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/autoscaling_apis/create_or_update_autoscaling_policy)
-    - :heavy_check_mark: 获取自动伸缩策略 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/autoscaling_apis/get_autoscaling_capacity)
-    - :heavy_check_mark: 删除自动伸缩策略 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/autoscaling_apis/delete_autoscaling_policy)
+    - :heavy_check_mark: 创建或更新自动伸缩策略 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/autoscaling_apis/create_or_update_autoscaling_policy)
+    - :heavy_check_mark: 获取自动伸缩策略 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/autoscaling_apis/get_autoscaling_capacity)
+    - :heavy_check_mark: 删除自动伸缩策略 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/autoscaling_apis/delete_autoscaling_policy)
     - Get autoscaling policy
   - Compact and aligned text (CAT) APIs
     - cat aliases
@@ -885,59 +885,59 @@ Listening at http://localhost:3000
     - Execute enrich policy
     - Enrich stats
   - Graph explore API
-  - :heavy_check_mark: 索引相关 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_apis)
-    - :heavy_check_mark: 别名存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/alias_exists)
-    - :heavy_check_mark: 别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/aliases)
-    - :heavy_check_mark: 分析 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/analyze)
-    - :heavy_check_mark: 分析索引磁盘的使用 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/analyze_index_disk_usage)
-    - :heavy_check_mark: 清除缓存 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/clear_cache)
-    - :heavy_check_mark: 复制索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/clone_index)
-    - :heavy_check_mark: 关闭索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/close_index)
-    - :heavy_check_mark: 创建索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_index)
-    - :heavy_check_mark: 创建或更新索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_index_alias)
-    - :heavy_check_mark: 创建或更新组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_component_template)
-    - :heavy_check_mark: 创建或更新索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/create_or_update_index_template)
+  - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/index_apis)
+    - :heavy_check_mark: 别名存在 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/alias_exists)
+    - :heavy_check_mark: 别名 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/aliases)
+    - :heavy_check_mark: 分析 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/analyze)
+    - :heavy_check_mark: 分析索引磁盘的使用 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/analyze_index_disk_usage)
+    - :heavy_check_mark: 清除缓存 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/clear_cache)
+    - :heavy_check_mark: 复制索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/clone_index)
+    - :heavy_check_mark: 关闭索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/close_index)
+    - :heavy_check_mark: 创建索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/create_index)
+    - :heavy_check_mark: 创建或更新索引别名 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/create_or_update_index_alias)
+    - :heavy_check_mark: 创建或更新组件模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/create_or_update_component_template)
+    - :heavy_check_mark: 创建或更新索引模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/create_or_update_index_template)
     - Create or update index template (legacy)
-    - :heavy_check_mark: 删除组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_component_template)
-    - :heavy_check_mark: 删除悬空索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_dangling_index)
-    - :heavy_check_mark: 删除索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index)
-    - :heavy_check_mark: 删除索引别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_alias)
-    - :heavy_check_mark: 删除索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/delete_index_template)
+    - :heavy_check_mark: 删除组件模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/delete_component_template)
+    - :heavy_check_mark: 删除悬空索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/delete_dangling_index)
+    - :heavy_check_mark: 删除索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/delete_index)
+    - :heavy_check_mark: 删除索引别名 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/delete_index_alias)
+    - :heavy_check_mark: 删除索引模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/delete_index_template)
     - Delete index template (legacy)
-    - :heavy_check_mark: 索引存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_exists)
+    - :heavy_check_mark: 索引存在 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/index_exists)
     - Field usage stats
-    - :heavy_check_mark: 冲刷 [:link:](https://docs.es.shiyueshuyi.xyz/#//rest_apis/index_apis/flush)
-    - :heavy_check_mark: 强制合并 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/force_merge)
-    - :heavy_check_mark: 冻结索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/freeze_index)
-    - :heavy_check_mark: 获取+-别名 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_alias)
-    - :heavy_check_mark: 获取组件模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_component_template)
-    - :heavy_check_mark: 获取字段映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_field_mapping)
-    - :heavy_check_mark: 获取索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index)
-    - :heavy_check_mark: 获取索引设置 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_settings)
-    - :heavy_check_mark: 获取索引模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_index_template)
+    - :heavy_check_mark: 冲刷 [:link:](https://elasticsearch.bookhub.zone/#//rest_apis/index_apis/flush)
+    - :heavy_check_mark: 强制合并 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/force_merge)
+    - :heavy_check_mark: 冻结索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/freeze_index)
+    - :heavy_check_mark: 获取索引别名 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/get_index_alias)
+    - :heavy_check_mark: 获取组件模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/get_component_template)
+    - :heavy_check_mark: 获取字段映射 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/get_field_mapping)
+    - :heavy_check_mark: 获取索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/get_index)
+    - :heavy_check_mark: 获取索引设置 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/get_index_settings)
+    - :heavy_check_mark: 获取索引模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/get_index_template)
     - Get index template (legacy)
-    - :heavy_check_mark: 获取映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/get_mapping)
-    - :heavy_check_mark: 导入悬空索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/import_dangling_index)
+    - :heavy_check_mark: 获取映射 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/get_mapping)
+    - :heavy_check_mark: 导入悬空索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/import_dangling_index)
     - Index alias exists
-    - :heavy_check_mark: 索引恢复 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_recovery)
-    - :heavy_check_mark: 索引段 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_segments)
-    - :heavy_check_mark: 索引分片存储 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_shard_stores)
-    - :heavy_check_mark: 索引统计 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/index_stats)
+    - :heavy_check_mark: 索引恢复 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/index_recovery)
+    - :heavy_check_mark: 索引段 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/index_segments)
+    - :heavy_check_mark: 索引分片存储 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/index_shard_stores)
+    - :heavy_check_mark: 索引统计 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/index_stats)
     - Index template exists (legacy)
-    - :heavy_check_mark: 列出悬空索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/list_dangling_indices)
-    - :heavy_check_mark: 开启索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/open_index)
-    - heavy_check_mark: 刷新 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/refresh)
-    - :heavy_check_mark: 解析索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/resolve_index)
-    - :heavy_check_mark: 翻转索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/rollover_index)
-    - :heavy_check_mark: 收缩索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/shrink_index)
-    - :heavy_check_mark: 模拟索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/simulate_index)
-    - :heavy_check_mark: 模拟模板 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/simulate_template)
-    - :heavy_check_mark: 拆分索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/split_index)
-    - :heavy_check_mark: 同步冲刷 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/synced_flush)
-    - :heavy_check_mark: 类型存在 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/type_exists)
-    - :heavy_check_mark: 解冻索引 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/unfreeze_index)
-    - :heavy_check_mark: 更新索引设置 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/update_index_settings)
-    - :heavy_check_mark: 更新映射 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/index_apis/update_mapping)
+    - :heavy_check_mark: 列出悬空索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/list_dangling_indices)
+    - :heavy_check_mark: 开启索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/open_index)
+    - heavy_check_mark: 刷新 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/refresh)
+    - :heavy_check_mark: 解析索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/resolve_index)
+    - :heavy_check_mark: 翻转索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/rollover_index)
+    - :heavy_check_mark: 收缩索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/shrink_index)
+    - :heavy_check_mark: 模拟索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/simulate_index)
+    - :heavy_check_mark: 模拟模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/simulate_template)
+    - :heavy_check_mark: 拆分索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/split_index)
+    - :heavy_check_mark: 同步冲刷 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/synced_flush)
+    - :heavy_check_mark: 类型存在 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/type_exists)
+    - :heavy_check_mark: 解冻索引 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/unfreeze_index)
+    - :heavy_check_mark: 更新索引设置 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/update_index_settings)
+    - :heavy_check_mark: 更新映射 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/update_mapping)
   - Index lifecycle management APIs
     - Create policy
     - Get policy
@@ -1039,8 +1039,8 @@ Listening at http://localhost:3000
     - Rollup search
     - Start rollup jobs
     - Stop rollup jobs
-  - :heavy_check_mark: 搜索相关 API [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/search_apis/search_apis)
-    - :heavy_check_mark: 搜索 [:link:](https://docs.es.shiyueshuyi.xyz/#/rest_apis/search_apis/search)
+  - :heavy_check_mark: 搜索相关 API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search_apis)
+    - :heavy_check_mark: 搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search)
     - Async search
     - Point in time
     - Scroll
@@ -1049,7 +1049,7 @@ Listening at http://localhost:3000
     - Multi search template
     - Search shards
     - Suggesters
-    - Multi search
+    - :heavy_check_mark: 多重搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/multi_search)
     - EQL search
     - Get async EQL search
     - Delete async EQL search

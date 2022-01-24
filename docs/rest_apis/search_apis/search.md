@@ -118,7 +118,7 @@ GET /my-index-000001/_search
   - 查询的主要排序以索引字段为目标。
 
 - `preference`
-  （可选，字符串）用于搜索的节点和碎片。默认情况下，Elasticsearch 使用[自适应副本选择](/search_your_data/search_shard_routing?id=自适应副本选择)从符合条件的节点和分片中进行选择，以考虑[分配感知](/setup/config/cluster_level_shard_allocation_and_routing_settings?id=分片分配感知)。
+  （可选，字符串）用于搜索的节点和分片。默认情况下，Elasticsearch 使用[自适应副本选择](/search_your_data/search_shard_routing?id=自适应副本选择)从符合条件的节点和分片中进行选择，以考虑[分配感知](/setup/config/cluster_level_shard_allocation_and_routing_settings?id=分片分配感知)。
 
   - `preference` 合法值
     - `_only_local`
@@ -141,7 +141,7 @@ GET /my-index-000001/_search
   !> `q` 参数覆盖请求正文中的查询参数。如果同时指定了这两个参数，则不会返回与查询请求正文参数匹配的文档。
 
 - `request_cache`
-  （可选，布尔值）如果为 `true`,对 `size` 为 `0` 的请求启用搜索结果缓存。参阅[分片请求缓存设置](/setup/config/shard_request_cache_setttings)。默认为索引级设置。
+  （可选，布尔值）如果为 `true`，对 `size` 为 `0` 的请求启用搜索结果缓存。参阅[分片请求缓存设置](/setup/config/shard_request_cache_setttings)。默认为索引级设置。
 
 - `rest_total_hits_as_int`
   (可选，布尔值)指示是否 `hits.total` 应在搜索响应中呈现为整数或对象。默认为 `false`。
