@@ -89,3 +89,4 @@
   * [搜索相关 API](/rest_apis/search_apis/search_apis)
     * [搜索](/rest_apis/search_apis/search)
     * [多重搜索](/rest_apis/search_apis/multi_search)
+    * [异步搜索](/rest_apis/search_apis/async_search)

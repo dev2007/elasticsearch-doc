@@ -1041,7 +1041,7 @@ Listening at http://localhost:3000
     - Stop rollup jobs
   - :heavy_check_mark: 搜索相关 API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search_apis)
     - :heavy_check_mark: 搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search)
-    - Async search
+    - :heavy_check_mark: 异步搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/async_search)
     - Point in time
     - Scroll
     - Clear scroll
