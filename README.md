@@ -1042,7 +1042,7 @@ Listening at http://localhost:3000
   - :heavy_check_mark: 搜索相关 API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search_apis)
     - :heavy_check_mark: 搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search)
     - :heavy_check_mark: 异步搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/async_search)
-    - Point in time
+    - :heavy_check_mark: 时间点 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/point_in_time)
     - Scroll
     - Clear scroll
     - Search template
