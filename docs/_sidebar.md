@@ -91,3 +91,4 @@
     * [多重搜索](/rest_apis/search_apis/multi_search)
     * [异步搜索](/rest_apis/search_apis/async_search)
     * [时间点](/rest_apis/search_apis/point_in_time)
+    * [滚动](/rest_apis/search_apis/scroll)
