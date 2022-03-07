@@ -1044,7 +1044,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 异步搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/async_search)
     - :heavy_check_mark: 时间点 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/point_in_time)
     - :heavy_check_mark: 滚动 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/scroll)
-    - Clear scroll
+    - :heavy_check_mark: 清除滚动 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/clear_scroll)
     - Search template
     - Multi search template
     - Search shards
