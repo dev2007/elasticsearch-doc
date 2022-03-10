@@ -63,7 +63,7 @@ GET /customer/_doc/1
 
 向 Elasticsearch 导入一些数据，你就能开始搜索和分析：
 
-1. 下载 [accounts.json](https://github.com/elastic/elasticsearch/blob/master/docs/src/test/resources/accounts.json?raw=true) 示例数据集。这个随机生成的数据集文档表示具体以下信息的用户账户：
+1. 下载 [accounts.json](https://download.elastic.co/demos/kibana/gettingstarted/accounts.zip) 示例数据集。这个随机生成的数据集文档表示具体以下信息的用户账户：
 
 ```json
 {
