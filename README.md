@@ -1048,7 +1048,7 @@ Listening at http://localhost:3000
     - Search template
     - Multi search template
     - Search shards
-    - Suggesters
+    - :heavy_check_mark: 建议器 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/suggesters)
     - :heavy_check_mark: 多重搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/multi_search)
     - EQL search
     - Get async EQL search
