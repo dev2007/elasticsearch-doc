@@ -1055,6 +1055,7 @@ Listening at http://localhost:3000
     - Delete async EQL search
     - Count
     - Validate
+    - :heavy_check_mark: 词语枚举 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/terms_enum)
     - Explain
     - Profile
     - Field capabilities

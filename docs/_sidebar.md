@@ -94,3 +94,4 @@
     * [滚动](/rest_apis/search_apis/scroll)
     * [清除滚动]((/rest_apis/search_apis/clear_scroll)
     * [建议器](/rest_apis/search_apis/suggesters)
+    * [词语枚举](/rest_apis/search_apis/terms_enum)
