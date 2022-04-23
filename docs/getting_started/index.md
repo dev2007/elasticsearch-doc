@@ -55,6 +55,8 @@ GET /customer/_doc/1
 }
 ```
 
+> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#example-Example.Index)
+
 ## 批量索引文档
 
 如果你有大量文档要索引，你能通过`批量 API`（`bulk API`） 来批量提交它们。批量文档操作比单独提交请求显著更快，因为它极简了网络往返。
