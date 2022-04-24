@@ -64,7 +64,7 @@ GET /bank/_search
 
 每个搜索请求都是独立的：Elasticsearch 不在请求间维护任何状态信息。在请求中指定 `from` 和 `size` 参数用来分页浏览搜索结果。
 
-> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#Example.Search)
+> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#example-Example.Search)
 
 例如，以下请求获取 10 到 19 的结果：
 
