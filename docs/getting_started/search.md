@@ -64,6 +64,8 @@ GET /bank/_search
 
 每个搜索请求都是独立的：Elasticsearch 不在请求间维护任何状态信息。在请求中指定 `from` 和 `size` 参数用来分页浏览搜索结果。
 
+> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#Example.Search)
+
 例如，以下请求获取 10 到 19 的结果：
 
 ```bash
@@ -78,6 +80,8 @@ GET /bank/_search
 }
 ```
 
+> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#example-Example.SearchFromSize)
+
 现在你已看到如何提交基本查询请求，你可以开始构造比 `match_all` 更有趣的查询。
 
 为了在字段中搜索指定词语，你可以使用匹配查询。例如，以下的查询搜索地址（`address`）字段，用以查找地址包含 `mill` 或 `lane`的客户：
@@ -89,6 +93,8 @@ GET /bank/_search
 }
 ```
 
+> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#example-Example.SearchMatch)
+
 为了执行短语搜索而不是匹配单独的词语，你可以使用 `match_phrase` 替代 `match`。例如，以下请求只匹配包含短语 `mill lane` 的地址：
 
 ```bash
@@ -97,6 +103,8 @@ GET /bank/_search
   "query": { "match_phrase": { "address": "mill lane" } }
 }
 ```
+
+> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#example-Example.SearchMatchPhrase)
 
 为了构造更复杂的查询，你可以使用包含多个查询条件的 `bool` 的查询。你可以按必须的（必须匹配）、可选的（应该匹配）或者不必的（必须不匹配）来指定条件。
 
@@ -122,6 +130,8 @@ GET /bank/_search
 
 `must_not` 子句中的条件被认作过滤器。它影响文档是否包含在结果中，但不影响文档分数。你可以显式地指定任意的过滤器，用来包含或排除基于结构化数据的文档。
 
+> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#example-Example.SearchBool)
+
 例如，以下请求使用范围过滤器用以限定结果中账户余额在 $20,000 和 $30,000（含）之间。
 
 ```bash
@@ -142,5 +152,7 @@ GET /bank/_search
   }
 }
 ```
+
+> 编程语言实例代码: [Go](https://pkg.go.dev/github.com/goclub/es#example-Example.SearchBoolFilter)
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-search.html)
