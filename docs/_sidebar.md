@@ -96,3 +96,4 @@
     * [词语枚举](/rest_apis/search_apis/terms_enum)
     * [滚动](/rest_apis/search_apis/scroll)
     * [清除滚动]((/rest_apis/search_apis/clear_scroll)
+    * [解释](/rest_apis/search_apis/explain)
