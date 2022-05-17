@@ -97,3 +97,4 @@
     * [滚动](/rest_apis/search_apis/scroll)
     * [清除滚动]((/rest_apis/search_apis/clear_scroll)
     * [解释](/rest_apis/search_apis/explain)
+    * [字段能力](/rest_apis/search_apis/field_capabilities)
