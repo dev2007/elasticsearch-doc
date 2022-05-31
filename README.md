@@ -1058,7 +1058,7 @@ Listening at http://localhost:3000
     - Validate
     - :heavy_check_mark: 词语枚举 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/terms_enum)
     - :heavy_check_mark: 搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search)
-    - Profile
+    - :heavy_check_mark: 分析 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/profile)
     - :heavy_check_mark: 字段能力 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/field_capabilities)
     - Ranking evaluation
   - Searchable snapshots APIs

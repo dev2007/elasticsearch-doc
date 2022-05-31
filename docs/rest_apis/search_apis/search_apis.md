@@ -20,7 +20,7 @@
 
 - [解释](/rest_apis/search_apis/explain)
 - [字段能力](/rest_apis/search_apis/field_capabilities)
-- [配置](/rest_apis/search_apis/profile)
+- [分析](/rest_apis/search_apis/profile)
 - [排序评估](//rest_apis/search_apis/ranking_evaluation)
 - [搜索分片](/rest_apis/search_apis/search_shards)
 - [校验](/rest_apis/search_apis/validate)
