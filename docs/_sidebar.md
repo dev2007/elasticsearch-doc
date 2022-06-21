@@ -101,3 +101,4 @@
     * [分析](/rest_apis/search_apis/profile)
     * [排序评估](/rest_apis/search_apis/ranking_evaluation)
     * [搜索分片](/rest_apis/search_apis/search_shards)
+    * [验证](/rest_apis/search_apis/validate)
