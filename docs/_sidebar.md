@@ -103,3 +103,4 @@
     * [搜索分片](/rest_apis/search_apis/search_shards)
     * [验证](/rest_apis/search_apis/validate)
     * [搜索模板](/rest_apis/search_apis/search_template)
+    * [多搜索模板](/rest_apis/search_apis/multi_search_template)
