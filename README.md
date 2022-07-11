@@ -1048,6 +1048,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 清除滚动 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/clear_scroll)
     - :heavy_check_mark: 搜索模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search_template)
     - :heavy_check_mark: 多搜索模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/multi_search_template)
+    - :heavy_check_mark: 渲染搜索模板 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/render_search_template)
     - :heavy_check_mark: 搜索分片 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/search_shards)
     - :heavy_check_mark: 建议器 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/suggesters)
     - :heavy_check_mark: 多重搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/multi_search)
