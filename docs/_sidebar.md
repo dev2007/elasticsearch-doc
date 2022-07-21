@@ -105,3 +105,4 @@
     * [搜索模板](/rest_apis/search_apis/search_template)
     * [多搜索模板](/rest_apis/search_apis/multi_search_template)
     * [渲染搜索模板](/rest_apis/search_apis/render_search_template)
+    * [矢量块搜索](/rest_apis/search_apis/vector_tile_search)

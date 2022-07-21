@@ -1062,6 +1062,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 分析 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/profile)
     - :heavy_check_mark: 字段能力 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/field_capabilities)
     - :heavy_check_mark: 排序评估 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/ranking_evaluation)
+    - :heavy_check_mark: 矢量块搜索 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/search_apis/vector_tile_search)
   - Searchable snapshots APIs
     - Mount snapshot
   - Security APIs
