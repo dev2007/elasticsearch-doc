@@ -55,16 +55,16 @@ Listening at http://localhost:3000
   - :heavy_check_mark: 开始搜索 [:link:](https://elasticsearch.bookhub.tech/#/getting_started/search)
   - :heavy_check_mark: 使用聚合分析结果  [:link:](https://elasticsearch.bookhub.tech/#/getting_started/aggregations)
   - :heavy_check_mark: 何去何从 [:link:](https://elasticsearch.bookhub.tech/#/getting_started/nextstep)
-- :heavy_check_mark: 设置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/setup)
-  - :heavy_check_mark: 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/install)
-    - :heavy_check_mark: Linux 或 MacOS 上用存档安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/install/linux)
-    - :heavy_check_mark: 在 Windows 上用 `.zip` 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/install/windows)
-    - :heavy_check_mark: 使用 Debian 包安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/install/debian)
-    - :heavy_check_mark: 使用 RPM 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/install/rpm)
-    - :heavy_check_mark: 使用 Windows MSI 安装程序安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/install/msi)
-    - :heavy_check_mark: 使用 Docker 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/install/docker)
-    - :heavy_check_mark: 使用 Homebrew 在 macOS 上安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/setup/install/brew)
-  - Configuring Elasticsearch
+- :heavy_check_mark: 设置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/set_up_elasticsearch)
+  - :heavy_check_mark: 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install)
+    - :heavy_check_mark: Linux 或 MacOS 上用存档安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/linux)
+    - :heavy_check_mark: 在 Windows 上用 `.zip` 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/windows)
+    - :heavy_check_mark: 使用 Debian 包安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/debian)
+    - :heavy_check_mark: 使用 RPM 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/rpm)
+    - :heavy_check_mark: 使用 Windows MSI 安装程序安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/msi)
+    - :heavy_check_mark: 使用 Docker 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/docker)
+    - :heavy_check_mark: 使用 Homebrew 在 macOS 上安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/brew)
+  - :heavy_check_mark: 配置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/configuring_elasticsearch/configuring_elasticsearch)
     - Setting JVM options
     - Secure settings
     - Auditing settings

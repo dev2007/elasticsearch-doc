@@ -38,7 +38,7 @@ POST /my-index-000001/_forcemerge
 
 - 集群中的所有数据流和索引
 
-使用 [`force_merge` 线程池](/setup/config/thread_pools)分别强制合并每个目标分片。默认情况下，每个节点只有一个强制合并线程，这意味着该节点上的碎片一次强制合并一个。如果在节点上展开 `force_merge` 线程池，则它将强制并行合并其分片。
+使用 [`force_merge` 线程池](/set_up_elasticsearch/configuring_elasticsearchthread_pools)分别强制合并每个目标分片。默认情况下，每个节点只有一个强制合并线程，这意味着该节点上的碎片一次强制合并一个。如果在节点上展开 `force_merge` 线程池，则它将强制并行合并其分片。
 
 强制合并使被合并的分片的存储空间临时增加，在 `max_num_segments` 参数设置为 `1` 的情况下，存储空间将增加一倍，因为所有的片段都需要重写为新的片段。
 

@@ -1,6 +1,6 @@
 # 索引级分片分配过滤
 
-你可以使用分片分配过滤器来控制 Elasticsearch 在何处分配特定索引的分片。每个索引过滤器与[集群范围的分配过滤](/setup/config/cluster_level_shard_allocation_and_routing_settings?id=集群级分片分配过滤)和[分配感知](/setup/config/cluster_level_shard_allocation_and_routing_settings?id=分片分配感知)一起应用。
+你可以使用分片分配过滤器来控制 Elasticsearch 在何处分配特定索引的分片。每个索引过滤器与[集群范围的分配过滤](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings?id=集群级分片分配过滤)和[分配感知](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings?id=分片分配感知)一起应用。
 
 分片分配过滤器可以基于自定义节点属性或内置 `_name`，`_host_ip`，`_publish_ip`，`_ip`，`_host`，`_id`，`_tier` 和 `_tier_preference` 属性。[索引生命周期管理](/ILM_manage_the_index_lifecycle)使用基于自定义节点属性的过滤器来确定在阶段之间移动时如何重分配分片。
 

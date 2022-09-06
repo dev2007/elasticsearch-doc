@@ -4,13 +4,13 @@
 
 这些层属性通过这些数据角色设置：
 
-- [data_content](/setup/config/node?id=内容数据节点)
-- [data_hot](/setup/config/node?id=热数据节点)
-- [data_warm](/setup/config/node?id=温数据节点)
-- [data_cold](/setup/config/node?id=冷数据节点)
-- [data_frozen](/setup/config/node?id=冻结数据节点)
+- [data_content](/set_up_elasticsearch/configuring_elasticsearchnode?id=内容数据节点)
+- [data_hot](/set_up_elasticsearch/configuring_elasticsearchnode?id=热数据节点)
+- [data_warm](/set_up_elasticsearch/configuring_elasticsearchnode?id=温数据节点)
+- [data_cold](/set_up_elasticsearch/configuring_elasticsearchnode?id=冷数据节点)
+- [data_frozen](/set_up_elasticsearch/configuring_elasticsearchnode?id=冻结数据节点)
 
-?> [数据](/setup/config/node?id=数据节点)角色不是有效的数据层，不能用于数据层筛选。[data_frozen](/setup/config/node?id=冻结数据节点) 角色只能用于搜索挂载了 shared_cache 选项的快照。
+?> [数据](/set_up_elasticsearch/configuring_elasticsearchnode?id=数据节点)角色不是有效的数据层，不能用于数据层筛选。[data_frozen](/set_up_elasticsearch/configuring_elasticsearchnode?id=冻结数据节点) 角色只能用于搜索挂载了 shared_cache 选项的快照。
 
 ## 数据层分配设置
 

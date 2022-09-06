@@ -118,7 +118,7 @@ pkill -F pid
 
 ## 在命令行配置 Elasticsearch
 
-Elasticsearch 默认从 `$ES_HOME/config/elasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/setup/config)中解释。
+Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearchelasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/set_up_elasticsearch/config)中解释。
 
 在配置文件中可以指定的设置，也能在命令行中指定，如下使用 `-E` 语法：
 
@@ -138,7 +138,7 @@ Elasticsearch 默认从 `$ES_HOME/config/elasticsearch.yml` 加载配置。配�
 | :-- | :-- | :-- | :-- |
 |home| Elasticsearch 主目录或 `$ES_HOME`| 解压存档创建的目录| |
 |bin| 二进制脚本，包括启动节点的 `elasticsearch` 和安装插件的 `elasticsearch-plugin`| `$ES_HOME/bin`||
-|conf| 配置文件，包括 `elasticsearch.yml`| `$ES_HOME/config`|[ES_PATH_CONF](/setup/config?id=配置文件位置)|
+|conf| 配置文件，包括 `elasticsearch.yml`| `$ES_HOME/config`|[ES_PATH_CONF](/set_up_elasticsearch/config?id=配置文件位置)|
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`$ES_HOME/data`|`path.data`|
 |logs| 日志文件位置| `$ES_HOME/logs` | `path.logs`|
 |plugins| 插件文件位置。每个插件会包含在一个子目录中。| `$ES_HOME/plugins`||
@@ -148,8 +148,8 @@ Elasticsearch 默认从 `$ES_HOME/config/elasticsearch.yml` 加载配置。配�
 
 你现在有一个测试 Elasticsearch 环境部署好。在你使用 Elasticsearch 正式开始开发或者生产之前，你必须做一些额外的设置：
 
-- 学习如何配置 [Elasticsearch](/setup/config)。
-- 配置[重要的 Elasticsearch 设置](/setup/important_es_config)。
-- 配置[重要的系统设置](/setup/important_system_config)。
+- 学习如何配置 [Elasticsearch](/set_up_elasticsearch/config)。
+- 配置[重要的 Elasticsearch 设置](/set_up_elasticsearch/important_es_config)。
+- 配置[重要的系统设置](/set_up_elasticsearch/important_system_config)。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)

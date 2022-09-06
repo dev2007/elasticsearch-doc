@@ -212,5 +212,4 @@ DELETE /_async_search/FmRldE8zREVEUzA2ZVpUeGs2ejJFUFEaMkZ5QTVrSTZSaVN3WlNFVmtlWH
 
 如果启用了 Elasticsearch 安全功能，则特定异步搜索的删除仅限于：`*`， 提交原始搜索请求的经过身份验证的用户。`*` 具有 `cancel_task` 集群权限的用户。
 
-
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/async-search.html)

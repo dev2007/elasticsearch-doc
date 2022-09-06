@@ -24,7 +24,7 @@ brew install elastic/tap/elasticsearch-full
 | :-- | :-- | :-- | :-- |
 |home| Elasticsearch 主目录或 `$ES_HOME`| `/usr/local/var/homebrew/linked/elasticsearch-full`| |
 |bin| 二进制脚本，包括启动节点的 `elasticsearch` 和安装插件的 `elasticsearch-plugin`| `/usr/local/var/homebrew/linked/elasticsearch-full/bin`||
-|conf| 配置文件，包括 `elasticsearch.yml`| `/usr/local/etc/elasticsearch`|[ES_PATH_CONF](/setup/config?id=配置文件位置)|
+|conf| 配置文件，包括 `elasticsearch.yml`| `/usr/local/etc/elasticsearch`|[ES_PATH_CONF](/set_up_elasticsearch/config?id=配置文件位置)|
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`/usr/local/var/lib/elasticsearch`|`path.data`|
 |logs| 日志文件位置| `/usr/local/var/log/elasticsearch` | `path.logs`|
 |plugins| 插件文件位置。每个插件会包含在一个子目录中。| `/usr/local/var/homebrew/linked/elasticsearch/plugins`||
@@ -34,8 +34,8 @@ brew install elastic/tap/elasticsearch-full
 
 你现在有一个测试 Elasticsearch 环境部署好。在你使用 Elasticsearch 正式开始开发或者生产之前，你必须做一些额外的设置：
 
-- 学习如何配置 [Elasticsearch](/setup/config)。
-- 配置[重要的 Elasticsearch 设置](/setup/important_es_config)。
-- 配置[重要的系统设置](/setup/important_system_config)。
+- 学习如何配置 [Elasticsearch](/set_up_elasticsearch/config)。
+- 配置[重要的 Elasticsearch 设置](/set_up_elasticsearch/important_es_config)。
+- 配置[重要的系统设置](/set_up_elasticsearch/important_system_config)。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/brew.html)

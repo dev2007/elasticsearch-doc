@@ -162,7 +162,7 @@ action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-hist
 
 ## 在命令行配置 Elasticsearch
 
-Elasticsearch 默认从文件 `%ES_PATH_CONF%\elasticsearch.yml` 加载配置。在[配置 Elasticsearch](/setup/config) 中解释了配置文件的格式。
+Elasticsearch 默认从文件 `%ES_PATH_CONF%\elasticsearch.yml` 加载配置。在[配置 Elasticsearch](/set_up_elasticsearch/config) 中解释了配置文件的格式。
 
 在配置文件中可以指定的设置，也能在命令行中指定，如下使用 `-E` 的语法：
 
@@ -303,8 +303,8 @@ start /wait msiexec.exe /x elasticsearch-7.11.2.msi /qn /l uninstall.log
 
 你现在有一个测试 Elasticsearch 环境部署好。在你使用 Elasticsearch 正式开始开发或者生产之前，你必须做一些额外的设置：
 
-- 学习如何配置 [Elasticsearch](/setup/config)。
-- 配置[重要的 Elasticsearch 设置](/setup/important_es_config)。
-- 配置[重要的系统设置](/setup/important_system_config)。
+- 学习如何配置 [Elasticsearch](/set_up_elasticsearch/config)。
+- 配置[重要的 Elasticsearch 设置](/set_up_elasticsearch/important_es_config)。
+- 配置[重要的系统设置](/set_up_elasticsearch/important_system_config)。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html)
