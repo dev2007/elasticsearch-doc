@@ -18,6 +18,7 @@
     * [使用 Docker 安装 Elasticsearch](/set_up_elasticsearch/install/docker)
     * [使用 Homebrew 在 macOS 上安装 Elasticsearch](/set_up_elasticsearch/install/brew)
   * [配置 Elasticsearch](/set_up_elasticsearch/configuring_elasticsearch/configuring_elasticsearch)
+    * [重要的 Elasticsearch 配置](/set_up_elasticsearch/configuring_elasticsearch/import_elasticsearch_configuration)
 * [索引模块](/index_modules/index_modules)
   * [分析](/index_modules/analysis)
   * [索引分片分配](/index_modules/index_shard_allocation/index_shard_allocation)

@@ -65,6 +65,7 @@ Listening at http://localhost:3000
     - :heavy_check_mark: 使用 Docker 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/docker)
     - :heavy_check_mark: 使用 Homebrew 在 macOS 上安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/install/brew)
   - :heavy_check_mark: 配置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/configuring_elasticsearch/configuring_elasticsearch)
+    - :heavy_check_mark: 重要的 Elasticsearch 配置 [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/configuring_elasticsearch/import_elasticsearch_configuration)
     - Setting JVM options
     - Secure settings
     - Auditing settings
