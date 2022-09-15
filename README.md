@@ -67,7 +67,7 @@ Listening at http://localhost:3000
   - :heavy_check_mark: 配置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/configuring_elasticsearch/configuring_elasticsearch)
     - :heavy_check_mark: 重要的 Elasticsearch 配置 [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/configuring_elasticsearch/import_elasticsearch_configuration)
     - :heavy_check_mark: 安全配置 [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/configuring_elasticsearch/secure_settings)
-    - Auditing settings
+    - :heavy_check_mark: 审计安全设置 [:link:](https://elasticsearch.bookhub.tech/#/set_up_elasticsearch/configuring_elasticsearch/auditing_settings)
     - Circuit breaker settings
     - Cluster-level shard allocation and routing settings
     - Cross-cluster replication settings
