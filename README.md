@@ -863,9 +863,9 @@ Listening at http://localhost:3000
     - Migrate to data stream
     - Data stream stats
     - Promote data stream
-  - Document APIs
+  - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/document_apis/document_apis)
     - Reading and Writing documents
-    - Index
+    - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/document_apis/index)
     - Get
     - Delete
     - Delete by query
@@ -885,7 +885,7 @@ Listening at http://localhost:3000
     - Execute enrich policy
     - Enrich stats
   - Graph explore API
-  - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/index_apis)
+  - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/index_apis)
     - :heavy_check_mark: 别名存在 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/alias_exists)
     - :heavy_check_mark: 别名 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/aliases)
     - :heavy_check_mark: 分析 [:link:](https://elasticsearch.bookhub.zone/#/rest_apis/index_apis/analyze)
