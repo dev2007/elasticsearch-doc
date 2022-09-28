@@ -863,9 +863,9 @@ Listening at http://localhost:3000
     - Migrate to data stream
     - Data stream stats
     - Promote data stream
-  - Document APIs
+  - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/#/rest_apis/document_apis/document_apis)
     - Reading and Writing documents
-    - Index
+    - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/#/rest_apis/document_apis/index)
     - Get
     - Delete
     - Delete by query
