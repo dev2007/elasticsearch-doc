@@ -30,9 +30,9 @@ Elasticsearch 只需要很少的配置即可开始，但在生产中使用集群
 
 Elasticsearch 将索引的数据写入索引，并将数据流写入数据目录。Elasticsearch 将自己的应用程序日志写入日志目录，其中包含有关集群运行状况和操作的信息。
 
-对于 [macOS .tar.gz](/set_up_elasticsearch/install/linux)，[Linux .tar.gz](/set_up_elasticsearch/install/linux) 和 [Windows .zip](/set_up_elasticsearch/install/windows) 安装，`data` 和 `logs` 默认是 `$ES_HOME` 的子目录。然而，`$ES_HOME` 中的文件可能在升级过程中被删除。
+对于 [macOS .tar.gz](/set_up_elasticsearch/installing_elasticsearch/linux)，[Linux .tar.gz](/set_up_elasticsearch/installing_elasticsearch/linux) 和 [Windows .zip](/set_up_elasticsearch/installing_elasticsearch/windows) 安装，`data` 和 `logs` 默认是 `$ES_HOME` 的子目录。然而，`$ES_HOME` 中的文件可能在升级过程中被删除。
 
-在生产中，我们强烈建议你设置 `elasticsearch.yml` 中的 `path.data` 和 `path.logs` 在 `$ES_HOME` 之外的位置。默认情况下，[Docker](/set_up_elasticsearch/install/docker)、[Debian](/set_up_elasticsearch/install/debian) 和 [RPM](/set_up_elasticsearch/install/rpm) 安装将数据和日志写入 `$ES_HOME` 之外的位置。
+在生产中，我们强烈建议你设置 `elasticsearch.yml` 中的 `path.data` 和 `path.logs` 在 `$ES_HOME` 之外的位置。默认情况下，[Docker](/set_up_elasticsearch/installing_elasticsearch/docker)、[Debian](/set_up_elasticsearch/installing_elasticsearch/debian) 和 [RPM](/set_up_elasticsearch/installing_elasticsearch/rpm) 安装将数据和日志写入 `$ES_HOME` 之外的位置。
 
 支持的 `path.data`和 `path.logs`。值因平台而异：
 
@@ -230,7 +230,7 @@ cluster.initial_master_nodes:
 
 ## JVM 堆转储路径设置
 
-默认情况下，Elasticsearch 将 JVM 配置为将内存不足异常的堆转储到默认数据目录。在 RPM 和 Debian 软件包中，数据目录是 `/var/lib/elasticsearch`。在[Linux 和 MacOS](/set_up_elasticsearch/install/linux) 及 [Windows](/set_up_elasticsearch/install/windows) 发行版上，`data` 目录位于 Elasticsearch 安装的根目录下。
+默认情况下，Elasticsearch 将 JVM 配置为将内存不足异常的堆转储到默认数据目录。在 RPM 和 Debian 软件包中，数据目录是 `/var/lib/elasticsearch`。在[Linux 和 MacOS](/set_up_elasticsearch/installing_elasticsearch/linux) 及 [Windows](/set_up_elasticsearch/installing_elasticsearch/windows) 发行版上，`data` 目录位于 Elasticsearch 安装的根目录下。
 
 如果此路径不适合接收堆转储，请修改 [jvm.options](/set_up_elasticsearch/configuring_elasticsearch/advanced_configuration?id=设置-JVM-选项) 中的 `-XX:HeapDumpPath=…` 条目：
 
@@ -280,7 +280,7 @@ docker run -e CLI_JAVA_OPTS="$MY_OPTS" # etc
 
 ## JVM 致命错误日志设置
 
-默认情况下，Elasticsearch 将 JVM 配置为将致命错误日志写入默认日志目录。在 [RPM](/set_up_elasticsearch/install/rpm) 和 [Debian](/set_up_elasticsearch/install/debian) 软件包中，这个目录是 `/var/log/elasticsearch`。在 [Linux 和 MacOS](/set_up_elasticsearch/install/linux) 和 [Windows](/set_up_elasticsearch/install/windows) 发行版上，日志目录位于 Elasticsearch 安装的根目录下。
+默认情况下，Elasticsearch 将 JVM 配置为将致命错误日志写入默认日志目录。在 [RPM](/set_up_elasticsearch/installing_elasticsearch/rpm) 和 [Debian](/set_up_elasticsearch/installing_elasticsearch/debian) 软件包中，这个目录是 `/var/log/elasticsearch`。在 [Linux 和 MacOS](/set_up_elasticsearch/installing_elasticsearch/linux) 和 [Windows](/set_up_elasticsearch/installing_elasticsearch/windows) 发行版上，日志目录位于 Elasticsearch 安装的根目录下。
 
 这些是 JVM 遇到致命错误（如分段错误）时生成的日志。如果此路径不适合接收日志，请修改 [jvm.options](/set_up_elasticsearch/configuring_elasticsearch/advanced_configuration?id=设置-JVM-选项) 中的 `-XX:ErrorFile=…` 条目。
 

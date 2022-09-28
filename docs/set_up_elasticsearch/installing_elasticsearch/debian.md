@@ -1,6 +1,6 @@
 # 使用 Debian 包安装 Elasticsearch
 
-Elasticsearch 的 Debian 包可以[从我们的网站](/set_up_elasticsearch/install/debian?id=手工下载和安装-Debian-包)或者从[我们的 APT 仓库](/set_up_elasticsearch/install/debian?id=从-APT-仓库安装)下载。它可以用于在任何基于 Debian 的系统（如 Debian 和 Ubuntu）上安装 Elasticsearch。
+Elasticsearch 的 Debian 包可以[从我们的网站](/set_up_elasticsearch/installing_elasticsearch/debian?id=手工下载和安装-Debian-包)或者从[我们的 APT 仓库](/set_up_elasticsearch/installing_elasticsearch/debian?id=从-APT-仓库安装)下载。它可以用于在任何基于 Debian 的系统（如 Debian 和 Ubuntu）上安装 Elasticsearch。
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 

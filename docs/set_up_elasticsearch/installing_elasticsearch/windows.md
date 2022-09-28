@@ -2,7 +2,7 @@
 
 Elasticsearch 可以使用 Windows `.zip` 存档安装到 Windows 上。可以使用 `elasticsearch-service.bat` 安装 Elasticsearch 作为服务运行。
 
-?> Elasticsearch 过去使用 `.zip` 存档安装到 Windows 上。[MSI 安装包](/set_up_elasticsearch/install/windows_msi)提供了最简单的 Windows 入门体验。如果你愿意可以继续使用 `.zip`。
+?> Elasticsearch 过去使用 `.zip` 存档安装到 Windows 上。[MSI 安装包](/set_up_elasticsearch/installing_elasticsearch/windows_msi)提供了最简单的 Windows 入门体验。如果你愿意可以继续使用 `.zip`。
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 

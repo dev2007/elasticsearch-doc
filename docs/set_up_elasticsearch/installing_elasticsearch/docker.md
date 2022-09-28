@@ -101,7 +101,7 @@ networks:
     driver: bridge
 ```
 
-?> 例子中的 `docker-compose.yml` 使用环境变量 `ES_JAVA_OPTS` 手工设置堆大小为 512 MB。我们不推荐在生产环境使用 `ES_JAVA_OPTS`。参看[手工设置堆大小](/set_up_elasticsearch/install/docker?id=手工设置堆大小)。
+?> 例子中的 `docker-compose.yml` 使用环境变量 `ES_JAVA_OPTS` 手工设置堆大小为 512 MB。我们不推荐在生产环境使用 `ES_JAVA_OPTS`。参看[手工设置堆大小](/set_up_elasticsearch/installing_elasticsearch/docker?id=手工设置堆大小)。
 
 这个示例 Docker Compose 文件，提供了一个三节点 Elasticsearch 集群。节点 `es01` 监听 `localhost:9200`，`es02` 和 `es03` 通过 Docker 网络与 `es01` 通信。
 
@@ -234,7 +234,7 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 
 为了提高性能和节点稳定性，swapping 需要禁用。有关执行此操作的更多信息，请参阅 [禁用 swapping](/set_up_elasticsearch/important_system_config/swapping)。
 
-如果你选择 `bootstrap.memory_lock: true`，你也需要在 Docker 守护进程中定义 `memlock: true` 限定，或者如[示例 compose 文件](/set_up_elasticsearch/install/docker?id=使用-Docker-Compose-启动多节点集群)中显示的设置。当使用 `docker run`，你可以指定：
+如果你选择 `bootstrap.memory_lock: true`，你也需要在 Docker 守护进程中定义 `memlock: true` 限定，或者如[示例 compose 文件](/set_up_elasticsearch/installing_elasticsearch/docker?id=使用-Docker-Compose-启动多节点集群)中显示的设置。当使用 `docker run`，你可以指定：
 
 `-e "bootstrap.memory_lock=true" --ulimit memlock=-1:-1`
 
@@ -272,9 +272,9 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 
 ## 使用 Docker 配置 Elasticsearch
 
-当你在 Docker 中运行时， [Elasticsearch 配置文件](/set_up_elasticsearch/config?id=配置文件位置)从 `/usr/share/elasticsearch/configuring_elasticsearch` 加载。为了使用自定义配置文件，你要[绑定挂载文件](/set_up_elasticsearch/install/docker?id=挂载-Elasticsearch-配置文件)到镜像中的配置文件上。
+当你在 Docker 中运行时， [Elasticsearch 配置文件](/set_up_elasticsearch/config?id=配置文件位置)从 `/usr/share/elasticsearch/configuring_elasticsearch` 加载。为了使用自定义配置文件，你要[绑定挂载文件](/set_up_elasticsearch/installing_elasticsearch/docker?id=挂载-Elasticsearch-配置文件)到镜像中的配置文件上。
 
-你可以通过环境变量设置独立的 Elasticsearch 配置参数。[示例 compose 文件](/set_up_elasticsearch/install/docker?id=使用-Docker-Compose-启动多节点集群)和[单节点示例](/set_up_elasticsearch/install/docker?id=使用-Docker-启动单节点集群)就用的这种方法。
+你可以通过环境变量设置独立的 Elasticsearch 配置参数。[示例 compose 文件](/set_up_elasticsearch/installing_elasticsearch/docker?id=使用-Docker-Compose-启动多节点集群)和[单节点示例](/set_up_elasticsearch/installing_elasticsearch/docker?id=使用-Docker-启动单节点集群)就用的这种方法。
 
 要使用文件内容设置环境变量，给环境变量名字加上后缀 `_FILE`。这对于秘密传输配置（如密码）给 Elasticsearch，而不是直接指定它们非常有用。
 
@@ -290,7 +290,7 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 docker run <various parameters> bin/elasticsearch -Ecluster.name=mynewclustername
 ```
 
-虽然绑定挂载配置文件通常在生产环境是首选方法，你也可以创建包含你自己配置的[自定义 Docker 镜像](/set_up_elasticsearch/install/docker?id=使用自定义-Docker-镜像)。
+虽然绑定挂载配置文件通常在生产环境是首选方法，你也可以创建包含你自己配置的[自定义 Docker 镜像](/set_up_elasticsearch/installing_elasticsearch/docker?id=使用自定义-Docker-镜像)。
 
 ### 挂载 Elasticsearch 配置文件
 

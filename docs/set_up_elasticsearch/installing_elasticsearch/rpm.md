@@ -1,8 +1,8 @@
 # 使用 RPM 安装 Elasticsearch
 
-Elasticsearch 的 RPM 可以[从我们的网站](/set_up_elasticsearch/install/rpm?id=手工下载和安装-rpm)或者从[我们的 RPM 仓库](/set_up_elasticsearch/install/rpm?id=从-rpm-仓库安装)下载。它可以用于在任何基于 RPM 的系统（如 OpenSuSE，SLES，Centos，Red Hat 和 Oracle Enterprise）上安装 Elasticsearch。
+Elasticsearch 的 RPM 可以[从我们的网站](/set_up_elasticsearch/installing_elasticsearch/rpm?id=手工下载和安装-rpm)或者从[我们的 RPM 仓库](/set_up_elasticsearch/installing_elasticsearch/rpm?id=从-rpm-仓库安装)下载。它可以用于在任何基于 RPM 的系统（如 OpenSuSE，SLES，Centos，Red Hat 和 Oracle Enterprise）上安装 Elasticsearch。
 
-?> 老版本的 RPM 发行版本（如 SLES 11 和 CentOS 5）不支持 RPM 安装。请参阅 [在 Linux 或 MacOS 上用存档安装 Elasticsearch](https://docs.es.shiyueshuyi.xyz/#/set_up_elasticsearch/install/linux)。
+?> 老版本的 RPM 发行版本（如 SLES 11 和 CentOS 5）不支持 RPM 安装。请参阅 [在 Linux 或 MacOS 上用存档安装 Elasticsearch](https://docs.es.shiyueshuyi.xyz/#/set_up_elasticsearch/installing_elasticsearch/linux)。
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 
