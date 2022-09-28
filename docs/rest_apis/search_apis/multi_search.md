@@ -16,7 +16,7 @@ GET my-index-000001/_msearch
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/setup/remote_clusters/configure_roles_and_users_for_remote_clusters?id=配置跨集群搜索权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters?id=配置跨集群搜索权限)。
 
 ## 描述
 
@@ -75,7 +75,7 @@ body\n
   （可选，布尔值）如果为 `true`，缺少或关闭的索引不包括在响应中。默认为 `false`。
 
 - `max_concurrent_searches`
-  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/setup/config/node?id=数据节点) * min([搜索线程池大小](/setup/config/thread_pools), 10)))。
+  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearchnode?id=数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearchthread_pools), 10)))。
 
 - `max_concurrent_shard_requests`
   （可选，整数）定义此搜索并发执行的每个节点的并发分片请求数。此值应用于限制搜索对集群的影响，以限制并发分片请求的数量。默认为 `5`。
@@ -153,7 +153,7 @@ body\n
       （可选，字符串）用于执行搜索的节点或分片。默认随机。
 
     - `request_cache`
-      （可选，布尔值）如果为 `true`，请求缓存可用于此搜索。默认为索引级设置。参阅[分片请求缓存设置](/setup/config/shard_request_cache_setttings)。
+      （可选，布尔值）如果为 `true`，请求缓存可用于此搜索。默认为索引级设置。参阅[分片请求缓存设置](/set_up_elasticsearch/configuring_elasticsearchshard_request_cache_setttings)。
 
     - `routing`
       （可选，字符串）用于将搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/_routing-field)。

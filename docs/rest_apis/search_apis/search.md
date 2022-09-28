@@ -18,7 +18,7 @@ GET /my-index-000001/_search
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你必须有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)来向目标数据流、索引或别名使用此 API。对于跨集群搜索，参阅[配置跨集群搜索权限](/setup/remote_clusters/configure_roles_and_users_for_remote_clusters?id=配置跨集群搜索权限)。
+- 如果 Elasticsearch 安全特性启用，你必须有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)来向目标数据流、索引或别名使用此 API。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters?id=配置跨集群搜索权限)。
 
   要在[时间点（PIT）](/rest_apis/search_apis/point_in_time)中搜索别名，必须对别名数据流或索引有 `read` 索引权限。
 
@@ -118,7 +118,7 @@ GET /my-index-000001/_search
   - 查询的主要排序以索引字段为目标。
 
 - `preference`
-  （可选，字符串）用于搜索的节点和分片。默认情况下，Elasticsearch 使用[自适应副本选择](/search_your_data/search_shard_routing?id=自适应副本选择)从符合条件的节点和分片中进行选择，以考虑[分配感知](/setup/config/cluster_level_shard_allocation_and_routing_settings?id=分片分配感知)。
+  （可选，字符串）用于搜索的节点和分片。默认情况下，Elasticsearch 使用[自适应副本选择](/search_your_data/search_shard_routing?id=自适应副本选择)从符合条件的节点和分片中进行选择，以考虑[分配感知](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings?id=分片分配感知)。
 
   - `preference` 合法值
     - `_only_local`
@@ -141,7 +141,7 @@ GET /my-index-000001/_search
   !> `q` 参数覆盖请求正文中的查询参数。如果同时指定了这两个参数，则不会返回与查询请求正文参数匹配的文档。
 
 - `request_cache`
-  （可选，布尔值）如果为 `true`，对 `size` 为 `0` 的请求启用搜索结果缓存。参阅[分片请求缓存设置](/setup/config/shard_request_cache_setttings)。默认为索引级设置。
+  （可选，布尔值）如果为 `true`，对 `size` 为 `0` 的请求启用搜索结果缓存。参阅[分片请求缓存设置](/set_up_elasticsearch/configuring_elasticsearchshard_request_cache_setttings)。默认为索引级设置。
 
 - `rest_total_hits_as_int`
   (可选，布尔值)指示是否 `hits.total` 应在搜索响应中呈现为整数或对象。默认为 `false`。
@@ -419,7 +419,7 @@ GET /my-index-000001/_search
   花费时间包括：
 
   - 协调节点和数据节点之间的通信时间
-  - 请求在搜索[线程池](/setup/config/thread_pools)中排队等待执行的时间
+  - 请求在搜索[线程池](/set_up_elasticsearch/configuring_elasticsearchthread_pools)中排队等待执行的时间
   - 实际执行时间
 
   花费时间不包括：

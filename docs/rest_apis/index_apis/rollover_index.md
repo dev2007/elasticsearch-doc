@@ -18,7 +18,7 @@ POST my-data-stream/_rollover
 
 ## 描述
 
-?> 我们推荐使用 ILM 的[翻转](/ILM_manage_the_index_lifecycle/index_lifecycle_actions/rollover)操作来自动执行翻转。参阅[索引生命周期](/setup/config/index_lifecycle)
+?> 我们推荐使用 ILM 的[翻转](/ILM_manage_the_index_lifecycle/index_lifecycle_actions/rollover)操作来自动执行翻转。参阅[索引生命周期](/set_up_elasticsearch/configuring_elasticsearchindex_lifecycle)
 
 翻转 API 为数据流或索引别名创建一个新索引。API 的行为依赖翻转的目标。
 
@@ -107,7 +107,7 @@ POST my-data-stream/_rollover
 
   - `max_age`
 
-  （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）在达到创建索引所用的最长时间后触发翻转。从索引创建时间开始，始终计算运行的时间，即使索引起始日期配置为自定义日期，例如当使用设置 [`index.lifecycle.parse_origination_date`](/setup/config/index_lifecycle_management_settings) 或 [`index.lifecycle.origination_date`](/setup/config/index_lifecycle_management_settings) 。
+  （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）在达到创建索引所用的最长时间后触发翻转。从索引创建时间开始，始终计算运行的时间，即使索引起始日期配置为自定义日期，例如当使用设置 [`index.lifecycle.parse_origination_date`](/set_up_elasticsearch/configuring_elasticsearchindex_lifecycle_management_settings) 或 [`index.lifecycle.origination_date`](/set_up_elasticsearch/configuring_elasticsearchindex_lifecycle_management_settings) 。
  
   - `max_docs`
 

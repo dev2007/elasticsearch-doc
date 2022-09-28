@@ -43,12 +43,13 @@
   <script src="https://cdn.jsdelivr.net/npm/md5@2.3.0/dist/md5.min.js"></script>
   <script>
     const gitalk = new Gitalk({
+      proxy: 'https://cors-server.bookhub.tech/github_access_token',
       clientID: 'e601a4bc90ebbac34ee4',
       clientSecret: 'f143b714f9256eea984397040183320c6faea98e',
       repo: 'gitalk-comment',
       owner: 'dev2007',
       admin: ['dev2007'],
-      id: MD5(location.pathname),
+      id: MD5(location.href),
       // facebook-like distraction free mode
       distractionFreeMode: false
     })

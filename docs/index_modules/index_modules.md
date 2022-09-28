@@ -85,7 +85,7 @@
 
 - `index.auto_expand_replicas`
 
-根据集群中数据节点的数量，自动扩展副本的数量。设置为以连接符分隔的下限和上限（如，`0-5`）或者使用 `all` 作为上限（如，`0-all`）。默认为 `false`（即禁用）。请注意自动扩展的副本数量只考虑[分配筛选](/index_modules/index_shard/shard_allocation)规则，而忽略其他分配规则，如[分片分配感知](/setup/config/cluster_level?id=分片分配感知)和[每个节点分片总数](/index_modules/index_shard/total_shards)，如果适用规则阻止分配所有副本，则这可能导致集群健康变为 `YELLOW`（黄色）。
+根据集群中数据节点的数量，自动扩展副本的数量。设置为以连接符分隔的下限和上限（如，`0-5`）或者使用 `all` 作为上限（如，`0-all`）。默认为 `false`（即禁用）。请注意自动扩展的副本数量只考虑[分配筛选](/index_modules/index_shard/shard_allocation)规则，而忽略其他分配规则，如[分片分配感知](/set_up_elasticsearch/configuring_elasticsearchcluster_level?id=分片分配感知)和[每个节点分片总数](/index_modules/index_shard/total_shards)，如果适用规则阻止分配所有副本，则这可能导致集群健康变为 `YELLOW`（黄色）。
 
 - `index.search.idle.after`
 
@@ -230,7 +230,7 @@ NGramTokenizer 和 NGramTokenFilter的 min_gram 和 max_gram 允许差值。默�
 
 ## X-Pack 索引设置 [`X-Pack`]
 
-- [索引生命周期管理](/setup/config/index_lifecycle)
+- [索引生命周期管理](/set_up_elasticsearch/configuring_elasticsearchindex_lifecycle)
 
 指定的索引的生命周期策略和翻转别名。
 

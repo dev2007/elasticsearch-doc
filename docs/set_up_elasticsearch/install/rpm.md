@@ -1,8 +1,8 @@
 # 使用 RPM 安装 Elasticsearch
 
-Elasticsearch 的 RPM 可以[从我们的网站](/setup/install/rpm?id=手工下载和安装-rpm)或者从[我们的 RPM 仓库](/setup/install/rpm?id=从-rpm-仓库安装)下载。它可以用于在任何基于 RPM 的系统（如 OpenSuSE，SLES，Centos，Red Hat 和 Oracle Enterprise）上安装 Elasticsearch。
+Elasticsearch 的 RPM 可以[从我们的网站](/set_up_elasticsearch/install/rpm?id=手工下载和安装-rpm)或者从[我们的 RPM 仓库](/set_up_elasticsearch/install/rpm?id=从-rpm-仓库安装)下载。它可以用于在任何基于 RPM 的系统（如 OpenSuSE，SLES，Centos，Red Hat 和 Oracle Enterprise）上安装 Elasticsearch。
 
-?> 老版本的 RPM 发行版本（如 SLES 11 和 CentOS 5）不支持 RPM 安装。请参阅 [在 Linux 或 MacOS 上用存档安装 Elasticsearch](https://docs.es.shiyueshuyi.xyz/#/setup/install/linux)。
+?> 老版本的 RPM 发行版本（如 SLES 11 和 CentOS 5）不支持 RPM 安装。请参阅 [在 Linux 或 MacOS 上用存档安装 Elasticsearch](https://docs.es.shiyueshuyi.xyz/#/set_up_elasticsearch/install/linux)。
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 
@@ -186,9 +186,9 @@ GET /
 
 `/etc/elasticsearch` 目录包含 Elasticsearch 默认运行时配置。该目录和所包含的所有文件所有权在包安装时设置为 `root:elasticsearch`。
 
-`setgid ` 标志对目录 `/etc/elasticsearch` 应用组权限，以确保 Elasticsearch 能读取任何包含的文件和子目录。所有文件和子目录继承 `root:elasticsearch` 所有权。从该目录或者任何子目录运行命令，如 [elasticsearch-keystore 工具](/setup/config/secure)，需要 `root:elasticsearch` 权限。
+`setgid ` 标志对目录 `/etc/elasticsearch` 应用组权限，以确保 Elasticsearch 能读取任何包含的文件和子目录。所有文件和子目录继承 `root:elasticsearch` 所有权。从该目录或者任何子目录运行命令，如 [elasticsearch-keystore 工具](/set_up_elasticsearch/configuring_elasticsearchsecure)，需要 `root:elasticsearch` 权限。
 
-Elasticsearch 默认从 `/etc/elasticsearch/elasticsearch.yml` 文件加载它的配置。在[配置 Elasticsearch](/setup/config) 中解释了配置文件的格式。
+Elasticsearch 默认从 `/etc/elasticsearch/elasticsearch.yml` 文件加载它的配置。在[配置 Elasticsearch](/set_up_elasticsearch/config) 中解释了配置文件的格式。
 
 RPM 也有一个系统配置文件（`/etc/sysconfig/elasticsearch`），它允许你设置以下的变量：
 
@@ -202,7 +202,7 @@ RPM 也有一个系统配置文件（`/etc/sysconfig/elasticsearch`），它允�
 |`ES_JAVA_OPTS`|你想应用的任何其他 JVM 系统属性。|
 |`RESTART_ON_UPGRADE`|在包升级时配置重启，默认为 `false`。这意味着你必须在手工安装包后重启你的 Elasticseach 实例。这样做的原因是为了确保集群的升级不会导致持续的分片重分配，进而导致的高网络流量和降低了集群的响应时间。|
 
-?> 使用 `systemd` 的发行版本要求需要通过 `systemd` 配置系统资源限制，而不是通过 `/etc/sysconfig/elasticsearch` 文件。更多信息，请参阅 [Systemd 配置](/setup/important_system_config/system?id=Systemd-配置)。
+?> 使用 `systemd` 的发行版本要求需要通过 `systemd` 配置系统资源限制，而不是通过 `/etc/sysconfig/elasticsearch` 文件。更多信息，请参阅 [Systemd 配置](/set_up_elasticsearch/important_system_config/system?id=Systemd-配置)。
 
 ## RPM 目录结构
 
@@ -212,7 +212,7 @@ RPM 包将配置文件、日志和数据目录放在基于 RPM 系统的适当�
 | :-- | :-- | :-- | :-- |
 |home| Elasticsearch 主目录或 `$ES_HOME`| `/usr/share/elasticsearch`| |
 |bin| 二进制脚本，包括启动节点的 `elasticsearch` 和安装插件的 `elasticsearch-plugin`| `/usr/share/elasticsearch/bin`||
-|conf| 配置文件，包括 `elasticsearch.yml`| `/etc/elasticsearch`|[ES_PATH_CONF](/setup/config?id=配置文件位置)|
+|conf| 配置文件，包括 `elasticsearch.yml`| `/etc/elasticsearch`|[ES_PATH_CONF](/set_up_elasticsearch/config?id=配置文件位置)|
 |conf| 环境变量，包括堆大小，文件描述符。| `/etc/default/elasticsearch`||
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`/var/lib/elasticsearch`|`path.data`|
 |jdk|用于运行 Elasticsearch 的捆绑 Java 开发工具包。可以通过在 `/etc/sysconfig/elasticsearch` 中覆盖 `JAVA_HOME`环境变量。|`/usr/share/elasticsearch/jdk`||
@@ -224,8 +224,8 @@ RPM 包将配置文件、日志和数据目录放在基于 RPM 系统的适当�
 
 你现在有一个测试 Elasticsearch 环境部署好。在你使用 Elasticsearch 正式开始开发或者生产之前，你必须做一些额外的设置：
 
-- 学习如何配置 [Elasticsearch](/setup/config)。
-- 配置[重要的 Elasticsearch 设置](/setup/important_es_config)。
-- 配置[重要的系统设置](/setup/important_system_config)。
+- 学习如何配置 [Elasticsearch](/set_up_elasticsearch/config)。
+- 配置[重要的 Elasticsearch 设置](/set_up_elasticsearch/important_es_config)。
+- 配置[重要的系统设置](/set_up_elasticsearch/important_system_config)。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html)

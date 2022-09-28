@@ -63,13 +63,13 @@ GET /my-index-000001/_stats
     [合并](/index_modules/merge)统计。
 
   - `query_cache`
-    [查询缓存](/setup/config/node_query_cache_settings)统计。
+    [查询缓存](/set_up_elasticsearch/configuring_elasticsearchnode_query_cache_settings)统计。
 
   - `refresh`
     [刷新](/rest_apis/index_apis/refresh)统计。
 
   - `request_cache`
-    [分片请求缓存](/setup/config/shard_request_cache_setttings)统计。
+    [分片请求缓存](/set_up_elasticsearch/configuring_elasticsearchshard_request_cache_setttings)统计。
 
   - `search`
     搜索统计信息，包括建议统计信息。您可以通过添加额外的 `groups` 参数（搜索操作可以与一个或多个组关联）来包括自定义组的统计信息。`groups` 参数接受以逗号分隔的组名列表。使用 `_all` 返回所有组的统计信息。

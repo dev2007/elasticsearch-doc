@@ -20,7 +20,7 @@ GET /_resolve/index/my-index-*
 
 `<name>`
 
-（必需，字符串）逗号分隔的待解析的索引、别名及数据流的名字或索引模式。在[远程集群](/setup/remote_clusters)上的资源可以通过语法 `<cluster>:<name>` 指定。
+（必需，字符串）逗号分隔的待解析的索引、别名及数据流的名字或索引模式。在[远程集群](/set_up_elasticsearch/remote_clusters)上的资源可以通过语法 `<cluster>:<name>` 指定。
 
 ## 查询参数
 

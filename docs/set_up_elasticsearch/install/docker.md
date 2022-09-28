@@ -16,7 +16,7 @@ docker pull docker.elastic.co/elasticsearch/elasticsearch:7.11.2
 
 ## 使用 Docker 启动单节点集群
 
-要启动单节点 Elasticsearch 集群进行开发或测试，请指定[单节点发现](/setup/bootstrap?id=单节点发现)以绕过[启动检查](/setup/bootstrap)：
+要启动单节点 Elasticsearch 集群进行开发或测试，请指定[单节点发现](/set_up_elasticsearch/bootstrap?id=单节点发现)以绕过[启动检查](/set_up_elasticsearch/bootstrap)：
 
 ```bash
 docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.11.2
@@ -101,7 +101,7 @@ networks:
     driver: bridge
 ```
 
-?> 例子中的 `docker-compose.yml` 使用环境变量 `ES_JAVA_OPTS` 手工设置堆大小为 512 MB。我们不推荐在生产环境使用 `ES_JAVA_OPTS`。参看[手工设置堆大小](/setup/install/docker?id=手工设置堆大小)。
+?> 例子中的 `docker-compose.yml` 使用环境变量 `ES_JAVA_OPTS` 手工设置堆大小为 512 MB。我们不推荐在生产环境使用 `ES_JAVA_OPTS`。参看[手工设置堆大小](/set_up_elasticsearch/install/docker?id=手工设置堆大小)。
 
 这个示例 Docker Compose 文件，提供了一个三节点 Elasticsearch 集群。节点 `es01` 监听 `localhost:9200`，`es02` 和 `es03` 通过 Docker 网络与 `es01` 通信。
 
@@ -200,7 +200,7 @@ sysctl -w vm.max_map_count=262144
 
 !> 一个例外是 [OpenShift](https://docs.openshift.com/container-platform/3.6/creating_images/guidelines.html#openshift-specific-guidelines)，它使用任意分配的用户 ID 运行容器。OpenShift 显示的持久卷的 gid 设置为 0，它可以无需调整的运行。
 
-如果你要绑定挂载本地目录或文件，它必须可被用户 `elasticsearch` 读取。此外，此用户对 [配置、数据和日志目录](/setup/important_es_config?id=路径设置)有写权限（Elasticsearch 需要对 `config` 目录有写权限，这样它才能生成密钥库）。一个好的策略是为本地目录 gid `0` 分配组访问权限。
+如果你要绑定挂载本地目录或文件，它必须可被用户 `elasticsearch` 读取。此外，此用户对 [配置、数据和日志目录](/set_up_elasticsearch/important_es_config?id=路径设置)有写权限（Elasticsearch 需要对 `config` 目录有写权限，这样它才能生成密钥库）。一个好的策略是为本地目录 gid `0` 分配组访问权限。
 
 例如，要准备本地目录以通过绑定挂载来存储数据，按以下操作：
 
@@ -212,11 +212,11 @@ chgrp 0 esdatadir
 
 你也可以使用自定义 UID 和 GID 来运行 Elasticsearch 容器。除非你绑定挂载每个 `config`、`data` 和 `logs` 目录，否则必须为 `docker run` 传递命令行选项 `--group-add 0`。这样可以确保运行 Elasticsearch 的用户也是容器 `root` （GID 0）组的成员。
 
-最后，你还可以通过环境变量 `TAKE_FILE_OWNERSHIP` 强制容器更改用于[数据和日志目录](/setup/important?id=路径设置)的绑定挂载的所有权。当你这样做的时候，它们将属于 uid:gid `1000:0`，它提供了 Elasticsearch 进程所需的读写访问权限。
+最后，你还可以通过环境变量 `TAKE_FILE_OWNERSHIP` 强制容器更改用于[数据和日志目录](/set_up_elasticsearch/important?id=路径设置)的绑定挂载的所有权。当你这样做的时候，它们将属于 uid:gid `1000:0`，它提供了 Elasticsearch 进程所需的读写访问权限。
 
 ### 为 nofile 和 nproc 增加 ulimit
 
-必须为 Elasticsearch 容器提供 [nofile](/setup/important_system_config/config) 和 [nproc](/setup/bootstrap/thread) 增加 ulimit。验证 Docker 的守护进程是否的 [init system](https://github.com/moby/moby/tree/ea4d1243953e6b652082305a9c3cda8656edab26/contrib/init) 是否将它们设置为可接受的值。
+必须为 Elasticsearch 容器提供 [nofile](/set_up_elasticsearch/important_system_config/config) 和 [nproc](/set_up_elasticsearch/bootstrap/thread) 增加 ulimit。验证 Docker 的守护进程是否的 [init system](https://github.com/moby/moby/tree/ea4d1243953e6b652082305a9c3cda8656edab26/contrib/init) 是否将它们设置为可接受的值。
 
 为了检测 Docker 守护进程默认的 ulimit，执行：
 
@@ -232,9 +232,9 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 
 ### 禁用 swapping
 
-为了提高性能和节点稳定性，swapping 需要禁用。有关执行此操作的更多信息，请参阅 [禁用 swapping](/setup/important_system_config/swapping)。
+为了提高性能和节点稳定性，swapping 需要禁用。有关执行此操作的更多信息，请参阅 [禁用 swapping](/set_up_elasticsearch/important_system_config/swapping)。
 
-如果你选择 `bootstrap.memory_lock: true`，你也需要在 Docker 守护进程中定义 `memlock: true` 限定，或者如[示例 compose 文件](/setup/install/docker?id=使用-Docker-Compose-启动多节点集群)中显示的设置。当使用 `docker run`，你可以指定：
+如果你选择 `bootstrap.memory_lock: true`，你也需要在 Docker 守护进程中定义 `memlock: true` 限定，或者如[示例 compose 文件](/set_up_elasticsearch/install/docker?id=使用-Docker-Compose-启动多节点集群)中显示的设置。当使用 `docker run`，你可以指定：
 
 `-e "bootstrap.memory_lock=true" --ulimit memlock=-1:-1`
 
@@ -244,9 +244,9 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 
 ### 手工设置堆大小
 
-默认情况下，Elasticsearch 基于节点的[角色](/setup/config/node?id=节点角色)和节点容器总可用内存，自动地设置 JVM 堆。对大多数生产环境，我们推荐默认大小设置。如果有需要，你可以通过手工设置 JVM 堆大小来重载默认设置。
+默认情况下，Elasticsearch 基于节点的[角色](/set_up_elasticsearch/configuring_elasticsearchnode?id=节点角色)和节点容器总可用内存，自动地设置 JVM 堆。对大多数生产环境，我们推荐默认大小设置。如果有需要，你可以通过手工设置 JVM 堆大小来重载默认设置。
 
-为了在生产环境手工设置堆大小，绑定挂载包含了你期望的[堆大小](/setup/config/advanced?id=设置-JVM-堆大小)设置的 [JVM 选项](/setup/config/jvm)文件（在 `/usr/share/elasticsearch/config/jvm.options.d`中）。
+为了在生产环境手工设置堆大小，绑定挂载包含了你期望的[堆大小](/set_up_elasticsearch/configuring_elasticsearchadvanced?id=设置-JVM-堆大小)设置的 [JVM 选项](/set_up_elasticsearch/configuring_elasticsearchjvm)文件（在 `/usr/share/elasticsearch/configuring_elasticsearchjvm.options.d`中）。
 
 用于测试的话，你可以通过环境变量 `ES_JAVA_OPTS` 手工设置堆大小。例如，要用 16 GB，通过 `docker run` 指定 `-e ES_JAVA_OPTS="-Xms16g -Xmx16g"`。`ES_JAVA_OPTS` 重载所有其他 JVM 选项。在生产环境，我们不推荐使用 `ES_JAVA_OPTS`。上方的 `docker-compose.yml` 可以看到设置堆大小为 512 MB。
 
@@ -272,9 +272,9 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 
 ## 使用 Docker 配置 Elasticsearch
 
-当你在 Docker 中运行时， [Elasticsearch 配置文件](/setup/config?id=配置文件位置)从 `/usr/share/elasticsearch/config/` 加载。为了使用自定义配置文件，你要[绑定挂载文件](/setup/install/docker?id=挂载-Elasticsearch-配置文件)到镜像中的配置文件上。
+当你在 Docker 中运行时， [Elasticsearch 配置文件](/set_up_elasticsearch/config?id=配置文件位置)从 `/usr/share/elasticsearch/configuring_elasticsearch` 加载。为了使用自定义配置文件，你要[绑定挂载文件](/set_up_elasticsearch/install/docker?id=挂载-Elasticsearch-配置文件)到镜像中的配置文件上。
 
-你可以通过环境变量设置独立的 Elasticsearch 配置参数。[示例 compose 文件](/setup/install/docker?id=使用-Docker-Compose-启动多节点集群)和[单节点示例](/setup/install/docker?id=使用-Docker-启动单节点集群)就用的这种方法。
+你可以通过环境变量设置独立的 Elasticsearch 配置参数。[示例 compose 文件](/set_up_elasticsearch/install/docker?id=使用-Docker-Compose-启动多节点集群)和[单节点示例](/set_up_elasticsearch/install/docker?id=使用-Docker-启动单节点集群)就用的这种方法。
 
 要使用文件内容设置环境变量，给环境变量名字加上后缀 `_FILE`。这对于秘密传输配置（如密码）给 Elasticsearch，而不是直接指定它们非常有用。
 
@@ -290,24 +290,24 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 docker run <various parameters> bin/elasticsearch -Ecluster.name=mynewclustername
 ```
 
-虽然绑定挂载配置文件通常在生产环境是首选方法，你也可以创建包含你自己配置的[自定义 Docker 镜像](/setup/install/docker?id=使用自定义-Docker-镜像)。
+虽然绑定挂载配置文件通常在生产环境是首选方法，你也可以创建包含你自己配置的[自定义 Docker 镜像](/set_up_elasticsearch/install/docker?id=使用自定义-Docker-镜像)。
 
 ### 挂载 Elasticsearch 配置文件
 
 创建自定义配置文件，将其绑定挂载到 Docker 镜像的相应文件上。例如，使用 `docker run` 绑定挂载 `custom_elasticsearch.yml`，如下指定：
 
 ```bash
--v full_path_to/custom_elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+-v full_path_to/custom_elasticsearch.yml:/usr/share/elasticsearch/configuring_elasticsearchelasticsearch.yml
 ```
 
 !> 容器以用户 `elasticsearch`，使用 uid:gid `1000:0` 运行 Elasticsearch。绑定挂载的主机目录和文件，必须能被此用户访问，且数据和日志目录必须能被此用户写入。
 
 ### 挂载 Elasticsearch 密钥库
 
-默认情况下，Elasticsearch 会为安全设置自动生成密钥库文件。这个文件是混淆的，但没有加密。如果你想使用密码加密你的[安全设置](/setup/config/secure_settings)，你必须使用 `elasticsearch-keystore` 程序去创建一个密码保护的密钥库，然后绑定挂载它到容器中文件 `/usr/share/elasticsearch/config/elasticsearch.keystore`。为了在启动时向 Docker 容器提供密码，将 Docker 的环境变量值 `KEYSTORE_PASSWORD` 设置为密码值。例如，`docker run` 命令可以有以下的选项：
+默认情况下，Elasticsearch 会为安全设置自动生成密钥库文件。这个文件是混淆的，但没有加密。如果你想使用密码加密你的[安全设置](/set_up_elasticsearch/configuring_elasticsearchsecure_settings)，你必须使用 `elasticsearch-keystore` 程序去创建一个密码保护的密钥库，然后绑定挂载它到容器中文件 `/usr/share/elasticsearch/configuring_elasticsearchelasticsearch.keystore`。为了在启动时向 Docker 容器提供密码，将 Docker 的环境变量值 `KEYSTORE_PASSWORD` 设置为密码值。例如，`docker run` 命令可以有以下的选项：
 
 ```bash
--v full_path_to/elasticsearch.keystore:/usr/share/elasticsearch/config/elasticsearch.keystore
+-v full_path_to/elasticsearch.keystore:/usr/share/elasticsearch/configuring_elasticsearchelasticsearch.keystore
 -E KEYSTORE_PASSWORD=mypassword
 ```
 
@@ -317,7 +317,7 @@ docker run <various parameters> bin/elasticsearch -Ecluster.name=mynewclusternam
 
 ```bash
 FROM docker.elastic.co/elasticsearch/elasticsearch:7.11.2
-COPY --chown=elasticsearch:elasticsearch elasticsearch.yml /usr/share/elasticsearch/config/
+COPY --chown=elasticsearch:elasticsearch elasticsearch.yml /usr/share/elasticsearch/configuring_elasticsearch
 ```
 
 你可以这样构建和运行镜像：
@@ -338,8 +338,8 @@ docker run -ti -v /usr/share/elasticsearch/data elasticsearch-custom
 
 你现在有一个测试 Elasticsearch 环境部署好。在你使用 Elasticsearch 正式开始开发或者生产之前，你必须做一些额外的设置：
 
-- 学习如何配置 [Elasticsearch](/setup/config)。
-- 配置[重要的 Elasticsearch 设置](/setup/important_es_config)。
-- 配置[重要的系统设置](/setup/important_system_config)。
+- 学习如何配置 [Elasticsearch](/set_up_elasticsearch/config)。
+- 配置[重要的 Elasticsearch 设置](/set_up_elasticsearch/important_es_config)。
+- 配置[重要的系统设置](/set_up_elasticsearch/important_system_config)。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)

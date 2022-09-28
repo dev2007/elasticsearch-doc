@@ -8,5 +8,5 @@
 
 > 如果文档对你有帮助，欢迎点击右上角到 GitHub 给一个 ☆
 
-[更多文档](https://bookhub.zone)
+[更多文档](https://bookhub.tech)
 [点击阅读](es.md)

@@ -2,7 +2,7 @@
 
 Elasticsearch 可以使用 Windows `.zip` 存档安装到 Windows 上。可以使用 `elasticsearch-service.bat` 安装 Elasticsearch 作为服务运行。
 
-?> Elasticsearch 过去使用 `.zip` 存档安装到 Windows 上。[MSI 安装包](/setup/install/windows_msi)提供了最简单的 Windows 入门体验。如果你愿意可以继续使用 `.zip`。
+?> Elasticsearch 过去使用 `.zip` 存档安装到 Windows 上。[MSI 安装包](/set_up_elasticsearch/install/windows_msi)提供了最简单的 Windows 入门体验。如果你愿意可以继续使用 `.zip`。
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 
@@ -48,7 +48,7 @@ Elasticsearch 可以如以下从命令行启动：
 
 ## 在命令行配置 Elasticsearch
 
-Elasticsearch 默认从 `$ES_HOME/config/elasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/setup/config)中解释。
+Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearchelasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/set_up_elasticsearch/config)中解释。
 
 在配置文件中可以指定的设置，也能在命令行中指定，如下使用 `-E` 语法：
 
@@ -147,7 +147,7 @@ The service 'elasticsearch-service-x64' has been installed.
 
 ?> 默认情况，Elasticsearch 依据节点的角色和总内存，自动调整 JVM 堆大小。对于大多数生产环境，我们推荐默认调整。如果需要，你可以手动设置堆大小来覆盖默认调整。
 
-?> 当第一次在 Windows 上安装 Elasticsearch 作为服务或者从命令行运行 Elasticsearch 时，你可以按[JVM 堆大小设置](/setup/config/advanced?id=JVM 堆大小设置)手工设置堆大小。为了调整已安装服务的堆大小，使用服务管理器：`bin\elasticsearch-service.bat manager`。
+?> 当第一次在 Windows 上安装 Elasticsearch 作为服务或者从命令行运行 Elasticsearch 时，你可以按[JVM 堆大小设置](/set_up_elasticsearch/configuring_elasticsearchadvanced?id=JVM 堆大小设置)手工设置堆大小。为了调整已安装服务的堆大小，使用服务管理器：`bin\elasticsearch-service.bat manager`。
 
 ?> 该服务会自动配置一个私有临时目录供 Elasticsearch 运行时使用。该私有临时目录配置为用户运行安装的私有临时目录的子目录。如果这个服务要在不同的用户下运行，你可以在执行服务安装之前，通过设置环境变量 `ES_TMPDIR` 配置这个临时目录的优先位置。
 
@@ -169,7 +169,7 @@ The service 'elasticsearch-service-x64' has been installed.
 | :-- | :-- | :-- | :-- |
 |home| Elasticsearch 主目录或 `%ES_HOME%`| 解压存档创建的目录| |
 |bin| 二进制脚本，包括启动节点的 `elasticsearch` 和安装插件的 `elasticsearch-plugin`| `%ES_HOME%\bin`||
-|conf| 配置文件，包括 `elasticsearch.yml`| `%ES_HOME%\config`|[ES_PATH_CONF](/setup/config?id=配置文件位置)|
+|conf| 配置文件，包括 `elasticsearch.yml`| `%ES_HOME%\config`|[ES_PATH_CONF](/set_up_elasticsearch/config?id=配置文件位置)|
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`%ES_HOME%\data`|`path.data`|
 |logs| 日志文件位置| `%ES_HOME%\logs` | `path.logs`|
 |plugins| 插件文件位置。每个插件会包含在一个子目录中。| `%ES_HOME%\plugins`||
@@ -179,8 +179,8 @@ The service 'elasticsearch-service-x64' has been installed.
 
 你现在有一个测试 Elasticsearch 环境部署好。在你使用 Elasticsearch 正式开始开发或者生产之前，你必须做一些额外的设置：
 
-- 学习如何配置 [Elasticsearch](/setup/config)。
-- 配置[重要的 Elasticsearch 设置](/setup/important_es_config)。
-- 配置[重要的系统设置](/setup/important_system_config)。
+- 学习如何配置 [Elasticsearch](/set_up_elasticsearch/config)。
+- 配置[重要的 Elasticsearch 设置](/set_up_elasticsearch/important_es_config)。
+- 配置[重要的系统设置](/set_up_elasticsearch/important_system_config)。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/zip-windows.html)
