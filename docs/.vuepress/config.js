@@ -23,7 +23,6 @@ module.exports = {
   ],
   themeConfig: {
     logo: '/favicon.ico',
-    lastUpdated: '最后更新',
     sidebarDepth: 3,
     displayAllHeaders: true,
     nav: [
