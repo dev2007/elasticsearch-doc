@@ -143,7 +143,7 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - Reindex from a remote cluster
 - :heavy_check_mark: 索引模块 [:link:](https://elasticsearch.bookhub.tech/index_modules/)
   - :heavy_check_mark: 分析 [:link:](https://elasticsearch.bookhub.tech/index_modules/analysis)
-  - :heavy_check_mark: 索引分片分配 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/index_shard_allocation)
+  - :heavy_check_mark: 索引分片分配 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/)
     - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/shard_allocation_filtering)
     - :heavy_check_mark: 当节点离开时延迟分配 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/delaying_allocation)
     - :heavy_check_mark: 索引恢复优先级 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/index_recovery_prioritization)
