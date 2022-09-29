@@ -43,18 +43,18 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
 
 > 已完成的部分标示 :heavy_check_mark:，并添加网站链接。
 
-- :heavy_check_mark: 什么是 Elasticsearch？ [:link:](https://elasticsearch.bookhub.tech/es)
+- :heavy_check_mark: 什么是 Elasticsearch？ [:link:](https://elasticsearch.bookhub.tech/intro/)
   - :heavy_check_mark: 数据输入：文档和索引 [:link:](https://elasticsearch.bookhub.tech/intro/datain)
   - :heavy_check_mark: 信息输出：搜索和分析 [:link:](https://elasticsearch.bookhub.tech/intro/inforout)
   - :heavy_check_mark: 可伸缩性和弹性 [:link:](https://elasticsearch.bookhub.tech/intro/scalability)
-- :heavy_check_mark: Elasticsearch 入门 [:link:](https://elasticsearch.bookhub.tech/getting_started/getting_started)
+- :heavy_check_mark: Elasticsearch 入门 [:link:](https://elasticsearch.bookhub.tech/getting_started/)
   - :heavy_check_mark: 启动并运行 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/getting_started/install)
-  - :heavy_check_mark: 索引一些文档 [:link:](https://elasticsearch.bookhub.tech/getting_started/index)
+  - :heavy_check_mark: 索引一些文档 [:link:](https://elasticsearch.bookhub.tech/getting_started/esindex)
   - :heavy_check_mark: 开始搜索 [:link:](https://elasticsearch.bookhub.tech/getting_started/search)
   - :heavy_check_mark: 使用聚合分析结果  [:link:](https://elasticsearch.bookhub.tech/getting_started/aggregations)
   - :heavy_check_mark: 何去何从 [:link:](https://elasticsearch.bookhub.tech/getting_started/nextstep)
-- :heavy_check_mark: 设置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/set_up_elasticsearch)
-  - :heavy_check_mark: 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/installing_elasticsearch)
+- :heavy_check_mark: 设置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/)
+  - :heavy_check_mark: 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/)
     - :heavy_check_mark: Linux 或 MacOS 上用存档安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/linux)
     - :heavy_check_mark: 在 Windows 上用 `.zip` 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/windows)
     - :heavy_check_mark: 使用 Debian 包安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/debian)
@@ -62,7 +62,7 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - :heavy_check_mark: 使用 Windows MSI 安装程序安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/msi)
     - :heavy_check_mark: 使用 Docker 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/docker)
     - :heavy_check_mark: 使用 Homebrew 在 macOS 上安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/brew)
-  - :heavy_check_mark: 配置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/configuring_elasticsearch)
+  - :heavy_check_mark: 配置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/)
     - :heavy_check_mark: 重要的 Elasticsearch 配置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/import_elasticsearch_configuration)
     - :heavy_check_mark: 安全配置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/secure_settings)
     - :heavy_check_mark: 审计安全设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/auditing_settings)
@@ -141,7 +141,7 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
   - Reindex before upgrading
     - Reindex in place
     - Reindex from a remote cluster
-- :heavy_check_mark: 索引模块 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_modules)
+- :heavy_check_mark: 索引模块 [:link:](https://elasticsearch.bookhub.tech/index_modules/)
   - :heavy_check_mark: 分析 [:link:](https://elasticsearch.bookhub.tech/index_modules/analysis)
   - :heavy_check_mark: 索引分片分配 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/index_shard_allocation)
     - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/shard_allocation_filtering)
@@ -786,8 +786,8 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
   - Tune for disk usage
   - Size your shards
 - Glossary of terms
-- :heavy_check_mark: REST API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rest_apis)
-  - :heavy_check_mark: API 约定 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_convention/api_convention)
+- :heavy_check_mark: REST API [:link:](https://elasticsearch.bookhub.tech/rest_apis/)
+  - :heavy_check_mark: API 约定 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_convention/)
     - :heavy_check_mark: 多目标语法 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_convention/multi_target_syntax)
     - :heavy_check_mark: 索引名中的日期数学支持 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_convention/date_math_support_in_index_names)
     - :heavy_check_mark: Cron 表达式 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_convention/cron_expressions)
@@ -861,9 +861,9 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - Migrate to data stream
     - Data stream stats
     - Promote data stream
-  - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/document_apis)
+  - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/)
     - Reading and Writing documents
-    - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/index)
+    - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/esindex)
     - Get
     - Delete
     - Delete by query
@@ -883,7 +883,7 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - Execute enrich policy
     - Enrich stats
   - Graph explore API
-  - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/index_apis)
+  - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/)
     - :heavy_check_mark: 别名存在 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/alias_exists)
     - :heavy_check_mark: 别名 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/aliases)
     - :heavy_check_mark: 分析 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/analyze)
@@ -1037,7 +1037,7 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - Rollup search
     - Start rollup jobs
     - Stop rollup jobs
-  - :heavy_check_mark: 搜索相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/search_apis)
+  - :heavy_check_mark: 搜索相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/)
     - :heavy_check_mark: 搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/search)
     - :heavy_check_mark: 异步搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/async_search)
     - :heavy_check_mark: 时间点 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/point_in_time)
