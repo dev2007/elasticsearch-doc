@@ -1,6 +1,8 @@
 # 创建或更新自动伸缩策略 API
 
-?> 此特性设计用于 [Elasticsearch Service](https://www.elastic.co/cloud/elasticsearch-service/signup?baymax=docs-body&elektra=docs)、[Elastic Cloud Enterprise](https://www.elastic.co/guide/en/cloud-enterprise/current) 和 [Kubernetes 上的 Elastic Cloud](https://www.elastic.co/guide/en/cloud-on-k8s/current) 的间接使用。不支持直接用户使用。
+::: tip 提示
+此特性设计用于 [Elasticsearch Service](https://www.elastic.co/cloud/elasticsearch-service/signup?baymax=docs-body&elektra=docs)、[Elastic Cloud Enterprise](https://www.elastic.co/guide/en/cloud-enterprise/current) 和 [Kubernetes 上的 Elastic Cloud](https://www.elastic.co/guide/en/cloud-on-k8s/current) 的间接使用。不支持直接用户使用。
+:::
 
 创建或更新一个自动伸缩策略。
 
@@ -19,7 +21,7 @@ PUT /_autoscaling/policy/<name>
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你必须有 `manage_autoscaling` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=集群权限)来使用此 API。
+- 如果 Elasticsearch 安全特性启用，你必须有 `manage_autoscaling` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)来使用此 API。
 
 - 如果启用了[操作员权限特性](/secure_the_elastic_stack/operator_privileges/operator_privileges)，则只有操作员用户可以使用此 API。
 

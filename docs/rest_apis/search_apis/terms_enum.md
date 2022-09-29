@@ -1,6 +1,6 @@
 # 词语枚举 API
 
-词语枚举 API 可用于发现索引中与部分字符串匹配的词语。支持的字段类型有[`keyword`](/mapping/field_data_types/keyword?id=关键字字段类型)、[`constant_keyword`](/mapping/field_data_types/keyword?id=常量关键字字段类型) 和 [`flattened`](/mapping/field_data_types/flattened) 字段。这用于自动完成：
+词语枚举 API 可用于发现索引中与部分字符串匹配的词语。支持的字段类型有[`keyword`](/mapping/field_data_types/keyword#关键字字段类型)、[`constant_keyword`](/mapping/field_data_types/keyword#常量关键字字段类型) 和 [`flattened`](/mapping/field_data_types/flattened) 字段。这用于自动完成：
 
 ```bash
 POST stackoverflow/_terms_enum
@@ -53,7 +53,7 @@ API 返回以下响应：
   （可选，整数）返回的匹配词语数量。默认为 10。
 
 - `timeout`
-  （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）用于收集结果的最长时间。默认为“1s”（一秒）。如果超过超时，则响应中的 `complete` 标志设置为 `false`，结果可能是部分或空的。
+  （可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）用于收集结果的最长时间。默认为“1s”（一秒）。如果超过超时，则响应中的 `complete` 标志设置为 `false`，结果可能是部分或空的。
 
 - `case_insensitive`
   （可选，布尔值）如果为 `true`，则提供的搜索字符串与索引项匹配，不区分大小写。默认为 `false`。

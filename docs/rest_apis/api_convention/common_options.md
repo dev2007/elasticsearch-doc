@@ -20,7 +20,7 @@
 - `-1d`：减一天
 - `/d`：舍入到最近的一天
 
-支持的时间单位不同于支持的周期[时间单位](/rest_apis/api_convention/common_options?id=时间单位)。支持的单位有：
+支持的时间单位不同于支持的周期[时间单位](/rest_apis/api_convention/common_options#时间单位)。支持的单位有：
 
 |||
 |:--|:--|

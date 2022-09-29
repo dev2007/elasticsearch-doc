@@ -12,7 +12,7 @@ PUT /my-index-000001
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标索引必须有 `create_index` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标索引必须有 `create_index` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 描述
 
@@ -36,7 +36,7 @@ PUT /my-index-000001
 4. 不能以 `-`、`_`、`+` 开头
 5. 不能是 `.` 或 `..`
 6. 长度不能超过 255 字节（注意是字节，所以多字节字符会更快达到 255 的限制）
-7. 名字以 `.` 开头不推荐，除非由插件管理的[隐藏索引](/index_modules/index_modules)和内部索引
+7. 名字以 `.` 开头不推荐，除非由插件管理的[隐藏索引](/index_modules)和内部索引
 
 ## 查询参数
 
@@ -46,13 +46,13 @@ PUT /my-index-000001
 - `wait_for_active_shards`
 （可选，字符串）在操作执行之前必须活动的分片复制数量。设置为 `all` 或任何正整数，最大值为索引分片总数（`number_of_replicas+1`）。默认为：1，主分片。
 
-参阅 [激活分片](/rest_apis/document_apis/index?id=激活分片)
+参阅 [活动分片](/rest_apis/document_apis/esindex#活动分片)
 
 - `master_timeout`
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 - `timeout`
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 请求体
 
@@ -69,7 +69,7 @@ PUT /my-index-000001
 参阅[映射](/mapping/mapping)
 
 - `settings`
-（可选，[索引设置对象](/index_modules/index_modules?id=索引设置)）索引的配置选项。参阅[索引设置](/index_modules/index_modules?id=索引设置)
+（可选，[索引设置对象](/index_modules#索引设置)）索引的配置选项。参阅[索引设置](/index_modules#索引设置)
 
 ## 示例
 
@@ -104,9 +104,11 @@ PUT /my-index-000001
 }
 ```
 
-?> 在 `settings` 部分中，不必显示指定 `index` 部分。
+::: tip 提示
+在 `settings` 部分中，不必显示指定 `index` 部分。
+:::
 
-有关创建索引时，可以设置的所有不同索引级别设置的详细信息，参阅章节[索引模块](/index_modules/index_modules)。
+有关创建索引时，可以设置的所有不同索引级别设置的详细信息，参阅章节[索引模块](/index_modules)。
 
 ### 映射
 
@@ -126,7 +128,9 @@ PUT /test
 }
 ```
 
-?> 在 7.0.0 之前，**mapping**（映射）定义用于包含类型名字。尽管现在不推荐在请求中指定类型，但如果设置了请求参数 include_type_name，仍然可以提供类型。更多的信息，参阅[移除映射类型](/mapping/removal_of_mapping_types)。
+::: tip 提示
+在 7.0.0 之前，**mapping**（映射）定义用于包含类型名字。尽管现在不推荐在请求中指定类型，但如果设置了请求参数 include_type_name，仍然可以提供类型。更多的信息，参阅[移除映射类型](/mapping/removal_of_mapping_types)。
+:::
 
 ### 别名
 
@@ -147,7 +151,7 @@ PUT /test
 }
 ```
 
-### 等待激活分片
+### 等待活动分片
 
 默认情况下，索引创建只会在每个分片的主副本已启动或请求超时时，向客户端返回响应。索引创建响应将表明发生了什么。
 
@@ -178,6 +182,6 @@ PUT /test
 PUT /test?wait_for_active_shards=2
 ```
 
-对 `wait_for_active_shards` 的详情解释，及它的可能值能在[这里](/rest_apis/document_apis/index?id=激活分片)找到。
+对 `wait_for_active_shards` 的详情解释，及它的可能值能在[这里](/rest_apis/document_apis/esindex#活动分片)找到。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-create-index.html)

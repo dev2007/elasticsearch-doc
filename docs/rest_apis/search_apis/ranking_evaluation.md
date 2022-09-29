@@ -10,7 +10,7 @@
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你必须对目标数据流、索引或别名有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你必须对目标数据流、索引或别名有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 描述
 
@@ -46,7 +46,7 @@
   （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
   1. `all`
-  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
   2. `open`
   匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
   3. `closed`
@@ -157,7 +157,7 @@ GET /my-index-000001/_rank_eval
 3. `"template_id": "match_one_field_query"`：引用预定义的模板
 4. `"params": {`：用于填充模板的参数
 
-你也可使用[存储的模板](/search_your_data/search_templates?id=创建一个搜索模板)。
+你也可使用[存储的模板](/search_your_data/search_templates#创建一个搜索模板)。
 
 ```bash
 GET /my_index/_rank_eval

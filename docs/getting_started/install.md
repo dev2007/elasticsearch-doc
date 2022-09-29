@@ -96,7 +96,9 @@ Windows:
 
 你可以通过 Elasticsearch REST API 提交 HTTP 请求，直接与集群交互。如果你安装和运行了 Kibana，你也可以打开 Kibana，并通过开发控制台（`Dev Console`）提交请求。
 
-?> 当您准备在自己的应用程序中开始使用 Elasticsearch 时，您可能想查看[Elasticsearch 语言客户端](https://www.elastic.co/guide/en/elasticsearch/client/index.html)。
+::: tip 提示
+当您准备在自己的应用程序中开始使用 Elasticsearch 时，您可能想查看[Elasticsearch 语言客户端](https://www.elastic.co/guide/en/elasticsearch/client/index.html)。
+:::
 
 ```bash
 GET /_cat/health?v=true
@@ -109,7 +111,9 @@ epoch      timestamp cluster       status node.total node.data shards pri relo i
 1565052807 00:53:27  elasticsearch green           3         3      6   3    0    0        0             0                  -                100.0%
 ```
 
-?> 如果仅有一个 Elasticsearch 单实例，集群状态会保持为黄色。一个单节点集群是功能完整的，但数据不能被复制到另一个节点以提供弹性。集群状态为绿色时，副本分片必定可用。如果集群状态为红色，某些数据不可用。
+::: tip 提示
+如果仅有一个 Elasticsearch 单实例，集群状态会保持为黄色。一个单节点集群是功能完整的，但数据不能被复制到另一个节点以提供弹性。集群状态为绿色时，副本分片必定可用。如果集群状态为红色，某些数据不可用。
+:::
 
 ## 使用 cURL 命令与 Elasticsearch 交互
 

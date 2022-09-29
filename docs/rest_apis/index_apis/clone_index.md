@@ -14,7 +14,7 @@ POST /my-index-000001/_clone/cloned-my-index-000001
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标索引必须有 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标索引必须有 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 - 为了复制索引，索引必须标记为只读，并且[集群健康](/rest_apis/cluster_apis/cluster_health)状态为 `green`（绿色）。
 
 例如，以下请求在 `` 上阻止写操作，所以它就能被复制。元数据变更，比如删除索引仍然是允许的。
@@ -28,7 +28,7 @@ PUT /my_source_index/_settings
 }
 ```
 
-在数据流的当前写索引不能被复制。为了复制当前写索引，这个数据流必须先被[翻转](/data_streams/data_streams?id=翻转)，这样一个新的写索引被创建，前一个写索引才能被复制。
+在数据流的当前写索引不能被复制。为了复制当前写索引，这个数据流必须先被[翻转](/data_streams/data_streams#翻转)，这样一个新的写索引被创建，前一个写索引才能被复制。
 
 ## 描述
 
@@ -52,11 +52,13 @@ POST /my_source_index/_clone/my_target_index
 
 一旦将目标索引添加到集群状态，上述请求将立即返回——它不会等待复制操作开始。
 
-!> 索引只有满足以下要求才能被复制：
+::: danger 警告
+索引只有满足以下要求才能被复制：
+
 - 目标索引不存在
 - 源索引的主分片数与目标索引一致
 - 处理复制进程的节点必须有足够的可用磁盘空间来容纳现有索引的第二个副本
-
+:::
 `_clone` API 类似[创建索引 API](/rest_apis/index_apis/create_index)，也为目标索引接受参数 `settings` 和 `aliases`：
 
 ```bash
@@ -83,9 +85,9 @@ POST /my_source_index/_clone/my_target_index
 
 一旦主节点被分配了，它的状态会变为 `initializing`（初始化中），拆分过程开始。当拆分操作完成，分片会变为 `active`（激活）。这时，Elasticsearch 会尝试分配任何副本，并可能决定主分片重定位到另一个节点。
 
-### 等待激活分片
+### 等待活动分片
 
-由于拆分操作创建一个新索引来拆分分片进去，所以在索引创建的设置[等待激活分片](/index_apis/create_index?id=等待激活分片)也应用于拆分索引操作。
+由于拆分操作创建一个新索引来拆分分片进去，所以在索引创建的设置[等待活动分片](/index_apis/create_index#等待活动分片)也应用于拆分索引操作。
 
 ## 路径参数
 
@@ -105,7 +107,7 @@ POST /my_source_index/_clone/my_target_index
 4. 不能以 `-`、`_`、`+` 开头
 5. 不能是 `.` 或 `..`
 6. 长度不能超过 255 字节（注意是字节，所以多字节字符会更快达到 255 的限制）
-7. 名字以 `.` 开头不推荐，除非由插件管理的[隐藏索引](/index_modules/index_modules)和内部索引
+7. 名字以 `.` 开头不推荐，除非由插件管理的[隐藏索引](/index_modules)和内部索引
 
 ## 查询参数
 
@@ -113,10 +115,10 @@ POST /my_source_index/_clone/my_target_index
 （可选，字符串）在操作执行之前必须活动的分片复制数量。设置为 `all` 或任何正整数，最大值为索引分片总数（`number_of_replicas+1`）。默认为：1，主分片。
 
 - `master_timeout`
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 - `timeout`
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 请求体
 
@@ -126,6 +128,6 @@ POST /my_source_index/_clone/my_target_index
 
 - `settings`
 
-（可选，[索引设置对象](/index_modules/index_modules?id=索引设置)）目标索引配置选项。参阅[索引设置](/index_modules/index_modules?id=索引设置)。
+（可选，[索引设置对象](/index_modules#索引设置)）目标索引配置选项。参阅[索引设置](/index_modules#索引设置)。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-clone-index.html)

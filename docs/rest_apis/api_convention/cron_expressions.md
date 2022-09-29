@@ -8,11 +8,13 @@ cron 表达式是以下格式的字符串：
 
 Elasticsearch 使用来自 [Quartz 任务调度器](https://quartz-scheduler.org/)的 cron 解析器。有关编写 Quartz cron 表达式的更多信息，参阅 [Quartz CronTrigger 教程](http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html)。
 
-?> 你可以使用 [elasticsearch-croneval](/command_line_tools/elasticsearch-croneval) 命令行工具校验你的 cron 表达式。
+::: tip 提示
+可以使用 [elasticsearch-croneval](/command_line_tools/elasticsearch-croneval) 命令行工具校验你的 cron 表达式。
+:::
 
 ## Cron 表达式元素
 
-除了 `year`（年），所有元素都是必需的。有关允许的特殊字符的信息，参阅 [Cron 特殊字符](/rest_apis/api_convention/cron_expressions?id=Cron-特殊字符)。
+除了 `year`（年），所有元素都是必需的。有关允许的特殊字符的信息，参阅 [Cron 特殊字符](/rest_apis/api_convention/cron_expressions#Cron-特殊字符)。
 
 - `<seconds>`
 （必需的） 有效值： `0`-`59` 以及特殊字符 `,` `-` `*` `/`

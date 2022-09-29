@@ -4,7 +4,9 @@
 
 JSON 用于计算机很棒。即使它的显示格式很好，但试图在数据中找到关系也是乏味的。人类的眼睛，尤其是在看终端时，需要紧凑和对齐的文本。紧凑和对齐文本（CAT）API 旨在满足这一需求。
 
-!> cat API 仅用于使用 [Kibana 控制台](https://www.elastic.co/guide/en/kibana/7.16/console-kibana.html)或命令行的人使用。它们*不*适用于应用程序。对于应用程序使用，我们建议使用相应的 JSON API。
+::: danger 警告
+cat API 仅用于使用 [Kibana 控制台](https://www.elastic.co/guide/en/kibana/7.16/console-kibana.html)或命令行的人使用。它们*不*适用于应用程序。对于应用程序使用，我们建议使用相应的 JSON API。
+:::
 
 所有 cat 命令都接受查询字符串参数 `help` 以查看它们提供的所有标题和信息，而 `/_cat` 命令单独列出了所有可用的命令。
 
@@ -42,7 +44,9 @@ ip   |   | ip address
 node | n | node name
 ```
 
-?> 如果使用任何可选的 url 参数，则不支持 `help`。例如 `GET _cat/shards/my-index-000001?help` 或 `GET _cat/indices/my-index-*?help` 会导致错误。使用 `GET _cat/shards?help` 或 `GET _cat/indices?help` 替代。
+::: tip 提示
+如果使用任何可选的 url 参数，则不支持 `help`。例如 `GET _cat/shards/my-index-000001?help` 或 `GET _cat/indices/my-index-*?help` 会导致错误。使用 `GET _cat/shards?help` 或 `GET _cat/indices?help` 替代。
+:::
 
 ### 头（Headers）
 
@@ -82,11 +86,11 @@ yellow open   my-index-000001  u8FNjxh8Rfy_awN11oDKYQ   1   1       1200        
 green  open   my-index-000002  nYFWZEO7TUiOjLQXBaYJpA   1   0          0            0        230          230
 ```
 
-如果你想修改 [time units](/rest_apis/api_convention/common_options?id=时间单位)，使用 `time` 参数。
+如果你想修改 [time units](/rest_apis/api_convention/common_options#时间单位)，使用 `time` 参数。
 
-如果你想修改 [size units](/rest_apis/api_convention/common_options?id=无单位数量)，使用 `size` 参数。
+如果你想修改 [size units](/rest_apis/api_convention/common_options#无单位数量)，使用 `size` 参数。
 
-如果你想修改 [byte units](/rest_apis/api_convention/common_options?id=字节大小单位)，使用 `bytes` 参数。
+如果你想修改 [byte units](/rest_apis/api_convention/common_options#字节大小单位)，使用 `bytes` 参数。
 
 ### 以文本（text）、json、smile、yaml 或 cbor 形式响应
 

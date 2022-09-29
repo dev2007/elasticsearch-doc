@@ -14,7 +14,7 @@ GET /my-index-000001/_recovery
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `monitor` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `monitor` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 描述
 

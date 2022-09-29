@@ -12,7 +12,7 @@ POST /my-index-000001/_open
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标索引必须有 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标索引必须有 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 描述
 
@@ -30,11 +30,11 @@ POST /my-index-000001/_open
 
 关闭的索引会消耗显著数量的硬盘空间，这在托管环境中可能会造成问题。通过集群设置 API 将 `cluster.indices.close.enable` 设置为 `false`，可以禁用关闭索引。默认值为 `true`。
 
-在7.12.0及更早版本中，无法关闭数据流上的当前写入索引。为了关闭当前写索引，数据流必须先被[翻转](/data_streams/data_streams?id=翻转)以便创建新的写入索引，这样之前的写入索引能被关闭。此限制从 7.12.1 不再适用。
+在7.12.0及更早版本中，无法关闭数据流上的当前写入索引。为了关闭当前写索引，数据流必须先被[翻转](/data_streams/data_streams#翻转)以便创建新的写入索引，这样之前的写入索引能被关闭。此限制从 7.12.1 不再适用。
 
-## 等待激活分片
+## 等待活动分片
 
-因为打开或关闭索引会分配其分片，在创建索引时，[`wait_for_active_shards`](/index_apis/create_index?id=等待激活分片) 设置也适用于 `_open` 和 `_close` 索引操作。
+因为打开或关闭索引会分配其分片，在创建索引时，[`wait_for_active_shards`](/index_apis/create_index#等待活动分片) 设置也适用于 `_open` 和 `_close` 索引操作。
 
 ## 路径参数
 
@@ -59,7 +59,7 @@ POST /my-index-000001/_open
 （可选，字符串）通配符表达式能匹配的索引类型。如果请求目标为数据流，则此参数确定通配符表达式是否匹配隐藏的数据流则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔列表的值，如 `open,hidden`。有效的值有：
 
 1. `all`
-匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
 2. `open`
 匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
 3. `closed`
@@ -77,13 +77,13 @@ POST /my-index-000001/_open
 - `wait_for_active_shards`
 （可选，字符串）在操作执行之前必须活动的分片复制数量。设置为 `all` 或任何正整数，最大值为索引分片总数（`number_of_replicas+1`）。值 `index-setting` 指依据索引设置 `index.write.wait_for_active_shards` 等待。默认：`0`，意味着不等待任何分片准备。
 
-参阅[激活分片](/rest_apis/document_apis/index?id=激活分片)。
+参阅[活动分片](/rest_apis/document_apis/esindex#活动分片)。
 
 - `master_timeout`
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 - `timeout`
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 示例
 

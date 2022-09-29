@@ -24,7 +24,7 @@ brew install elastic/tap/elasticsearch-full
 | :-- | :-- | :-- | :-- |
 |home| Elasticsearch 主目录或 `$ES_HOME`| `/usr/local/var/homebrew/linked/elasticsearch-full`| |
 |bin| 二进制脚本，包括启动节点的 `elasticsearch` 和安装插件的 `elasticsearch-plugin`| `/usr/local/var/homebrew/linked/elasticsearch-full/bin`||
-|conf| 配置文件，包括 `elasticsearch.yml`| `/usr/local/etc/elasticsearch`|[ES_PATH_CONF](/set_up_elasticsearch/config?id=配置文件位置)|
+|conf| 配置文件，包括 `elasticsearch.yml`| `/usr/local/etc/elasticsearch`|[ES_PATH_CONF](/set_up_elasticsearch/config#配置文件位置)|
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`/usr/local/var/lib/elasticsearch`|`path.data`|
 |logs| 日志文件位置| `/usr/local/var/log/elasticsearch` | `path.logs`|
 |plugins| 插件文件位置。每个插件会包含在一个子目录中。| `/usr/local/var/homebrew/linked/elasticsearch/plugins`||

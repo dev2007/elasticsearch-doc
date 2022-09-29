@@ -14,13 +14,15 @@ POST /my-index-000001/_forcemerge
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 `maintenance` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 `maintenance` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)
 
 ## 描述
 
 使用强制合并 API 强制[合并](/index_modules/merge)一个或多个索引的分片。合并通过将部分片段合并在一起，减少了每个片段中的片段数，还释放了被删除文档所使用的空间。合并通常自动进行，但有时手动触发合并是有用的。
 
-!> **只有在完成对索引的写入后，才能对其调用强制合并**。强制合并可以产生非常大的（>5GB）段，并且如果继续写入这样的索引，那么自动合并策略将永远不会考虑这些段以用于将来合并，直到它们大部分由删除的文档组成。这可能会导致索引中保留非常大的段，从而导致磁盘使用率增加和搜索性能下降。
+::: danger 警告
+**只有在完成对索引的写入后，才能对其调用强制合并**。强制合并可以产生非常大的（>5GB）段，并且如果继续写入这样的索引，那么自动合并策略将永远不会考虑这些段以用于将来合并，直到它们大部分由删除的文档组成。这可能会导致索引中保留非常大的段，从而导致磁盘使用率增加和搜索性能下降。
+:::
 
 ### 在强制合并期间阻塞
 
@@ -61,7 +63,7 @@ POST /my-index-000001/_forcemerge
   （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
   1. `all`
-  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
   2. `open`
   匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
   3. `closed`
@@ -93,7 +95,9 @@ POST /my-index-000001/_forcemerge
 
   在 Lucene 中，文档不会从段中删除；只是标记为已删除。在合并过程中，将创建一个不包含这些文档删除的新段。
 
-  ?> 此参数**不会**覆写设置 `index.merge.policy.expunge_deletes_allowed`。
+  ::: tip 提示
+  此参数**不会**覆写设置 `index.merge.policy.expunge_deletes_allowed`。
+  :::
 
 ## 示例
 

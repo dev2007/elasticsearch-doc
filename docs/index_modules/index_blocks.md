@@ -12,11 +12,13 @@
 
 - `index.blocks.read_only_allow_delete`
 
-类似于 `index.blocks.read_only`，但也允许删除索引以获取更多资源。[基于硬盘的分片分配器](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings?id=基于硬盘的分片分配设置)可以自动添加和移除块。
+类似于 `index.blocks.read_only`，但也允许删除索引以获取更多资源。[基于硬盘的分片分配器](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings#基于硬盘的分片分配设置)可以自动添加和移除块。
 
 从索引中删除文档以释放资源——而不是删除索引本身——随着时间推移会增加索引大小。当 `index.blocks.read_only_allow_delete` 设置为 `true` 时，删除索引是不允许的。然而，删除索引自身会释放只读索引块，并使资源几乎立即可用。
 
-!> 在磁盘利用率低于高水位线时，Elasticsearch 自动添加和移除只读索引块，由 [cluster.routing.allocation.disk.watermark.flood_stage](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings) 控制。
+::: danger 警告
+在磁盘利用率低于高水位线时，Elasticsearch 自动添加和移除只读索引块，由 [cluster.routing.allocation.disk.watermark.flood_stage](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings) 控制。
+:::
 
 - `index.blocks.read`
 
@@ -78,7 +80,7 @@ PUT /my-index-000001/_block/write
 （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
 1. `all`
-匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
 2. `open`
 匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
 3. `closed`
@@ -96,11 +98,11 @@ PUT /my-index-000001/_block/write
 
 - `master_timeout`
 
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 - `timeout`
 
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 例子
 

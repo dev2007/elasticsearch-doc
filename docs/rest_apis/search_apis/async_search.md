@@ -23,7 +23,7 @@ POST /sales*/_async_search?size=0
 }
 ```
 
-响应包含正在执行的搜索的标识符。你可以使用此 ID 稍后检索搜索的最终结果。当前可用的搜索结果将作为[响应](/rest_apis/search_apis/search?id=响应体)对象的一部分返回。
+响应包含正在执行的搜索的标识符。你可以使用此 ID 稍后检索搜索的最终结果。当前可用的搜索结果将作为[响应](/rest_apis/search_apis/search#响应体)对象的一部分返回。
 
 ```bash
 {
@@ -61,15 +61,19 @@ POST /sales*/_async_search?size=0
 5. `"successful" : 3`：有多少分片成功完成了搜索
 6. `"value" : 157483`：当前有多少文档与查询匹配，这些文档属于已完成搜索的分片
 
-?> **注意** 虽然查询不再运行，因此 `is_running` 设置为 `false`，但结果可能是部分的。如果某些分片返回结果后搜索失败，或者协调异步搜索的节点死亡，就会发生这种情况。
+::: tip 提示
+虽然查询不再运行，因此 `is_running` 设置为 `false`，但结果可能是部分的。如果某些分片返回结果后搜索失败，或者协调异步搜索的节点死亡，就会发生这种情况。
+:::
 
 通过提供 `wait_for_completion_timeout` 参数（默认为 `1` 秒），可以阻止并等待搜索完成，直到达到某个超时。当异步搜索在这样的超时内完成时，响应将不包括ID，因为结果不存储在集群中。`keep_on_completion` 参数（默认为 `false`）可以设置为 `true`，以请求存储结果，以便在 `wait_for_completion_timeout` 内搜索完成时，也可以进行后续检索。
 
 你还可以通过 `keep_alive` 参数指定异步搜索需要多长时间可用，该参数默认为 `5d`（五天）。在此期间之后，将删除正在进行的异步搜索和任何保存的搜索结果。
 
-?> **注意** 当结果的主要排序是索引字段时，分片将根据其为该字段保留的最小值和最大值进行排序，因此部分结果将根据请求的排序标准可用。
+::: tip 提示
+当结果的主要排序是索引字段时，分片将根据其为该字段保留的最小值和最大值进行排序，因此部分结果将根据请求的排序标准可用。
+:::
 
-提交异步搜索 API 支持与搜索 API 相同的[参数]((/rest_apis/search_apis/search?id=查询参数)，尽管有些参数具有不同的默认值：
+提交异步搜索 API 支持与搜索 API 相同的[参数]((/rest_apis/search_apis/search#查询参数)，尽管有些参数具有不同的默认值：
 
 - `batched_reduce_size` 默认为 `5`：这会影响部分结果可用的频率，这会在碎片结果减少时发生。每次协调节点收到一定数量的新碎片响应（默认情况下为 `5`）时，都会执行部分减少。
 
@@ -79,13 +83,17 @@ POST /sales*/_async_search?size=0
 
 - `ccs_minimize_roundtrips` 默认为 `false`，且是唯一支持的值。
 
-!> **警告** 异步搜索不支持仅包含[建议部分](/rest_apis/search_apis/suggesters)的[滚动](/search_your_data/paginate_search_results?id=滚动搜索结果)或搜索请求。仅当 `ccs_minimize_roundtrips` 设置为 `false` 时，才支持跨群集搜索。
+::: danger 警告
+异步搜索不支持仅包含[建议部分](/rest_apis/search_apis/suggesters)的[滚动](/search_your_data/paginate_search_results#滚动搜索结果)或搜索请求。仅当 `ccs_minimize_roundtrips` 设置为 `false` 时，才支持跨群集搜索。
+:::
 
-?> **注意** 默认情况下，7.x 版本 Elasticsearch 不会限制存储的异步搜索响应的大小。存储大量异步响应可能会破坏集群的稳定性。如果要设置最大允许大小的限制，请更改搜 `search.max_async_search_response_size` 集群级设置。之后，尝试存储大于此设置的异步响应将导致错误。
+::: tip 提示
+默认情况下，7.x 版本 Elasticsearch 不会限制存储的异步搜索响应的大小。存储大量异步响应可能会破坏集群的稳定性。如果要设置最大允许大小的限制，请更改搜 `search.max_async_search_response_size` 集群级设置。之后，尝试存储大于此设置的异步响应将导致错误。
+:::
 
 ## 获取异步搜索
 
-获取异步搜索 API 根据之前提交的异步搜索请求的 id 检索其结果。如果启用了 Elasticsearch 安全功能，则对特定异步搜索结果的访问仅限于[提交该请求的用户或 API 密钥](/secure_the_elastic_stack/limitations?id=用户和-API-密钥的资源共享检查)。
+获取异步搜索 API 根据之前提交的异步搜索请求的 id 检索其结果。如果启用了 Elasticsearch 安全功能，则对特定异步搜索结果的访问仅限于[提交该请求的用户或 API 密钥](/secure_the_elastic_stack/limitations#用户和-API-密钥的资源共享检查)。
 
 ```bash
 GET /_async_search/FmRldE8zREVEUzA2ZVpUeGs2ejJFUFEaMkZ5QTVrSTZSaVN3WlNFVmtlWHJsdzoxMDc=

@@ -1,12 +1,14 @@
 # 使用 Debian 包安装 Elasticsearch
 
-Elasticsearch 的 Debian 包可以[从我们的网站](/set_up_elasticsearch/installing_elasticsearch/debian?id=手工下载和安装-Debian-包)或者从[我们的 APT 仓库](/set_up_elasticsearch/installing_elasticsearch/debian?id=从-APT-仓库安装)下载。它可以用于在任何基于 Debian 的系统（如 Debian 和 Ubuntu）上安装 Elasticsearch。
+Elasticsearch 的 Debian 包可以[从我们的网站](/set_up_elasticsearch/installing_elasticsearch/debian#手工下载和安装-Debian-包)或者从[我们的 APT 仓库](/set_up_elasticsearch/installing_elasticsearch/debian#从-APT-仓库安装)下载。它可以用于在任何基于 Debian 的系统（如 Debian 和 Ubuntu）上安装 Elasticsearch。
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 
 Elasticsearch 的最新稳定版本，能在 [Elasticsearch 下载页面](https://www.elastic.co/downloads/elasticsearch)找到。其他版本能在[历史发布页面](https://www.elastic.co/downloads/past-releases)找到。
 
-?> Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
+::: tip 提示
+Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
+:::
 
 ## 导入 Elasticsearch PGP 密钥
 
@@ -47,11 +49,15 @@ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee 
 sudo apt-get update && sudo apt-get install elasticsearch
 ```
 
-!> 如果 Elasticsearch 仓库中存在两条相同的条目，你在 `apt-get update` 操作时，会看到如下错误：  
+::: danger 警告
+如果 Elasticsearch 仓库中存在两条相同的条目，你在 `apt-get update` 操作时，会看到如下错误：  
 `Duplicate sources.list entry https://artifacts.elastic.co/packages/7.x/apt/ ...`  
 检查 `/etc/apt/sources.list.d/elasticsearch-7.x.list` 的重复条目，或者在 `/etc/apt/sources.list.d/` 中的文件和 `/etc/apt/sources.list` 文件中定位重复条目。
+:::
 
-?> 在基于 systemd 的发行版上，安装脚本尝试设置内核参数（如，`vm.max_map_count`）；你可以通过屏蔽 systemd-sysctl.service 单位来跳过这个操作。
+::: tip 提示
+在基于 systemd 的发行版上，安装脚本尝试设置内核参数（如，`vm.max_map_count`）；你可以通过屏蔽 systemd-sysctl.service 单位来跳过这个操作。
+:::
 
 ## 手工下载和安装 Debian 包
 
@@ -74,7 +80,9 @@ sudo dpkg -i elasticsearch-7.11.1-amd64.deb
 action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
 ```
 
-!> 如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
+::: danger 警告
+如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
+:::
 
 ## SysV `init` 对 `systemd`
 
@@ -202,7 +210,9 @@ Debian 包也有一个系统配置文件（`/etc/default/elasticsearch`），它
 |`ES_JAVA_OPTS`|你想应用的任何其他 JVM 系统属性。|
 |`RESTART_ON_UPGRADE`|在包升级时配置重启，默认为 `false`。这意味着你必须在手工安装包后重启你的 Elasticseach 实例。这样做的原因是为了确保集群的升级不会导致持续的分片重分配，进而导致的高网络流量和降低了集群的响应时间。|
 
-?> 使用 `systemd` 的发行版本要求需要通过 `systemd` 配置系统资源限制，而不是通过 `/etc/sysconfig/elasticsearch` 文件。更多信息，请参阅 [Systemd 配置](/set_up_elasticsearch/important_system_config/system?id=Systemd-配置)。
+::: tip 提示
+使用 `systemd` 的发行版本要求需要通过 `systemd` 配置系统资源限制，而不是通过 `/etc/sysconfig/elasticsearch` 文件。更多信息，请参阅 [Systemd 配置](/set_up_elasticsearch/important_system_config/system#Systemd-配置)。
+:::
 
 ## Debian 包目录结构
 
@@ -212,7 +222,7 @@ Debian 包将配置文件、日志和数据目录放在基于 Debian 系统的�
 | :-- | :-- | :-- | :-- |
 |home| Elasticsearch 主目录或 `$ES_HOME`| `/usr/share/elasticsearch`| |
 |bin| 二进制脚本，包括启动节点的 `elasticsearch` 和安装插件的 `elasticsearch-plugin`| `/usr/share/elasticsearch/bin`||
-|conf| 配置文件，包括 `elasticsearch.yml`| `/etc/elasticsearch`|[ES_PATH_CONF](/set_up_elasticsearch/config?id=配置文件位置)|
+|conf| 配置文件，包括 `elasticsearch.yml`| `/etc/elasticsearch`|[ES_PATH_CONF](/set_up_elasticsearch/config#配置文件位置)|
 |conf| 环境变量，包括堆大小，文件描述符。| `/etc/default/elasticsearch`||
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`/var/lib/elasticsearch`|`path.data`|
 |jdk|用于运行 Elasticsearch 的捆绑 Java 开发工具包。可以通过在 `/etc/default/elasticsearch` 中覆盖 `JAVA_HOME`环境变量。|`/usr/share/elasticsearch/jdk`||

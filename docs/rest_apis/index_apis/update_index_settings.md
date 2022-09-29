@@ -1,6 +1,6 @@
 # 更新索引设置
 
-实时修改[动态索引设置](/index_modules/index_modules)。
+实时修改[动态索引设置](/index_modules)。
 
 对数据流，索引设置更改默认应用于所有备份索引。
 
@@ -19,7 +19,7 @@ PUT /my-index-000001/_settings
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 路径参数
 
@@ -40,7 +40,7 @@ PUT /my-index-000001/_settings
 （可选，字符串）通配符表达式能匹配的索引类型。如果请求目标为数据流，则此参数确定通配符表达式是否匹配隐藏的数据流则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔列表的值，如 `open,hidden`。有效的值有：
 
 1. `all`
-匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
 2. `open`
 匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
 3. `closed`
@@ -66,17 +66,17 @@ PUT /my-index-000001/_settings
 
 - `master_timeout`
 
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 - `timeout`
 
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待响应的时间。如果在超时过期之前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 请求体
 
 - `settings`
 
-（可选，[索引设置对象](/index_modules/index_modules?id=索引设置)）索引配置选项。参阅[索引设置](/index_modules/index_modules?id=索引设置)。
+（可选，[索引设置对象](/index_modules#索引设置)）索引配置选项。参阅[索引设置](/index_modules#索引设置)。
 
 ## 示例
 
@@ -93,7 +93,7 @@ PUT /my-index-000001/_settings
 }
 ```
 
-在[索引模块](/index_modules/index_modules)中可以找到每个索引设置的列表，这些设置可以在活动索引上动态更新。
+在[索引模块](/index_modules)中可以找到每个索引设置的列表，这些设置可以在活动索引上动态更新。
 
 要防止更新已有设置，可以将 `preserve_existing` 请求参数设置为 `true`。
 
@@ -135,9 +135,12 @@ POST /my-index-000001/_forcemerge?max_num_segments=5
 
 要添加分析器，必须关闭索引，定义分析器，然后重新打开索引。
 
-?> 你不能关闭数据流的写索引。
-要为数据流的写入索引和将来的备份索引更新分析器，请在[流使用的索引模板](data_streams/set_up_a_data_stream?id=第三步_创建一个索引模板)中更新分析器。然后[翻转数据流](/data_streams/use_a_data_stream?id=手动翻转数据流)，将新的分析器应用于流的写索引和未来的备份索引。这会影响滚动更新后添加到流中的搜索和任何新数据。但是，它不会影响数据流的支持索引或其现有数据。
-要更改现有备份索引的分析器，必须创建新的数据流并将数据重新索引到其中。参阅[使用重索引更改映射或设置](/data_streams/change_mappings_and_settings_for_a_data_stream?id=使用重索引更改映射或设置)。
+::: tip 提示
+你不能关闭数据流的写索引。
+:::
+
+要为数据流的写入索引和将来的备份索引更新分析器，请在[流使用的索引模板](data_streams/set_up_a_data_stream#第三步_创建一个索引模板)中更新分析器。然后[翻转数据流](/data_streams/use_a_data_stream#手动翻转数据流)，将新的分析器应用于流的写索引和未来的备份索引。这会影响滚动更新后添加到流中的搜索和任何新数据。但是，它不会影响数据流的支持索引或其现有数据。
+要更改现有备份索引的分析器，必须创建新的数据流并将数据重新索引到其中。参阅[使用重索引更改映射或设置](/data_streams/change_mappings_and_settings_for_a_data_stream#使用重索引更改映射或设置)。
 
 例如，以下命令将为索引 `my-index-000001` 添加内容分析器：
 

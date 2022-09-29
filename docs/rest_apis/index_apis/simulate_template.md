@@ -12,7 +12,7 @@ POST /_index_template/_simulate/template_1
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `manage_index_templates` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=集群权限)。
+- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `manage_index_templates` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)。
 
 ## 路径参数
 
@@ -28,7 +28,7 @@ POST /_index_template/_simulate/template_1
 
 - `master_timeout`
 
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 请求体
 
@@ -42,7 +42,7 @@ POST /_index_template/_simulate/template_1
 
     - `hidden`
 
-      （可选，布尔值）如果为 `true`，数据流是[隐藏的](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)。默认为 `false`。
+      （可选，布尔值）如果为 `true`，数据流是[隐藏的](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)。默认为 `false`。
 
 - `index_patterns`
 
@@ -88,11 +88,11 @@ POST /_index_template/_simulate/template_1
 
           - `is_hidden`
 
-            （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax?id=隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
+            （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax#隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
 
           - `is_write_index`
 
-            （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases?id=写索引)。默认为 `false`。
+            （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases#写索引)。默认为 `false`。
 
           - `routing`
 
@@ -160,11 +160,11 @@ POST /_index_template/_simulate/template_1
 
           - `is_hidden`
 
-          （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax?id=隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
+          （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax#隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
 
           - `is_write_index`
 
-          （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases?id=写索引)。默认为 `false`。
+          （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases#写索引)。默认为 `false`。
 
           - `routing`
 
@@ -187,7 +187,7 @@ POST /_index_template/_simulate/template_1
 
     - `settings`
 
-      (可选，[索引设置对象](/index_modules/index_modules?id=索引设置))索引的配置选项。参阅[索引设置](/index_modules/index_modules?id=索引设置)。
+      (可选，[索引设置对象](/index_modules#索引设置))索引的配置选项。参阅[索引设置](/index_modules#索引设置)。
 
 ## 示例
 

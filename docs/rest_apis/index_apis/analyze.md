@@ -22,7 +22,7 @@ GET /_analyze
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对指定索引必须有 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你对指定索引必须有 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 路径参数
 
@@ -207,7 +207,9 @@ GET /_analyze
 
 如果你想获得更高级的细节，请将 `explain`设置为 `true` (默认为 `false`)。它会输出每个标记的所有标记属性。你可以通过设置选项 `attributes` 来过滤你想输出的标记属性。
 
-?> 更多详情信息的格式在 Lucene 中被标记为实验性的，将来可能会改变。
+::: tip 提示
+更多详情信息的格式在 Lucene 中被标记为实验性的，将来可能会改变。
+:::
 
 ```bash
 GET /_analyze

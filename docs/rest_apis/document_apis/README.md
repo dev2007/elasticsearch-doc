@@ -4,7 +4,7 @@
 
 ## 单文档 API
 
-- [索引](/rest_apis/document_apis/index)
+- [索引](/rest_apis/document_apis/esindex)
 - [获取](/rest_apis/document_apis/get)
 - [删除](/rest_apis/document_apis/delete)
 - [更新](/rest_apis/document_apis/update)

@@ -16,7 +16,7 @@ GET /my-index-000001/_mapping/field/user
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或索引别名必须有 `view_index_metadata` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或索引别名必须有 `view_index_metadata` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 路径参数
 
@@ -41,7 +41,7 @@ GET /my-index-000001/_mapping/field/user
 （可选，字符串）通配符表达式能匹配的索引类型。如果请求目标为数据流，则此参数确定通配符表达式是否匹配隐藏的数据流则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔列表的值，如 `open,hidden`。有效的值有：
 
 1. `all`
-匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
 2. `open`
 匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
 3. `closed`

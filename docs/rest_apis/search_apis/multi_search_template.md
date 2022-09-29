@@ -1,6 +1,6 @@
 # 多搜索 API
 
-使用单个请求运行多个[模板搜索](/search_your_data/search_templates?id=运行多模板搜索)。
+使用单个请求运行多个[模板搜索](/search_your_data/search_templates#运行多模板搜索)。
 
 ```bash
 GET my-index/_msearch/template
@@ -22,7 +22,7 @@ GET my-index/_msearch/template
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters?id=配置跨集群搜索权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters#配置跨集群搜索权限)。
 
 ## 路径参数
 
@@ -36,10 +36,10 @@ GET my-index/_msearch/template
 ## 查询参数
 
 - `ccs_minimize_roundtrips`
-  （可选，布尔值）如果为 `true`，在执行跨集群搜索（CCS）请求时，协调节点和远程集群之间的网络往返行程最小化。参阅 [跨群集搜索如何处理网络延迟](/search_your_data/search_across_clusters?id=跨群集搜索如何处理网络延迟)。默认为 `true`。
+  （可选，布尔值）如果为 `true`，在执行跨集群搜索（CCS）请求时，协调节点和远程集群之间的网络往返行程最小化。参阅 [跨群集搜索如何处理网络延迟](/search_your_data/search_across_clusters#跨群集搜索如何处理网络延迟)。默认为 `true`。
 
 - `max_concurrent_searches`
-  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearchnode?id=数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearchthread_pools), 10)))。
+  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearchnode#数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearchthread_pools), 10)))。
 
 - `rest_total_hits_as_int`
   (可选，布尔值)指示是否 `hits.total` 应在搜索响应中呈现为整数或对象。默认为 `false`，返回一个对象。
@@ -83,7 +83,7 @@ GET my-index/_msearch/template
     （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
     1. `all`
-    匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+    匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
     2. `open`
     匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
     3. `closed`

@@ -1,10 +1,14 @@
 # 索引 API
 
-!> 参阅[移除映射类型](/mapping/removal_of_mapping_types)
+::: danger 警告
+参阅[移除映射类型](/mapping/removal_of_mapping_types)
+:::
 
 将JSON文档添加到指定的数据流或索引，并使其可搜索。如果目标是索引，并且文档已经存在，则请求将更新文档并增加其版本。
 
-?> 你不能使用索引 API 将现有文档的更新请求发送到数据流。参阅[通过查询更新数据流中的文档](/data_streams/use_a_data_stream?id=通过查询更新数据流中的文档)以及[更新或删除备份索引中的文档](/data_streams/use_a_data_stream?id=更新或删除备份索引中的文档)。
+::: tip 提示
+你不能使用索引 API 将现有文档的更新请求发送到数据流。参阅[通过查询更新数据流中的文档](/data_streams/use_a_data_stream#通过查询更新数据流中的文档)以及[更新或删除备份索引中的文档](/data_streams/use_a_data_stream#更新或删除备份索引中的文档)。
+:::
 
 ## 请求
 
@@ -16,11 +20,13 @@
 
 `POST /<target>/_create/<_id>`
 
-!> 不能使用 `PUT /<target>/_doc/<_id>` 请求格式向数据流添加新文档。要指定文档ID，请改用 `PUT/<target>/_create/<_ID>` 格式。参阅[向数据流添加文档](/data_streams/use_a_data_stream?id=向数据流添加文档)。
+::: danger 警告
+不能使用 `PUT /<target>/_doc/<_id>` 请求格式向数据流添加新文档。要指定文档ID，请改用 `PUT/<target>/_create/<_ID>` 格式。参阅[向数据流添加文档](/data_streams/use_a_data_stream#向数据流添加文档)。
+:::
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或索引别名必须有[索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或索引别名必须有[索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
   - 要使用 `PUT /<target>/_doc/<_id>` 请求格式添加或覆盖文档，你必须有 `create`、`index` 或 `write` 索引权限。
   - 要使用 `POST /<target>/_ doc/`、`PUT /<target>/_create/<_id>` 或 `POST /<<target>/_create/<_ id>` 请求格式添加文档，你必须有 `create_doc`、`create`、`index` 或 `write` 索引权限。
@@ -34,7 +40,7 @@
 
   （必需，字符串）目标的数据流或索引名字。
 
-  如果目标不存在，并且与具有 [`data_stream` 定义的索引模板](/data_streams/set_up_a_data_stream?id=创建索引模板)的名称或通配符（*）模式匹配，则此请求将创建数据流。参阅[设置数据流](/data_streams/set_up_a_data_stream)。
+  如果目标不存在，并且与具有 [`data_stream` 定义的索引模板](/data_streams/set_up_a_data_stream#创建索引模板)的名称或通配符（*）模式匹配，则此请求将创建数据流。参阅[设置数据流](/data_streams/set_up_a_data_stream)。
 
   如果目标不存在且与数据流模板不匹配，则此请求将创建索引。
 
@@ -56,17 +62,19 @@
 
 - `if_seq_no`
 
-  （可选，整数）仅当文档具有此序列号时才执行此操作。参阅[乐观并发控制](/rest_apis/document_apis/index?id=乐观并发控制)。
+  （可选，整数）仅当文档具有此序列号时才执行此操作。参阅[乐观并发控制](/rest_apis/document_apis/esindex#乐观并发控制)。
 
 - `if_primary_term`
 
-  （可选，整数）仅当文档具有此主词语时才执行此操作。参阅[乐观并发控制](/rest_apis/document_apis/index?id=乐观并发控制)。
+  （可选，整数）仅当文档具有此主词语时才执行此操作。参阅[乐观并发控制](/rest_apis/document_apis/esindex#乐观并发控制)。
 
 - `op_type`
 
   （可选，枚举）设置为 `create`，仅在文档不存在时为其编制索引（*不存在则放置*）。如果具有指定 `_id` 的文档已经存在，索引操作将失败。与使用 `<index>/_create` 端点相同的逻辑。有效值：`index`, `create`。如果指定了文档 id，则默认为 `index`。否则，它默认为 `create`。
 
-?> **注意** 如果请求以数据流为目标，则 `op_type` 为 `create` 是必需的。参阅[向数据流添加文档](/data_streams/use_a_data_stream?id=向数据流添加文档)。
+::: tip 提示
+如果请求以数据流为目标，则 `op_type` 为 `create` 是必需的。参阅[向数据流添加文档](/data_streams/use_a_data_stream#向数据流添加文档)。
+:::
 
 - `pipeline`
 
@@ -82,11 +90,11 @@
 
 - `timeout`
 
-  （可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）请求等待以下操作的时间段：
+  （可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）请求等待以下操作的时间段：
 
-  - [自动创建索引](/rest_apis/document_apis/index?id=自动创建数据流和索引)
+  - [自动创建索引](/rest_apis/document_apis/esindex#自动创建数据流和索引)
   - [动态映射](/mapping/dynamic_mapping)更新
-  - [等待活动分片](/rest_apis/document_apis/index?id=活动分片)
+  - [等待活动分片](/rest_apis/document_apis/esindex#活动分片)
 
   默认为 `1m`（一分钟）。这保证了 Elasticsearch 在失败之前至少要等待超时。实际等待时间可能更长，尤其是在发生多次等待时。
 
@@ -102,7 +110,7 @@
 
   （可选，字符串）继续操作前必须处于活动状态的分片副本数。设置为 `all` 或任何正整数，上限为索引中分片的总数（`(number_of_replicas+1`）。默认为：`1`，代表主分片。
 
-  参阅[激活分片](/rest_apis/document_apis/index?id=激活分片)。
+  参阅[活动分片](/rest_apis/document_apis/esindex#活动分片)。
 
 - `require_alias`
 
@@ -128,7 +136,9 @@
 
   指示索引操作成功的碎片副本数。索引操作成功时，`successful` 至少为1。
 
-  ?> **注意** 索引操作成功返回时，​默认情况下副本分片可能不会全部启动，只有主节点是必须启动的。设置 `wait_for_active_shards` 以更改此默认行为。参阅[活动分片](/rest_apis/document_apis/index?id=活动分片)。
+::: tip 提示
+索引操作成功返回时，​默认情况下副本分片可能不会全部启动，只有主节点是必须启动的。设置 `wait_for_active_shards` 以更改此默认行为。参阅[活动分片](/rest_apis/document_apis/esindex#活动分片)。
+:::
 
 - `_shards.failed`
 
@@ -152,11 +162,11 @@
 
 - `_seq_no`
 
-  为索引操作分配给文档的序列号。序列号用于确保文档的旧版本不会覆盖新版本。参阅[乐观并发控制](/rest_apis/document_apis/index?id=乐观并发控制)。
+  为索引操作分配给文档的序列号。序列号用于确保文档的旧版本不会覆盖新版本。参阅[乐观并发控制](/rest_apis/document_apis/esindex#乐观并发控制)。
 
 - `_primary_term`
 
-  为索引操作分配给文档的主要词语。参阅[乐观并发控制](/rest_apis/document_apis/index?id=乐观并发控制)。
+  为索引操作分配给文档的主要词语。参阅[乐观并发控制](/rest_apis/document_apis/esindex#乐观并发控制)。
 
 - `result`
 
@@ -168,17 +178,21 @@
 
 ### 自动创建数据流和索引
 
-如果请求的目标不存在，并且匹配一个 [带 `data_stream` 定义的索引模板](/data_streams/set_up_a_data_stream?id=创建一个索引模板)，则索引操作会自动创建数据流。参阅[设置数据流](/data_streams/set_up_a_data_stream)。
+如果请求的目标不存在，并且匹配一个 [带 `data_stream` 定义的索引模板](/data_streams/set_up_a_data_stream#创建一个索引模板)，则索引操作会自动创建数据流。参阅[设置数据流](/data_streams/set_up_a_data_stream)。
 
 如果目标不存在并且与数据流模板不匹配，则操作会自动创建索引并应用任何匹配的[索引模板](/index_templates/index_templates)。
 
-?> **注意** Elasticsearch包括几个内置索引模板。要避免与这些模板发生命名冲突，参阅[避免索引模式冲突](/index_templates/index_templates)。
+::: tip 提示
+Elasticsearch包括几个内置索引模板。要避免与这些模板发生命名冲突，参阅[避免索引模式冲突](/index_templates/index_templates)。
+:::
 
 如果不存在映射，索引操作将创建动态映射。默认情况下，如果需要，新字段和对象将自动添加到映射中。有关字段映射的更多信息，参阅[映射](/mapping/mapping)和[更新映射](/rest_apis/index_apis/update_mapping) API。
 
 自动创建索引由设置 `action.auto_create_index` 控制。此设置默认为 `true`，允许自动创建任何索引。您可以修改此设置以明确允许或阻止自动创建与指定模式匹配的索引，或者将其设置为 `false` 以完全禁用自动创建索引。指定要允许的模式的逗号分隔列表，或使用 `+` 或 `-` 作为每个模式的前缀，以指示是允许还是阻止该模式。当指定列表时，默认行为是不允许。
 
-!> 设置 `action.auto_create_index` 只影响自动创建索引。它不影响创建数据流。
+::: danger 警告
+设置 `action.auto_create_index` 只影响自动创建索引。它不影响创建数据流。
+:::
 
 ```bash
 PUT _cluster/settings
@@ -267,7 +281,9 @@ POST my-index-000001/_doc?routing=kimchy
 
 设置显式映射时，还可以使用 `_routing` 字段指导索引操作，以从文档本身提取路由值。这需要额外的文档解析传递（非常小的）开销。如果定义了 `_routing` 映射并将其设置为 `required（必需的）`，则如果未提供或提取路由值，索引操作将失败。
 
-?> **注意** 数据流不支持自定义路由，除非它们是在模板中启用 `allow_custom_routing` 设置的情况下创建的。
+::: tip 提示
+数据流不支持自定义路由，除非它们是在模板中启用 `allow_custom_routing` 设置的情况下创建的。
+:::
 
 #### 分布式
 
@@ -333,7 +349,9 @@ PUT my-index-000001/_doc/1?version=2&version_type=external
 }
 ```
 
-?> **注意** 版本控制是完全实时的，不受搜索操作的近实时方面的影响。如果未提供版本，则执行操作时不进行任何版本检查。
+::: tip 提示
+版本控制是完全实时的，不受搜索操作的近实时方面的影响。如果未提供版本，则执行操作时不进行任何版本检查。
+:::
 
 在前面的示例中，操作将成功，因为提供的版本 2 高于当前文档版本 1。如果文档已经更新，并且其版本设置为 2 或更高，索引命令将失败并导致冲突（409  http状态代码）。
 
@@ -351,7 +369,9 @@ PUT my-index-000001/_doc/1?version=2&version_type=external
 
   仅当给定版本等于或高于存储文档的版本时，才为文档编制索引。如果没有现有文档，操作也会成功。给定的版本将用作新版本，并与新文档一起存储。提供的版本必须是非负的长数字。
 
-  ?> **注意** `external_gte` 版本类型用于特殊用例，应谨慎使用。如果使用不当，可能会导致数据丢失。还有另一个选项，`force`，不推荐使用，因为它会导致主分片和副本分片分离。
+  ::: tip 提示
+  `external_gte` 版本类型用于特殊用例，应谨慎使用。如果使用不当，可能会导致数据丢失。还有另一个选项，`force`，不推荐使用，因为它会导致主分片和副本分片分离。
+  :::
 
 ## 示例
 

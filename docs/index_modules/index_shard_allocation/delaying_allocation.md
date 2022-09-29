@@ -10,7 +10,7 @@
 
 这些操作旨在通过确保每个分片尽快完全复制，以保护集群避免数据丢失。
 
-即使我们在[节点级别](/set_up_elasticsearch/configuring_elasticsearchindex_recovery_settings)和[集群级别](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings?id=集群级分片分配设置)限制并发恢复，这种“分片洗牌”仍然会给集群带来大量额外负载，如果丢失的节点可能会很快返回，这可能是不必要的。想象以下场景：
+即使我们在[节点级别](/set_up_elasticsearch/configuring_elasticsearchindex_recovery_settings)和[集群级别](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings#集群级分片分配设置)限制并发恢复，这种“分片洗牌”仍然会给集群带来大量额外负载，如果丢失的节点可能会很快返回，这可能是不必要的。想象以下场景：
 
 - 节点 5 丢失网络连接。
 - 对于曾是节点 5 上的主分片的副本分片，主节点将把它们提升为主分片。
@@ -44,7 +44,9 @@ PUT _all/_settings
 - 在 `timeout`（超时） 到期前，节点 5 在几分钟后返回。
 - 丢失的副本重新分配给节点 5（且同步刷新的分片几乎可以立即恢复）。
 
-?> 此设置不会影响将副本升级为主分片，也不会影响以前未分配副本的分配。特别是，延迟分配在集群重启后不会生效。另外，在主节点故障切换的情况下，已消耗的延迟时长会被忽视（即，重置为完全初始的延迟）。
+::: tip 提示
+此设置不会影响将副本升级为主分片，也不会影响以前未分配副本的分配。特别是，延迟分配在集群重启后不会生效。另外，在主节点故障切换的情况下，已消耗的延迟时长会被忽视（即，重置为完全初始的延迟）。
+:::
 
 ## 分片迁移取消
 

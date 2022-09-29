@@ -10,7 +10,7 @@ GET /_dangling
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你必须有 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=集群权限)来使用此 API。
+- 如果 Elasticsearch 安全特性启用，你必须有 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)来使用此 API。
 
 ## 描述
 

@@ -26,7 +26,7 @@ GET my-index/_search/template
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters?id=配置跨集群搜索权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters#配置跨集群搜索权限)。
 
 ## 路径参数
 
@@ -41,13 +41,13 @@ GET my-index/_search/template
   默认为 `true`。
 
 - `ccs_minimize_roundtrips`
-  （可选，布尔值）如果为 `true`，在执行跨集群搜索（CCS）请求时，协调节点和远程集群之间的网络往返行程最小化。参阅 [跨群集搜索如何处理网络延迟](/search_your_data/search_across_clusters?id=跨群集搜索如何处理网络延迟)。默认为 `true`。
+  （可选，布尔值）如果为 `true`，在执行跨集群搜索（CCS）请求时，协调节点和远程集群之间的网络往返行程最小化。参阅 [跨群集搜索如何处理网络延迟](/search_your_data/search_across_clusters#跨群集搜索如何处理网络延迟)。默认为 `true`。
 
 - `expand_wildcards`
   （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
   1. `all`
-  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
   2. `open`
   匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
   3. `closed`
@@ -78,7 +78,7 @@ GET my-index/_search/template
   （可选，字符串）用于路由操作到指定分片的自定义值。
 
 - `scroll`
-  （可选，[时间值](/rest_apis/api_convention/common_options?id=时间单位)）指定滚动搜索时索引的一致视图应保持多长时间。
+  （可选，[时间值](/rest_apis/api_convention/common_options#时间单位)）指定滚动搜索时索引的一致视图应保持多长时间。
 
 - `search_type`
   （可选，字符串）搜索操作的类型。可选项：

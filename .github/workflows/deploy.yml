@@ -1,0 +1,20 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: pwd
+      run: pwd
+    - name: ls
+      run: ls
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@v1.8.1
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        TARGET_REPO: dev2007/elasticsearch-doc-publish
+        TARGET_BRANCH: master
+        BUILD_SCRIPT: npm install && npm run docs:build
+        BUILD_DIR: docs/.vuepress/dist/

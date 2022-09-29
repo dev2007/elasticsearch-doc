@@ -1,6 +1,6 @@
 # 创建或更新索引模板 API
 
-创建或更新一个索引模板。索引模板定义了可以自动用于新索引的[设置](/index_modules/index_modules?id=索引设置)、[映射](/mapping/mapping)和[别名](/rest_apis/index_apis/aliases)。
+创建或更新一个索引模板。索引模板定义了可以自动用于新索引的[设置](/index_modules#索引设置)、[映射](/mapping/mapping)和[别名](/rest_apis/index_apis/aliases)。
 
 ```bash
 PUT /_index_template/template_1
@@ -21,7 +21,7 @@ PUT /_index_template/template_1
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `manage_index_templates` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=集群权限)。
+- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `manage_index_templates` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)。
 
 ## 描述
 
@@ -49,24 +49,24 @@ Elasticsearch 基于通配符模式来匹配索引名字，将模板应用于相
 
 - `master_timeout`
 
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 请求体
 
 - `composed_of`
 
-（可选，字符串数组）一个组件模板名称的有序列表。组件模板按指定的顺序合并，这意味着最后指定的组件模板具有最高的优先级。参阅[组合多个组件模板](/rest_apis/index_apis/create_or_update_index_template?id=组合别名、映射和设置)查看示例。
+（可选，字符串数组）一个组件模板名称的有序列表。组件模板按指定的顺序合并，这意味着最后指定的组件模板具有最高的优先级。参阅[组合多个组件模板](/rest_apis/index_apis/create_or_update_index_template#组合别名、映射和设置)查看示例。
 
 - `data_stream`
 
   （可选，对象）如果这个对象被包含了，那么这个模板将会用于创建数据流和他们的备份索引。支持一个空对象。
 
-  数据流必须有 `data_stream` 对象来匹配索引模板。参阅[创建索引模板](/data_streams/set_up_a_data_stream/set_up_a_data_stream?id=第-3-步.创建索引模板)。
+  数据流必须有 `data_stream` 对象来匹配索引模板。参阅[创建索引模板](/data_streams/set_up_a_data_stream/set_up_a_data_stream#第-3-步.创建索引模板)。
 
   - `data_stream` 属性  
     - `hidden`
 
-    （可选，字符串）如果为 `true`，数据流是[隐藏的](/rest_apis/api_conventions/multi-target_syntax?id=隐藏数据流和索引)。默认为 `false`。
+    （可选，字符串）如果为 `true`，数据流是[隐藏的](/rest_apis/api_conventions/multi-target_syntax#隐藏数据流和索引)。默认为 `false`。
 - `index_patterns`
 
   （必需的，字符串数组）用于在创建时匹配数据流和索引名字的通配符（*）表达式数组。
@@ -111,11 +111,11 @@ Elasticsearch 基于通配符模式来匹配索引名字，将模板应用于相
 
           - `is_hidden`
 
-            （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax?id=隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
+            （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax#隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
 
           - `is_write_index`
 
-            （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases?id=写索引)。默认为 `false`。
+            （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases#写索引)。默认为 `false`。
 
           - `routing`
 
@@ -134,7 +134,7 @@ Elasticsearch 基于通配符模式来匹配索引名字，将模板应用于相
       参阅[映射](/mapping/mapping)。
 
     - `settings`
-      （可选，[索引设置对象](/index_modules/index_modules?id=索引设置)）索引的配置索引。参阅[索引设置](/index_modules/index_modules?id=索引设置)。
+      （可选，[索引设置对象](/index_modules#索引设置)）索引的配置索引。参阅[索引设置](/index_modules#索引设置)。
 
 - `version`
 
@@ -207,7 +207,9 @@ PUT /_index_template/template_2
 
 对于以 `te*` 开头的索引，将启用 `_source`，索引将有两个主分片和一个副本，因为只会应用 `template_2`。
 
-?> 不允许有相同优先级且索引模式重合的多个模板，且在尝试创建一个模板，而它与现有索引模板匹配具有相同优先级时，将引发错误。
+::: tip 提示
+不允许有相同优先级且索引模式重合的多个模板，且在尝试创建一个模板，而它与现有索引模板匹配具有相同优先级时，将引发错误。
+:::
 
 ### 模板版本
 
@@ -274,7 +276,7 @@ PUT /_index_template/template_1
 }
 ```
 
-参阅[创建索引模板](/data_streams/set_up_a_data_stream/set_up_a_data_stream?id=第-3-步.创建索引模板)。
+参阅[创建索引模板](/data_streams/set_up_a_data_stream/set_up_a_data_stream#第-3-步.创建索引模板)。
 
 ### 合并别名、映射和设置
 

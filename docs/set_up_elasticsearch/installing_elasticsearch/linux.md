@@ -6,7 +6,9 @@ Elasticsearch 在 Linux 和 MacOS 上是 `.tar.gz` 的压缩包。
 
 Elasticsearch 的最新稳定版本，能在 [Elasticsearch 下载页面](https://www.elastic.co/downloads/elasticsearch)找到。其他版本能在[历史发布页面](https://www.elastic.co/downloads/past-releases)找到。
 
-?> Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
+::: tip 提示
+Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
+:::
 
 ## 为 Linux 下载和安装压缩包
 
@@ -48,7 +50,9 @@ cd elasticsearch-7.11.1/
 action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
 ```
 
-!> 如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
+::: danger 警告
+如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
+:::
 
 ## 从命令行运行 Elasticsearch
 
@@ -62,7 +66,9 @@ Elasticsearch 可以如以下从命令行启动：
 
 默认情况下，Elasticsearch 在前台运行，从标准输出（`stdout`）打印日志，且可以通过按 `Ctrl-C` 中止。
 
-?> 所有与 Elasticsearch 关联的脚本，需要一个支持数组版本的 Bash，且 Bash 要放在 `/bin/bash`中。因此，Bash 需要放在或者通过符号链接到这个路径中。
+::: tip 提示
+所有与 Elasticsearch 关联的脚本，需要一个支持数组版本的 Bash，且 Bash 要放在 `/bin/bash`中。因此，Bash 需要放在或者通过符号链接到这个路径中。
+:::
 
 ## 检查 Elasticsearch 是否正在运行
 
@@ -114,7 +120,9 @@ GET /
 pkill -F pid
 ```
 
-?> Elasticsearch `.tar.gz` 包不包含 `systemd` 模块。要把 Elasticsearch 作为服务，改用 [Debian](https://www.elastic.co/guide/en/elasticsearch/reference/current/starting-elasticsearch.html#start-deb) 或者 [RPM](https://www.elastic.co/guide/en/elasticsearch/reference/current/starting-elasticsearch.html#start-rpm) 包。
+::: tip 提示
+Elasticsearch `.tar.gz` 包不包含 `systemd` 模块。要把 Elasticsearch 作为服务，改用 [Debian](https://www.elastic.co/guide/en/elasticsearch/reference/current/starting-elasticsearch.html#start-deb) 或者 [RPM](https://www.elastic.co/guide/en/elasticsearch/reference/current/starting-elasticsearch.html#start-rpm) 包。
+:::
 
 ## 在命令行配置 Elasticsearch
 
@@ -126,7 +134,9 @@ Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearchelasticsearch.yml` �
 ./bin/elasticsearch -d -Ecluster.name=my_cluster -Enode.name=node_1
 ```
 
-?> 通常，任意集群范围设置（如 `cluster.name`）应该添加到 `elasticsearch.yml` 配置文件中，而任何节点特定设置，如 `node.name`，应该在命令行中指定。
+::: tip 提示
+通常，任意集群范围设置（如 `cluster.name`）应该添加到 `elasticsearch.yml` 配置文件中，而任何节点特定设置，如 `node.name`，应该在命令行中指定。
+:::
 
 ## 压缩包文件目录结构
 
@@ -138,7 +148,7 @@ Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearchelasticsearch.yml` �
 | :-- | :-- | :-- | :-- |
 |home| Elasticsearch 主目录或 `$ES_HOME`| 解压压缩包创建的目录| |
 |bin| 二进制脚本，包括启动节点的 `elasticsearch` 和安装插件的 `elasticsearch-plugin`| `$ES_HOME/bin`||
-|conf| 配置文件，包括 `elasticsearch.yml`| `$ES_HOME/config`|[ES_PATH_CONF](/set_up_elasticsearch/config?id=配置文件位置)|
+|conf| 配置文件，包括 `elasticsearch.yml`| `$ES_HOME/config`|[ES_PATH_CONF](/set_up_elasticsearch/config#配置文件位置)|
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`$ES_HOME/data`|`path.data`|
 |logs| 日志文件位置| `$ES_HOME/logs` | `path.logs`|
 |plugins| 插件文件位置。每个插件会包含在一个子目录中。| `$ES_HOME/plugins`||

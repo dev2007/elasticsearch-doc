@@ -18,7 +18,7 @@ GET /_field_caps?fields=rating
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你必须对目标数据流、索引或别名有 `view_index_metadata`、`read` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你必须对目标数据流、索引或别名有 `view_index_metadata`、`read` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 描述
 
@@ -45,7 +45,7 @@ GET /_field_caps?fields=rating
   （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
   1. `all`
-  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
   2. `open`
   匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
   3. `closed`
@@ -84,7 +84,7 @@ GET /_field_caps?fields=rating
       排除 multifield 字段
 
 - `types`
-  （可选，字符串）逗号分隔的要包含的字段类型的列表。任何与这些类型之一不匹配的字段都将从结果中排除。默认为空，表示返回所有字段类型。参阅[此处](/rest_apis/search_api/field_capabilities?id=响应体)，了解有关字段能力请求和响应中字段类型的更多信息。
+  （可选，字符串）逗号分隔的要包含的字段类型的列表。任何与这些类型之一不匹配的字段都将从结果中排除。默认为空，表示返回所有字段类型。参阅[此处](/rest_apis/search_api/field_capabilities#响应体)，了解有关字段能力请求和响应中字段类型的更多信息。
 
 ## 请求体
 
@@ -255,6 +255,8 @@ POST my-index-*/_field_caps?fields=rating
 
 在这种情况下的索引，将从响应中筛选提供的过滤器，在每个分片上重写为 `match_none`。
 
-!> 过滤是在尽力而为的基础上完成的，它使用索引统计信息和映射来重写查询为 `match_none`，而不是完全执行请求。例如，如果分片中的所有文档（包括已删除的文档）都不在提供的范围内，则对 `date` 字段的 `range` 查询可以重写为 `match_none`。但是，并非所有查询都可以重写为 `match_none`，因此即使提供的筛选器不匹配任何文档，该 API 也可能返回索引。
+::: danger 警告
+过滤是在尽力而为的基础上完成的，它使用索引统计信息和映射来重写查询为 `match_none`，而不是完全执行请求。例如，如果分片中的所有文档（包括已删除的文档）都不在提供的范围内，则对 `date` 字段的 `range` 查询可以重写为 `match_none`。但是，并非所有查询都可以重写为 `match_none`，因此即使提供的筛选器不匹配任何文档，该 API 也可能返回索引。
+:::
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-field-caps.html)

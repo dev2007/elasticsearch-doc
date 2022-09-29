@@ -1,6 +1,8 @@
 # 获取自动伸缩容量 API
 
-?> 此特性设计用于 [Elasticsearch Service](https://www.elastic.co/cloud/elasticsearch-service/signup?baymax=docs-body&elektra=docs)、[Elastic Cloud Enterprise](https://www.elastic.co/guide/en/cloud-enterprise/current) 和 [Kubernetes 上的 Elastic Cloud](https://www.elastic.co/guide/en/cloud-on-k8s/current) 的间接使用。不支持直接用户使用。
+::: tip 提示
+此特性设计用于 [Elasticsearch Service](https://www.elastic.co/cloud/elasticsearch-service/signup?baymax=docs-body&elektra=docs)、[Elastic Cloud Enterprise](https://www.elastic.co/guide/en/cloud-enterprise/current) 和 [Kubernetes 上的 Elastic Cloud](https://www.elastic.co/guide/en/cloud-on-k8s/current) 的间接使用。不支持直接用户使用。
+:::
 
 获取自动伸缩容量。
 
@@ -12,7 +14,7 @@ GET /_autoscaling/capacity/
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你必须有 `manage_autoscaling` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=集群权限)来使用此 API。
+- 如果 Elasticsearch 安全特性启用，你必须有 `manage_autoscaling` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)来使用此 API。
 
 ## 描述
 

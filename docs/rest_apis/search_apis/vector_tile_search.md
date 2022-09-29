@@ -15,7 +15,7 @@ GET my-index/_mvt/my-geo-field/15/5271/12710
 ## 前置条件
 
 - 在使用此 API 之前，你应该了解 [Mapbox矢量图块规范](https://github.com/mapbox/vector-tile-spec)。
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters?id=配置跨集群搜索权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters#配置跨集群搜索权限)。
 
 ## 路径参数
 
@@ -27,7 +27,9 @@ GET my-index/_mvt/my-geo-field/15/5271/12710
 - `<field>`
   （必需，字符串）包含要返回的地理空间值的字段。必须是 [`geo_point`](/mapping/field_data_types/geopoint) 或 [`geo_shape`](/mapping/field_data_types/geosharp) 字段。该字段必须启用[文档值](/mapping/mapping_parameters/doc_values)。不能是嵌套字段。
 
-  ?> 矢量分片本身不支持几何体集合。对于字段 `geo_shape` 中的 `geometrycollection` 值，API 为集合的每个元素返回一个 `hits` 层特征。这种行为在未来的版本中可能会改变。
+  ::: tip 提示
+  矢量分片本身不支持几何体集合。对于字段 `geo_shape` 中的 `geometrycollection` 值，API 为集合的每个元素返回一个 `hits` 层特征。这种行为在未来的版本中可能会改变。
+  :::
 
 - `<zoom>`
   （必需，整数）待搜索的矢量图块的缩放级别。接受 `0-29`。
@@ -118,30 +120,39 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
 
 ## 查询参数
 
-!> 你可以将此 API 的几个选项指定为查询参数或请求体参数。如果同时指定这两个参数，则查询参数优先。
+::: danger 警告
+你可以将此 API 的几个选项指定为查询参数或请求体参数。如果同时指定这两个参数，则查询参数优先。
+:::
 
 - `exact_bounds`
+
   （可选，布尔值）如果为 `false`，则 `meta` 层的特征是块的边界框。默认为 `false`。
 
   如果为 `true`，则 `meta` 层的特征是 [`geo_bounds`](/aggregations/metrics_aggregations/geo_bounds) 聚合产生的边界框。聚合在与 `wrap_longitude` 设置为 `false` 的 `〈zoom〉/〈x〉/〈y〉` 平铺相交的 `<field>` 值上运行。生成的边界框可能大于矢量图块。
 
 - `extent`
+
   （可选，整数）块一侧的大小（以像素为单位）。矢量平铺是等边的正方形。默认值为 `4096`。
 
 - `buffer`
+
   （可选，整数）块的外部剪切缓冲区的大小（以像素为单位）。这使得渲染器可以避免几何体中的轮廓瑕疵，这些几何体延伸到瓷砖的范围之外。默认为 `5`。
 
 - `grid_agg`
+
   （可选，字符串）用于为 `<field>` 创建网格的聚合。
 
   - `grid_agg` 有效值
     - `geotile` **(Default)**
+
       [geotile_grid](/aggregations/bucket_aggregations/geotile_grid) 聚合。
 
     - `geohex`
+
       [geohex_grid](/aggregations/bucket_aggregations/geohex_grid) 聚合。如果指定此值，则 `<field>` 必须是 [`geo_point`](/aggregations/bucket_aggregations/geo_point) 字段。
 
 - `grid_precision`
+
   （可选，整数）`grid_agg` 中单元格的精度级别。接受 `0`-`8`。默认为 `8`。如果为 `0`，则结果不包括 `aggs` 层。
 
   - `geotile` 网格精度
@@ -203,32 +214,40 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
     六边形单元格在矢量图块上没有完全对齐。某些单元格可能与多个矢量图块相交。为了计算每个精度的 H3 分辨率，Elasticsearch 将每个分辨率下六边形箱的平均密度与每个缩放级别下块箱的平均密度进行比较。Elasticsearch 使用最接近相应块密度的 H3 分辨率。
 
     - `grid_type`
-    （可选，字符串）确定 `aggs` 层中特征的几何体类型。在 `aggs` 层中，每个特征代表网格中的一个单元。
+
+      （可选，字符串）确定 `aggs` 层中特征的几何体类型。在 `aggs` 层中，每个特征代表网格中的一个单元。
 
       - `grid_type` 可用值
 
         - `grid`（**默认**）
+
           每个特征都是单元几何体的`多边形（Polygon）`。对于 `geotile` 的 `grid_agg`，特征是单元格的边界框。对于 `geohex` 的 `grid_agg`，特征是六边形单元的边界。
 
         - `point`
+
           每个特征都是一个`点（Point）`，即单元格的质心。
 
         - `centroid`
+
           每个特征都是一个`点（Point）`，即单元内数据的质心。对于复杂几何形状，实际质心可能在单元外部。在这些情况下，特征设置为距单元内质心最近的点。
+
     - `size`
+
       （可选，整数）在 `hits` 层中返回的最大功能数。接受 `0`-`10000`。默认值为 `10000`。如果为 `0`，则结果不包括 `hits` 层。
 
     - `track_total_hits`
+
       （可选，整数或布尔值）与查询匹配以准确计数的点击数。默认值为 `10000`。
 
       如果为 `true`，则返回准确的点击数，但会牺牲一些性能。如果为 `false`，则响应不包括与查询匹配的总点击数。
 
     - `with_labels`
+
       （可选，布尔值）如果为 `true`，`hits` 和 `aggs` 层将包含表示原始特征的建议标签位置的其他点特征。
 
       - `Point` 和 `MultiPoint` 特征将选择其中一个点。
-      - `Polygon` 和 `MultiPolygon` 特征将生成一个单点，即质心（如果位于多边形内），或从[有序三角形树](/mapping/field_data_types/geoshape?id=索引方法)中选择的多边形内的另一个点。
-      - `LineString` 特征同样将提供从[三角形树](/mapping/field_data_types/geoshape?id=索引方法)中选择的大致中心点。
+      - `Polygon` 和 `MultiPolygon` 特征将生成一个单点，即质心（如果位于多边形内），或从[有序三角形树](/mapping/field_data_types/geoshape#索引方法)中选择的多边形内的另一个点。
+      - `LineString` 特征同样将提供从[三角形树](/mapping/field_data_types/geoshape#索引方法)中选择的大致中心点。
       - 聚合结果将为每个聚合桶提供一个中心点。
 
       原始特征的所有属性也将复制到新的标签特征。此外，使用标签 `_mvt_label_position` 可以区分新功能。
@@ -236,6 +255,7 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
 ## 请求体
 
 - `aggs`
+
   （可选，[聚合对象](/aggregations/aggregations)）`grid_agg` 的子聚合。支持以下聚合类型：
 
   - [avg](/aggregations/metrics_aggregations/avg)
@@ -254,17 +274,21 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
   聚合名称不能以 `_mvt_` 开头。`_mvt_` 前缀是为内部聚合保留的。
 
 - `exact_bounds`
+
   （可选，布尔值）如果为 `false`，则 `meta` 层的特征是块的边界框。默认为 `false`。
 
   如果为 `true`，则 `meta` 层的特征是 [geo_bounds](/aggregations/metrics_aggregations/geo_bounds) 边界聚合产生的边界框。聚合在与 `wrap_longitude` 设置为 `false` 的 `〈zoom〉/〈x〉/〈y〉` 平铺相交的 `<field>` 值上运行。生成的边界框可能大于矢量图块。
 
 - `extent`
+
   （可选，整数）块一侧的像素大小。矢量平铺是等边的正方形。默认值为 `4096`。
 
 - `buffer`
+
   （可选，整数）分幅外部剪切缓冲区的像素大小。这使得渲染器可以避免几何体中的轮廓瑕疵，延伸到块的范围之外。默认为 `5`。
 
 - `fields`
+
   （可选，字符串或对象数组）要在 `hits` 层中返回的字段。支持通配符（*）。
 
   此参数不支持具有[数组值](/mapping/field_data_types/arrays)的字段。具有数组值的字段可能返回不一致的结果。
@@ -274,43 +298,60 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
   - `fields` 对象属性
 
     - `field`
+
       （必需，字符串）返回的字段。支持通配符（*）。
 
     - `format`
+
       （可选，字符串）日期和地理空间字段的格式。其他字段数据类型不支持此参数。
 
       [`date`](/mapping/field_data_types/date) 和 [`date_nanos`](/mapping/field_data_types/date_nanoseconds) 字段接受[日期格式](/mapping/mapping_parameters/format)。[`geo_point`](/mapping/field_data_types/geopoint) 和 [`geo_shape`](/mapping/field_data_types/geoshape) 字段接受：
 
       - `geojson`（默认）
+
         [GeoJSON](http://www.geojson.org/)
 
       - `wkt`
+
         [Well Known Text/知名文本](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry)
 
       - `mvt(<zoom>/<x>/<y>@<extent>) or mvt(<zoom>/<x>/<y>)`
+
         地图盒矢量块。此 API 返回的块是 base64 编码的字符串。
+
         - `mvt` 参数
           - `<zoom>`
+
             （必需，整数）块的缩放级别。支持 `0`-`29`。
+
           - `<x>`
+
             （必需，整数）块的 X 坐标。
+
           - `<y>`
+
             （必需，整数）块的 Y 坐标。
+
           - `<extent>`
+
             （可选，整数）平铺一侧的大小（以像素为单位）。矢量平铺是等边的正方形。默认为 `4,096`。
 
 - `grid_agg`
+
   （可选，字符串）用于为 `<field>` 创建网格的聚合。
 
   - `grid_agg` 可用值
 
     - `geotile` **(Default)**
+
       [geotile_grid](/aggregations/bucket_aggregations/geotile_grid) 聚合。
 
     - `geohex`
+
       [geohex_grid](/aggregations/bucket_aggregations/geohex_grid) 聚合。如果指定此值，则 `<field>` 必须是 [`geo_point`](/aggregations/bucket_aggregations/geo_point) 字段。
 
 - `grid_precision`
+
   （可选，整数）`grid_agg` 中单元格的精度级别。接受 `0`-`8`。默认为 `8`。如果为 `0`，则结果不包括 `aggs` 层。
 
   - `geotile` 网格精度
@@ -372,33 +413,42 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
     六边形单元格在矢量图块上没有完全对齐。某些单元格可能与多个矢量图块相交。为了计算每个精度的 H3 分辨率，Elasticsearch 将每个分辨率下六边形箱的平均密度与每个缩放级别下块箱的平均密度进行比较。Elasticsearch 使用最接近相应块密度的 H3 分辨率。
 
 - `grid_type`
+
   （可选，字符串）确定 `aggs` 层中特征的几何体类型。在 `aggs` 层中，每个特征代表网格中的一个单元。
 
   - `grid_type` 可用值
 
     - `grid`（**默认**）
+
       每个特征都是单元几何体的`多边形（Polygon）`。对于 `geotile` 的 `grid_agg`，特征是单元格的边界框。对于 `geohex` 的 `grid_agg`，特征是六边形单元的边界。
 
     - `point`
+
       每个特征都是一个`点（Point）`，即单元格的质心。
 
     - `centroid`
+
       每个特征都是一个`点（Point）`，即单元内数据的质心。对于复杂几何形状，实际质心可能在单元外部。在这些情况下，特征设置为距单元内质心最近的点。
 
 - `query`
+
   （可选，对象）[查询 DSL 对象](/query_dsl/query_dsl)用于搜索过滤文档。
 
 - `runtime_mappings`
+
   （可选，对象）在搜索请求中定义一个或多个[运行时字段](/mapping/runtime_fields/define_runtime_fields_in_a_search_request)。这些字段优先于具有相同名称的映射字段。
 
   - `runtime_mappings` 对象属性
 
     - `<field-name>`
+
       （必需，对象）配置运行时字段。键（key）是字段名字。
 
       - `<field-name>` 属性
         - `type`
+
           （必需，字符串）[字段类型](/mapping/field_data_types)，可以是以下任一种：
+
           - `boolean`
             - `composite`
             - `date`
@@ -408,6 +458,7 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
             - `keyword`
             - `long`
           - `script`
+
             （可选，字符串）查询时执行的 [Plainless Script](/scripting/how_to_write_script/how_to_write_script)。脚本可以访问文档的整个上下文，包括原始 `_source` 和任何映射字段及其值。
 
             此脚本必须包含 `emit` 以返回计算值。例如：
@@ -417,24 +468,28 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
             ```
 
 - `size`
+
   （可选，整数）在 `hits` 层中返回的最大功能数。接受 `0`-`10000`。默认值为 `10000`。如果为 `0`，则结果不包括 `hits` 层。
 
 - `sort`
+
   （可选，[排序对象](/search_your_data/sort_search_results)数组）`hits` 层排序特性。
 
   默认情况下，API 为每个特征计算边界框。它根据该框的对角线长度对特征进行排序，从最长到最短。
 
 - `track_total_hits`
+
   （可选，整数或布尔值）与查询匹配以准确计数的点击数。默认值为 `10000`。
 
   如果为 `true`，则返回准确的点击数，但会牺牲一些性能。如果为 `false`，则响应不包括与查询匹配的总点击数。
 
 - `with_labels`
+
   （可选，布尔值）如果为 `true`，`hits` 和 `aggs` 层将包含表示原始特征的建议标签位置的其他点特征。
 
   - `Point` 和 `MultiPoint` 特征将选择其中一个点。
-  - `Polygon` 和 `MultiPolygon` 特征将生成一个单点，即质心（如果位于多边形内），或从[有序三角形树](/mapping/field_data_types/geoshape?id=索引方法)中选择的多边形内的另一个点。
-  - `LineString` 特征同样将提供从[三角形树](/mapping/field_data_types/geoshape?id=索引方法)中选择的大致中心点。
+  - `Polygon` 和 `MultiPolygon` 特征将生成一个单点，即质心（如果位于多边形内），或从[有序三角形树](/mapping/field_data_types/geoshape#索引方法)中选择的多边形内的另一个点。
+  - `LineString` 特征同样将提供从[三角形树](/mapping/field_data_types/geoshape#索引方法)中选择的大致中心点。
   - 聚合结果将为每个聚合桶提供一个中心点。
 
   原始特征的所有属性也将复制到新的标签特征。此外，使用标签 `_mvt_label_position` 可以区分新功能。
@@ -444,147 +499,251 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
 返回的矢量图块包含以下数据：
 
 - `hits`
+
   （对象）层包含 `geo_bounding_box` 查询结果。
 
   - `hits` 属性
 
     - `extent`
+
       （可选，整数）块一侧的大小（以像素为单位）。矢量平铺是等边的正方形。
+
     - `version`
+
       （整数）[Mapbox 矢量图块规范](https://github.com/mapbox/vector-tile-spec)的主要版本号。
+
     - `features`
+
       （对象数组）特性数组。包含与 `geo_bounding_box` 查询匹配的每个 `<field>` 值的特征。
+
       - `features` 对象属性
         - `geometry`
+
           （对象）特性的几何图形。
+
           - `geometry` 属性
             - `type`
+
               （字符串）特征的几何图形类型。可用值为：
+
               - `UNKNOWN`
               - `POINT`
               - `LINESTRING`
               - `POLYGON`
             - `coordinates`
+
               （整数数组或二重数组）特性的坐标。
+
       - `properties`
+
         （对象）特性的属性。
+
         - `properties` 属性
           - `_id`
+
             （字符串）特性文档的文档 `_id`。
+
           - `_index`
+
             （字符串）特性文档的索引名字。
+
           - `<field>`
+
             字段值。仅返回 `fields` 参数的字段。
+
       - `type`
+
         （整数）特性几何体类型的标识符。数值为：
+
         - `1`(`POINT`)
         - `2`(`LINESTRING`)
         - `3`(`POLYGON`)
 
 - `aggs`
+
   （对象）包含 `grid_agg` 聚合及其子聚合结果的层。
+
   - `aggs` 属性
     - `extent`
+
       （可选，整数）块一侧的大小（以像素为单位）。矢量平铺是等边的正方形。
+
     - `version`
+
       （整数）[Mapbox 矢量图块规范](https://github.com/mapbox/vector-tile-spec)的主要版本号。
+
     - `features`
+
       （对象数组）特性数组。包含与 `geo_bounding_box` 查询匹配的每个 `<field>` 值的特征。
+
       - `features` 对象属性
         - `geometry`
+
           （对象）特性的几何图形。
+
           - `geometry` 属性
             - `type`
+
               （字符串）特征的几何图形类型。可用值为：
+
               - `UNKNOWN`
               - `POINT`
               - `LINESTRING`
               - `POLYGON`
             - `coordinates`
+
               （整数数组或二重数组）特性的坐标。
+
       - `properties`
+
         （对象）特性的属性。
+
         - `properties` 属性
           - `_count`
+
             （长整型）单元格文档的计数。
+
           - `_key`
+
             （字符串）单元格的桶（Bucket）键，格式为 `<zoom>/<x>/<y>`。
+
           - `<sub-aggregation>.value`
+
             单元格的子聚集结果。仅针对 `aggs` 参数中的子聚合返回。
       - `type`
+
         （整数）特性几何体类型的标识符。数值为：
+
         - `1`(`POINT`)
         - `2`(`LINESTRING`)
         - `3`(`POLYGON`)
 
 - `meta`
+
   （对象）包含请求元数据的层。
+
   - `meta` 属性
     - `extent`
+
       （可选，整数）块一侧的大小（以像素为单位）。矢量平铺是等边的正方形。
+
     - `version`
+
       （整数）[Mapbox 矢量图块规范](https://github.com/mapbox/vector-tile-spec)的主要版本号。
+
     - `features`
+
       （对象数组）特性数组。包含与 `geo_bounding_box` 查询匹配的每个 `<field>` 值的特征。
+
       - `features` 对象属性
         - `geometry`
+
           （对象）特性的几何图形。
+
           - `geometry` 属性
             - `type`
+
               （字符串）特征的几何图形类型。可用值为：
+
               - `UNKNOWN`
               - `POINT`
               - `LINESTRING`
               - `POLYGON`
             - `coordinates`
+
               （整数数组或二重数组）特性的坐标。
       - `properties`
+
         （对象）特性的属性。
+
         - `properties` 属性
           - `_shards.failed`
-            （整数）无法执行搜索的分片数。参阅搜索 API 的 [`shards`](/rest_apis/search_apis/search?id=响应体) 响应属性。
+
+            （整数）无法执行搜索的分片数。参阅搜索 API 的 [`shards`](/rest_apis/search_apis/search#响应体) 响应属性。
+
           - `_shards.skipped`
-            （整数）跳过搜索的分片数。参阅搜索 API 的 [`shards`](/rest_apis/search_apis/search?id=响应体) 响应属性。
+
+            （整数）跳过搜索的分片数。参阅搜索 API 的 [`shards`](/rest_apis/search_apis/search#响应体) 响应属性。
+
           - `_shards.successful`
-            （整数）成功执行搜索的分片数。参阅搜索 API 的 [`shards`](/rest_apis/search_apis/search?id=响应体) 响应属性。
+
+            （整数）成功执行搜索的分片数。参阅搜索 API 的 [`shards`](/rest_apis/search_apis/search#响应体) 响应属性。
+
           - `_shards.total`
-            （整数）需要查询的分片总数，包括未分配的分片。参阅搜索 API 的 [`shards`](/rest_apis/search_apis/search?id=响应体) 响应属性。
+
+            （整数）需要查询的分片总数，包括未分配的分片。参阅搜索 API 的 [`shards`](/rest_apis/search_apis/search#响应体) 响应属性。
+
           - `aggregations._count.avg`
+
             （浮点数）`aggs` 层中特性的平均 `_count` 值。
+
           - `aggregations._count.count`
+
             （整数）`aggs` 层中特性的唯一 `_count` 值的数量。
+
           - `aggregations._count.max`
+
             （浮点数）`aggs` 层特性的最大 `_count` 值。
+
           - `aggregations._count.min`
+
             （浮点数）`aggs` 层特性的最小 `_count` 值。
+
           - `aggregations._count.sum`
+
             （浮点数）`aggs` 层特性的合计 `_count` 值。
+
           - `aggregations.<sub-aggregation>.avg`
+
             （浮点数）子聚合结果的平均值。
+
           - `aggregations.<agg_name>.count`
+
             （整数）子聚合结果中的唯一值的数量。
+
           - `aggregations.<agg_name>.max`
+
             （浮点数）子聚合结果中的最大值。
+
           - `aggregations.<agg_name>.min`
+
             （浮点数）子聚合结果中的最小值。
+
           - `aggregations.<agg_name>.sum`
+
             （浮点数）子聚合结果中的合计值。
+
           - `hits.max_score`
+
             （浮点数）搜索结果的最高文档 `_score`。
+
           - `hits.total.relation`
+
             （字符串）指示是否 `hits.total.value` 是准确的或下限。可能的值为：
+
             - `eq`
+
               准确值
+
             - `gte`
+
               下限值
+
           - `hits.total.value`
+
             （整数）搜索命中的总数。
+
           - `timed_out`
+
             （布尔值）如果为 `true`，则搜索在完成之前超时。结果可能部分或为空。
+
           - `took`
-            （整数）Elasticsearch 运行搜索所需毫秒。参阅搜索 API 的 [`took`](/rest_apis/search_apis/search?id=请求体) 响应属性。
+
+            （整数）Elasticsearch 运行搜索所需毫秒。参阅搜索 API 的 [`took`](/rest_apis/search_apis/search#请求体) 响应属性。
       - `type`
+
         （整数）特性几何体类型的标识符。数值为：
+        
         - `1`(`POINT`)
         - `2`(`LINESTRING`)
         - `3`(`POLYGON`)

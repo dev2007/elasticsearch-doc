@@ -1,6 +1,6 @@
 # 创建或更新组件模板 API
 
-创建或更新组件模板。组件模板是构造[索引模板](/index_templates/index_templates)的构建块，用于指定索引[映射](/mapping/mapping)、[设置](/index_modules/index_modules)和[别名](/aliases)。
+创建或更新组件模板。组件模板是构造[索引模板](/index_templates/index_templates)的构建块，用于指定索引[映射](/mapping/mapping)、[设置](/index_modules)和[别名](/aliases)。
 
 ```bash
 PUT _component_template/template_1
@@ -33,7 +33,7 @@ PUT _component_template/template_1
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `manage_index_templates` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=集群权限)。
+- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `manage_index_templates` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)。
 
 ## 描述
 
@@ -73,7 +73,7 @@ PUT _component_template/template_1
 
 - `master_timeout`
 
-（可选，[时间单位](/rest_apis/api_convention/common_options?id=时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
+（可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
 
 ## 请求体
 
@@ -99,10 +99,10 @@ PUT _component_template/template_1
               （可选，字符串）用于将索引操作路由到特定分片的值。如果指定，这将覆盖索引操作的路由值。
             - `is_hidden`
 
-              （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax?id=隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
+              （可选，布尔值）如果为 `true`，别名是[隐藏的](/rest_apis/api_conventions/multi-target_syntax#隐藏数据流和索引)。默认为 `false`。别名所有的索引必须有相同的 `is_hidden` 值。
             - `is_write_index`
 
-              （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases?id=写索引)。默认为`false`。
+              （可选，布尔值）如果为 `true`，索引是别名的[写索引](/rest_apis/index_apis/aliases#写索引)。默认为`false`。
             - `routing`
 
               （可选，字符串）用于将索引和搜索操作路由到特定分片的值。
@@ -118,14 +118,14 @@ PUT _component_template/template_1
 
       参阅[映射](/mapping/mapping)。
     - `settings`
-      （可选，[索引设置对象](/index_modules/index_modules?id=索引设置)）索引配置选项。参阅[索引设置](/index_modules/index_modules?id=索引设置)。
+      （可选，[索引设置对象](/index_modules#索引设置)）索引配置选项。参阅[索引设置](/index_modules#索引设置)。
 - `version`
 
   （可选，整数）用于显式管理组件模板的版本号。Elasticsearch 不会自动生成或增加此数字。
 
 - `allow_auto_create`
 
-  （可选，布尔值）此设置覆盖了集群设置中的 [`action.auto_create_index`](/rest_apis/document_apis/index?id=自动创建数据流和索引) 的值。如果在模板中设置为 `true`，即使通过 `actions.auto_create_index` 禁用了自动创建索引，索引也能通过这个模板自动创建。如果设置为 `false`，匹配模板的索引或数据流必须被显示创建，且可能永远不会被自动创建。
+  （可选，布尔值）此设置覆盖了集群设置中的 [`action.auto_create_index`](/rest_apis/document_apis/esindex#自动创建数据流和索引) 的值。如果在模板中设置为 `true`，即使通过 `actions.auto_create_index` 禁用了自动创建索引，索引也能通过这个模板自动创建。如果设置为 `false`，匹配模板的索引或数据流必须被显示创建，且可能永远不会被自动创建。
 
 - `_meta`
 

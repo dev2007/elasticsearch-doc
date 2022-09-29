@@ -2,15 +2,21 @@
 
 Elasticsearch 可以使用 Windows `.zip` 存档安装到 Windows 上。可以使用 `elasticsearch-service.bat` 安装 Elasticsearch 作为服务运行。
 
-?> Elasticsearch 过去使用 `.zip` 存档安装到 Windows 上。[MSI 安装包](/set_up_elasticsearch/installing_elasticsearch/windows_msi)提供了最简单的 Windows 入门体验。如果你愿意可以继续使用 `.zip`。
+::: tip 提示
+Elasticsearch 过去使用 `.zip` 存档安装到 Windows 上。[MSI 安装包](/set_up_elasticsearch/installing_elasticsearch/windows_msi)提供了最简单的 Windows 入门体验。如果你愿意可以继续使用 `.zip`。
+:::
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 
-?> 在 Windows 上，Elasticsearch 机器学习特性需要 Microsoft 通用 C 运行时库。它内置于 Windows 10、Windows Server 2016 和更高版本的 Windows 中。对于老版本的 Windows，它可以通过 Windows Update 安装，也可以从[独立下载](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)安装。如果你不能安装 Microsoft 通用 C 运行时库，禁用机器学习特性你也能使用 Elasticsearch 的其他特性。
+::: tip 提示
+在 Windows 上，Elasticsearch 机器学习特性需要 Microsoft 通用 C 运行时库。它内置于 Windows 10、Windows Server 2016 和更高版本的 Windows 中。对于老版本的 Windows，它可以通过 Windows Update 安装，也可以从[独立下载](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)安装。如果你不能安装 Microsoft 通用 C 运行时库，禁用机器学习特性你也能使用 Elasticsearch 的其他特性。
+:::
 
 Elasticsearch 的最新稳定版本，能在 [Elasticsearch 下载页面](https://www.elastic.co/downloads/elasticsearch)找到。其他版本能在[历史发布页面](https://www.elastic.co/downloads/past-releases)找到。
 
-?> Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
+::: tip 提示
+Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
+:::
 
 ## 下载安装 `.zip` 包
 
@@ -32,7 +38,9 @@ cd c:\elasticsearch-7.11.1
 action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
 ```
 
-!> 如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
+::: danger 警告
+如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
+:::
 
 ## 从命令行运行 Elasticsearch
 
@@ -56,9 +64,13 @@ Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearchelasticsearch.yml` �
 .\bin\elasticsearch.bat -Ecluster.name=my_cluster -Enode.name=node_1
 ```
 
-?> 包含空格的值必须使用引号括起来。如 `-Epath.logs="C:\My Logs\logs"`。
+::: tip 提示
+包含空格的值必须使用引号括起来。如 `-Epath.logs="C:\My Logs\logs"`。
+:::
 
-?> 通常，任意集群范围设置（如 `cluster.name`）应该添加到 `elasticsearch.yml` 配置文件中，而任何节点特定设置，如 `node.name`，应该在命令行中指定。
+::: tip 提示
+通常，任意集群范围设置（如 `cluster.name`）应该添加到 `elasticsearch.yml` 配置文件中，而任何节点特定设置，如 `node.name`，应该在命令行中指定。
+:::
 
 ## 检查 Elasticsearch 是否正在运行
 
@@ -121,9 +133,13 @@ Using JAVA_HOME (64-bit):  "c:\jvm\jdk1.8"
 The service 'elasticsearch-service-x64' has been installed.
 ```
 
-?> 虽然 JRE 可以用于 Elasticsearch 服务，由于它使用客户端 VM （而不是服务器 JVM——它为长时间运行的应用程序提供更好的性能），不鼓励使用，并将发出警告。
+::: tip 提示
+虽然 JRE 可以用于 Elasticsearch 服务，由于它使用客户端 VM （而不是服务器 JVM——它为长时间运行的应用程序提供更好的性能），不鼓励使用，并将发出警告。
+:::
 
-?> 系统环境变量 `JAVA_HOME` 应该设置为你想让服务使用的 JDK 的安装路径。如果你升级 JDK，你不必重装服务，但你必须设置系统环境变量 `JAVA_HOME` 为最新的 JDK 安装路径。然而，不支持跨 JVM 类型（如，JRE 对 SE）的升级，必须重装服务。
+::: tip 提示
+系统环境变量 `JAVA_HOME` 应该设置为你想让服务使用的 JDK 的安装路径。如果你升级 JDK，你不必重装服务，但你必须设置系统环境变量 `JAVA_HOME` 为最新的 JDK 安装路径。然而，不支持跨 JVM 类型（如，JRE 对 SE）的升级，必须重装服务。
+:::
 
 ## 自定义服务配置
 
@@ -143,19 +159,27 @@ The service 'elasticsearch-service-x64' has been installed.
 |`ES_START_TYPE`|服务启动模式。可以为 `auto` 或 `manual`（默认）。|
 |`ES_STOP_TIMEOUT`|procrun 等待服务优雅退出的超时（秒）。默认为 `0`。|
 
-?> 作为它的核心，`elasticsearch-service.bat` 依赖于  Apache Commons Daemon 项目来安装服务。在服务安装之前设置的环境变量被复制，并在服务生命周期中使用。这意味着除非重装服务，否则在安装后对他们的变更都不会被获取。
+::: tip 提示
+作为它的核心，`elasticsearch-service.bat` 依赖于  Apache Commons Daemon 项目来安装服务。在服务安装之前设置的环境变量被复制，并在服务生命周期中使用。这意味着除非重装服务，否则在安装后对他们的变更都不会被获取。
+:::
 
-?> 默认情况，Elasticsearch 依据节点的角色和总内存，自动调整 JVM 堆大小。对于大多数生产环境，我们推荐默认调整。如果需要，你可以手动设置堆大小来覆盖默认调整。
+::: tip 提示
+默认情况，Elasticsearch 依据节点的角色和总内存，自动调整 JVM 堆大小。对于大多数生产环境，我们推荐默认调整。如果需要，你可以手动设置堆大小来覆盖默认调整。
+:::
 
-?> 当第一次在 Windows 上安装 Elasticsearch 作为服务或者从命令行运行 Elasticsearch 时，你可以按[JVM 堆大小设置](/set_up_elasticsearch/configuring_elasticsearchadvanced?id=JVM 堆大小设置)手工设置堆大小。为了调整已安装服务的堆大小，使用服务管理器：`bin\elasticsearch-service.bat manager`。
+::: tip 提示
+当第一次在 Windows 上安装 Elasticsearch 作为服务或者从命令行运行 Elasticsearch 时，你可以按[JVM 堆大小设置](/set_up_elasticsearch/configuring_elasticsearchadvanced#JVM 堆大小设置)手工设置堆大小。为了调整已安装服务的堆大小，使用服务管理器：`bin\elasticsearch-service.bat manager`。
+:::
 
-?> 该服务会自动配置一个私有临时目录供 Elasticsearch 运行时使用。该私有临时目录配置为用户运行安装的私有临时目录的子目录。如果这个服务要在不同的用户下运行，你可以在执行服务安装之前，通过设置环境变量 `ES_TMPDIR` 配置这个临时目录的优先位置。
+::: tip 提示
+该服务会自动配置一个私有临时目录供 Elasticsearch 运行时使用。该私有临时目录配置为用户运行安装的私有临时目录的子目录。如果这个服务要在不同的用户下运行，你可以在执行服务安装之前，通过设置环境变量 `ES_TMPDIR` 配置这个临时目录的优先位置。
+:::
 
 ### 使用管理 GUI
 
 也可以在安装后使用管理界面（`elasticsearch-service-mgr.exe`）来配置服务，它提供了对已安装服务的深入了解，包括其状态、启动类型、JVM、启动和停止设置等。从命令行调用 `elasticsearch-service.bat` 将会打开管理器窗口：
 
-![service-manager-win](/_media/service-manager-win.png)
+![service-manager-win](./_media/service-manager-win.png)
 
 通过管理界面所做的大多数修改（如 JVM 设置），都需要重启服务才能生效。
 
@@ -169,7 +193,7 @@ The service 'elasticsearch-service-x64' has been installed.
 | :-- | :-- | :-- | :-- |
 |home| Elasticsearch 主目录或 `%ES_HOME%`| 解压存档创建的目录| |
 |bin| 二进制脚本，包括启动节点的 `elasticsearch` 和安装插件的 `elasticsearch-plugin`| `%ES_HOME%\bin`||
-|conf| 配置文件，包括 `elasticsearch.yml`| `%ES_HOME%\config`|[ES_PATH_CONF](/set_up_elasticsearch/config?id=配置文件位置)|
+|conf| 配置文件，包括 `elasticsearch.yml`| `%ES_HOME%\config`|[ES_PATH_CONF](/set_up_elasticsearch/config#配置文件位置)|
 |data| 分配在节点上的每个索引和分片的数据文件位置。可以有多个位置。|`%ES_HOME%\data`|`path.data`|
 |logs| 日志文件位置| `%ES_HOME%\logs` | `path.logs`|
 |plugins| 插件文件位置。每个插件会包含在一个子目录中。| `%ES_HOME%\plugins`||

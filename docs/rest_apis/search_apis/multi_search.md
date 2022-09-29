@@ -16,7 +16,7 @@ GET my-index-000001/_msearch
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters?id=配置跨集群搜索权限)。
+- 如果 Elasticsearch 安全特性启用，你对目标数据流、索引或别名必须有 [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。对于跨集群搜索，参阅[配置跨集群搜索权限](/set_up_elasticsearch/remote_clusters/configure_roles_and_users_for_remote_clusters#配置跨集群搜索权限)。
 
 ## 描述
 
@@ -33,7 +33,9 @@ body\n
 
 此结构经过专门优化，以在特定搜索最终重定向到另一个节点时减少解析。
 
-!> 数据的最后一行必须以换行符 `\n` 结尾。每个换行符前面可以有一个回车符 `\r`。向该终端发送请求时，`Content-Type` 头应设置为 `application/x-ndjson`。
+::: danger 警告
+数据的最后一行必须以换行符 `\n` 结尾。每个换行符前面可以有一个回车符 `\r`。向该终端发送请求时，`Content-Type` 头应设置为 `application/x-ndjson`。
+:::
 
 ## 路径参数
 
@@ -50,13 +52,13 @@ body\n
   （可选，布尔值）如果为 `false`，任何通配符、[索引别名](/rest_apis/index_apis/bulk_index_alias)或 `_all` 值只针对丢失或关闭的索引，请求将返回一个错误。即使请求以其他开启索引为目标，此行为也适用。例如，如果一个索引以 `foo` 开头，而没有索引以 `bar` 开头，则以 `foo*,bar*` 为目标的请求将返回错误。
 
 - `ccs_minimize_roundtrips`
-  （可选，布尔值）如果为 `true`，在执行跨集群搜索（CCS）请求时，协调节点和远程集群之间的网络往返行程最小化。参阅 [跨群集搜索如何处理网络延迟](/search_your_data/search_across_clusters?id=跨群集搜索如何处理网络延迟)。默认为 `true`。
+  （可选，布尔值）如果为 `true`，在执行跨集群搜索（CCS）请求时，协调节点和远程集群之间的网络往返行程最小化。参阅 [跨群集搜索如何处理网络延迟](/search_your_data/search_across_clusters#跨群集搜索如何处理网络延迟)。默认为 `true`。
 
 - `expand_wildcards`
   （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
   1. `all`
-  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
   2. `open`
   匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
   3. `closed`
@@ -75,7 +77,7 @@ body\n
   （可选，布尔值）如果为 `true`，缺少或关闭的索引不包括在响应中。默认为 `false`。
 
 - `max_concurrent_searches`
-  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearchnode?id=数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearchthread_pools), 10)))。
+  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearchnode#数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearchthread_pools), 10)))。
 
 - `max_concurrent_shard_requests`
   （可选，整数）定义此搜索并发执行的每个节点的并发分片请求数。此值应用于限制搜索对集群的影响，以限制并发分片请求的数量。默认为 `5`。
@@ -98,7 +100,7 @@ body\n
   （可选，字符串）用于将搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/_routing-field)。
 
 - `search_type`
-  （可选，字符串）如何为[相关性评分](/query_dsl/query_and_filter_context?id=相关性评分)计算[分布式词语频率](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)。
+  （可选，字符串）如何为[相关性评分](/query_dsl/query_and_filter_context#相关性评分)计算[分布式词语频率](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)。
 
   - `search_type` 有效值
     - `query_then_fetch`
@@ -129,7 +131,7 @@ body\n
       （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
       1. `all`
-      匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+      匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
       2. `open`
       匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
       3. `closed`
@@ -235,7 +237,7 @@ GET my-index-000001/_msearch
 
 ## 部分响应
 
-为了确保快速响应，如果一个或多个分片失败，多搜索 API 将响应部分结果。有关更多信息，参阅[分片故障](/rest_apis/document_apis/reading_and_writing_documents?id=分片故障)。
+为了确保快速响应，如果一个或多个分片失败，多搜索 API 将响应部分结果。有关更多信息，参阅[分片故障](/rest_apis/document_apis/reading_and_writing_documents#分片故障)。
 
 ## 取消搜索
 

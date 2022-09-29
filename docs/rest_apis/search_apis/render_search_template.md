@@ -26,7 +26,7 @@ POST _render/template
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你对至少一个索引模型必须有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你对至少一个索引模型必须有 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 路径参数
 

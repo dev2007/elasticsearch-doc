@@ -19,7 +19,9 @@
 |`date_format`|显示计算日期的可选格式。默认为 `yyyy.MM.dd`。格式应与 java-time 兼容。[https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html)|
 |`time_zone`|可选的时区。默认为 `utc`。|
 
-?> 注意 `date_format`（日期格式）中使用的大小写字母。例如，`mm` 表示分钟，`MM`表示月份。类似的，`hh` 表示 `1-12` 范围内的小时，与 `AM/PM` 组合使用，而 `HH` 表示 `0-23` 24小时范围内的小时。
+::: tip 提示
+`date_format`（日期格式）中使用的大小写字母。例如，`mm` 表示分钟，`MM`表示月份。类似的，`hh` 表示 `1-12` 范围内的小时，与 `AM/PM` 组合使用，而 `HH` 表示 `0-23` 24小时范围内的小时。
+:::
 
 日期数学表达式与区域无关。因此，不以使用格列高利历之外的日历。
 
@@ -30,7 +32,8 @@
 PUT /%3Cmy-index-%7Bnow%2Fd%7D%3E
 ```
 
-?> 日期数学字符的百分比编码  
+::: tip 提示
+日期数学字符的百分比编码  
 日期格式特定字符必须为 URI 编码，如下：  
 
 |||
@@ -44,6 +47,7 @@ PUT /%3Cmy-index-%7Bnow%2Fd%7D%3E
 |+|%2B|
 |:|%3A|
 |,|%2C|
+:::
 
 以下示例显示日期数学索引名字的不同格式，且给定当前时间为 UTC 2024年3月22日中午，它们解析为最终索引名字。
 

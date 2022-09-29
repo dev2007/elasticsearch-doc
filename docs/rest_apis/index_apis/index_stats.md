@@ -16,7 +16,7 @@ GET /my-index-000001/_stats
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `monitor` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `monitor` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 描述
 
@@ -42,7 +42,7 @@ GET /my-index-000001/_stats
     返回所有统计
   
   - `completion`
-    [完成建议](/search_apis/suggesters?id=完成建议器)统计。
+    [完成建议](/search_apis/suggesters#完成建议器)统计。
 
   - `docs`
     尚未合并的文档数和已删除的文档数。[索引刷新](rest_apis/index_apis/refresh)会影响统计。
@@ -57,7 +57,7 @@ GET /my-index-000001/_stats
     获取统计，包括丢失的统计。
 
   - `indexing`
-    [索引](/rest_apis/document_apis/index)统计。
+    [索引](/rest_apis/document_apis/esindex)统计。
 
   - `merge`
     [合并](/index_modules/merge)统计。
@@ -80,7 +80,7 @@ GET /my-index-000001/_stats
     如果 `include_segment_file_size` 参数为 `true`，则此度量包括每个 Lucene 索引文件的聚合磁盘使用率。
 
   - `store`
-    [字节单位](/rest_apis/api_convention/common_options?id=字节大小单位)的索引大小。
+    [字节单位](/rest_apis/api_convention/common_options#字节大小单位)的索引大小。
 
   - `suggest`
     [建议器](/rest_apis/search_apis/suggesters)统计。
@@ -98,7 +98,7 @@ GET /my-index-000001/_stats
   （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
   1. `all`
-  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
   2. `open`
   匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
   3. `closed`

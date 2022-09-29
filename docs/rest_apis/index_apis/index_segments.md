@@ -14,7 +14,7 @@ GET /my-index-000001/_segments
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `monitor` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges?id=索引权限)。
+- 如果 Elasticsearch 安全特性启用，你使用此 API 必须有 `monitor` 或 `manage` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 
 ## 路径参数
 
@@ -33,7 +33,7 @@ GET /my-index-000001/_segments
   （可选，字符串）通配符表达式可以匹配的索引类型。如果请求可以数据流为目标，则此参数确定通配符表达式是否匹配隐藏的数据流。支持逗号分隔的值，如 `open,hidden`。有效的值有：
 
   1. `all`
-  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax?id=隐藏数据流和索引)（隐藏的）。
+  匹配任何数据流或索引，包括 [hidden](/rest_apis/api_convention/multi_target_syntax#隐藏数据流和索引)（隐藏的）。
   2. `open`
   匹配 open（开启）、非隐藏的索引。也匹配任何非隐藏的数据流。
   3. `closed`
@@ -166,7 +166,9 @@ API 返回以下响应：
 
 要添加可用于调试的其他信息，请使用 `verbose` 标志。
 
-!> 此功能是实验性的，在将来的版本中可能会完全更改或删除。Elastic 将尽最大努力解决任何问题，但实验性功能不受官方 GA 功能支持 SLA 的约束。
+::: danger 警告
+此功能是实验性的，在将来的版本中可能会完全更改或删除。Elastic 将尽最大努力解决任何问题，但实验性功能不受官方 GA 功能支持 SLA 的约束。
+:::
 
 ```bash
 GET /test/_segments?verbose=true
