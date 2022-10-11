@@ -20,6 +20,14 @@
 
 [在网站查看文档](https://elasticsearch.bookhub.tech)
 
+## 感谢与支持
+
+你的赞赏比感谢更有力！
+
+请我喝咖啡吧。
+
+![code](https://images.bookhub.tech/mp/code.jpg)
+
 ## 本地运行
 
 本文档基于 `VuePress` 编译后发布。本地通过 `npm` 安装 [`VuePress`](https://www.vuepress.cn/) 工具后，即可本地运行。
