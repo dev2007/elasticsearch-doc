@@ -6,6 +6,8 @@
 
 ## 感谢与支持
 
+![Translate](https://img.shields.io/badge/Translate-Elasticsearch-%2321BAB5) ![stars](https://img.shields.io/github/stars/dev2007/elasticsearch-doc?color=%2321BAB5&label=Stars&logo=github) ![forks](https://img.shields.io/github/forks/dev2007/elasticsearch-doc?color=%2321BAB5&label=Forks&logo=github)
+
 如果对你有帮助，欢迎到 GitHub 给我一颗星星 [Star](https://github.com/dev2007/elasticsearch-doc)。
 
 但你的赞赏比感谢更有力！
