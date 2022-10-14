@@ -12,7 +12,7 @@
 
 - `cluster.routing.allocation.total_shards_per_node`
 
-（[动态](/set_up_elasticsearch/configuring_elasticsearchconfig#集群和节点设置类型)）分配给每个节点的主分片和副本分片的最大数量。默认值为 `-1`（无限制）。
+（[动态](/set_up_elasticsearch/configuring_elasticsearch#集群和节点设置类型)）分配给每个节点的主分片和副本分片的最大数量。默认值为 `-1`（无限制）。
 
 Elasticsearch 在分片分配期间检查此设置。例如，一个集群的 `cluster.routing.allocation.total_shards_per_node` 设置为 `100`，三个节点具有以下分片分配：
 

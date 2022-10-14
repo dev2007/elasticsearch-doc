@@ -76,7 +76,7 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - :heavy_check_mark: 重要的 Elasticsearch 配置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/import_elasticsearch_configuration)
     - :heavy_check_mark: 安全配置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/secure_settings)
     - :heavy_check_mark: 审计安全设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/auditing_settings)
-    - Circuit breaker settings
+    - :heavy_check_mark: 断路器设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/circuit_breaker_settings)
     - Cluster-level shard allocation and routing settings
     - Cross-cluster replication settings
     - Discovery and cluster formation settings

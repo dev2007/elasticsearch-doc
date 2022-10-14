@@ -76,7 +76,8 @@ module.exports = {
             children: [
               ['/set_up_elasticsearch/configuring_elasticsearch/import_elasticsearch_configuration', '重要的 Elasticsearch 配置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/secure_settings', '安全设置'],
-              ['/set_up_elasticsearch/configuring_elasticsearch/auditing_settings', '审计安全设置']
+              ['/set_up_elasticsearch/configuring_elasticsearch/auditing_settings', '审计安全设置'],
+              ['/set_up_elasticsearch/configuring_elasticsearch/circuit_breaker_settings','断路器设置']
             ]
           }
         ]

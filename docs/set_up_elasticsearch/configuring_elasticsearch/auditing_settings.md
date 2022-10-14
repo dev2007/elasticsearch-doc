@@ -3,7 +3,7 @@
 你可以使用[审计日志](/secure_the_elastic_stack/enable_audit_logging/enable_audit_logging)记录与安全相关的事件，例如身份验证失败、拒绝连接和数据访问事件。此外，通过 API 对安全配置的更改，例如创建、更新和删除[本机](/secure_the_elastic_stack/user_authentication/native_user_authentication)和[内置](/secure_the_elastic_stack/user_authentication/built_in_users)用户、[角色](/rest_apis/security_apis/create_or_update_roles)、[角色映射](/rest_apis/security_apis/create_or_update_role_mappings)和 [API 键](/rest_apis/security_apis/create_api_keys)也会被记录下来。
 
 ::: tip 提示
-审计日志仅在某些订阅级别上可用。欲了解更多信息，参阅 https://www.elastic.co/subscriptions。
+审计日志仅在某些订阅级别上可用。欲了解更多信息，参阅 [https://www.elastic.co/subscriptions](https://www.elastic.co/subscriptions)。
 :::
 
 如果配置了，则必须在集群中的每个节点上设置审计设置。静态设置，例如 `xpack.security.audit.enabled`，必须在每个节点的 `elasticsearch.yml` 中配置。对于动态审计设置，使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings)确保所有节点上的设置相同。
