@@ -3,7 +3,8 @@ module.exports = {
   description: '基于 v7.11 官方文档开始翻译，持续翻译中',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'keywords', content: 'Elastic,Elasticsearch,ElasticStack,ELK,Document,docs,文档,中文文档,入门' }]
+    ['meta', { name: 'keywords', content: 'Elastic,Elasticsearch,ElasticStack,ELK,Document,docs,文档,中文文档,入门' }],
+	['script',{src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8380975615223941',crossorigin: 'anonymous'}]
   ],
   base: '/',
   markdown: {
@@ -12,7 +13,7 @@ module.exports = {
   plugins: [
     [
       '@vuepress/google-analytics', {
-        'ga': ''
+        'ga': 'UA-226868573-4'
       }
     ],
     [
