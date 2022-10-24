@@ -4,7 +4,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'keywords', content: 'Elastic,Elasticsearch,ElasticStack,ELK,Document,docs,文档,中文文档,入门' }],
-	['script',{src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8380975615223941',crossorigin: 'anonymous'}]
+	  ['script',{src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8380975615223941',crossorigin: 'anonymous'}]
   ],
   base: '/',
   markdown: {
@@ -28,7 +28,7 @@ module.exports = {
     displayAllHeaders: true,
     nav: [
       { text: '文档首页', link: '/intro/' },
-      { text: 'BookHub 书库', link: 'https://www.bookhub.tech' },
+      { text: 'BookHub 书库', link: 'https://pdf.bookhub.tech' },
       { text: '中文文档汇集', link: 'https://docs.bookhub.tech' },
       { text: 'GitHub', link: 'https://github.com/dev2007/elasticsearch-doc' }
     ],
