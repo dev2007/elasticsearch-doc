@@ -12,12 +12,12 @@
 
 - `index.blocks.read_only_allow_delete`
 
-类似于 `index.blocks.read_only`，但也允许删除索引以获取更多资源。[基于硬盘的分片分配器](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings#基于硬盘的分片分配设置)可以自动添加和移除块。
+类似于 `index.blocks.read_only`，但也允许删除索引以获取更多资源。[基于硬盘的分片分配器](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings#基于硬盘的分片分配设置)可以自动添加和移除块。
 
 从索引中删除文档以释放资源——而不是删除索引本身——随着时间推移会增加索引大小。当 `index.blocks.read_only_allow_delete` 设置为 `true` 时，删除索引是不允许的。然而，删除索引自身会释放只读索引块，并使资源几乎立即可用。
 
 ::: danger 警告
-在磁盘利用率低于高水位线时，Elasticsearch 自动添加和移除只读索引块，由 [cluster.routing.allocation.disk.watermark.flood_stage](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings) 控制。
+在磁盘利用率低于高水位线时，Elasticsearch 自动添加和移除只读索引块，由 [cluster.routing.allocation.disk.watermark.flood_stage](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings) 控制。
 :::
 
 - `index.blocks.read`

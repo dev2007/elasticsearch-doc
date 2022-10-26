@@ -139,7 +139,7 @@ GET /my-index-000001/_search
 
 - `preference`
 
-  （可选，字符串）用于搜索的节点和分片。默认情况下，Elasticsearch 使用[自适应副本选择](/search_your_data/search_shard_routing#自适应副本选择)从符合条件的节点和分片中进行选择，以考虑[分配感知](/set_up_elasticsearch/configuring_elasticsearchcluster_level_shard_allocation_and_routing_settings#分片分配感知)。
+  （可选，字符串）用于搜索的节点和分片。默认情况下，Elasticsearch 使用[自适应副本选择](/search_your_data/search_shard_routing#自适应副本选择)从符合条件的节点和分片中进行选择，以考虑[分配感知](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings#分片分配感知)。
 
   - `preference` 合法值
     - `_only_local`
