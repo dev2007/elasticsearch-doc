@@ -1,5 +1,7 @@
 # Elasticsearch中文文档——基于v7.11
 
+![license](https://img.shields.io/badge/license-CC--BY--NC-%2321BAB5)
+
 ## 翻译目标及说明
 
 基于官方 v7.11 文档，翻译为中文，并发布在网站查看。
