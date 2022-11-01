@@ -81,6 +81,7 @@ module.exports = {
               ['/set_up_elasticsearch/configuring_elasticsearch/circuit_breaker_settings','断路器设置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings','集群级分片分配和路由设置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/cross_cluster_replication_settings','跨集群复制设置'],
+              ['/set_up_elasticsearch/configuring_elasticsearch/discovery_and_cluster_formation_settings','发现和集群组成设置']
             ]
           }
         ]

@@ -81,7 +81,7 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - :heavy_check_mark: 断路器设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/circuit_breaker_settings)
     - :heavy_check_mark: 集群级分片分配和路由设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings)
     - :heavy_check_mark: 跨集群复制设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/cross_cluster_replication_settings)
-    - Discovery and cluster formation settings
+    - :heavy_check_mark: 发现和集群组成设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/discovery_and_cluster_formation_settings)
     - Field data cache settings
     - HTTP
     - Index lifecycle management settings
