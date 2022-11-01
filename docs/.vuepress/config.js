@@ -27,10 +27,9 @@ module.exports = {
     sidebarDepth: 3,
     displayAllHeaders: true,
     nav: [
-      { text: '文档首页', link: '/intro/' },
-      { text: 'BookHub 书库', link: 'https://pdf.bookhub.tech' },
-      { text: '中文文档汇集', link: 'https://docs.bookhub.tech' },
-      { text: 'STEMpump', link: 'https://stempump.bookhub.tech'},
+      { text: 'BookHub 首页', link: 'https://www.bookhub.tech' },
+      { text: '中文文档', link: 'https://docs.bookhub.tech' },
+      { text: '计算机书库', link: 'https://pdf.bookhub.tech' },
       { text: 'GitHub', link: 'https://github.com/dev2007/elasticsearch-doc' }
     ],
     sidebar: [
