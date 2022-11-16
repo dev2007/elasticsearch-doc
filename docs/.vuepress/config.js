@@ -83,7 +83,8 @@ module.exports = {
               ['/set_up_elasticsearch/configuring_elasticsearch/cross_cluster_replication_settings','跨集群复制设置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/discovery_and_cluster_formation_settings','发现和集群组成设置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/field_data_cache_settings','字段数据缓存设置'],
-              ['/set_up_elasticsearch/configuring_elasticsearch/health_diagnostic_settings_in_elasticsearch','Elasticsearch 中的健康诊断设置']
+              ['/set_up_elasticsearch/configuring_elasticsearch/health_diagnostic_settings_in_elasticsearch','Elasticsearch 中的健康诊断设置'],
+              ['/set_up_elasticsearch/configuring_elasticsearch/index_lifecycle_management_settings','Elasticsearch 索引生命周期管理设置'],
             ]
           }
         ]
