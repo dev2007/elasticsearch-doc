@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Elasticsearch 中文文档',
-  description: '基于 v7.11 官方文档开始翻译，持续翻译中',
+  description: 'Elasticsearch 中文文档，基于 v7.11 官方文档开始翻译',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'keywords', content: 'Elastic,Elasticsearch,ElasticStack,ELK,Document,docs,文档,中文文档,入门' }],

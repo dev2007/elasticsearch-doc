@@ -4,6 +4,11 @@
 
 计划在全部翻译完成后，再基于完成时的最新版本，对有差异的老版本文档进行调整。
 
+<InArticleAdsense
+    data-ad-client="ca-pub-8380975615223941"
+    data-ad-slot="9428292757">
+</InArticleAdsense>
+
 ## 感谢与支持
 
 ![license](https://img.shields.io/badge/License-CC--BY--NC-%2321BAB5) ![Translate](https://img.shields.io/badge/Translation-Elasticsearch-%2321BAB5) ![stars](https://img.shields.io/github/stars/dev2007/elasticsearch-doc?color=%2321BAB5&label=Stars&logo=github) ![forks](https://img.shields.io/github/forks/dev2007/elasticsearch-doc?color=%2321BAB5&label=Forks&logo=github)

@@ -15,5 +15,8 @@
     "@vuepress/plugin-medium-zoom": "^1.9.7",
     "vuepress": "^1.9.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vue-google-adsense": "^1.10.1",
+    "vue-script2": "^2.1.0"
+  }
 }
