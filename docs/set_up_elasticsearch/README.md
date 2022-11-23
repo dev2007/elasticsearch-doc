@@ -7,6 +7,11 @@
 - 启动
 - 配置
 
+<InArticleAdsense
+    data-ad-client="ca-pub-8380975615223941"
+    data-ad-slot="9428292757">
+</InArticleAdsense>
+
 ## 支持的平台
 
 官方支持的操作系统的 JVM 列表见：[支持列表](https://www.elastic.co/cn/support/matrix)。Elasticsearch 在列出的平台上进行了测试，但它也可能在其他平台运行。

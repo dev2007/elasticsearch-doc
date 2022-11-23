@@ -2,6 +2,11 @@
 
 索引模块是按索引创建的模块，控制有关索引的所有方面。
 
+<InArticleAdsense
+    data-ad-client="ca-pub-8380975615223941"
+    data-ad-slot="9428292757">
+</InArticleAdsense>
+
 ## 索引设置
 
 可以为每个索引设置索引级的设置。设置如下：
