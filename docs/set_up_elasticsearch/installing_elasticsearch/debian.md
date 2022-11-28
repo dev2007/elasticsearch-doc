@@ -194,7 +194,7 @@ GET /
 
 `/etc/elasticsearch` 目录包含 Elasticsearch 默认运行时配置。该目录和所包含的所有文件所有权在包安装时设置为 `root:elasticsearch`。
 
-`setgid ` 标志对目录 `/etc/elasticsearch` 应用组权限，以确保 Elasticsearch 能读取任何包含的文件和子目录。所有文件和子目录继承 `root:elasticsearch` 所有权。从该目录或者任何子目录运行命令，如 [elasticsearch-keystore 工具](/set_up_elasticsearch/configuring_elasticsearchsecure)，需要 `root:elasticsearch` 权限。
+`setgid` 标志对目录 `/etc/elasticsearch` 应用组权限，以确保 Elasticsearch 能读取任何包含的文件和子目录。所有文件和子目录继承 `root:elasticsearch` 所有权。从该目录或者任何子目录运行命令，如 [elasticsearch-keystore 工具](/set_up_elasticsearch/configuring_elasticsearch/secure)，需要 `root:elasticsearch` 权限。
 
 Elasticsearch 默认从 `/etc/elasticsearch/elasticsearch.yml` 文件加载它的配置。在[配置 Elasticsearch](/set_up_elasticsearch/config) 中解释了配置文件的格式。
 

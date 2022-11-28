@@ -84,10 +84,9 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - :heavy_check_mark: 发现和集群组成设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/discovery_and_cluster_formation_settings.html)
     - :heavy_check_mark: 字段数据缓存设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/field_data_cache_settings.html)
     - :heavy_check_mark: Elasticsearch 中的健康诊断设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/health_diagnostic_settings_in_elasticsearch.html)
-    - HTTP
-    - Index lifecycle management settings
-    - Index management settings
-    - Index recovery settings
+    - :heavy_check_mark: 索引生命周期管理设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/index_lifecycle_management_settings.html)
+    - :heavy_check_mark: 索引管理设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/index_management_settings.html)
+    - :heavy_check_mark: 索引恢复设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/index_recovery_settings.html)
     - Indexing buffer settings
     - License settings
     - Local gateway settings

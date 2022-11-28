@@ -56,7 +56,7 @@ Elasticsearch 可以如以下从命令行启动：
 
 ## 在命令行配置 Elasticsearch
 
-Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearchelasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/set_up_elasticsearch/config)中解释。
+Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearch/elasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/set_up_elasticsearch/config)中解释。
 
 在配置文件中可以指定的设置，也能在命令行中指定，如下使用 `-E` 语法：
 
@@ -168,7 +168,7 @@ The service 'elasticsearch-service-x64' has been installed.
 :::
 
 ::: tip 提示
-当第一次在 Windows 上安装 Elasticsearch 作为服务或者从命令行运行 Elasticsearch 时，你可以按[JVM 堆大小设置](/set_up_elasticsearch/configuring_elasticsearchadvanced#JVM 堆大小设置)手工设置堆大小。为了调整已安装服务的堆大小，使用服务管理器：`bin\elasticsearch-service.bat manager`。
+当第一次在 Windows 上安装 Elasticsearch 作为服务或者从命令行运行 Elasticsearch 时，你可以按[JVM 堆大小设置](/set_up_elasticsearch/configuring_elasticsearch/advanced#JVM 堆大小设置)手工设置堆大小。为了调整已安装服务的堆大小，使用服务管理器：`bin\elasticsearch-service.bat manager`。
 :::
 
 ::: tip 提示

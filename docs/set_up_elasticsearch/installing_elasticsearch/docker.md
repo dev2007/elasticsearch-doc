@@ -250,9 +250,9 @@ docker run --rm centos:8 /bin/bash -c 'ulimit -Hn && ulimit -Sn && ulimit -Hu &&
 
 ### 手工设置堆大小
 
-默认情况下，Elasticsearch 基于节点的[角色](/set_up_elasticsearch/configuring_elasticsearchnode#节点角色)和节点容器总可用内存，自动地设置 JVM 堆。对大多数生产环境，我们推荐默认大小设置。如果有需要，你可以通过手工设置 JVM 堆大小来重载默认设置。
+默认情况下，Elasticsearch 基于节点的[角色](/set_up_elasticsearch/configuring_elasticsearch/node#节点角色)和节点容器总可用内存，自动地设置 JVM 堆。对大多数生产环境，我们推荐默认大小设置。如果有需要，你可以通过手工设置 JVM 堆大小来重载默认设置。
 
-为了在生产环境手工设置堆大小，绑定挂载包含了你期望的[堆大小](/set_up_elasticsearch/configuring_elasticsearchadvanced#设置-JVM-堆大小)设置的 [JVM 选项](/set_up_elasticsearch/configuring_elasticsearchjvm)文件（在 `/usr/share/elasticsearch/configuring_elasticsearchjvm.options.d`中）。
+为了在生产环境手工设置堆大小，绑定挂载包含了你期望的[堆大小](/set_up_elasticsearch/configuring_elasticsearch/advanced#设置-JVM-堆大小)设置的 [JVM 选项](/set_up_elasticsearch/configuring_elasticsearch/jvm)文件（在 `/usr/share/elasticsearch/configuring_elasticsearchjvm.options.d`中）。
 
 用于测试的话，你可以通过环境变量 `ES_JAVA_OPTS` 手工设置堆大小。例如，要用 16 GB，通过 `docker run` 指定 `-e ES_JAVA_OPTS="-Xms16g -Xmx16g"`。`ES_JAVA_OPTS` 重载所有其他 JVM 选项。在生产环境，我们不推荐使用 `ES_JAVA_OPTS`。上方的 `docker-compose.yml` 可以看到设置堆大小为 512 MB。
 
@@ -303,7 +303,7 @@ docker run <various parameters> bin/elasticsearch -Ecluster.name=mynewclusternam
 创建自定义配置文件，将其绑定挂载到 Docker 镜像的相应文件上。例如，使用 `docker run` 绑定挂载 `custom_elasticsearch.yml`，如下指定：
 
 ```bash
--v full_path_to/custom_elasticsearch.yml:/usr/share/elasticsearch/configuring_elasticsearchelasticsearch.yml
+-v full_path_to/custom_elasticsearch.yml:/usr/share/elasticsearch/configuring_elasticsearch/elasticsearch.yml
 ```
 
 ::: danger 警告
@@ -315,7 +315,7 @@ docker run <various parameters> bin/elasticsearch -Ecluster.name=mynewclusternam
 默认情况下，Elasticsearch 会为安全设置自动生成密钥库文件。这个文件是混淆的，但没有加密。如果你想使用密码加密你的[安全设置](/set_up_elasticsearch/configuring_elasticsearchsecure_settings)，你必须使用 `elasticsearch-keystore` 程序去创建一个密码保护的密钥库，然后绑定挂载它到容器中文件 `/usr/share/elasticsearch/configuring_elasticsearchelasticsearch.keystore`。为了在启动时向 Docker 容器提供密码，将 Docker 的环境变量值 `KEYSTORE_PASSWORD` 设置为密码值。例如，`docker run` 命令可以有以下的选项：
 
 ```bash
--v full_path_to/elasticsearch.keystore:/usr/share/elasticsearch/configuring_elasticsearchelasticsearch.keystore
+-v full_path_to/elasticsearch.keystore:/usr/share/elasticsearch/configuring_elasticsearch/elasticsearch.keystore
 -E KEYSTORE_PASSWORD=mypassword
 ```
 

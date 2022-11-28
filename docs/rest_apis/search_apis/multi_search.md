@@ -77,7 +77,7 @@ body\n
   （可选，布尔值）如果为 `true`，缺少或关闭的索引不包括在响应中。默认为 `false`。
 
 - `max_concurrent_searches`
-  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearchnode#数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearchthread_pools), 10)))。
+  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearch/node.html#数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearch/thread_pools.html), 10)))。
 
 - `max_concurrent_shard_requests`
   （可选，整数）定义此搜索并发执行的每个节点的并发分片请求数。此值应用于限制搜索对集群的影响，以限制并发分片请求的数量。默认为 `5`。
@@ -155,10 +155,10 @@ body\n
       （可选，字符串）用于执行搜索的节点或分片。默认随机。
 
     - `request_cache`
-      （可选，布尔值）如果为 `true`，请求缓存可用于此搜索。默认为索引级设置。参阅[分片请求缓存设置](/set_up_elasticsearch/configuring_elasticsearchshard_request_cache_setttings)。
+      （可选，布尔值）如果为 `true`，请求缓存可用于此搜索。默认为索引级设置。参阅[分片请求缓存设置](/set_up_elasticsearch/configuring_elasticsearch/shard_request_cache_setttings.html)。
 
     - `routing`
-      （可选，字符串）用于将搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/_routing-field)。
+      （可选，字符串）用于将搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/_routing-field.html)。
 
     - `search_type`
       （可选，字符串）指示在对返回的文档进行评分时是否应使用全局术语和文档频率。

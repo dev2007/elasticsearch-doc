@@ -238,7 +238,7 @@ NGramTokenizer 和 NGramTokenFilter的 min_gram 和 max_gram 允许差值。默�
 
 ## X-Pack 索引设置 [`X-Pack`]
 
-- [索引生命周期管理](/set_up_elasticsearch/configuring_elasticsearchindex_lifecycle)
+- [索引生命周期管理](/set_up_elasticsearch/configuring_elasticsearch/index_lifecycle)
 
 指定的索引的生命周期策略和翻转别名。
 

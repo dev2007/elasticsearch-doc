@@ -126,7 +126,7 @@ Elasticsearch `.tar.gz` 包不包含 `systemd` 模块。要把 Elasticsearch 作
 
 ## 在命令行配置 Elasticsearch
 
-Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearchelasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/set_up_elasticsearch/config)中解释。
+Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearch/elasticsearch.yml` 加载配置。配置文件的格式在[配置 Elasticsearch](/set_up_elasticsearch/config)中解释。
 
 在配置文件中可以指定的设置，也能在命令行中指定，如下使用 `-E` 语法：
 

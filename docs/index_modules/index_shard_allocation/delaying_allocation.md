@@ -10,7 +10,7 @@
 
 这些操作旨在通过确保每个分片尽快完全复制，以保护集群避免数据丢失。
 
-即使我们在[节点级别](/set_up_elasticsearch/configuring_elasticsearchindex_recovery_settings)和[集群级别](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings#集群级分片分配设置)限制并发恢复，这种“分片洗牌”仍然会给集群带来大量额外负载，如果丢失的节点可能会很快返回，这可能是不必要的。想象以下场景：
+即使我们在[节点级别](/set_up_elasticsearch/configuring_elasticsearch/index_recovery_settings)和[集群级别](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings#集群级分片分配设置)限制并发恢复，这种“分片洗牌”仍然会给集群带来大量额外负载，如果丢失的节点可能会很快返回，这可能是不必要的。想象以下场景：
 
 - 节点 5 丢失网络连接。
 - 对于曾是节点 5 上的主分片的副本分片，主节点将把它们提升为主分片。

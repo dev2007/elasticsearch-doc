@@ -21,7 +21,7 @@ PUT /_autoscaling/policy/<name>
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你必须有 `manage_autoscaling` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)来使用此 API。
+- 如果 Elasticsearch 安全特性启用，你必须有 `manage_autoscaling` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges.html#集群权限)来使用此 API。
 
 - 如果启用了[操作员权限特性](/secure_the_elastic_stack/operator_privileges/operator_privileges)，则只有操作员用户可以使用此 API。
 

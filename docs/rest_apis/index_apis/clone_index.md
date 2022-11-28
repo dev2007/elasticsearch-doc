@@ -79,7 +79,7 @@ POST /my_source_index/_clone/my_target_index
 
 ### 监控复制过程
 
-监控过程可以通过 [`_cat recovery` API](/rest_apis/compact_and_aligned_text_apis/cat_recovery) 监控，，或使用 [`集群健康` API](/rest_apis/cluster_apis/cluster_health) 通过 `wait_for_status` 参数设置为 `yellow`（黄色）等待所有主分片成功分配。
+监控过程可以通过 [`_cat recovery` API](/rest_apis/compact_and_aligned_text_apis/cat_recovery.html) 监控，，或使用 [`集群健康` API](/rest_apis/cluster_apis/cluster_health) 通过 `wait_for_status` 参数设置为 `yellow`（黄色）等待所有主分片成功分配。
 
 `_clone` API 一旦目标索引被添加到集群的状态，在任何分片被分配前，就会返回结果。这时，所有的分片都处于 `unassigned`（未分配）状态。如果由于任一原因，目标索引不能分配，它的主分片会保持 `unassigned` 直到它能在节点上分配。
 

@@ -39,7 +39,7 @@ GET my-index/_msearch/template
   （可选，布尔值）如果为 `true`，在执行跨集群搜索（CCS）请求时，协调节点和远程集群之间的网络往返行程最小化。参阅 [跨群集搜索如何处理网络延迟](/search_your_data/search_across_clusters#跨群集搜索如何处理网络延迟)。默认为 `true`。
 
 - `max_concurrent_searches`
-  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearchnode#数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearchthread_pools), 10)))。
+  （可选，整数）多重搜索 API 可以执行的最大并发搜索数。默认为 max(1, (# of [数据节点](/set_up_elasticsearch/configuring_elasticsearch/node#数据节点) * min([搜索线程池大小](/set_up_elasticsearch/configuring_elasticsearch/thread_pools), 10)))。
 
 - `rest_total_hits_as_int`
   (可选，布尔值)指示是否 `hits.total` 应在搜索响应中呈现为整数或对象。默认为 `false`，返回一个对象。
@@ -107,7 +107,7 @@ GET my-index/_msearch/template
     （可选，字符串）用于执行搜索的节点或分片。默认随机。
 
   - `request_cache`
-    （可选，布尔值）如果为 `true`，请求缓存可用于此搜索。默认为索引级设置。参阅[分片请求缓存设置](/set_up_elasticsearch/configuring_elasticsearchshard_request_cache_setttings)。
+    （可选，布尔值）如果为 `true`，请求缓存可用于此搜索。默认为索引级设置。参阅[分片请求缓存设置](/set_up_elasticsearch/configuring_elasticsearch/shard_request_cache_setttings)。
 
   - `routing`
     （可选，字符串）用于搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/_routing_field)。
