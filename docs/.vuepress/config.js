@@ -86,7 +86,8 @@ module.exports = {
               ['/set_up_elasticsearch/configuring_elasticsearch/health_diagnostic_settings_in_elasticsearch','Elasticsearch 中的健康诊断设置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/index_lifecycle_management_settings','Elasticsearch 索引生命周期管理设置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/index_management_settings','索引管理设置'],
-              ['/set_up_elasticsearch/configuring_elasticsearch/index_recovery_settings',"索引恢复设置"]
+              ['/set_up_elasticsearch/configuring_elasticsearch/index_recovery_settings',"索引恢复设置"],
+              ['/set_up_elasticsearch/configuring_elasticsearch/indexing_buffer_settings',"索引缓冲区设置"]
             ]
           }
         ]

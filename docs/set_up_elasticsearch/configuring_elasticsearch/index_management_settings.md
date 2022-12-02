@@ -20,7 +20,7 @@
 
 - `reindex.remote.whitelist`  ![cloud](https://www.elastic.co/cloud/elasticsearch-service/signup?baymax=docs-body&elektra=docs)
 
-  [静态](/set_up_elasticsearch/configuring_elasticsearch)指定可以[从远程重索引](/rest_apis/document_apis/reindex.html#从远程重索引)的主机。期望它为 `host:port` 字符串的 YAML 数组。由逗号分隔的 `host:port` 条目列表组成。默认值为 `["\*.io:*"，"\*.com:*"]`。
+  ([静态](/set_up_elasticsearch/configuring_elasticsearch)指定可以[从远程重索引](/rest_apis/document_apis/reindex.html#从远程重索引)的主机。期望它为 `host:port` 字符串的 YAML 数组。由逗号分隔的 `host:port` 条目列表组成。默认值为 `["\*.io:*"，"\*.com:*"]`。
 
 - `stack.templates.enabled`
 
