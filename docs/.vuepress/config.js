@@ -87,7 +87,9 @@ module.exports = {
               ['/set_up_elasticsearch/configuring_elasticsearch/index_lifecycle_management_settings','Elasticsearch 索引生命周期管理设置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/index_management_settings','索引管理设置'],
               ['/set_up_elasticsearch/configuring_elasticsearch/index_recovery_settings',"索引恢复设置"],
-              ['/set_up_elasticsearch/configuring_elasticsearch/indexing_buffer_settings',"索引缓冲区设置"]
+              ['/set_up_elasticsearch/configuring_elasticsearch/indexing_buffer_settings',"索引缓冲区设置"],
+              ['/set_up_elasticsearch/configuring_elasticsearch/license_settings',"索引缓冲区设置"],
+              ['/set_up_elasticsearch/configuring_elasticsearch/local_gateway_settings',"本地网关设置"]
             ]
           }
         ]

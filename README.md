@@ -88,8 +88,8 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - :heavy_check_mark: 索引管理设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/index_management_settings.html)
     - :heavy_check_mark: 索引恢复设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/index_recovery_settings.html)
     - :heavy_check_mark: 索引缓冲区设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/indexing_buffer_settings.html)
-    - License settings
-    - Local gateway settings
+    - :heavy_check_mark: 授权设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/license_setting.html)
+    - :heavy_check_mark: 本地网关设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/local_gateway_setting.html)
     - Logging
     - Machine learning settings
     - Monitoring settings
