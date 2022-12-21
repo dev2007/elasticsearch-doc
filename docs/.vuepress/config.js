@@ -89,7 +89,8 @@ module.exports = {
               ['/set_up_elasticsearch/configuring_elasticsearch/index_recovery_settings',"索引恢复设置"],
               ['/set_up_elasticsearch/configuring_elasticsearch/indexing_buffer_settings',"索引缓冲区设置"],
               ['/set_up_elasticsearch/configuring_elasticsearch/license_settings',"索引缓冲区设置"],
-              ['/set_up_elasticsearch/configuring_elasticsearch/local_gateway_settings',"本地网关设置"]
+              ['/set_up_elasticsearch/configuring_elasticsearch/local_gateway_settings',"本地网关设置"],
+              ['/set_up_elasticsearch/configuring_elasticsearch/logging',"日志"]
             ]
           }
         ]
