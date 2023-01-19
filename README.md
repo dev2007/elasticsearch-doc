@@ -90,9 +90,9 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - :heavy_check_mark: 索引缓冲区设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/indexing_buffer_settings.html)
     - :heavy_check_mark: 授权设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/license_setting.html)
     - :heavy_check_mark: 本地网关设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/local_gateway_setting.html)
-    - Logging
-    - Machine learning settings
-    - Monitoring settings
+    - :heavy_check_mark: 日志 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/logging.html)
+    - :heavy_check_mark: Elasticsearch 中的机器学习设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/machine_learning_settings_in_elasticsearch.html)
+    - :heavy_check_mark: Elasticsearch 中的监控设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/monitoring_settings_in_elasticsearch.html)
     - Node
     - Network settings
     - Node query cache settings
