@@ -50,7 +50,7 @@ PUT /my-index-000001/_block/write
 
 （可选，字符串）逗号分隔的列表或通配符表达式的索引名称，用于限定请求。
 
-为所有索引添加块，使用 `_all` 或 `*`。为了禁止通过 `_all` 或通配符表达式添加块，修改集群设置 `action.destructive_requires_name` 为 `true`。你可以在文件 `elasticsearch.yml` 中修改设置，或者通过[集群更新设置](/rest_apis/cluster_apis/cluster_update_settings) API。
+为所有索引添加块，使用 `_all` 或 `*`。为了禁止通过 `_all` 或通配符表达式添加块，修改集群设置 `action.destructive_requires_name` 为 `true`。你可以在文件 `elasticsearch.yml` 中修改设置，或者通过[集群更新设置](/rest_apis/cluster_apis/cluster_update_settings.html) API。
 
 - `<block>`
 

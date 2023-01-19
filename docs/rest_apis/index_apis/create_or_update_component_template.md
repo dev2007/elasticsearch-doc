@@ -63,7 +63,7 @@ PUT _component_template/template_1
 > 
 > [Elastic 代理](https://www.elastic.co/guide/en/fleet/7.14/fleet-overview.html) 使用这些模板为其数据流配置备份索引。如果使用 Elastic 代理，并希望覆盖其中一个模板，请将替换模板的版本设置为高于当前版本。
 > 
-> 如果你不使用 Elastic 代理，又想禁用内置的组件和索引模板，通过[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings)设置 `stack.templates.enabled` 为 `false`。
+> 如果你不使用 Elastic 代理，又想禁用内置的组件和索引模板，通过[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html)设置 `stack.templates.enabled` 为 `false`。
 
 ## 查询参数
 

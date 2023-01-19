@@ -212,7 +212,7 @@ cluster.routing.allocation.awareness.attributes: rack_id
 
 > 将多个属性指定为逗号分隔的列表。
 
-你还可以使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings) 来设置或更新集群的感知属性。
+你还可以使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html) 来设置或更新集群的感知属性。
 
 在这个示例配置中，如果使用 `node.attr` 启动两个节点。`rack_id` 设置为 `rack_one` 并创建一个索引，其中包含 5 个主分片和每个主分片的 1 个副本，所有主分片和副本都在这两个节点上分配。
 
@@ -307,7 +307,7 @@ PUT _cluster/settings
   （[动态](/set_up_elasticsearch/configuring_elasticsearch#集群和节点设置类型)）与 `cluster.blocks.read_only` 相同，但允许删除索引以释放资源。
 
 ::: warning 警告
-不要依赖此设置来阻止更改集群。任何有权访问[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings)
+不要依赖此设置来阻止更改集群。任何有权访问[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html)
  的用户都可以使集群再次读写。
 :::
 

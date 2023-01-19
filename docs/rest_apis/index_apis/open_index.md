@@ -44,7 +44,7 @@ POST /my-index-000001/_open
 
 若要以集群中的所有数据流和索引为目标，省略此参数或使用 `_all` 或 `*`。
 
-使用 `_all` 或 `*` 关闭所有索引。修改 `action.destructive_requires_name` 集群设置为 `true`，可以禁用通过 `_all` 或 `*` 关闭索引。你可以在文件 `elasticsearch.yml` 中 或通过 [集群更新设置](/rest_apis/cluster_apis/cluster_update_settings) API 来更新这个设置。
+使用 `_all` 或 `*` 关闭所有索引。修改 `action.destructive_requires_name` 集群设置为 `true`，可以禁用通过 `_all` 或 `*` 关闭索引。你可以在文件 `elasticsearch.yml` 中 或通过 [集群更新设置](/rest_apis/cluster_apis/cluster_update_settings.html) API 来更新这个设置。
 
 ## 查询参数
 

@@ -6,7 +6,7 @@
 审计日志仅在某些订阅级别上可用。欲了解更多信息，参阅 [https://www.elastic.co/subscriptions](https://www.elastic.co/subscriptions)。
 :::
 
-如果配置了，则必须在集群中的每个节点上设置审计设置。静态设置，例如 `xpack.security.audit.enabled`，必须在每个节点的 `elasticsearch.yml` 中配置。对于动态审计设置，使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings)确保所有节点上的设置相同。
+如果配置了，则必须在集群中的每个节点上设置审计设置。静态设置，例如 `xpack.security.audit.enabled`，必须在每个节点的 `elasticsearch.yml` 中配置。对于动态审计设置，使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html)确保所有节点上的设置相同。
 
 ## 常规审计设置
 

@@ -1,6 +1,6 @@
 # 配置 Elasticsearch
 
-Elasticsearch 具有良好的默认值，只需要很少的配置。可以使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings) 在运行的集群上更改大多数设置。
+Elasticsearch 具有良好的默认值，只需要很少的配置。可以使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html) 在运行的集群上更改大多数设置。
 
 配置文件应包含特定于节点的设置（如 `node.name` 和路径），或节点加入群集所需的设置，如 `cluster.name` 和 `network.host`。
 
@@ -79,7 +79,7 @@ export HOSTNAME="host1,host2"
 
 - **动态**
 
-你可以使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings) 在正在运行的集群上配置和更新动态设置。你还可以使用 `elasticsearch.yml` 在未启动或关闭的节点上本地配置动态设置。
+你可以使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html) 在正在运行的集群上配置和更新动态设置。你还可以使用 `elasticsearch.yml` 在未启动或关闭的节点上本地配置动态设置。
 
 使用集群更新设置 API 进行的更新可以是持久的，适用于跨集群重新启动；也可以是瞬时的，在集群重新启动后重置。你还可以通过使用 API 为瞬态或持久设置分配 `null` 来重置它们。
 
@@ -93,7 +93,7 @@ export HOSTNAME="host1,host2"
 例如，可以应用瞬态设置来覆盖持久设置或 `elasticsearch.yml` 设置。但是，更改 `elasticsearch.yml` 设置不会覆盖已定义的瞬态或持久设置。
 
 ::: tip 提示
-如果使用 Elasticsearch 服务，请使用[用户设置](https://www.elastic.co/guide/en/cloud/current/ec-add-user-settings.html)功能配置所有集群设置。此方法允许 Elasticsearch 服务自动拒绝可能破坏集群的不安全设置。<br> 如果你在自己的硬件上运行 Elasticsearch，请使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings) 配置动态集群设置。仅使用 `elasticsearch.yml` 用于静态集群设置和节点设置。API 不需要重新启动，并确保设置的值在所有节点上都相同。
+如果使用 Elasticsearch 服务，请使用[用户设置](https://www.elastic.co/guide/en/cloud/current/ec-add-user-settings.html)功能配置所有集群设置。此方法允许 Elasticsearch 服务自动拒绝可能破坏集群的不安全设置。<br> 如果你在自己的硬件上运行 Elasticsearch，请使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html) 配置动态集群设置。仅使用 `elasticsearch.yml` 用于静态集群设置和节点设置。API 不需要重新启动，并确保设置的值在所有节点上都相同。
 :::
 
 ::: danger 警告

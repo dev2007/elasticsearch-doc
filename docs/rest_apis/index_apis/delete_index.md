@@ -22,7 +22,7 @@ DELETE /my-index-000001
 
 在这个参数中，通配符表达式只能匹配开启、具体的索引。你不能通过[别名](/rest_apis/index_apis/bulk_index_alias)删除索引。
 
-为了删除所有索引，使用 `_all` 或 `*`。为了禁止使用 `_all` 或通配符表达式删除索引，修改 `action.destructive_requires_name` 集群设置为 `true`。你可以在 `elasticsearch.yml` 文件中或通过[集群更新](/rest_apis/cluster_apis/cluster_update_settings) API 更新设置。
+为了删除所有索引，使用 `_all` 或 `*`。为了禁止使用 `_all` 或通配符表达式删除索引，修改 `action.destructive_requires_name` 集群设置为 `true`。你可以在 `elasticsearch.yml` 文件中或通过[集群更新](/rest_apis/cluster_apis/cluster_update_settings.html) API 更新设置。
 
 ::: tip 提示
 你不能删除数据流的当前写入索引。为了删除索引，你必须[翻转](/data_streams/data_streams#翻转)数据流，这样一个新的写索引就创建了。这时你就可以使用删除索引 API 删除之前的写索引。
