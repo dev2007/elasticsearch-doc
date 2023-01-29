@@ -25,7 +25,7 @@ module.exports = {
   themeConfig: {
     logo: '/favicon.ico',
     sidebarDepth: 3,
-    displayAllHeaders: true,
+    displayAllHeaders: false,
     nav: [
       { text: 'BookHub 首页', link: 'https://www.bookhub.tech' },
       { text: '中文文档', link: 'https://docs.bookhub.tech' },
@@ -92,7 +92,7 @@ module.exports = {
               ['/set_up_elasticsearch/configuring_elasticsearch/local_gateway_settings',"本地网关设置"],
               ['/set_up_elasticsearch/configuring_elasticsearch/logging',"日志"],
               ['/set_up_elasticsearch/configuring_elasticsearch/machine_learning_settings_in_elasticsearch',"Elasticsearch 中的机器学习设置"],
-              ['/set_up_elasticsearch/monitoring_settings_in_elasticsearch','Elasticsearch 中的监控设置']
+              ['/set_up_elasticsearch/configuring_elasticsearch/monitoring_settings_in_elasticsearch','Elasticsearch 中的监控设置']
             ]
           }
         ]
