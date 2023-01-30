@@ -3,7 +3,7 @@
 :::warning 警告
 **7.16 弃用**
 
-不推荐使用 Elasticsearch 监控插件来收集和发送监控数据。Metricbeat 是收集监测数据并将其发送到监测集群的推荐方法。如果您以前配置了传统收集方法，则应迁移到使用 Metricbeat 收集方法。参阅[使用 Metricbeat 收集 Elasticsearch 监测数据](/monitor_a_cluster/collecting_elasticsearch_monitoring_data_with_metribeat.html)。
+不推荐使用 Elasticsearch 监控插件来收集和发送监控数据。Metricbeat 是收集监测数据并将其发送到监测集群的推荐方法。如果你以前配置了传统收集方法，则应迁移到使用 Metricbeat 收集方法。参阅[使用 Metricbeat 收集 Elasticsearch 监测数据](/monitor_a_cluster/collecting_elasticsearch_monitoring_data_with_metribeat.html)。
 :::
 
 默认情况下，Elasticsearch 监控功能已启用，但数据收集已禁用。要启用数据收集，请使用 `xpack.monitoring.collection.enabled` 设置。
@@ -36,7 +36,7 @@
 
 - `xpack.monitoring.elasticsearch.collection.enabled`
 
-    （[动态](/rest_apis/cluster_apis/cluster_update_settings.html)）[~~7.16.0~~] 控制是否应收集有关 Elasticsearch 集群的统计信息。默认为 `true`。这与 `xpack.monitoring.collection.enabled` 不同，它允许您启用或禁用所有监视集合。然而，此设置只是禁用 Elasticsearch 数据的收集，同时仍允许其他数据通过此集群收集（例如，Kibana、Logstash、Beats 或 APM 服务器监控数据）。
+    （[动态](/rest_apis/cluster_apis/cluster_update_settings.html)）[~~7.16.0~~] 控制是否应收集有关 Elasticsearch 集群的统计信息。默认为 `true`。这与 `xpack.monitoring.collection.enabled` 不同，它允许你启用或禁用所有监视集合。然而，此设置只是禁用 Elasticsearch 数据的收集，同时仍允许其他数据通过此集群收集（例如，Kibana、Logstash、Beats 或 APM 服务器监控数据）。
 
 - `xpack.monitoring.collection.cluster.stats.timeout`
 
@@ -80,9 +80,9 @@
 
 `local` 导出器是监控功能使用的默认导出器。顾名思义，它将数据导出到本地集群，这意味着不需要太多配置。
 
-如果您没有提供*任何*导出程序，那么监控功能将自动为您创建一个导出程序。如果提供了任何导出器，则不会添加默认值。
+如果你没有提供*任何*导出程序，那么监控功能将自动为你创建一个导出程序。如果提供了任何导出器，则不会添加默认值。
 
-```yml
+```yaml
 xpack.monitoring.exporters.my_local:
   type: local
 ```
@@ -97,7 +97,7 @@ xpack.monitoring.exporters.my_local:
 
 - `cluster_alerts.management.enabled`
 
-    [~~7.16.0~~] 是否为此群集创建集群警报。默认值为 `true`。若要使用此功能，必须启用观察器。如果您拥有基本许可，则不会显示集群警报。
+    [~~7.16.0~~] 是否为此群集创建集群警报。默认值为 `true`。若要使用此功能，必须启用观察器。如果你拥有基本许可，则不会显示集群警报。
 
 - `wait_master.timeout`
 
@@ -105,9 +105,9 @@ xpack.monitoring.exporters.my_local:
 
 ## HTTP 导出器设置
 
-以下列出了可以随 `http` 导出器提供的设置。所有设置都显示为您为导出器选择的名称后面的内容：
+以下列出了可以随 `http` 导出器提供的设置。所有设置都显示为你为导出器选择的名称后面的内容：
 
-```yml
+```yaml
 xpack.monitoring.exporters.my_remote:
   type: http
   host: ["host:port", ...]
@@ -121,7 +121,7 @@ xpack.monitoring.exporters.my_remote:
 
     [~~7.16.0~~] 主机支持多种格式，既可以作为数组，也可以作为单个值。支持的格式包括 `hostname`、`hostname:port`、`http://hostname`、`http://hostname:port`、`https://hostname` 和 `https://hostname:port`。无法假定主机。默认协议始终为 `http`，如果未作为 `host` 字符串的一部分提供，则默认端口始终为 `9200`。
 
-    ```yml
+    ```yaml
     xpack.monitoring.exporters:
       example1:
         type: http
@@ -165,7 +165,7 @@ xpack.monitoring.exporters.my_remote:
 
     [~~7.16.0~~] 添加到每个请求的可选头，可以帮助通过代理路由请求。
 
-    ```yml
+    ```yaml
     xpack.monitoring.exporters.my_remote:
       headers:
         X-My-Array: [abc, def, xyz]
@@ -184,13 +184,13 @@ xpack.monitoring.exporters.my_remote:
 
 - `cluster_alerts.management.enabled`
 
-    [~~7.16.0~~] 是否为此集群创建集群警报。默认值为 `true`。若要使用此功能，必须启用观察器。如果您拥有基本许可，则不会显示集群警报。
+    [~~7.16.0~~] 是否为此集群创建集群警报。默认值为 `true`。若要使用此功能，必须启用观察器。如果你拥有基本许可，则不会显示集群警报。
 
 - `cluster_alerts.management.blacklist`
 
     [~~7.16.0~~] 防止创建特定集群警报。它还会删除当前集群中已存在的所有适用的监控。
 
-    您可以将以下任何监控标识符添加到阻止的警报列表中：
+    你可以将以下任何监控标识符添加到阻止的警报列表中：
 
     - `elasticsearch_cluster_status`
     - `elasticsearch_version_mismatch`
@@ -229,7 +229,7 @@ xpack.monitoring.exporters.my_remote:
 
 - `xpack.monitoring.exporters.$NAME.ssl.cipher_suites`
 
-    （[静态](/set_up_elasticsearch/configuring_elasticsearch)）[~~7.16.0~~] 支持的密码套件因您使用的Java版本而异。例如，对于版本12，默认值为：`TLS_AES_256_GCM_SHA384`、 `TLS_AES_128_GCM_SHA256`、 `TLS_CHACHA20_POLY1305_SHA256`、 `TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384`、 `TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256`、 `TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384`、 `TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256`、 `TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256`、 `TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256`、 `TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384`、 `TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256`、 `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`、 `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`、 `TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA`、 `TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA`、 `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`、 `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`、 `TLS_RSA_WITH_AES_256_GCM_SHA384、 TLS_RSA_WITH_AES_128_GCM_SHA256`、 `TLS_RSA_WITH_AES_256_CBC_SHA256`、 `TLS_RSA_WITH_AES_128_CBC_SHA256`、 `TLS_RSA_WITH_AES_256_CBC_SHA`、 `TLS_RSA_WITH_AES_128_CBC_SHA`。
+    （[静态](/set_up_elasticsearch/configuring_elasticsearch)）[~~7.16.0~~] 支持的密码套件因你使用的Java版本而异。例如，对于版本12，默认值为：`TLS_AES_256_GCM_SHA384`、 `TLS_AES_128_GCM_SHA256`、 `TLS_CHACHA20_POLY1305_SHA256`、 `TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384`、 `TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256`、 `TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384`、 `TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256`、 `TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256`、 `TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256`、 `TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384`、 `TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256`、 `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`、 `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`、 `TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA`、 `TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA`、 `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`、 `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`、 `TLS_RSA_WITH_AES_256_GCM_SHA384、 TLS_RSA_WITH_AES_128_GCM_SHA256`、 `TLS_RSA_WITH_AES_256_CBC_SHA256`、 `TLS_RSA_WITH_AES_128_CBC_SHA256`、 `TLS_RSA_WITH_AES_256_CBC_SHA`、 `TLS_RSA_WITH_AES_128_CBC_SHA`。
 
     有关更多信息，参阅 Oracle 的 [Java Cryptography Architecture 文档](https://docs.oracle.com/en/java/javase/11/security/oracle-providers.html#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2)。
 

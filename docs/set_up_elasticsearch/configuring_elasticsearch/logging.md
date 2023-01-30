@@ -44,7 +44,7 @@ Elasticsearch 使用 Log4j 2 进行日志记录。可以使用 `log4j2.propertie
 
 例如，如果你的日志目录（`path.logs`）是 `/var/log/elasticsearch` 且你的集群被命名为 `production` 那么 `${sys:es.logs.base_path}` 会解析为 `/var/log/elasticsearch`，并且 `${sys:es.logs.base_path}${sys:file.separator}${sys:es.logs.cluster_name}.log` 会解析为 `/var/log/elasticsearch/production.log`。
 
-```yml
+```yaml
 ######## Server JSON ############################
 appender.rolling.type = RollingFile 
 appender.rolling.name = rolling
@@ -85,7 +85,7 @@ appender.rolling.strategy.action.condition.nested_condition.exceeds = 2GB
 14. `appender.rolling.strategy.action.condition.nested_condition.type = IfAccumulatedFileSize`：仅当我们累积了太多压缩日志时才删除
 15. `appender.rolling.strategy.action.condition.nested_condition.exceeds = 2GB`：压缩日志的大小条件为 2 GB
 
-```yml
+```yaml
 ######## Server -  old style pattern ###########
 appender.rolling_old.type = RollingFile
 appender.rolling_old.name = rolling_old
@@ -105,7 +105,7 @@ Log4j 的配置解析被任何无关的空格所混淆；如果复制并粘贴�
 
 如果要在指定的时间段内保留日志文件，可以使用滚动策略和删除操作。
 
-```yml
+```yaml
 appender.rolling.strategy.type = DefaultRolloverStrategy 
 appender.rolling.strategy.action.type = Delete 
 appender.rolling.strategy.action.basepath = ${sys:es.logs.base_path} 
@@ -144,7 +144,7 @@ PUT /_cluster/settings
 
 1. `elasticsearch.yml`：
 
-```yml
+```yaml
 logger.org.elasticsearch.discovery: DEBUG
 ```
 
@@ -152,7 +152,7 @@ logger.org.elasticsearch.discovery: DEBUG
 
 2. `log4j2.properties`：
 
-```yml
+```yaml
 logger.discovery.name = org.elasticsearch.discovery
 logger.discovery.level = debug
 ```
@@ -169,7 +169,7 @@ Elasticsearch 在 `CRITICAL` 级别发出弃用日志消息。这些消息表明
 
 要停止写入弃用日志消息，请设置 `log4j2.properties` 中的 `logger.deprevention.level` 为 `OFF`：
 
-```yml
+```yaml
 logger.deprecation.level = OFF
 ```
 
@@ -204,7 +204,7 @@ logger.deprecation.level = OFF
 
 为了更容易解析 Elasticsearch 日志，日志现在以 JSON 格式打印。这由 Log4J 布局属性 `appender.rolling.layout.type=ECSJsonLayout` 配置。此布局需要设置数据集属性，该属性用于在分析时区分日志流。
 
-```yml
+```yaml
 appender.rolling.layout.type = ECSJsonLayout
 appender.rolling.layout.dataset = elasticsearch.server
 ```
@@ -215,7 +215,7 @@ appender.rolling.layout.dataset = elasticsearch.server
 你仍然可以使用自己的自定义布局。为此，使用不同的布局替换行 `appender.rolling.layout`。参见以下示例：
 :::
 
-```yml
+```yaml
 appender.rolling.type = RollingFile
 appender.rolling.name = rolling
 appender.rolling.fileName = ${sys:es.logs.base_path}${sys:file.separator}${sys:es.logs.cluster_name}_server.log

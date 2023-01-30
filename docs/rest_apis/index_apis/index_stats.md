@@ -72,7 +72,7 @@ GET /my-index-000001/_stats
     [分片请求缓存](/set_up_elasticsearch/configuring_elasticsearch/shard_request_cache_setttings.html)统计。
 
   - `search`
-    搜索统计信息，包括建议统计信息。您可以通过添加额外的 `groups` 参数（搜索操作可以与一个或多个组关联）来包括自定义组的统计信息。`groups` 参数接受以逗号分隔的组名列表。使用 `_all` 返回所有组的统计信息。
+    搜索统计信息，包括建议统计信息。你可以通过添加额外的 `groups` 参数（搜索操作可以与一个或多个组关联）来包括自定义组的统计信息。`groups` 参数接受以逗号分隔的组名列表。使用 `_all` 返回所有组的统计信息。
 
   - `segments`
     所有开放段的内存使用。

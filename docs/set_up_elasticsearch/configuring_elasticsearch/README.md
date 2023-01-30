@@ -22,9 +22,9 @@ Elasticsearch有三个配置文件：
 ES_PATH_CONF=/path/to/my/config ./bin/elasticsearch
 ```
 
-或者，您可以通过命令行或shell概要文件导出ES_PATH_CONF环境变量。
+或者，你可以通过命令行或shell概要文件导出ES_PATH_CONF环境变量。
 
-对于包发行版，配置目录位置默认为 `/etc/elasticsearch`。还可以通过 `ES_PATH_CONF` 环境变量更改配置目录的位置，但请注意，在 shell 中设置此值是不够的。相反，这个变量来源于 `/etc/default/elasticsearch`（对于 Debian 包）和 `/etc/sysconfig/elasticsearch`（对于 RPM 包）。您需要相应地编辑其中一个文件中的 `ES_PATH_CONF=/etc/elasticsearch` 条目，以更改配置目录位置。
+对于包发行版，配置目录位置默认为 `/etc/elasticsearch`。还可以通过 `ES_PATH_CONF` 环境变量更改配置目录的位置，但请注意，在 shell 中设置此值是不够的。相反，这个变量来源于 `/etc/default/elasticsearch`（对于 Debian 包）和 `/etc/sysconfig/elasticsearch`（对于 RPM 包）。你需要相应地编辑其中一个文件中的 `ES_PATH_CONF=/etc/elasticsearch` 条目，以更改配置目录位置。
 
 ## 配置文件格式
 

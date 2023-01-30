@@ -102,7 +102,7 @@
 
 分配器还试图通过禁止向超过低水位的节点分配更多分片来保持节点远离高水位。重要的是，如果所有节点都超过了低水位，则无法分配新的分片，Elasticsearch 将无法在节点之间移动任何分片，以将磁盘使用率保持在高水位以下。你必须确保你的集群总共有足够的磁盘空间，并且总是有一些节点低于低水位线。
 
-基于磁盘的分片分配器触发的分片移动，还必须满足所有其他分片分配规则，如[分配筛选](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_setting#集群级分片分配过滤)和[强制感知](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_setting#强制感知)。如果这些规则过于严格，那么它们还可以阻止分片移动，以控制节点的磁盘使用。如果您使用的是数据层，Elasticsearch会自动配置分配过滤规则，将碎片放置在适当的层中，这意味着基于磁盘的分片分配器在每个层中独立工作。
+基于磁盘的分片分配器触发的分片移动，还必须满足所有其他分片分配规则，如[分配筛选](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_setting#集群级分片分配过滤)和[强制感知](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_setting#强制感知)。如果这些规则过于严格，那么它们还可以阻止分片移动，以控制节点的磁盘使用。如果你使用的是数据层，Elasticsearch会自动配置分配过滤规则，将碎片放置在适当的层中，这意味着基于磁盘的分片分配器在每个层中独立工作。
 
 如果一个节点填满其磁盘的速度快于 Elasticsearch 将分片移动到其他地方的速度，则存在磁盘将完全填满的风险。为了防止这种情况，作为最后的手段，一旦磁盘使用率达到洪泛阶段，Elasticsearch 将阻止对受影响节点上具有分片的索引的写入。它还将继续将分片移动到集群中的其他节点上。当受影响节点上的磁盘使用率降至高水位以下时，Elasticsearch 会自动删除写块。
 
@@ -221,7 +221,7 @@ cluster.routing.allocation.awareness.attributes: rack_id
 
 ### 强制感知
 
-默认情况下，如果一个位置失败，Elasticsearch 会将所有丢失的副本分片分配给其余位置。虽然您可能在所有位置拥有足够的资源来托管主分片和副本分片，但单个位置可能无法托管所有分片。
+默认情况下，如果一个位置失败，Elasticsearch 会将所有丢失的副本分片分配给其余位置。虽然你可能在所有位置拥有足够的资源来托管主分片和副本分片，但单个位置可能无法托管所有分片。
 
 为了防止单个位置在发生故障时过载，可以设置 `cluster.routing.allocation.awareness.force`，以便在其他位置的节点可用之前不分配副本。
 

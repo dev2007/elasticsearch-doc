@@ -97,7 +97,7 @@ Windows:
 你可以通过 Elasticsearch REST API 提交 HTTP 请求，直接与集群交互。如果你安装和运行了 Kibana，你也可以打开 Kibana，并通过开发控制台（`Dev Console`）提交请求。
 
 ::: tip 提示
-当您准备在自己的应用程序中开始使用 Elasticsearch 时，您可能想查看[Elasticsearch 语言客户端](https://www.elastic.co/guide/en/elasticsearch/client/index.html)。
+当你准备在自己的应用程序中开始使用 Elasticsearch 时，你可能想查看[Elasticsearch 语言客户端](https://www.elastic.co/guide/en/elasticsearch/client/index.html)。
 :::
 
 ```bash

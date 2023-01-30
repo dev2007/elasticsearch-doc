@@ -93,7 +93,7 @@ success [16:17:40] Build 9a5052 finished in 14671 ms!
     - :heavy_check_mark: 日志 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/logging.html)
     - :heavy_check_mark: Elasticsearch 中的机器学习设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/machine_learning_settings_in_elasticsearch.html)
     - :heavy_check_mark: Elasticsearch 中的监控设置 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/monitoring_settings_in_elasticsearch.html)
-    - Node
+    - :heavy_check_mark: 节点 [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/configuring_elasticsearch/node.html)
     - Network settings
     - Node query cache settings
     - Search settings

@@ -24,7 +24,7 @@
 
 这些设置可以在 `elasticsearch.yml` 中配置如下：
 
-```yml
+```yaml
 gateway.expected_data_nodes: 3
 gateway.recover_after_time: 600s
 gateway.recover_after_data_nodes: 3

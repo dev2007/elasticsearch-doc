@@ -69,7 +69,7 @@ path:
 如果需要，可以在 `path.data` 中指定多个路径。Elasticsearch 跨所有提供的路径存储节点的数据，但将每个分片的数据保持在同一路径上。
 
 Elasticsearch 不平衡节点数据路径上的分片。单个路径中的高磁盘使用率可以触发整个节点的[高磁盘利用率水印](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings#基于磁盘的分片分配设置
-)。如果触发，Elasticsearch 将不会向节点添加分片，即使节点的其他路径具有可用磁盘空间。如果需要额外的磁盘空间，建议您添加新节点，而不是其他数据路径。
+)。如果触发，Elasticsearch 将不会向节点添加分片，即使节点的其他路径具有可用磁盘空间。如果需要额外的磁盘空间，建议你添加新节点，而不是其他数据路径。
 
 - 类 Unix 系统
 
@@ -99,9 +99,9 @@ path:
 
 支持多数据路径在 7.13 中已被弃用，并将在未来版本中删除。
 
-作为多数据路径的替代方案，您可以使用硬件虚拟化层（如 RAID）或软件虚拟化层，如 Linux 上的逻辑卷管理器（LVM）或 Windows 上的存储空间，创建跨越多个磁盘的文件系统。如果希望在一台计算机上使用多个数据路径，则必须为每个数据路径运行一个节点。
+作为多数据路径的替代方案，你可以使用硬件虚拟化层（如 RAID）或软件虚拟化层，如 Linux 上的逻辑卷管理器（LVM）或 Windows 上的存储空间，创建跨越多个磁盘的文件系统。如果希望在一台计算机上使用多个数据路径，则必须为每个数据路径运行一个节点。
 
-如果当前在[高可用集群](/set_up_a_cluster_for_high_availability/desining_for_resilicence/desining_for_resilicence)中使用多个数据路径，则可以迁移到为每个节点使用单一路径的设置，而无需使用类似于[滚动重启](/set_up_elasticsearch/full_cluster_restart_and_rolling_restart#滚动重启)的过程进行停机：依次关闭每个节点，并将其替换为一个或多个节点，每个节点都配置为使用单一数据路径。更详细地说，对于当前具有多个数据路径的每个节点，应遵循以下过程。原则上，您可以在滚动升级到 8.0 期间执行此迁移，但我们建议在开始升级之前迁移到单个数据路径设置。
+如果当前在[高可用集群](/set_up_a_cluster_for_high_availability/desining_for_resilicence/desining_for_resilicence)中使用多个数据路径，则可以迁移到为每个节点使用单一路径的设置，而无需使用类似于[滚动重启](/set_up_elasticsearch/full_cluster_restart_and_rolling_restart#滚动重启)的过程进行停机：依次关闭每个节点，并将其替换为一个或多个节点，每个节点都配置为使用单一数据路径。更详细地说，对于当前具有多个数据路径的每个节点，应遵循以下过程。原则上，你可以在滚动升级到 8.0 期间执行此迁移，但我们建议在开始升级之前迁移到单个数据路径设置。
 
 1. 创建快照以在发生灾难时保护你的数据。
 
@@ -249,7 +249,7 @@ cluster.initial_master_nodes:
 
 默认情况下，Elasticsearch 启用垃圾收集（GC）日志。这些是在 [jvm.options](/set_up_elasticsearch/configuring_elasticsearch/advanced_configuration#设置-JVM-选项) 中配置的，并输出到与 Elasticsearch 日志相同的默认位置。默认配置每 64 MB 旋转一次日志，最多可消耗 2 GB 的磁盘空间。
 
-你可以使用[JEP 158：统一 JVM 日志](https://openjdk.java.net/jeps/158)中描述的命令行选项重新配置 JVM 日志。除非更改默认 `jvm.options` 文件中，除了你自己的设置之外，还将应用 Elasticsearch 默认配置。要禁用默认配置，首先通过提供 `-Xlog:disable` 选项禁用日志记录，然后提供您自己的命令行选项。这将禁用*所有* JVM 日志记录，因此请确保查看可用选项并启用所需的所有功能。
+你可以使用[JEP 158：统一 JVM 日志](https://openjdk.java.net/jeps/158)中描述的命令行选项重新配置 JVM 日志。除非更改默认 `jvm.options` 文件中，除了你自己的设置之外，还将应用 Elasticsearch 默认配置。要禁用默认配置，首先通过提供 `-Xlog:disable` 选项禁用日志记录，然后提供你自己的命令行选项。这将禁用*所有* JVM 日志记录，因此请确保查看可用选项并启用所需的所有功能。
 
 要查看原始 JEP 中未包含的其他选项，参阅[使用 JVM 统一日志框架启用日志](https://docs.oracle.com/en/java/javase/13/docs/specs/man/java.html#enable-logging-with-the-jvm-unified-logging-framework)。
 
