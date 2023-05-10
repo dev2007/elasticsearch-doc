@@ -93,7 +93,8 @@ module.exports = {
               ['/set_up_elasticsearch/configuring_elasticsearch/logging',"日志"],
               ['/set_up_elasticsearch/configuring_elasticsearch/machine_learning_settings_in_elasticsearch',"Elasticsearch 中的机器学习设置"],
               ['/set_up_elasticsearch/configuring_elasticsearch/monitoring_settings_in_elasticsearch','Elasticsearch 中的监控设置'],
-              ['/set_up_elasticsearch/configuring_elasticsearch/node','节点']
+              ['/set_up_elasticsearch/configuring_elasticsearch/node','节点'],
+              ['/set_up_elasticsearch/configuring_elasticsearch/networking','网络']
             ]
           }
         ]
