@@ -10,7 +10,7 @@
 - [data_cold](/set_up_elasticsearch/configuring_elasticsearch/node#冷数据节点)
 - [data_frozen](/set_up_elasticsearch/configuring_elasticsearch/node#冻结数据节点)
 
-::: tip 提示
+:::note 提示
 [数据](/set_up_elasticsearch/configuring_elasticsearch/node#数据节点)角色不是有效的数据层，不能用于数据层筛选。[data_frozen](/set_up_elasticsearch/configuring_elasticsearch/node#冻结数据节点) 角色只能用于搜索挂载了 shared_cache 选项的快照。
 :::
 

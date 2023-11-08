@@ -1,3 +1,7 @@
+---
+sidebar_position: 60
+---
+
 # 使用 Docker 安装 Elasticsearch
 
 Elasticsearch 也提供 Docker 镜像。镜像使用 [centos:8](https://hub.docker.com/_/centos/) 作为基础镜像。
@@ -101,7 +105,7 @@ networks:
     driver: bridge
 ```
 
-::: tip 提示
+:::note 提示
 例子中的 `docker-compose.yml` 使用环境变量 `ES_JAVA_OPTS` 手工设置堆大小为 512 MB。我们不推荐在生产环境使用 `ES_JAVA_OPTS`。参看[手工设置堆大小](/set_up_elasticsearch/installing_elasticsearch/docker#手工设置堆大小)。
 :::
 
@@ -113,7 +117,7 @@ networks:
 
 1. 确保 Docker Engine 分配了至少 4 GiB 内存。在 Docker 桌面中，你可以在首选项（macOS）或设置（Windows）的高级选项卡中配置资源使用。
 
-::: tip 提示
+:::note 提示
 在 Linux 上，Docker Compose 未与 Docker 一起预装。在 docs.docker.com 查看安装指南：[在 Linux 安装 Compose](https://docs.docker.com/compose/install)
 :::
 
@@ -202,7 +206,7 @@ sysctl -w vm.max_map_count=262144
 
 默认情况下，Elasticsearch 通过 uid:gid `1000:0`，以用户 `elasticsearch` 在容器中运行。
 
-::: danger 警告
+:::caution 警告
 一个例外是 [OpenShift](https://docs.openshift.com/container-platform/3.6/creating_images/guidelines.html#openshift-specific-guidelines)，它使用任意分配的用户 ID 运行容器。OpenShift 显示的持久卷的 gid 设置为 0，它可以无需调整的运行。
 :::
 
@@ -306,7 +310,7 @@ docker run <various parameters> bin/elasticsearch -Ecluster.name=mynewclusternam
 -v full_path_to/custom_elasticsearch.yml:/usr/share/elasticsearch/configuring_elasticsearch/elasticsearch.yml
 ```
 
-::: danger 警告
+:::caution 警告
 容器以用户 `elasticsearch`，使用 uid:gid `1000:0` 运行 Elasticsearch。绑定挂载的主机目录和文件，必须能被此用户访问，且数据和日志目录必须能被此用户写入。
 :::
 

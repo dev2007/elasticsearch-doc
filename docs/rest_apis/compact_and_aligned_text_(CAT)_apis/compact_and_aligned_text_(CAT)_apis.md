@@ -4,7 +4,7 @@
 
 JSON 用于计算机很棒。即使它的显示格式很好，但试图在数据中找到关系也是乏味的。人类的眼睛，尤其是在看终端时，需要紧凑和对齐的文本。紧凑和对齐文本（CAT）API 旨在满足这一需求。
 
-::: danger 警告
+:::caution 警告
 cat API 仅用于使用 [Kibana 控制台](https://www.elastic.co/guide/en/kibana/7.16/console-kibana.html)或命令行的人使用。它们*不*适用于应用程序。对于应用程序使用，我们建议使用相应的 JSON API。
 :::
 
@@ -44,7 +44,7 @@ ip   |   | ip address
 node | n | node name
 ```
 
-::: tip 提示
+:::note 提示
 如果使用任何可选的 url 参数，则不支持 `help`。例如 `GET _cat/shards/my-index-000001?help` 或 `GET _cat/indices/my-index-*?help` 会导致错误。使用 `GET _cat/shards?help` 或 `GET _cat/indices?help` 替代。
 :::
 

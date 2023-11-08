@@ -14,7 +14,7 @@
 
 当一个冻结索引被解冻，索引会通过正常的恢复过程再次变为可写。参阅[已冻结索引](/frozen_indices/frozen_indices)和[冻结索引](/rest_apis/index_apis/freeze_index)。
 
-::: danger 警告
+:::caution 警告
 冻结一个索引会在同一个 API 调用中关闭这个索引并且重新打开它。这将导致在短时间内主分片不被分配，直到再次分配主分片前集群会变为红色（red）。这个限制在未来可能被移除。
 :::
 

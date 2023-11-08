@@ -1,3 +1,7 @@
+---
+sidebar_position: 170
+---
+
 # Elasticsearch 中的机器学习设置
 
 使用机器学习不需要配置任何设置。默认情况下已启用。
@@ -59,7 +63,7 @@
 
 - `xpack.ml.nightly_maintenance_requests_per_second`
 
-   （[动态](/rest_apis/cluster_apis/cluster_update_settings.html)）夜间维护任务删除过期模型快照和结果的速率。该设置是按查询请求删除中使用的 [requests_per_second]() 参数的代理，并控制节流。启用操作员权限功能后，此设置只能由操作员用户更新。有效值必须大于 `0.0` 或等于 `-1.0`，其中 `-1.0` 表示使用默认值。默认值为 `-1.0`。
+   （[动态](/rest_apis/cluster_apis/cluster_update_settings.html)）夜间维护任务删除过期模型快照和结果的速率。该设置是按查询请求删除中使用的 [requests_per_second](/rest_apis/document_apis/delete_by_query.html) 参数的代理，并控制节流。启用操作员权限功能后，此设置只能由操作员用户更新。有效值必须大于 `0.0` 或等于 `-1.0`，其中 `-1.0` 表示使用默认值。默认值为 `-1.0`。
 
 - `xpack.ml.node_concurrent_job_allocations`
 

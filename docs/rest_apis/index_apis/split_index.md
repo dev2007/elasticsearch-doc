@@ -103,7 +103,7 @@ POST /my_source_index/_split/my_target_index
 
 - 一旦将目标索引添加到集群状态，上述请求将立即返回——它不会等待拆分操作开始。
 
-::: danger 警告
+:::caution 警告
 只有满足以下要求的索引才能拆分：
 
 - 目标索引不存在

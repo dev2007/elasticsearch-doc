@@ -75,7 +75,7 @@ POST /my_source_index/_shrink/my_target_index
 
 一旦将目标索引添加到集群状态，上述请求将立即返回——它不会等待收缩操作开始。
 
-::: danger 警告
+:::caution 警告
 只有满足以下要求，索引才能收缩:
 - 目标索引必须不存在
 - 源索引必须有比目标索引更多的主分片
@@ -103,7 +103,7 @@ POST /my_source_index/_shrink/my_target_index
 1. `"index.number_of_shards": 1` 目标索引分片数量。必须是源索引的分片数量的因子。
 2. `"index.codec": "best_compression"` 最佳压缩只有在对索引进行新的写入时才会生效，例如强制将分片合并到单个片段时。
 
-::: tip 提示
+:::note 提示
 映射可以不在收缩请求中指定。
 :::
 

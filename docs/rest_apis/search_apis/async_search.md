@@ -61,7 +61,7 @@ POST /sales*/_async_search?size=0
 5. `"successful" : 3`：有多少分片成功完成了搜索
 6. `"value" : 157483`：当前有多少文档与查询匹配，这些文档属于已完成搜索的分片
 
-::: tip 提示
+:::note 提示
 虽然查询不再运行，因此 `is_running` 设置为 `false`，但结果可能是部分的。如果某些分片返回结果后搜索失败，或者协调异步搜索的节点死亡，就会发生这种情况。
 :::
 
@@ -69,7 +69,7 @@ POST /sales*/_async_search?size=0
 
 你还可以通过 `keep_alive` 参数指定异步搜索需要多长时间可用，该参数默认为 `5d`（五天）。在此期间之后，将删除正在进行的异步搜索和任何保存的搜索结果。
 
-::: tip 提示
+:::note 提示
 当结果的主要排序是索引字段时，分片将根据其为该字段保留的最小值和最大值进行排序，因此部分结果将根据请求的排序标准可用。
 :::
 
@@ -83,11 +83,11 @@ POST /sales*/_async_search?size=0
 
 - `ccs_minimize_roundtrips` 默认为 `false`，且是唯一支持的值。
 
-::: danger 警告
+:::caution 警告
 异步搜索不支持仅包含[建议部分](/rest_apis/search_apis/suggesters)的[滚动](/search_your_data/paginate_search_results#滚动搜索结果)或搜索请求。仅当 `ccs_minimize_roundtrips` 设置为 `false` 时，才支持跨群集搜索。
 :::
 
-::: tip 提示
+:::note 提示
 默认情况下，7.x 版本 Elasticsearch 不会限制存储的异步搜索响应的大小。存储大量异步响应可能会破坏集群的稳定性。如果要设置最大允许大小的限制，请更改搜 `search.max_async_search_response_size` 集群级设置。之后，尝试存储大于此设置的异步响应将导致错误。
 :::
 

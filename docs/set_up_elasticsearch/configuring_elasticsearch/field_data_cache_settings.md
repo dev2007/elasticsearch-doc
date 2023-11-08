@@ -1,3 +1,7 @@
+---
+sidebar_position: 80
+---
+
 # 字段数据缓存设置
 
 字段数据缓存包含[字段数据](/mapping/field_data_type/text.html#fielddata-映射参数)和[全局序号](/mapping/mapping_parameters/eager_global_ordinals.html)，它们都用于支持某些字段类型的聚合。由于这些是堆上的数据结构，因此监控缓存的使用情况非常重要。

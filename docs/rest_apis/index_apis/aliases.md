@@ -61,7 +61,7 @@ Elasticsearch 中的 API 在处理指定索引时接受一个索引名，在适�
 
   （字符串）用于执行操作的索引名字的通配符表达式。
   如果 `indices` 参数未被指定，此参数是必需的。
-  ::: tip 提示
+  :::note 提示
   你不能向索引别名添加[数据流](/data_streams/data_streams)。
   :::
 
@@ -69,7 +69,7 @@ Elasticsearch 中的 API 在处理指定索引时接受一个索引名，在适�
 
   （数组）用于执行操作的索引名数组。
   如果 `index` 参数未被指定，此参数是必需的。
-  ::: tip 提示
+  :::note 提示
   你不能向索引别名添加[数据流](/data_streams/data_streams)。
   :::
 
@@ -105,7 +105,7 @@ Elasticsearch 中的 API 在处理指定索引时接受一个索引名，在适�
 
   参阅[写索引](/rest_apis/index_apis/aliases#写索引)获取示例。
 
-  ::: danger 警告
+  :::caution 警告
   对一个索引，别名没有显示地设置 `is_write_index: true`，且只引用了一个索引，那在引用另一个索引之前，引用的索引的行为将与写索引一致。
   :::
   

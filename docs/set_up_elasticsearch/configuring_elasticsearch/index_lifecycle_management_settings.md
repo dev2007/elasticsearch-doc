@@ -1,3 +1,7 @@
+---
+sidebar_position: 100
+---
+
 # Elasticsearch 索引生命周期管理设置
 
 这些是可用于配置[索引生命周期管理](/data_management/ILM_manage_the_index_lifecycle.html)（ILM）的设置。

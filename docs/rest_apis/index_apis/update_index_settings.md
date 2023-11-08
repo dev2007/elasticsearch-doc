@@ -135,7 +135,7 @@ POST /my-index-000001/_forcemerge?max_num_segments=5
 
 要添加分析器，必须关闭索引，定义分析器，然后重新打开索引。
 
-::: tip 提示
+:::note 提示
 你不能关闭数据流的写索引。
 :::
 

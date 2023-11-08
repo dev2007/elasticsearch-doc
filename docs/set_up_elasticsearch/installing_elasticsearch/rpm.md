@@ -1,8 +1,12 @@
+---
+sidebar_position: 40
+---
+
 # 使用 RPM 安装 Elasticsearch
 
 Elasticsearch 的 RPM 可以[从我们的网站](/set_up_elasticsearch/installing_elasticsearch/rpm#手工下载和安装-rpm)或者从[我们的 RPM 仓库](/set_up_elasticsearch/installing_elasticsearch/rpm#从-rpm-仓库安装)下载。它可以用于在任何基于 RPM 的系统（如 OpenSuSE，SLES，Centos，Red Hat 和 Oracle Enterprise）上安装 Elasticsearch。
 
-::: tip 提示
+:::note 提示
 老版本的 RPM 发行版本（如 SLES 11 和 CentOS 5）不支持 RPM 安装。请参阅 [在 Linux 或 MacOS 上用存档安装 Elasticsearch](https://docs.es.shiyueshuyi.xyz/#/set_up_elasticsearch/installing_elasticsearch/linux)。
 :::
 
@@ -10,7 +14,7 @@ Elasticsearch 的 RPM 可以[从我们的网站](/set_up_elasticsearch/installin
 
 Elasticsearch 的最新稳定版本，能在 [Elasticsearch 下载页面](https://www.elastic.co/downloads/elasticsearch)找到。其他版本能在[历史发布页面](https://www.elastic.co/downloads/past-releases)找到。
 
-::: tip 提示
+:::note 提示
 Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
 :::
 
@@ -55,7 +59,7 @@ sudo zypper modifyrepo --enable elasticsearch && \
 - `sudo dnf install` 在 Fedora 和其他新的 Red Hat 的发行版上使用 `dnf`。
 - `sudo zypper modifyrepo` 在基于 OpenSUSE 的发行版本上使用 `zypper`。
 
-::: tip 提示
+:::note 提示
 配置的仓库默认是禁用的。这排除了升级系统其他部分时意外升级 Elasticsearch 的可能性。每个安装或者升级命令必须显示启用仓库，如上面的示例命令所示。
 :::
 
@@ -80,7 +84,7 @@ sudo rpm --install elasticsearch-7.11.2-x86_64.rpm
 action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
 ```
 
-::: danger 警告
+:::caution 警告
 如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
 :::
 
@@ -210,7 +214,7 @@ RPM 也有一个系统配置文件（`/etc/sysconfig/elasticsearch`），它允�
 |`ES_JAVA_OPTS`|你想应用的任何其他 JVM 系统属性。|
 |`RESTART_ON_UPGRADE`|在包升级时配置重启，默认为 `false`。这意味着你必须在手工安装包后重启你的 Elasticseach 实例。这样做的原因是为了确保集群的升级不会导致持续的分片重分配，进而导致的高网络流量和降低了集群的响应时间。|
 
-::: tip 提示
+:::note 提示
 使用 `systemd` 的发行版本要求需要通过 `systemd` 配置系统资源限制，而不是通过 `/etc/sysconfig/elasticsearch` 文件。更多信息，请参阅 [Systemd 配置](/set_up_elasticsearch/important_system_config/system#Systemd-配置)。
 :::
 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # 在 Linux 或 MacOS 上用压缩包安装 Elasticsearch
 
 Elasticsearch 在 Linux 和 MacOS 上是 `.tar.gz` 的压缩包。
@@ -6,7 +10,7 @@ Elasticsearch 在 Linux 和 MacOS 上是 `.tar.gz` 的压缩包。
 
 Elasticsearch 的最新稳定版本，能在 [Elasticsearch 下载页面](https://www.elastic.co/downloads/elasticsearch)找到。其他版本能在[历史发布页面](https://www.elastic.co/downloads/past-releases)找到。
 
-::: tip 提示
+:::note 提示
 Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
 :::
 
@@ -50,7 +54,7 @@ cd elasticsearch-7.11.1/
 action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
 ```
 
-::: danger 警告
+:::caution 警告
 如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
 :::
 
@@ -66,7 +70,7 @@ Elasticsearch 可以如以下从命令行启动：
 
 默认情况下，Elasticsearch 在前台运行，从标准输出（`stdout`）打印日志，且可以通过按 `Ctrl-C` 中止。
 
-::: tip 提示
+:::note 提示
 所有与 Elasticsearch 关联的脚本，需要一个支持数组版本的 Bash，且 Bash 要放在 `/bin/bash`中。因此，Bash 需要放在或者通过符号链接到这个路径中。
 :::
 
@@ -120,7 +124,7 @@ GET /
 pkill -F pid
 ```
 
-::: tip 提示
+:::note 提示
 Elasticsearch `.tar.gz` 包不包含 `systemd` 模块。要把 Elasticsearch 作为服务，改用 [Debian](https://www.elastic.co/guide/en/elasticsearch/reference/current/starting-elasticsearch.html#start-deb) 或者 [RPM](https://www.elastic.co/guide/en/elasticsearch/reference/current/starting-elasticsearch.html#start-rpm) 包。
 :::
 
@@ -134,7 +138,7 @@ Elasticsearch 默认从 `$ES_HOME/configuring_elasticsearch/elasticsearch.yml` �
 ./bin/elasticsearch -d -Ecluster.name=my_cluster -Enode.name=node_1
 ```
 
-::: tip 提示
+:::note 提示
 通常，任意集群范围设置（如 `cluster.name`）应该添加到 `elasticsearch.yml` 配置文件中，而任何节点特定设置，如 `node.name`，应该在命令行中指定。
 :::
 

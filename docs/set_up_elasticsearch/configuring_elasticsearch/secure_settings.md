@@ -1,8 +1,12 @@
+---
+sidebar_position: 20
+---
+
 # 安全设置
 
 有些设置是敏感的，依靠文件系统权限来保护它们的值是不够的。对于这个用例，Elasticsearch 提供一个密钥存储库和 [elasticsearch-keystore](/command_line_tools/elasticsearch_keystore) 工具来管理密钥存储库中的设置。
 
-::: danger 重要
+:::danger 重要
 只有一些设置被设计为从密钥库中读取。但是，密钥库没有验证来阻止不支持的设置。向密钥库中添加不支持的设置将导致 Elasticsearch 启动失败。要查看密钥存储库中是否支持某个设置，请在设置引用中查找 “Secure” 限定符。
 :::
 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # 数据输入：文档和索引
 
 Elasticsearch 是一种分布式文档存储。Elasticsearch 不用列数据行存储信息，而是存储已序列化为 JSON 文档的复杂数据结构。当集群中有多个 Elasticsearch 节点时，存储的文档将分布在集群中，且可以从任何节点直接访问。

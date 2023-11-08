@@ -1,6 +1,6 @@
 # 滚动 API
 
-::: danger 警告
+:::caution 警告
 我们不再建议使用滚动 API 进行深度分页。如果在分页超过 10,000 次点击时需要保留索引状态，请在时间点（PIT）使用 [`search_after`](/search_your_data/paginate_search_results#搜寻) 参数。
 :::
 
@@ -39,7 +39,7 @@ GET /_search/scroll
 
 参阅[滚动搜索结果](/search_your_data/paginate_search_results#滚动搜索结果)。
 
-::: danger 警告
+:::caution 警告
 滚动搜索的结果反映了初始搜索请求时索引的状态。后续的索引或文档更改只会影响以后的搜索和滚动请求。
 :::
 
@@ -48,7 +48,7 @@ GET /_search/scroll
 - `<scroll_id>`
   [~~7.0.0~~]（可选，字符串）搜索的滚动 ID。
 
-  ::: danger 警告
+  :::caution 警告
   滚动 ID 可能很长。我们建议仅使用 [`scroll_id` 请求体参数](/rest_apis/search_apis/scroll)指定滚动 ID。
   :::
 
@@ -62,7 +62,7 @@ GET /_search/scroll
 
   默认情况下，此值不能超过 `1d`（24小时）。你可以通过 `search.max_keep_alive` 集群设置修改些限制。
 
-  ::: danger 警告
+  :::caution 警告
   你还可以通过请求体参数 `scroll` 指定该值。如果同时指定了这两个参数，则只使用查询参数。
   :::
 
@@ -70,7 +70,7 @@ GET /_search/scroll
   
   [~~7.0.0~~]（可选，字符串）搜索的滚动 ID。
 
-  ::: danger 警告
+  :::caution 警告
   滚动 ID 可能很长。我们建议仅使用 [`scroll_id` 请求体参数](/rest_apis/search_apis/scroll)指定滚动 ID。
   :::
 
@@ -88,7 +88,7 @@ GET /_search/scroll
 
   默认情况下，此值不能超过 `1d`（24小时）。你可以通过 `search.max_keep_alive` 集群设置修改些限制。
 
-  ::: danger 警告
+  :::caution 警告
   你还可以通过查询参数 `scroll` 指定该值。如果同时指定了这两个参数，则只使用查询参数。
   :::
   

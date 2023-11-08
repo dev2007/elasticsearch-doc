@@ -117,7 +117,7 @@ GET my-index-000001/_validate/query
 }
 ```
 
-::: tip 提示
+:::note 提示
 在正文中发送的查询必须嵌套在查询键中，这与 [搜索 API](/rest_apis/search_apis/search)的工作原理相同
 :::
 

@@ -1,8 +1,12 @@
+---
+sidebar_position: 30
+---
+
 # 审计安全设置
 
 你可以使用[审计日志](/secure_the_elastic_stack/enable_audit_logging/enable_audit_logging)记录与安全相关的事件，例如身份验证失败、拒绝连接和数据访问事件。此外，通过 API 对安全配置的更改，例如创建、更新和删除[本机](/secure_the_elastic_stack/user_authentication/native_user_authentication)和[内置](/secure_the_elastic_stack/user_authentication/built_in_users)用户、[角色](/rest_apis/security_apis/create_or_update_roles)、[角色映射](/rest_apis/security_apis/create_or_update_role_mappings)和 [API 键](/rest_apis/security_apis/create_api_keys)也会被记录下来。
 
-::: tip 提示
+:::note 提示
 审计日志仅在某些订阅级别上可用。欲了解更多信息，参阅 [https://www.elastic.co/subscriptions](https://www.elastic.co/subscriptions)。
 :::
 
@@ -34,7 +38,7 @@
 
     默认值为 `false`，因此不打印请求体。
 
-::: danger 重要
+:::danger 重要
 当在审计事件中包含请求体时，建议可能会以纯文本的形式审计敏感数据，即使所有安全 API(如更改用户密码的 API)在审计时都会过滤掉凭据。
 :::
 

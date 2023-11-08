@@ -52,7 +52,7 @@ POST /my_source_index/_clone/my_target_index
 
 一旦将目标索引添加到集群状态，上述请求将立即返回——它不会等待复制操作开始。
 
-::: danger 警告
+:::caution 警告
 索引只有满足以下要求才能被复制：
 
 - 目标索引不存在

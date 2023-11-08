@@ -2,14 +2,9 @@
 
 Elasticsearch 暴露的 REST API，提供给 UI 组件使用，也可以直接被调用来配置及访问 Elasticsearch 特性。
 
-::: tip 提示
+:::note 提示
 我们致力于在本节中包含更多的 Elasticsearch APIs。一些内容可能可能还没被包含。
 :::
-
-<InArticleAdsense
-    data-ad-client="ca-pub-8380975615223941"
-    data-ad-slot="9428292757">
-</InArticleAdsense>
 
 - [API 约定](/rest_apis/api_conventions/api_conventions)
 - [自动缩放 API](/rest_apis/autoscaling_apis)

@@ -1,3 +1,7 @@
+---
+sidebar_position: 50
+---
+
 # 集群级分片分配和路由设置
 
 *分片分配*是将分片分配给节点的过程。这可能发生在初始恢复、复制副本分配、重新平衡或添加或删除节点时。
@@ -88,7 +92,7 @@
 
   （[动态](/set_up_elasticsearch/configuring_elasticsearch#集群和节点设置类型)）应执行的操作的最小优化值（非负浮点）。默认值为 `1.0f`。提高此值将导致集群在优化分片平衡方面不太积极。
 
-::: tip 注意
+:::tip 注意
 无论平衡算法的结果如何，由于强制感知或分配过滤，可能不允许重新平衡。
 :::
 
@@ -96,7 +100,7 @@
 
 基于磁盘的分片分配器可确保所有节点都有足够的磁盘空间，而无需执行超出必要的分片移动。它基于一对称为*低水位*和*高水位*的阈值来分配分片。它的主要目标是确保没有节点超过高水位，或者至少任何这样的水位只是暂时的。如果一个节点超过了高水位，Elasticsearch 将通过将其分片移动到集群中的其他节点来解决这个问题。
 
-::: tip 注意
+:::tip 注意
 节点有时会暂时超出高水位，这是正常的。
 :::
 
@@ -106,7 +110,7 @@
 
 如果一个节点填满其磁盘的速度快于 Elasticsearch 将分片移动到其他地方的速度，则存在磁盘将完全填满的风险。为了防止这种情况，作为最后的手段，一旦磁盘使用率达到洪泛阶段，Elasticsearch 将阻止对受影响节点上具有分片的索引的写入。它还将继续将分片移动到集群中的其他节点上。当受影响节点上的磁盘使用率降至高水位以下时，Elasticsearch 会自动删除写块。
 
-::: tip 提示
+:::note 提示
 集群中的节点使用的磁盘空间量非常不同，这是正常的。集群的[平衡](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_setting#分片重平衡设置)只取决于每个节点上的碎片数量以及这些碎片所属的索引。它既不考虑这些碎片的大小，也不考虑每个节点上的可用磁盘空间，原因如下：
 
 - 磁盘使用率随时间变化。平衡单个节点的磁盘使用将需要更多的分片移动，甚至可能会浪费掉先前的移动。移动分片会消耗资源，如 I/O 和网络带宽，并可能从文件系统缓存中收回数据。在可能的情况下，最好使用这些资源来处理搜索和索引。
@@ -135,7 +139,7 @@
 
   （[动态](/set_up_elasticsearch/configuring_elasticsearch#集群和节点设置类型)）控制危险水位，默认为 `95%`。Elasticsearch 对每个索引强制执行只读索引块（`index.blocks.read_only_allow_delete`），该索引在节点上分配了一个或多个分片，并且至少有一个磁盘超过危险水位。此设置是防止节点耗尽磁盘空间的最后手段。当磁盘利用率低于高水位时，索引块将自动释放。与低和高水位类似，也可以将其设置为比值，例如 `0.95` 或绝对字节值。
 
-  ::: tip 注意
+  :::tip 注意
   不能在水印设置中混合使用百分比/比率值和字节值。要么将所有值设置为百分比/比率值，要么将所有设置为字节值。此强制是为了让 Elasticsearch 可以验证设置是否内部一致，确保低磁盘阈值小于高磁盘阈值，高磁盘阈值小于危险水位阈值。
   :::
 
@@ -160,7 +164,7 @@ PUT /my-index-000001/_settings
 
   （[动态](/set_up_elasticsearch/configuring_elasticsearch#集群和节点设置类型)）Elasticsearch 应该多久检查一次集群中每个节点的磁盘使用情况。默认为 `30s`。
 
-::: tip 注意
+:::tip 注意
 百分比值表示已使用的磁盘空间，而字节值表示可用磁盘空间。这可能会让人困惑，因为它颠倒了高低的含义。例如，将低水位设置为 10gb，将高水位设置为 5gb 是有意义的，但反之亦然。
 :::
 
@@ -184,7 +188,7 @@ PUT _cluster/settings
 
 当使用动态 `cluster.routing.allocation.awareness.attributes` 启用分片分配感知时，分片仅分配给为指定感知属性设置了值的节点。如果使用多个感知属性，Elasticsearch 在分配分片时会分别考虑每个属性。
 
-::: tip 注意
+:::tip 注意
 属性值的数量决定了在每个位置分配了多少分片副本。如果每个位置中的节点数量不平衡，并且有大量副本，则副本分片可能未分配。
 :::
 
@@ -277,7 +281,7 @@ PUT _cluster/settings
 |`_id`|按节点 id 匹配|
 |`_tier`|按节点[数据层](/data_management/data_tiers)角色匹配节点|
 
-::: tip 注意
+:::tip 注意
 `_tier` 过滤基于[节点](/set_up_elasticsearch/configuring_elasticsearch/node)角色。只有角色的子集是[数据层](/data_management/data_tiers)角色，通用[数据角色](/set_up_elasticsearch/configuring_elasticsearch/node#数据节点)将匹配任何层筛选。[数据层](/data_management/data_tiers)角色的角色子集，但通用[数据角色](/set_up_elasticsearch/configuring_elasticsearch/node#数据节点)将匹配任何层筛选。
 :::
 
@@ -315,7 +319,7 @@ PUT _cluster/settings
 
 根据集群中的节点数量，对集群中的碎片数量有一个软限制。这是为了防止可能无意中破坏集群稳定的操作。
 
-::: danger 重要
+:::danger 重要
 此限制旨在作为安全网，而不是尺寸建议。集群可以安全支持的分片的确切数量取决于硬件配置和工作负载，但在几乎所有情况下都应该保持在这个限制之下，因为默认限制设置得很高。
 :::
 
@@ -349,7 +353,7 @@ PUT _cluster/settings
 
   Elasticsearch拒绝任何创建超过此限制的冻结分片的请求。例如，`cluster.max_shards_per_node.frozen` 设置为 `100` 且三个冻结数据节点的集群的冻结分片限制为 `300`。如果群集已包含 `296` 个分片，Elasticsearch 将拒绝向集群添加五个或更多冻结分片的任何请求。
 
-  ::: tip 注意
+  :::tip 注意
   这些设置不限制单个节点的分片。要限制每个节点的分片数量，请使用 [cluster.routing.allocation.total_shards_per_node](/index_modules/index_shard_allocation/total_shards_per_node) 设置。
   :::
 
@@ -366,7 +370,7 @@ PUT /_cluster/settings
 }
 ```
 
-::: danger 重要
+:::danger 重要
 用户定义的集群元数据不用于存储敏感或机密信息。任何有权访问[集群获取设置 API](/rest_apis/cluster_apis/cluster_get_settings) 的人都可以查看存储在用户定义的集群元数据中的任何信息，并将其记录在 Elasticsearch 日志中。
 :::
 

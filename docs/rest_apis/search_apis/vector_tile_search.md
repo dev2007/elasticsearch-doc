@@ -27,7 +27,7 @@ GET my-index/_mvt/my-geo-field/15/5271/12710
 - `<field>`
   （必需，字符串）包含要返回的地理空间值的字段。必须是 [`geo_point`](/mapping/field_data_types/geopoint) 或 [`geo_shape`](/mapping/field_data_types/geosharp) 字段。该字段必须启用[文档值](/mapping/mapping_parameters/doc_values)。不能是嵌套字段。
 
-  ::: tip 提示
+  :::note 提示
   矢量分片本身不支持几何体集合。对于字段 `geo_shape` 中的 `geometrycollection` 值，API 为集合的每个元素返回一个 `hits` 层特征。这种行为在未来的版本中可能会改变。
   :::
 
@@ -120,7 +120,7 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
 
 ## 查询参数
 
-::: danger 警告
+:::caution 警告
 你可以将此 API 的几个选项指定为查询参数或请求体参数。如果同时指定这两个参数，则查询参数优先。
 :::
 

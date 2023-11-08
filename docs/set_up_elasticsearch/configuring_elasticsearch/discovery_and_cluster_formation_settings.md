@@ -1,10 +1,14 @@
+---
+sidebar_position: 70
+---
+
 # 发现和集群组成设置
 
 [发现和集群组成](/set_up_elasticsearch/discovery_and_cluster_formation/)受以下设置影响：
 
 - `discovery.seed_hosts`
 
-  ([静态](/set_up_elasticsearch/configuring_elasticsearch))提供群集中符合条件的主节点的地址列表。也可以是包含用逗号分隔的地址的单个字符串。每个地址的格式为 `host:port` 或 `host`。`host` 可以是由 DNS 解析的主机名、IPv4 地址或 IPv6 地址。IPv6 地址必须用方括号括起来。如果主机名通过 DNS 解析为多个地址，Elasticsearch 将使用所有地址。DNS 查找受 [JVM DNS 缓存]()的约束。如果未给出 `port`，则按顺序检查以下配置：
+  ([静态](/set_up_elasticsearch/configuring_elasticsearch))提供群集中符合条件的主节点的地址列表。也可以是包含用逗号分隔的地址的单个字符串。每个地址的格式为 `host:port` 或 `host`。`host` 可以是由 DNS 解析的主机名、IPv4 地址或 IPv6 地址。IPv6 地址必须用方括号括起来。如果主机名通过 DNS 解析为多个地址，Elasticsearch 将使用所有地址。DNS 查找受 [JVM DNS 缓存](/set_up_elasticsearch/important_system_configuration/dns_cache_settings)的约束。如果未给出 `port`，则按顺序检查以下配置：
 
   1. `transport.profiles.default.port`
   2. `transport.port`
@@ -143,7 +147,7 @@
 
     只有元数据写入操作（例如，映射更新、路由表更改）被拒绝，但常规索引操作仍然有效。根据上次已知的集群配置，读取和写入操作成功。这种情况可能导致部分读取过时数据，因为该节点可能与集群的其他部分隔离。
 
-::: tip 注意
+:::tip 注意
 
 - `cluster.no_master_block` 设置不适用于基于节点的 API（例如，集群统计、节点信息和节点统计 API）。对这些 API 的请求不会被阻止，可以在任何可用节点上运行。
 - 要使集群完全运行，它必须有一个活动的主机。

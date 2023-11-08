@@ -1,3 +1,7 @@
+---
+sidebar_position: 140
+---
+
 # 授权设置
 
 你可以在 `elasticsearch.yml` 文件中配置此许可设置。有关详细信息，参阅[授权管理](https://www.elastic.co/guide/en/kibana/8.5/managing-licenses.html)。

@@ -1,3 +1,7 @@
+---
+sidebar_position: 10
+---
+
 # 重要的 Elasticsearch 配置
 
 Elasticsearch 只需要很少的配置即可开始，但在生产中使用集群之前，必须考虑以下几点：
@@ -56,13 +60,13 @@ path:
   logs: "C:\\Elastic\\Elasticsearch\\logs"
 ```
 
-::: danger 重要
+:::danger 重要
 不要修改数据目录中的任何内容或运行可能会干扰其内容的进程。如果 Elasticsearch 以外的其他内容修改了数据目录的内容，则 Elasticsearch 可能会失败，报告损坏或其他数据不一致，或者可能在默默丢失部分数据后正常工作。不要尝试对数据目录进行文件系统备份；不支持还原此类备份的方法。相反，请使用[快照和还原](/snapshot_and_restore/snapshot_and_restore)来安全地进行备份。不要在数据目录上运行病毒扫描程序。病毒扫描程序可能会阻止 Elasticsearch 正常工作，并可能会修改数据目录的内容。数据目录不包含可执行文件，因此病毒扫描只会发现误报。
 :::
 
 ## 多数据路径
 
-::: danger 重要
+:::danger 重要
 7.13.0 版本已弃用
 :::
 
@@ -173,7 +177,7 @@ node.name: prod-data-2
 network.host: 192.168.1.10
 ```
 
-::: danger 重要
+:::danger 重要
 当你提供 `network.host` 值，Elasticsearch 假设你正在从开发模式转移到生产模式，并将大量系统启动检查从警告升级为异常。查看[开发和生产模式](set_up_elasticsearch/import_system_configuration/import_system_configuration)之间的差异。
 :::
 ## 发现和集群构成设置
@@ -209,7 +213,7 @@ discovery.seed_hosts:
 由于自动引导[原生不安全](/set_up_elasticsearch/discovery_and_cluster_formation/quorum_based_decision_making
 )，因此在生产模式下启动新集群时，必须明确列出在第一次选举中应计算其投票的主合格节点。你可以使用 `cluster.initial_master_nodes` 设置此列表。
 
-::: danger 重要
+:::danger 重要
 集群首次成功形成后，删除每个节点配置中的 `cluster.initial_master_nodes` 设置。重新启动集群或向现有集群添加新节点时，不要使用此设置。
 :::
 
@@ -295,7 +299,7 @@ docker run -e CLI_JAVA_OPTS="$MY_OPTS" # etc
 
 在灾难中，[快照](/snapshot_and_restore/snapshot_and_restore)可以防止永久数据丢失。[快照生命周期管理](/snapshot_and_restore/create_a_snapshot#使用-SLM-自动化快照)是对集群进行定期备份的最简单方法。有关详细信息，参阅[创建快照](/snapshot_and_restore/create_a_snapshot)。
 
-::: danger 警告
+:::caution 警告
 **快照是备份集群的唯一可靠且受支持的方法**。你无法通过复制 Elasticsearch 集群节点的数据目录来备份该集群。不支持从文件系统级备份中恢复任何数据的方法。如果尝试从这样的备份中恢复集群，它可能会失败，并报告损坏或丢失文件或其他数据不一致，或者它似乎成功又悄悄地丢失了一些数据。
 :::
 

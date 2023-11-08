@@ -1,3 +1,7 @@
+---
+sidebar_position: 90
+---
+
 # Elasticsearch 中的健康诊断设置
 
 以下是可用于配置内部诊断服务的*专家级*设置。此服务的输出通过当前运行[健康 API](/rest_apis/cluster_apis/health.html) 展示。不建议更改其中任何一个的默认值。

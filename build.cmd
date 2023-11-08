@@ -1,2 +1,3 @@
-npm run docs:build
-PAUSE
+npm run build
+
+pause

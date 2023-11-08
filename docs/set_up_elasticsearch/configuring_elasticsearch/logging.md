@@ -1,3 +1,7 @@
+---
+sidebar_position: 160
+---
+
 # 日志
 
 你可以使用 Elasticsearch 的应用程序日志来监视集群并诊断问题。如果将 Elasticsearch 作为服务运行，则日志的默认位置会因平台和安装方法而异：

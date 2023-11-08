@@ -8,7 +8,7 @@ cron 表达式是以下格式的字符串：
 
 Elasticsearch 使用来自 [Quartz 任务调度器](https://quartz-scheduler.org/)的 cron 解析器。有关编写 Quartz cron 表达式的更多信息，参阅 [Quartz CronTrigger 教程](http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html)。
 
-::: tip 提示
+:::note 提示
 可以使用 [elasticsearch-croneval](/command_line_tools/elasticsearch-croneval) 命令行工具校验你的 cron 表达式。
 :::
 

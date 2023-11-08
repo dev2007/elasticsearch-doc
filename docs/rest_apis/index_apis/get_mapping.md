@@ -6,7 +6,7 @@
 GET /my-index-000001/_mapping
 ```
 
-::: tip 提示
+:::note 提示
 在版本 7.0.0 之前，映射的定义用于包含类型名字。即使在请求中指定类型不被推荐，但如果设置了请求参数 `include_type_name`，仍然可以提供类型。更多细节，参阅 [移除映射类型](/mapping/removal_of_mapping_types)。
 :::
 

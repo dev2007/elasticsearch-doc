@@ -1,3 +1,7 @@
+---
+sidebar_position: 190
+---
+
 # 节点
 
 无论何时启动 Elasticsearch 实例，都是在启动一个节点。连接节点的集合称为集群。如果你运行的是 Elasticsearch 的单节点，那么你有一个单节点集群。
@@ -271,7 +275,7 @@ node.roles: [ transform, remote_cluster_client ]
 
 可以通过调整其 `elasticsearch.yml` 文件并重新启动它来更改节点的角色。这被称为重新调整节点的用途。为了满足对上述意外数据的检查，在启动没有 `data` 或 `master` 角色的节点时，必须执行一些额外的步骤来准备重新调整节点的用途。
 
-- 如果你想通过删除数据角色来重新调整数据节点的用途，那么应该首先使用[分配过滤器]()/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings.html将所有分片数据安全地迁移到集群中的其他节点上。
+- 如果你想通过删除数据角色来重新调整数据节点的用途，那么应该首先使用[分配过滤器](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings.html)将所有分片数据安全地迁移到集群中的其他节点上。
 
 - 如果你希望重新调整节点的用途，使其既不具有 `data` 角色，也不具有 `master` 角色，那么最简单的方法是启动一个具有空数据路径和所需角色的新节点。你可能会发现，首先使用[分配过滤器](/set_up_elasticsearch/configuring_elasticsearch/cluster_level_shard_allocation_and_routing_settings.html)将分片数据迁移到集群中的其他位置是最安全的。
 
@@ -297,7 +301,7 @@ path.data:  /var/elasticsearch/data
 
 Elasticsearch 集群的性能通常受到底层存储性能的限制，因此必须确保存储支持可接受的性能。某些远程存储性能非常差，特别是在 Elasticsearch 所施加的负载下，因此在使用特定存储体系结构之前，请确保仔细地对系统进行基准测试。
 
-::: tip 提示
+:::note 提示
 使用 `.zip` 或 `.tar.gz` 发行版时，应将 `path.data` 设置配置为查找 Elasticsearch 主目录之外的数据目录，以便在不删除数据的情况下删除主目录！RPM 和 Debian 发行版已经为你做到了这一点。
 :::
 

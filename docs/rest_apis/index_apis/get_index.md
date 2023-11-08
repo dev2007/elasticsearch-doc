@@ -6,7 +6,7 @@
 GET /my-index-000001
 ```
 
-::: tip 提示
+:::note 提示
 在 7.0.0 之前，**mappings**（映射） 定义用于包含类型名称。虽然响应中的映射不再默认包含类型名称，你仍然可以通过参数 include_type_name 请求旧的格式。更多细节，参阅[移除映射类型](/mapping/removal_of_mapping_types)。
 :::
 

@@ -30,7 +30,7 @@ PUT /my-index-000001/_alias/alias1
 
 为了向集群中的所有索引添加别名，使用值 `_all`。
 
-::: tip 提示
+:::note 提示
 你不能给[数据流](/datastreams/datastreams)添加索引别名。
 :::
 

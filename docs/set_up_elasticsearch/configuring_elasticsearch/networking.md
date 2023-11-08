@@ -1,3 +1,7 @@
+---
+sidebar_position: 200
+---
+
 # 网络
 
 每个 Elasticsearch 节点都有两个不同的网络接口。客户端使用其 [HTTP 接口](#高级-http-设置)向 Elasticsearch 的 RES TAPI 发送请求，但节点使用[传输接口](#高级传输设置)与其他节点通信。传输接口还用于与[远程集群](/set_up_elasticsearch/remote_clusters)进行通信。
@@ -72,7 +76,7 @@
 
 默认情况下，这些特殊值同时产生 IPv4 和 IPv6 地址，但你也可以添加 `:ipv4` 或 `:ipv6` 后缀，将它们分别限制为 IPv4 或 IPv6 地址。例如，`network.host: "_en0:ipv4_"` 会将此节点的地址设置为接口 `en0` 的 IPv4 地址。
 
-:::tip 提示
+:::note 提示
 **云端发现**
 
 当在安装了 EC2 发现插件或[谷歌计算引擎发现插件](https://www.elastic.co/guide/en/elasticsearch/plugins/8.7/discovery-gce-network-host.html#discovery-gce-network-host)的云上运行时，可以使用更多特殊设置。

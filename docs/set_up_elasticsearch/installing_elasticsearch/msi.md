@@ -1,24 +1,28 @@
+---
+sidebar_position: 50
+---
+
 # 使用 Windows MSI 安装程序安装 Elasticsearch
 
-::: danger 警告
+:::caution 警告
 此功能处于测试阶段，随时可能改变。该设计和代码是不够成熟的正式 GA 特性，并不提供保证。测试版本特性不属于支持 SLA 的正式 GA 特性。
 :::
 
 Elasticsearch 可以使用 `.msi` 包在 Windows 上安装。可以将 Elasticsearch 作为 Windows 服务安装，或者使用 `elasticsearch.exe` 手工运行。
 
-::: tip 提示
+:::note 提示
 Elasticsearch 过去使用 `.zip` 存档安装到 Windows 上。如果你愿意可以继续使用 `.zip`。
 :::
 
 这个包包含免费和订阅的特性。[开始 30 天的试用](https://www.elastic.co/guide/en/elasticsearch/reference/current/license-settings.html)，尝试所有功能。
 
-::: tip 提示
+:::note 提示
 在 Windows 上，Elasticsearch 机器学习特性需要 Microsoft 通用 C 运行时库。它内置于 Windows 10、Windows Server 2016 和更高版本的 Windows 中。对于老版本的 Windows，它可以通过 Windows Update 安装，也可以从[独立下载](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)安装。如果你不能安装 Microsoft 通用 C 运行时库，禁用机器学习特性你也能使用 Elasticsearch 的其他特性。
 :::
 
 Elasticsearch 的最新稳定版本，能在 [Elasticsearch 下载页面](https://www.elastic.co/downloads/elasticsearch)找到。其他版本能在[历史发布页面](https://www.elastic.co/downloads/past-releases)找到。
 
-::: tip 提示
+:::note 提示
 Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://openjdk.java.net/) 捆绑版本。要使用自己的 Java 版本，查阅 [JVM 版本要求](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html#jvm-version)。
 :::
 
@@ -40,7 +44,7 @@ Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://open
 
 ![msi_installer_service](./_media/msi_installer_service.png)
 
-::: danger 警告
+:::caution 警告
 当选择运行服务的 Windows 账户时，请确保选择的账户有足够的权限访问安装和其他选择的部署目录。还要确保这个账户能运行 Windows 服务。
 :::
 
@@ -50,7 +54,7 @@ Elasticsearch 包含 JDK 维护者（GPLv2+CE）提供的 [OpenJDK](https://open
 
 作为安装的一部分，可以下载和安装一系列常见插件，通过配置 HTTPS 代理选项就可以下载这些插件。
 
-::: tip 提示
+:::note 提示
 确保安装机器可能访问互联网，且任何公司防火墙已配置允许从 `artifacts.elastic.co` 下载：
 :::
 
@@ -156,7 +160,7 @@ start /wait msiexec.exe /i elasticsearch-7.11.2.msi /qn INSTALLDIR="C:\Custom In
 action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-history*,.ml*
 ```
 
-::: danger 警告
+:::caution 警告
 如果你在使用 [Logstash](https://www.elastic.co/products/logstash) 或 [Beats](https://www.elastic.co/products/beats)，那么你很可能需要在你的 `action.auto_create_index` 设置中使用额外的索引名字，具体的值取决于你的本地配置。如果你不确定你环境的正确值，可以考虑设置这个值为*以允许自动创建所有索引。
 :::
 
@@ -170,7 +174,7 @@ action.auto_create_index: .monitoring*,.watches,.triggered_watches,.watcher-hist
 
 命令行终端将展示类似于以下的输出：
 
-![elasticsearch_exe](/_media/elasticsearch_exe.png)
+![elasticsearch_exe](./_media/elasticsearch_exe.png)
 
 默认情况下，Elasticsearch 在前台运行，除了向 `LOGSDIRECTORY` 中 `<cluster name>.log` 文件打印日志，还将日志打印到标准输出（`STDOUT`），且可以通过 `Ctrl-C` 中止。
 
@@ -184,11 +188,11 @@ Elasticsearch 默认从文件 `%ES_PATH_CONF%\elasticsearch.yml` 加载配置。
 .\bin\elasticsearch.exe -E cluster.name=my_cluster -E node.name=node_1
 ```
 
-::: tip 提示
+:::note 提示
 包含空格的值必须使用引号括起来。如 `-Epath.logs="C:\My Logs\logs"`。
 :::
 
-::: tip 提示
+:::note 提示
 通常，任意集群范围设置（如 `cluster.name`）应该添加到 `elasticsearch.yml` 配置文件中，而任何节点特定设置，如 `node.name`，应该在命令行中指定。
 :::
 
@@ -232,7 +236,7 @@ Elasticsearch 可以作为服务安装在后台运行，也可以没有任何用
 
 一旦安装，Elasticsearch 就会出现在服务控制面板：
 
-![msi_installer_installed_service](/_media/msi_installer_installed_service.png)
+![msi_installer_installed_service](./_media/msi_installer_installed_service.png)
 
 而且，可以在控制面板中或从命令行使用以下命令停止和重启：
 
@@ -258,21 +262,21 @@ Get-Service Elasticsearch | Start-Service
 
 下载并双击更新版本的 `.msi` 包将启动 GUI 向导。第一步将列出之前安装的只读属性：
 
-![msi_installer_upgrade_notice](/_media/msi_installer_upgrade_notice.png)
+![msi_installer_upgrade_notice](./_media/msi_installer_upgrade_notice.png)
 
 下一步允许更改某些配置选项：
 
-![msi_installer_upgrade_configuration](/_media/msi_installer_upgrade_configuration.png)
+![msi_installer_upgrade_configuration](./_media/msi_installer_upgrade_configuration.png)
 
 最后，插件步骤允许升级或删除当前安装的插件，对于当前未安装的插件，可以下载并安装：
 
-![msi_installer_upgrade_plugins](/_media/msi_installer_upgrade_plugins.png)
+![msi_installer_upgrade_plugins](./_media/msi_installer_upgrade_plugins.png)
 
 ## 使用命令行升级
 
 `.msi` 还可以使用命令行升级 Elasticsearch。
 
-::: danger 警告
+:::caution 警告
 命令行升级需要传递与第一次安装一致的命令行属性；Windows 安装程序不会记录这些属性。  
 例如，如果你最初使用命令行选项 `PLUGINS="ingest-geoip"` 和 `LOCKMEMORY="true"` 来安装，那通过命令行升级也要传递相同的值。  
 例外是 `INSTALLDIR` 参数（如果最初指定了），它必须与当前安装目录不同。如果设置 `INSTALLDIR`，路径中的结尾必须是 Elasticsearch 的版本，如：  
@@ -295,7 +299,7 @@ start /wait msiexec.exe /i elasticsearch-7.11.2.msi /qn /l upgrade.log
 
 `.msi` 包会处理作为安装的一部分的所有目录和文件的卸载。
 
-::: danger 警告
+:::caution 警告
 卸载将删除作为安装部分创建的所有内容，数据、配置或日志目录除外。建议在升级前复制数据目录，或考虑使用快照 API。
 :::
 
@@ -303,7 +307,7 @@ MSI 安装包不提供用于卸载 GUI。通过按 Windows 键并输入 `add or 
 
 一旦打开，在已安装应用列表中找到 Elasticsearch ，点击并选择卸载：
 
-![msi_installer_uninstall](/_media/msi_installer_uninstall.png)
+![msi_installer_uninstall](./_media/msi_installer_uninstall.png)
 
 这会启动卸载过程。
 

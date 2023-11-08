@@ -1,3 +1,7 @@
+---
+sidebar_position: 110
+---
+
 # 索引管理设置
 
 你可以使用以下集群设置来启用或禁用索引管理功能。
@@ -14,7 +18,7 @@
 
   ([动态](/set_up_elasticsearch/configuring_elasticsearch)允许关闭 Elasticsearch 中的开放索引。如果为 `false`，则无法关闭打开的索引。默认为 `true`。
 
-::: tip 注意
+:::tip 注意
 关闭的索引仍然占用大量磁盘空间。
 :::
 

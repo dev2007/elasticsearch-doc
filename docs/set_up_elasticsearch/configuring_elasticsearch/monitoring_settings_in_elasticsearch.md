@@ -1,3 +1,7 @@
+---
+sidebar_position: 180
+---
+
 # Elasticsearch 中的监控设置
 
 :::warning 警告
@@ -10,7 +14,7 @@
 
 除非另有说明，否则可以使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html) 在实时集群上动态更新这些设置。
 
-要调整监控数据在监控 UI 中的显示方式，请在 `kibana.yml` 中配置 [`xpack.monitoring` 设置]()。要控制如何从 Logstash 收集监控数据，请在 `Logstash.yml` 配置监控设置。
+要调整监控数据在监控 UI 中的显示方式，请在 `kibana.yml` 中配置 [`xpack.monitoring` 设置](https://www.elastic.co/guide/en/kibana/8.10/monitoring-settings-kb.html)。要控制如何从 Logstash 收集监控数据，请在 `Logstash.yml` 配置监控设置。
 
 详细信息，参阅[监控集群](https://www.elastic.co/guide/en/kibana/8.6/monitoring-settings-kb.html)。
 

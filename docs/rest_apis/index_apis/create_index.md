@@ -104,7 +104,7 @@ PUT /my-index-000001
 }
 ```
 
-::: tip 提示
+:::note 提示
 在 `settings` 部分中，不必显示指定 `index` 部分。
 :::
 
@@ -128,7 +128,7 @@ PUT /test
 }
 ```
 
-::: tip 提示
+:::note 提示
 在 7.0.0 之前，**mapping**（映射）定义用于包含类型名字。尽管现在不推荐在请求中指定类型，但如果设置了请求参数 include_type_name，仍然可以提供类型。更多的信息，参阅[移除映射类型](/mapping/removal_of_mapping_types)。
 :::
 

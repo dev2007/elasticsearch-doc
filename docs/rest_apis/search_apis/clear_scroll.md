@@ -20,7 +20,7 @@ DELETE /_search/scroll
 - `<scroll_id>`
   [~~7.0.0~~]（可选，字符串）搜索的滚动 ID。
 
-  ::: danger 警告
+  :::caution 警告
   滚动 ID 可能很长。我们建议仅使用 [`scroll_id` 请求体参数](/rest_apis/search_apis/scroll)指定滚动 ID。
   :::
 
@@ -29,7 +29,7 @@ DELETE /_search/scroll
 - `scroll_id`
   [~~7.0.0~~]（可选，字符串）搜索的滚动 ID。
 
-  ::: danger 警告
+  :::caution 警告
   滚动 ID 可能很长。我们建议仅使用 [`scroll_id` 请求体参数](/rest_apis/search_apis/scroll)指定滚动 ID。
   :::
 

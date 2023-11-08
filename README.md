@@ -32,12 +32,24 @@
 
 ![code](https://images.bookhub.tech/mp/code.jpg)
 
+### 赞赏榜
+
+> 感谢赞赏和点击广告的朋友。
+
+|昵称|赞赏|
+|--|--|
+|【匿名】|￥6.66|
+|逃****|￥0.50|
+|gr****|￥6.66|
+|55****|￥1.00|
+|zs****|￥1.00|
+
 ## 本地运行
 
-本文档基于 `VuePress` 编译后发布。本地通过 `npm` 安装 [`VuePress`](https://www.vuepress.cn/) 工具后，即可本地运行。
+本文档基于 `Docusaurus` 编译后发布。本地通过 `npm` 安装 [`Docusaurus`](https://www.docusaurus.cn/) 工具后，即可本地运行。
 
 > 1. 进入项目目录
-> 2. 执行 `npm run docs:dev`
+> 2. 执行 `npm run docusaurus start`
 
 ```bash
 cd /elasticsearch-doc
@@ -47,8 +59,8 @@ npm run docs:dev
 控制台显示如下示例后，即可通过浏览器输入 URL 地址查看文档：
 
 ```bash
-success [16:17:40] Build 9a5052 finished in 14671 ms!
-> VuePress dev server listening at http://localhost:8080/
+[INFO] Starting the development server...
+[SUCCESS] Docusaurus website is running at: http://localhost:3000/
 ```
 
 ## 文档列表及进度

@@ -2,11 +2,6 @@
 
 索引模块是按索引创建的模块，控制有关索引的所有方面。
 
-<InArticleAdsense
-    data-ad-client="ca-pub-8380975615223941"
-    data-ad-slot="9428292757">
-</InArticleAdsense>
-
 ## 索引设置
 
 可以为每个索引设置索引级的设置。设置如下：
@@ -19,7 +14,7 @@
 
 可以通过[更新索引 API](/rest_apis/index_apis/update_index_settings) 在活动的索引上修改。
 
-::: danger 警告
+:::caution 警告
 在关闭的索引上修改静态或动态索引设置，可能会导致不正确的设置。如果不删除并重建索引，是无法修正这些设置。
 :::
 
@@ -31,7 +26,7 @@
 
 索引应该具有的主分片数量。默认为 `1`。此设置只能在创建索引时设置。在关闭的索引上也不能修改。
 
-::: tip 提示
+:::note 提示
 每个分片数量限定为 `1,024`。这是一个安全限定，以防止意外创建索引，而这些索引会由于资源分配而破坏集群的稳定性。这个限定可以通过指定 `export ES_JAVA_OPTS="-Des.index.max_number_of_shards=128"` 系统属性来修改，这个属性属于集群的每个节点。
 :::
 
@@ -46,7 +41,7 @@
 
 这个设置的默认值基于索引的主分片数。默认情况下，允许按 2 的因子拆分最多 1,024 个分片。
 
-::: tip 提示
+:::note 提示
 在 Elasticsearch 7.0.0 以及更新的版本，这个设置影响文档在分片中的分布方式。使用自定义路由重新索引旧索引时，你必须显式设置 `index.number_of_routing_shards` 以维持相同的文档分布。参阅[相关的碎裂变化](https://www.elastic.co/guide/en/elasticsearch/reference/7.0/breaking-changes-7.0.html#_document_distribution_changes)。
 :::
 
@@ -61,7 +56,7 @@
     - `true`
     检测物理和逻辑损坏。这会消耗更高的 CPU 和内存。
 
-::: danger 警告
+:::caution 警告
 仅限专家。在大型索引上检查分片可能花费更多的时间。
 :::
 

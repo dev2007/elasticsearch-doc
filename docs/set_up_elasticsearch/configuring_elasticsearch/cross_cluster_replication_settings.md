@@ -1,3 +1,7 @@
+---
+sidebar_position: 60
+---
+
 # 跨集群复制设置
 
 可以使用[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html) 在活动集群上动态更新这些跨集群复制设置。

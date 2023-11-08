@@ -1,3 +1,7 @@
+---
+sidebar_position: 70
+---
+
 # 使用 Homebrew 在 macOS 上安装 Elasticsearch
 
 Elasticsearch 发布了 Homebrew formulae，所以你可以通过 [Homebrew](https://brew.sh/) 包管理器安装 Elasticsearch。

@@ -18,7 +18,7 @@ POST my-data-stream/_rollover
 
 ## 描述
 
-::: tip 提示
+:::note 提示
 我们推荐使用 ILM 的[翻转](/ILM_manage_the_index_lifecycle/index_lifecycle_actions/rollover)操作来自动执行翻转。参阅[索引生命周期](/set_up_elasticsearch/index_lifecycle)
 :::
 
@@ -30,7 +30,7 @@ POST my-data-stream/_rollover
 
 ### 翻转带有写索引的索引别名
 
-::: tip 提示
+:::note 提示
 在 Elasticsearch 7.9 之前，你通常会使用带有写索引的[索引别名](/rest_apis/index_apis/create_or_update_index_alias)来管理时序数据。数据流取代了这一功能，需要较少的维护，并自动与数据层集成。
 参阅[转换索引别名为数据流](/data_streams/set_up_a_data_stream#转换索引别名为数据流)。
 :::
@@ -108,7 +108,7 @@ POST my-data-stream/_rollover
 
   （可选，对象）翻转的条件。如果指定，Elasticsearch 仅在当前索引满足以下一个或多个条件时执行翻转。如果参数未指定，Elasticsearch 无条件执行翻转。
 
-  ::: danger 警告
+  :::caution 警告
   为了触发翻转，当前索引在请求时必须满足这些条件。Elasticsearch 不会在 API 响应后监视索引。要自动化翻转，改用 ILM 的[翻转](/ILM_manage_the_index_lifecycle/index_lifecycle_actions/rollover)。
   :::
 
@@ -126,7 +126,7 @@ POST my-data-stream/_rollover
 
     （可选，[字节单位](/rest_apis/api_convention/common_options#字节大小单位)）当索引达到一定大小时触发翻转。这是索引中所有主分片的总大小。副本不会被计算到最大索引大小。
 
-    ::: tip 提示
+    :::note 提示
     为查看当前索引大小，可以使用 [`_cat indices`](/rest_apis/compact_and_aligned_text_apis/cat_indices) API。`pri.store.size` 值显示所有主分片的组合大小。
     :::
 
@@ -134,7 +134,7 @@ POST my-data-stream/_rollover
 
     （可选，[字节单位](/rest_apis/api_convention/common_options#字节大小单位)）当索引中最大的主分片达到一定大小时触发翻转。主分片在索引中的最大值。同 `max_size` 一样，副本会被忽略。
 
-    ::: tip 提示
+    :::note 提示
     为了查看当前分片大小，可以使用 [`_cat shards`] API。`store` 值展示每个分片大小，`prirep` 指示一个分片是主分片（`p`）还是副本（`r`）。
     :::
 

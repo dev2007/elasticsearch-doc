@@ -34,7 +34,7 @@ GET /my-index-000001/_search
 
 ## 查询参数
 
-::: danger 警告
+:::caution 警告
 可以使用查询参数或请求体参数指定此 API 的多个选项。如果同时使用了这两种参数，则仅使用查询参数。
 :::
 
@@ -171,7 +171,7 @@ GET /my-index-000001/_search
 
   你可以使用 `q` 参数来运行查询参数搜索。查询参数搜索不支持完整的 Elasticsearch [查询 DSL](/query_dsl)，但便于测试。
 
-  ::: danger 警告
+  :::caution 警告
   `q` 参数覆盖请求正文中的查询参数。如果同时指定了这两个参数，则不会返回与查询请求正文参数匹配的文档。
   :::
 
@@ -288,7 +288,7 @@ GET /my-index-000001/_search
 
   （可选，整数）为每个分片收集的最大文档数。如果查询达到此限制，Elasticsearch 会提前终止查询。Elasticsearch 在排序之前收集文档。
 
-  ::: danger 警告
+  :::caution 警告
   使用要小心。Elasticsearch 将此参数应用于处理请求的每个分片。如果可能，让 Elasticsearch 自动执行提前终止。避免为针对跨多个数据层具有备份索引的数据流的请求指定此参数。
   :::
 
@@ -499,7 +499,7 @@ GET /my-index-000001/_search
 
   （可选，整数）为每个分片收集的最大文档数。如果查询达到此限制，Elasticsearch 会提前终止查询。Elasticsearch 在排序之前收集文档。
 
-  ::: danger 警告
+  :::caution 警告
   使用要小心。Elasticsearch 将此参数应用于处理请求的每个分片。如果可能，让 Elasticsearch 自动执行提前终止。避免为针对跨多个数据层具有备份索引的数据流的请求指定此参数。
   :::
 
