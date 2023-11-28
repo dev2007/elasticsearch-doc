@@ -142,6 +142,17 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: '行为分析 API',
+          link: { type: 'doc', id: "rest_apis/behavioral_analytics_apis/behavioral_analytics_apis" },
+          items: [
+            'rest_apis/behavioral_analytics_apis/put-analytics-collection',
+            'rest_apis/behavioral_analytics_apis/delete_analytics_collection',
+            'rest_apis/behavioral_analytics_apis/list_analytics_collections',
+            'rest_apis/behavioral_analytics_apis/post_analytics_collection_event'
+          ]
+        },
+        {
+          type: 'category',
           label: '文档 API',
           link: { type: 'doc', id: "rest_apis/document_apis/document_apis" },
           items: [

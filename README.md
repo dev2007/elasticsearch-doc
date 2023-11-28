@@ -817,11 +817,16 @@ npm run docs:dev
     - :heavy_check_mark: Cron 表达式 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_convention/cron_expressions.html)
     - :heavy_check_mark: 常用选项 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_convention/common_options.html)
     - :heavy_check_mark: 基于 URL 的访问控制 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_convention/url-based_access_control.html)
-  - Autoscaling APIs
+  - :heavy_check_mark: 自动伸缩 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/autoscaling_apis/)
     - :heavy_check_mark: 创建或更新自动伸缩策略 [:link:](https://elasticsearch.bookhub.tech/rest_apis/autoscaling_apis/create_or_update_autoscaling_policy.html)
     - :heavy_check_mark: 获取自动伸缩策略 [:link:](https://elasticsearch.bookhub.tech/rest_apis/autoscaling_apis/get_autoscaling_capacity.html)
     - :heavy_check_mark: 删除自动伸缩策略 [:link:](https://elasticsearch.bookhub.tech/rest_apis/autoscaling_apis/delete_autoscaling_policy.html)
-    - Get autoscaling policy
+    - :heavy_check_mark: 获取自动伸缩策略 [:link:](https://elasticsearch.bookhub.tech/rest_apis/autoscaling_apis/get_autoscaling_policy)
+  - :heavy_check_mark: 行为分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/behavioral_analytics_apis)
+    - :heavy_check_mark: 创建分析集合 [:link:](https://elasticsearch.bookhub.tech/rest_apis/behavioral_analytics_apis/put-analytics-collection)
+    - :heavy_check_mark: 删除分析集合 [:link:](https://elasticsearch.bookhub.tech/rest_apis/behavioral_analytics_apis/delete_analytics_collection)
+    - :heavy_check_mark: 列出分析集合 [:link:](https://elasticsearch.bookhub.tech/rest_apis/behavioral_analytics_apis/list_analytics_collections)
+    - :heavy_check_mark: 将事件发布到分析集合 [:link:](https://elasticsearch.bookhub.tech/rest_apis/behavioral_analytics_apis/post_analytics_collection_event)
   - Compact and aligned text (CAT) APIs
     - cat aliases
     - cat allocation
