@@ -156,7 +156,8 @@ const sidebars = {
           label: '文档 API',
           link: { type: 'doc', id: "rest_apis/document_apis/document_apis" },
           items: [
-            'rest_apis/document_apis/esindex'
+            'rest_apis/document_apis/docs_replication',
+            'rest_apis/document_apis/docs_index'
           ]
         },
         {
