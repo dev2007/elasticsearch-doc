@@ -894,7 +894,7 @@ npm run docs:dev
     - :heavy_check_mark: 读写 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_replication)
     - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_index)
     - :heavy_check_mark: 获取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_get)
-    - ✅ [删除 API](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_delete)
+    - :heavy_check_mark: [删除 API](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_delete)
     - Delete by query
     - Update
     - Update by query
