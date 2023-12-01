@@ -273,7 +273,7 @@ PUT /my-index-000001
 }
 ```
 
-通过[索引](/rest_apis/document_apis/esindex) API 索引多个具有 `user_id` 字段值的文档。
+通过[索引](/rest_apis/document_apis/docs_index) API 索引多个具有 `user_id` 字段值的文档。
 
 ```bash
 POST /my-index-000001/_doc?refresh=wait_for

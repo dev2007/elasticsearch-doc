@@ -73,7 +73,7 @@ npm run docs:dev
   - :heavy_check_mark: 可伸缩性和弹性 [:link:](https://elasticsearch.bookhub.tech/intro/scalability.html)
 - :heavy_check_mark: Elasticsearch 入门 [:link:](https://elasticsearch.bookhub.tech/getting_started/.html)
   - :heavy_check_mark: 启动并运行 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/getting_started/install.html)
-  - :heavy_check_mark: 索引一些文档 [:link:](https://elasticsearch.bookhub.tech/getting_started/esindex.html)
+  - :heavy_check_mark: 索引一些文档 [:link:](https://elasticsearch.bookhub.tech/getting_started/docs_index.html)
   - :heavy_check_mark: 开始搜索 [:link:](https://elasticsearch.bookhub.tech/getting_started/search.html)
   - :heavy_check_mark: 使用聚合分析结果  [:link:](https://elasticsearch.bookhub.tech/getting_started/aggregations.html)
   - :heavy_check_mark: 何去何从 [:link:](https://elasticsearch.bookhub.tech/getting_started/nextstep.html)
@@ -891,10 +891,10 @@ npm run docs:dev
     - Data stream stats
     - Promote data stream
   - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/)
-    - Reading and Writing documents
-    - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/esindex.html)
-    - Get
-    - Delete
+    - :heavy_check_mark: 读写 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_replication)
+    - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_index)
+    - :heavy_check_mark: 获取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_get)
+    - ✅ [删除 API](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_delete)
     - Delete by query
     - Update
     - Update by query

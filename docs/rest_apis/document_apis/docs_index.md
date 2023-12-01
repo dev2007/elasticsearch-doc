@@ -62,11 +62,11 @@
 
 - `if_seq_no`
 
-  （可选，整数）仅当文档具有此序列号时才执行此操作。参阅[乐观并发控制](/rest_apis/document_apis/esindex#乐观并发控制)。
+  （可选，整数）仅当文档具有此序列号时才执行此操作。参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
 
 - `if_primary_term`
 
-  （可选，整数）仅当文档具有此主词语时才执行此操作。参阅[乐观并发控制](/rest_apis/document_apis/esindex#乐观并发控制)。
+  （可选，整数）仅当文档具有此主词语时才执行此操作。参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
 
 - `op_type`
 
@@ -92,9 +92,9 @@
 
   （可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）请求等待以下操作的时间段：
 
-  - [自动创建索引](/rest_apis/document_apis/esindex#自动创建数据流和索引)
+  - [自动创建索引](/rest_apis/document_apis/docs_index#自动创建数据流和索引)
   - [动态映射](/mapping/dynamic_mapping)更新
-  - [等待活动分片](/rest_apis/document_apis/esindex#活动分片)
+  - [等待活动分片](/rest_apis/document_apis/docs_index#活动分片)
 
   默认为 `1m`（一分钟）。这保证了 Elasticsearch 在失败之前至少要等待超时。实际等待时间可能更长，尤其是在发生多次等待时。
 
@@ -110,7 +110,7 @@
 
   （可选，字符串）继续操作前必须处于活动状态的分片副本数。设置为 `all` 或任何正整数，上限为索引中分片的总数（`(number_of_replicas+1`）。默认为：`1`，代表主分片。
 
-  参阅[活动分片](/rest_apis/document_apis/esindex#活动分片)。
+  参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)。
 
 - `require_alias`
 
@@ -137,7 +137,7 @@
   指示索引操作成功的碎片副本数。索引操作成功时，`successful` 至少为1。
 
 :::note 提示
-索引操作成功返回时，​默认情况下副本分片可能不会全部启动，只有主节点是必须启动的。设置 `wait_for_active_shards` 以更改此默认行为。参阅[活动分片](/rest_apis/document_apis/esindex#活动分片)。
+索引操作成功返回时，​默认情况下副本分片可能不会全部启动，只有主节点是必须启动的。设置 `wait_for_active_shards` 以更改此默认行为。参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)。
 :::
 
 - `_shards.failed`
@@ -162,11 +162,11 @@
 
 - `_seq_no`
 
-  为索引操作分配给文档的序列号。序列号用于确保文档的旧版本不会覆盖新版本。参阅[乐观并发控制](/rest_apis/document_apis/esindex#乐观并发控制)。
+  为索引操作分配给文档的序列号。序列号用于确保文档的旧版本不会覆盖新版本。参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
 
 - `_primary_term`
 
-  为索引操作分配给文档的主要词语。参阅[乐观并发控制](/rest_apis/document_apis/esindex#乐观并发控制)。
+  为索引操作分配给文档的主要词语。参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
 
 - `result`
 

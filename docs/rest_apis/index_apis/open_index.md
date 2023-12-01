@@ -77,7 +77,7 @@ POST /my-index-000001/_open
 - `wait_for_active_shards`
 （可选，字符串）在操作执行之前必须活动的分片复制数量。设置为 `all` 或任何正整数，最大值为索引分片总数（`number_of_replicas+1`）。值 `index-setting` 指依据索引设置 `index.write.wait_for_active_shards` 等待。默认：`0`，意味着不等待任何分片准备。
 
-参阅[活动分片](/rest_apis/document_apis/esindex#活动分片)。
+参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)。
 
 - `master_timeout`
 （可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。

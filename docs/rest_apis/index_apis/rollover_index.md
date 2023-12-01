@@ -164,7 +164,7 @@ POST my-data-stream/_rollover
 
 - `shards_acknowledged`
 
-  （布尔值）如果为 `true`，请求在 `master_timeout` 周期内接收来自[活动分片](/rest_apis/document_apis/esindex#活动分片)的响应。
+  （布尔值）如果为 `true`，请求在 `master_timeout` 周期内接收来自[活动分片](/rest_apis/document_apis/docs_index#活动分片)的响应。
 
 - `old_index`
 

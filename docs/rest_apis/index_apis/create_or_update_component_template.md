@@ -125,7 +125,7 @@ PUT _component_template/template_1
 
 - `allow_auto_create`
 
-  （可选，布尔值）此设置覆盖了集群设置中的 [`action.auto_create_index`](/rest_apis/document_apis/esindex#自动创建数据流和索引) 的值。如果在模板中设置为 `true`，即使通过 `actions.auto_create_index` 禁用了自动创建索引，索引也能通过这个模板自动创建。如果设置为 `false`，匹配模板的索引或数据流必须被显示创建，且可能永远不会被自动创建。
+  （可选，布尔值）此设置覆盖了集群设置中的 [`action.auto_create_index`](/rest_apis/document_apis/docs_index#自动创建数据流和索引) 的值。如果在模板中设置为 `true`，即使通过 `actions.auto_create_index` 禁用了自动创建索引，索引也能通过这个模板自动创建。如果设置为 `false`，匹配模板的索引或数据流必须被显示创建，且可能永远不会被自动创建。
 
 - `_meta`
 

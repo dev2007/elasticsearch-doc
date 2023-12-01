@@ -65,7 +65,7 @@ POST /my-index-000001/_disk_usage?run_expensive_tasks=true
 
   （可选，字符串）继续操作前必须处于活动状态的分片副本数。设置为 `all` 或任何正整数，上限为索引中分片的总数（`(number_of_replicas+1`）。默认为：`1`，代表主分片。
 
-  参阅[活动分片](/rest_apis/document_apis/esindex#活动分片)。
+  参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)。
 
 ## 示例
 

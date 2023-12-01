@@ -46,7 +46,7 @@ PUT /my-index-000001
 - `wait_for_active_shards`
 （可选，字符串）在操作执行之前必须活动的分片复制数量。设置为 `all` 或任何正整数，最大值为索引分片总数（`number_of_replicas+1`）。默认为：1，主分片。
 
-参阅 [活动分片](/rest_apis/document_apis/esindex#活动分片)
+参阅 [活动分片](/rest_apis/document_apis/docs_index#活动分片)
 
 - `master_timeout`
 （可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）等待连接到主节点的时间。如果在超时过期前没有收到响应，则请求失败并返回错误。默认为 `30s`。
@@ -182,6 +182,6 @@ PUT /test
 PUT /test?wait_for_active_shards=2
 ```
 
-对 `wait_for_active_shards` 的详情解释，及它的可能值能在[这里](/rest_apis/document_apis/esindex#活动分片)找到。
+对 `wait_for_active_shards` 的详情解释，及它的可能值能在[这里](/rest_apis/document_apis/docs_index#活动分片)找到。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-create-index.html)

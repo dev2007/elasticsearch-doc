@@ -36,7 +36,7 @@ const sidebars = {
       link: { type: 'doc', id: "getting_started/getting_started" },
       items: [
         'getting_started/install',
-        'getting_started/esindex',
+        'getting_started/docs_index',
         'getting_started/search',
         'getting_started/aggregations',
         'getting_started/nextstep'
@@ -158,7 +158,8 @@ const sidebars = {
           items: [
             'rest_apis/document_apis/docs_replication',
             'rest_apis/document_apis/docs_index',
-            'rest_apis/document_apis/docs_get'
+            'rest_apis/document_apis/docs_get',
+            'rest_apis/document_apis/docs_delete'
           ]
         },
         {

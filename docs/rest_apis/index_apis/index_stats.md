@@ -57,7 +57,7 @@ GET /my-index-000001/_stats
     获取统计，包括丢失的统计。
 
   - `indexing`
-    [索引](/rest_apis/document_apis/esindex)统计。
+    [索引](/rest_apis/document_apis/docs_index)统计。
 
   - `merge`
     [合并](/index_modules/merge)统计。
