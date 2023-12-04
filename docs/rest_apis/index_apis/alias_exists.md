@@ -1,6 +1,6 @@
 # 别名存在 API
 
-检查一个[别名](/aliases/aliases)是否存在。
+检查一个[别名](/aliases)是否存在。
 
 ```bash
 HEAD _alias/my-alias

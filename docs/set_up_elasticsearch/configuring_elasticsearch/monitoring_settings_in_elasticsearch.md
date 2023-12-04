@@ -4,7 +4,7 @@ sidebar_position: 180
 
 # Elasticsearch 中的监控设置
 
-:::warning 警告
+:::caution 警告
 **7.16 弃用**
 
 不推荐使用 Elasticsearch 监控插件来收集和发送监控数据。Metricbeat 是收集监测数据并将其发送到监测集群的推荐方法。如果你以前配置了传统收集方法，则应迁移到使用 Metricbeat 收集方法。参阅[使用 Metricbeat 收集 Elasticsearch 监测数据](/monitor_a_cluster/collecting_elasticsearch_monitoring_data_with_metribeat.html)。

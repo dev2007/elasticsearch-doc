@@ -13,6 +13,14 @@ slug: /
 
 - 2023.11.08 变更文档框架为 Docusaurus
 
+## 微信公众号
+
+欢迎关注微信公众号：**程序员爱读书**。
+
+分享程序员最需要的书籍和文章，助力你从掌握职业生涯的方法论。
+
+![](https://images.bookhub.tech/mp/mp_name.png)
+
 ## 感谢与支持
 
 ![license](https://img.shields.io/badge/License-CC--BY--NC-%2321BAB5) ![Translate](https://img.shields.io/badge/Translation-Elasticsearch-%2321BAB5) ![stars](https://img.shields.io/github/stars/dev2007/elasticsearch-doc?color=%2321BAB5&label=Stars&logo=github) ![forks](https://img.shields.io/github/forks/dev2007/elasticsearch-doc?color=%2321BAB5&label=Forks&logo=github)

@@ -22,6 +22,14 @@
 
 [在网站查看文档](https://elasticsearch.bookhub.tech)
 
+## 微信公众号
+
+欢迎关注微信公众号：**程序员爱读书**。
+
+分享程序员最需要的书籍和文章，助力你从掌握职业生涯的方法论。
+
+![](https://images.bookhub.tech/mp/mp_name.png)
+
 ## 感谢与支持
 
 如果对你有帮助，欢迎给我一颗星。
@@ -895,7 +903,7 @@ npm run docs:dev
     - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_index)
     - :heavy_check_mark: 获取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_get)
     - :heavy_check_mark: [删除 API](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_delete)
-    - Delete by query
+    - :heavy_check_mark: [按查询删除 API](https://elasticsearch.bookhub.tech/rest_apis/document_apis/delete_by_query)
     - Update
     - Update by query
     - Multi get

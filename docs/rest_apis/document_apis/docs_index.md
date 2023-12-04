@@ -114,7 +114,7 @@
 
 - `require_alias`
 
-（可选，布尔值）如果为 `true`，则目标必须是[索引别名](/aliases/aliases)。默认为`false`。
+（可选，布尔值）如果为 `true`，则目标必须是[索引别名](/aliases)。默认为`false`。
 
 ## 请求体
 
