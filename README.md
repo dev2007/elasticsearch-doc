@@ -902,9 +902,9 @@ npm run docs:dev
     - :heavy_check_mark: 读写 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_replication)
     - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_index)
     - :heavy_check_mark: 获取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_get)
-    - :heavy_check_mark: [删除 API](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_delete)
-    - :heavy_check_mark: [按查询删除 API](https://elasticsearch.bookhub.tech/rest_apis/document_apis/delete_by_query)
-    - Update
+    - :heavy_check_mark: 删除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_delete)
+    - :heavy_check_mark: 按查询删除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/delete_by_query)
+    - :heavy_check_mark: 更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_update)
     - Update by query
     - Multi get
     - Bulk

@@ -160,7 +160,8 @@ const sidebars = {
             'rest_apis/document_apis/docs_index',
             'rest_apis/document_apis/docs_get',
             'rest_apis/document_apis/docs_delete',
-            'rest_apis/document_apis/delete_by_query'
+            'rest_apis/document_apis/delete_by_query',
+            'rest_apis/document_apis/docs_update',
           ]
         },
         {
