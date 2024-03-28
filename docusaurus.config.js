@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh',
+    locales: ['zh'],
   },
 
   presets: [
@@ -150,6 +150,10 @@ const config = {
         additionalLanguages: ['bash', 'java', 'yaml', 'json', 'groovy', 'kotlin', 'graphql', 'properties', 'toml', 'hoon']
       },
     }),
+  
+    plugins: [[ require.resolve('docusaurus-lunr-search'), {
+      languages: ['en', 'zh'] // language codes
+    }]],
 };
 
 module.exports = config;
