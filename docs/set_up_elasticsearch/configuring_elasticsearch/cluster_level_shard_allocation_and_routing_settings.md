@@ -310,7 +310,7 @@ PUT _cluster/settings
 
   （[动态](/set_up_elasticsearch/configuring_elasticsearch#集群和节点设置类型)）与 `cluster.blocks.read_only` 相同，但允许删除索引以释放资源。
 
-::: warning 警告
+:::caution 警告
 不要依赖此设置来阻止更改集群。任何有权访问[集群更新设置 API](/rest_apis/cluster_apis/cluster_update_settings.html)
  的用户都可以使集群再次读写。
 :::
