@@ -114,7 +114,7 @@ GET my-index-000001/_doc/2?routing=user1
 - `_source_includes`
     (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，包含在响应中。
 
-    如果指定了该参数，则只返回这些源字段。您可以使用 `_source_excludes` 查询参数从该子集中排除字段。
+    如果指定了该参数，则只返回这些源字段。你可以使用 `_source_excludes` 查询参数从该子集中排除字段。
 
     如果 `_source` 参数为 `false`，该参数将被忽略。
 - `version`
@@ -127,7 +127,7 @@ GET my-index-000001/_doc/2?routing=user1
 - `_index`
     文档所属索引的名称。
 - `_id`
-    文件的唯一标识符。
+    文档的唯一标识符。
 - `_version`
     文档版本。文档每次更新时都会递增。
 - `_seq_no`

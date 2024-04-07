@@ -46,6 +46,7 @@
 
 |昵称|时间|赞赏|留言|
 |--|--|--|--|
+|小f****|2024.04.03 16:25|￥2.33|--|
 |【未知】|2024.03.29 08:27|￥6.66|--|
 |【未知】|2024.03.20 09:57|￥6.66|**感谢大佬解救英语苦手**|
 |【未知】|2023.09.18 20：36|￥6.66|**加油**|
@@ -907,8 +908,8 @@ npm run docs:dev
     - :heavy_check_mark: 删除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_delete)
     - :heavy_check_mark: 按查询删除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/delete_by_query)
     - :heavy_check_mark: 更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_update)
-    - U:heavy_check_mark: 按查询更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_update_by_query)
-    - Multi get
+    - :heavy_check_mark: 按查询更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_update_by_query)
+    - :heavy_check_mark: 多重查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_multi_get)
     - Bulk
     - Reindex
     - Term vectors
