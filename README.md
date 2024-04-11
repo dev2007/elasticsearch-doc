@@ -1,12 +1,12 @@
-# Elasticsearch中文文档——基于v7.11
+# Elasticsearch中文文档——从 v7.11 开始
 
 ![license](https://img.shields.io/badge/license-CC--BY--NC-%2321BAB5)
 
 ## 翻译目标及说明
 
-基于官方 7.11 文档，翻译为中文，并发布在网站查看。
+从官方 7.11 文档开始，翻译为中文，并发布在网站查看。
 
-由于官方版本更新比较快(当前为 8.12)，文档虽然是基于 7.11 开始翻译，但实际翻译过程中，后续的文档都是翻译时的最新版本。
+由于官方版本更新比较快(当前为 8.13)，文档虽然是基于 7.11 开始翻译，但实际翻译过程中，后续的文档都是翻译当前的最新版本。
 
 计划在全部翻译完成后，再基于完成时的最新版本，对有差异的老版本文档进行调整。
 
@@ -910,7 +910,7 @@ npm run docs:dev
     - :heavy_check_mark: 更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_update)
     - :heavy_check_mark: 按查询更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_update_by_query)
     - :heavy_check_mark: 多重查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_multi_get)
-    - Bulk
+    - :heavy_check_mark: 批量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_bulk)
     - Reindex
     - Term vectors
     - Multi term vectors

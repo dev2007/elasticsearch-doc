@@ -92,9 +92,9 @@
 
   （可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）请求等待以下操作的时间段：
 
-  - [自动创建索引](/rest_apis/document_apis/docs_index#自动创建数据流和索引)
-  - [动态映射](/mapping/dynamic_mapping)更新
-  - [等待活动分片](/rest_apis/document_apis/docs_index#活动分片)
+    - [自动创建索引](/rest_apis/document_apis/docs_index#自动创建数据流和索引)
+    - [动态映射](/mapping/dynamic_mapping)更新
+    - [等待活动分片](/rest_apis/document_apis/docs_index#活动分片)
 
   默认为 `1m`（一分钟）。这保证了 Elasticsearch 在失败之前至少要等待超时。实际等待时间可能更长，尤其是在发生多次等待时。
 
@@ -114,7 +114,7 @@
 
 - `require_alias`
 
-（可选，布尔值）如果为 `true`，则目标必须是[索引别名](/aliases)。默认为`false`。
+  （可选，布尔值）如果为 `true`，则目标必须是[索引别名](/aliases)。默认为`false`。
 
 ## 请求体
 
