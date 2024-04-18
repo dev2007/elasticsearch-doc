@@ -58,7 +58,7 @@ optional_source\n
 
 `delete` 不需要在下一行指定来源，其语义与标准删除 API 相同。
 
-:::note 注意
+:::tip 注意
 最后一行数据必须以换行符 `\n` 结束。每个换行符前都可以有一个 `\r`（回车符）。向 `_bulk` 端点发送 NDJSON 数据时，请使用一个值为 `application/json` 或 `application/x-ndjson` 的 `Content-Type` 请求头。
 :::
 
@@ -118,7 +118,7 @@ $ curl -s -H "Content-Type: application/x-ndjson" -XPOST localhost:9200/_bulk --
 
 ### 版本控制
 
-每个批量项目都可以使用 `version` 字段包含版本值。它会根据 `_version` 映射自动遵循索引/删除操作的行为。它还支持 `version_type`（参阅[版本控制](/rest_apis/document_apis/index.html#版本控制)）。
+每个批量项目都可以使用 `version` 字段包含版本值。它会根据 `_version` 映射自动遵循索引/删除操作的行为。它还支持 `version_type`（参阅[版本控制](/rest_apis/document_apis/docs_index.html#版本控制)）。
 
 ### 路由
 

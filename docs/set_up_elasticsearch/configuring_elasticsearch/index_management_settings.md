@@ -8,7 +8,7 @@ sidebar_position: 110
 
 - `action.auto_create_index` ![cloud](https://www.elastic.co/cloud/elasticsearch-service/signup?baymax=docs-body&elektra=docs)
 
-  [动态](/set_up_elasticsearch/configuring_elasticsearch)如果索引还不存在将[自动创建索引](/rest_apis/document_apis/index.html#自动创建数据流和索引)并应用任何配置的索引模板。默认为 `true`。
+  [动态](/set_up_elasticsearch/configuring_elasticsearch)如果索引还不存在将[自动创建索引](/rest_apis/document_apis/docs_index.html#自动创建数据流和索引)并应用任何配置的索引模板。默认为 `true`。
 
 - `action.destructive_requires_name` ![cloud](https://www.elastic.co/cloud/elasticsearch-service/signup?baymax=docs-body&elektra=docs)
 

@@ -181,7 +181,7 @@ wait_time = target_time - write_time = 2 seconds - .5 seconds = 1.5 seconds
 - `terminate_after`
     (可选，整数）每个分片要收集的最大文档数。如果查询达到此限制，Elasticsearch 会提前终止查询。Elasticsearch 会在排序前收集文档。
 
-:::caution 重要
+:::danger 重要
 谨慎使用。Elasticsearch 会将此参数应用于处理请求的每个分片。在可能的情况下，让 Elasticsearch 自动执行提前终止。如果请求的目标数据流带有跨多个数据层的备份索引，则应避免指定此参数。
 :::
 

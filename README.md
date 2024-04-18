@@ -902,16 +902,16 @@ npm run docs:dev
     - Data stream stats
     - Promote data stream
   - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/)
-    - :heavy_check_mark: 读写 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_replication)
+    - :heavy_check_mark: 读写 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/replication)
     - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_index)
-    - :heavy_check_mark: 获取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_get)
-    - :heavy_check_mark: 删除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_delete)
+    - :heavy_check_mark: 获取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/get)
+    - :heavy_check_mark: 删除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/delete)
     - :heavy_check_mark: 按查询删除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/delete_by_query)
-    - :heavy_check_mark: 更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_update)
-    - :heavy_check_mark: 按查询更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_update_by_query)
-    - :heavy_check_mark: 多重查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_multi_get)
-    - :heavy_check_mark: 批量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_bulk)
-    - Reindex
+    - :heavy_check_mark: 更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/update)
+    - :heavy_check_mark: 按查询更新 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/update_by_query)
+    - :heavy_check_mark: 多重查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/multi_get)
+    - :heavy_check_mark: 批量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/bulk)
+    - :heavy_check_mark: 重索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/reindex)
     - Term vectors
     - Multi term vectors
     - ?refresh

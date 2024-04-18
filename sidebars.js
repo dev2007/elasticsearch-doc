@@ -156,15 +156,16 @@ const sidebars = {
           label: '文档 API',
           link: { type: 'doc', id: "rest_apis/document_apis/document_apis" },
           items: [
-            'rest_apis/document_apis/docs_replication',
+            'rest_apis/document_apis/replication',
             'rest_apis/document_apis/docs_index',
-            'rest_apis/document_apis/docs_get',
-            'rest_apis/document_apis/docs_delete',
+            'rest_apis/document_apis/get',
+            'rest_apis/document_apis/delete',
             'rest_apis/document_apis/delete_by_query',
-            'rest_apis/document_apis/docs_update',
-            'rest_apis/document_apis/docs_update_by_query',
-            'rest_apis/document_apis/docs_multi_get',
-            'rest_apis/document_apis/docs_bulk'
+            'rest_apis/document_apis/update',
+            'rest_apis/document_apis/update_by_query',
+            'rest_apis/document_apis/multi_get',
+            'rest_apis/document_apis/bulk',
+            'rest_apis/document_apis/reindex'
           ]
         },
         {
