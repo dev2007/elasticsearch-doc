@@ -46,6 +46,8 @@
 
 |昵称|时间|赞赏|留言|
 |--|--|--|--|
+|土豆****|2024.06.26 20:28|￥10.24|--|
+|o_****|2024.05.11 09:46|￥2.33|**感谢翻译**|
 |小f****|2024.04.03 16:25|￥2.33|--|
 |【未知】|2024.03.29 08:27|￥6.66|--|
 |【未知】|2024.03.20 09:57|￥6.66|**感谢大佬解救英语苦手**|
@@ -912,7 +914,7 @@ npm run docs:dev
     - :heavy_check_mark: 多重查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/multi_get)
     - :heavy_check_mark: 批量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/bulk)
     - :heavy_check_mark: 重索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/reindex)
-    - Term vectors
+    - :heavy_check_mark: 词向量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/termvectors)
     - Multi term vectors
     - ?refresh
     - Optimistic concurrency control

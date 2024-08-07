@@ -794,7 +794,7 @@ reindex.remote.whitelist: "otherhost:9200, another:9200, 127.0.10.*:9200, localh
 
 此功能应适用于任何版本的 Elasticsearch 远程群集。这样就可以通过从旧版本的群集重新索引，将任何版本的 Elasticsearch 升级到当前版本。
 
-:::warning 警告
+:::caution 警告
 Elasticsearch 不支持跨主要版本的向前兼容性。例如，你无法将 7.x 集群重新索引到 6.x 集群中。
 :::
 

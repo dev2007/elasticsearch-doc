@@ -165,7 +165,8 @@ const sidebars = {
             'rest_apis/document_apis/update_by_query',
             'rest_apis/document_apis/multi_get',
             'rest_apis/document_apis/bulk',
-            'rest_apis/document_apis/reindex'
+            'rest_apis/document_apis/reindex',
+            'rest_apis/document_apis/termvectors'
           ]
         },
         {
