@@ -916,7 +916,7 @@ npm run docs:dev
     - :heavy_check_mark: 批量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/bulk)
     - :heavy_check_mark: 重索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/reindex)
     - :heavy_check_mark: 词向量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/termvectors)
-    - Multi term vectors
+    - :heavy_check_mark: 多词向量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/multi_termvectors)
     - ?refresh
     - Optimistic concurrency control
   - Enrich APIs
