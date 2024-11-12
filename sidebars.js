@@ -167,7 +167,8 @@ const sidebars = {
             'rest_apis/document_apis/bulk',
             'rest_apis/document_apis/reindex',
             'rest_apis/document_apis/termvectors',
-            'rest_apis/document_apis/multi_termvectors'
+            'rest_apis/document_apis/multi_termvectors',
+            'rest_apis/document_apis/refresh'
           ]
         },
         {
