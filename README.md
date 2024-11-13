@@ -918,7 +918,7 @@ npm run docs:dev
     - :heavy_check_mark: 词向量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/termvectors)
     - :heavy_check_mark: 多词向量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/multi_termvectors)
     - :heavy_check_mark: ?refresh [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/refresh)
-    - Optimistic concurrency control
+    - :heavy_check_mark: 乐观并发控制 [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/optimistic_concurrency_control)
   - Enrich APIs
     - Put enrich policy
     - Delete enrich policy
