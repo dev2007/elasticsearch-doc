@@ -897,8 +897,8 @@ npm run docs:dev
     - Get auto-follow pattern
     - Pause auto-follow pattern
     - Resume auto-follow pattern
-  - Data stream APIs
-    - Create data stream
+  - :heavy_check_mark: 数据流 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/)
+    - :heavy_check_mark: 创建数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/create_data_stream)
     - Delete data stream
     - Get data stream
     - Migrate to data stream

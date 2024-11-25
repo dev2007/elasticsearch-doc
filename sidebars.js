@@ -153,6 +153,14 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: '数据流 API',
+          link: { type: 'doc', id: "rest_apis/data_stream_apis/data_stream_apis" },
+          items: [
+            'rest_apis/data_stream_apis/create_data_stream'
+          ]
+        },
+        {
+          type: 'category',
           label: '文档 API',
           link: { type: 'doc', id: "rest_apis/document_apis/document_apis" },
           items: [
