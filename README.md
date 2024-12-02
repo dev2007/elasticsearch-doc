@@ -900,7 +900,7 @@ npm run docs:dev
   - :heavy_check_mark: 数据流 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/)
     - :heavy_check_mark: 创建数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/create_data_stream)
     - :heavy_check_mark: 删除数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/delete_data_stream)
-    - Get data stream
+    - :heavy_check_mark: 获取数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/get_data_stream)
     - Migrate to data stream
     - Data stream stats
     - Promote data stream
