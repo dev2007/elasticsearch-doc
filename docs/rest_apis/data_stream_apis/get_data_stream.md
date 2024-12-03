@@ -131,7 +131,7 @@ GET /_data_stream/my-data-stream
         (字符串)流的匹配索引模板中当前 ILM 生命周期策略的名称。此生命周期策略在 `index.lifecycle.name` 设置中设置。
 
         如果模板不包含生命周期策略，则响应中不包含此属性。
-        
+
         :::note 提示
         数据流的后备索引可以分配不同的生命周期策略。要检索单个后备索引的生命周期策略，请使用获取索引设置 API。
         :::
@@ -258,4 +258,4 @@ API 返回以下响应：
 }
 ```
 
-# [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-data-stream.html)
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-data-stream.html)

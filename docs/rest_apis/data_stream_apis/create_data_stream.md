@@ -12,7 +12,7 @@ PUT /_data_stream/my-data-stream
 
 ## 前置条件
 
-- 如果 Elasticsearch 安全特性启用，你必须有 `create_index` 或 `manage` 的[索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)：
+- 如果 Elasticsearch 安全特性启用，你必须有 `create_index` 或 `manage` 的[索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
 - 已启用数据流的匹配[索引模板](/index_templates)。参阅[设置数据流](/data_streams/set_up_a_data_stream)。
 
 ## 路径参数

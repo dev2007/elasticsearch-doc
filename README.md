@@ -1,16 +1,32 @@
-# Elasticsearch中文文档——从 v7.11 开始
+# Elasticsearch 中文指导文档
 
 ![license](https://img.shields.io/badge/license-CC--BY--NC-%2321BAB5)
 
+## 目录
+
+- [翻译目标](#翻译目标及说明)
+- [在线阅读](#阅读文档)
+- [本地运行](#本地运行)
+- [感谢与支持](#感谢与支持)
+- [公众号](#微信公众号)
+- [翻译进度](#文档列表及进度)
+
+
 ## 翻译目标及说明
 
-从官方 7.11 文档开始，翻译为中文，并发布在网站查看。
+### 说明
 
-由于官方版本更新比较快(当前为 8.13)，文档虽然是基于 7.11 开始翻译，但实际翻译过程中，后续的文档都是翻译当前的最新版本。
+从官方 7.11 文档开始，翻译为中文，并发布在网站。
 
-计划在全部翻译完成后，再基于完成时的最新版本，对有差异的老版本文档进行调整。
+由于官方版本更新比较快(当前为 **8.16**)，文档虽然是基于 7.11 开始翻译，但实际翻译时，都是翻译当前的最新版本文档。
 
-由于文档过于庞大，不会按照文档先后顺序进行翻译。将优先进行 API 文档、相关使用的翻译，然后是基本配置等，最后再是基础概念、进阶等。
+### 计划
+
+1. 全部翻译完成后，再基于完成时的最新版本，对有差异的老版本文档进行调整。
+
+2. 优先进行 API 文档、相关使用的翻译，然后是基本配置等，最后再是基础概念、进阶等。
+
+### 目标
 
 翻译过程中，随着对相应概念的学习与理解，可能存在不同文档中对同一名词翻译时选词不同；或者对不同文档中的相同英文描述，翻译时有不同的中文表述（如一个使用子句，一个使用长句）。这些问题在翻译过程中在所难免，如果大家有发现，欢迎指出，我会将其修改一致。
 
@@ -18,17 +34,9 @@
 
 希望在大家的努力下，一起翻译出一份符合中文习惯，且阅读起来令人舒适的文档。这样的好文档才能帮助学习人的进步。这也是我翻译想达到的最高目标。
 
-## 查看文档
+## 阅读文档
 
-[在网站查看文档](https://elasticsearch.bookhub.tech)
-
-## 微信公众号
-
-欢迎关注微信公众号：**程序员爱读书**。
-
-分享程序员最需要的书籍和文章，助力你掌握职业生涯的方法论。
-
-![](https://images.bookhub.tech/mp/mp_name.png)
+[在网站阅读](https://elasticsearch.bookhub.tech)
 
 ## 感谢与支持
 
@@ -57,6 +65,14 @@
 |gr****|2022.07.17 10:22|￥6.66|--|
 |55****|2022.03.03 19:21|￥1.00|--|
 |zs****|2022.03.03 15:43|￥1.00|--|
+
+## 微信公众号
+
+欢迎关注微信公众号：**程序员爱读书**。
+
+分享程序员最需要的书籍和文章，助力你掌握职业生涯的方法论。
+
+![](https://images.bookhub.tech/mp/mp_name.png)
 
 ## 本地运行
 
@@ -901,7 +917,7 @@ npm run docs:dev
     - :heavy_check_mark: 创建数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/create_data_stream)
     - :heavy_check_mark: 删除数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/delete_data_stream)
     - :heavy_check_mark: 获取数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/get_data_stream)
-    - Migrate to data stream
+    - :heavy_check_mark: 迁移数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/migrate_to_data_stream)
     - Data stream stats
     - Promote data stream
   - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/)
