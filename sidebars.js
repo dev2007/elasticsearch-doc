@@ -160,7 +160,8 @@ const sidebars = {
             'rest_apis/data_stream_apis/delete_data_stream',
             'rest_apis/data_stream_apis/get_data_stream',
             'rest_apis/data_stream_apis/migrate_to_data_stream',
-            'rest_apis/data_stream_apis/data_stream_stats'
+            'rest_apis/data_stream_apis/data_stream_stats',
+            'rest_apis/data_stream_apis/promote_data_stream'
           ]
         },
         {
