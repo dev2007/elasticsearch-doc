@@ -918,7 +918,7 @@ npm run docs:dev
     - :heavy_check_mark: 删除数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/delete_data_stream)
     - :heavy_check_mark: 获取数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/get_data_stream)
     - :heavy_check_mark: 迁移数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/migrate_to_data_stream)
-    - Data stream stats
+    - :heavy_check_mark: 数据流统计 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/data_stream_stats)
     - Promote data stream
   - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/)
     - :heavy_check_mark: 读写 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/replication)
