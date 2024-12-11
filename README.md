@@ -921,6 +921,7 @@ npm run docs:dev
     - :heavy_check_mark: 数据流统计 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/data_stream_stats)
     - :heavy_check_mark: 推广数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/promote_data_stream)
     - :heavy_check_mark: 修改数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/modify_data_stream)
+    - :heavy_check_mark: 设置数据流生命周期 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/put_data_stream_lifecycle)
   - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/)
     - :heavy_check_mark: 读写 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/replication)
     - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_index)

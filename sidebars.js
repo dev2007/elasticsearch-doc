@@ -162,7 +162,8 @@ const sidebars = {
             'rest_apis/data_stream_apis/migrate_to_data_stream',
             'rest_apis/data_stream_apis/data_stream_stats',
             'rest_apis/data_stream_apis/promote_data_stream',
-            'rest_apis/data_stream_apis/modify_data_stream'
+            'rest_apis/data_stream_apis/modify_data_stream',
+            'rest_apis/data_stream_apis/put_data_stream_lifecycle'
           ]
         },
         {
