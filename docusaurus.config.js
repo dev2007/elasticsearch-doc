@@ -131,16 +131,7 @@ const config = {
                 href: 'https://pac4j.bookhub.tech',
               }
             ],
-          },
-          {
-            title: '更多',
-            items: [
-              {
-                label: '计算机书库',
-                href: 'https://pdf.bookhub.tech',
-              }
-            ],
-          },
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} bookHub.tech`,
       },
