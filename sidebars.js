@@ -165,6 +165,8 @@ const sidebars = {
             'rest_apis/data_stream_apis/modify_data_stream',
             'rest_apis/data_stream_apis/put_data_stream_lifecycle',
             'rest_apis/data_stream_apis/get_data_stream_lifecycle',
+            'rest_apis/data_stream_apis/delete_data_stream_lifecycle',
+            'rest_apis/data_stream_apis/explain_data_stream_lifecycle'
           ]
         },
         {
