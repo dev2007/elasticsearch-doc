@@ -20,7 +20,7 @@
 - [获取数据流生命周期](./get_data_stream_lifecycle) [预览版］
 - [删除数据流生命周期](./delete_data_stream_lifecycle) [预览版］
 - [解释数据流生命周期](./explain_data_stream_lifecycle) [预览版］
-- [获取数据流生命周期统计数据](./get_data_stream_lifecycle)[预览版］
+- [获取数据流生命周期统计数据](./get_data_stream_lifecycle_state)[预览版］
 
 以下 API 可用于[时序数据流](/data_streams/tsds)：
 

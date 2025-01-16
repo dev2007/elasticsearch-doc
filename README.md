@@ -925,6 +925,8 @@ npm run docs:dev
     - :heavy_check_mark: 获取数据流的生命周期 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/get_data_stream_lifecycle)
     - :heavy_check_mark: 删除数据流的生命周期 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/delete_data_stream_lifecycle)
     - :heavy_check_mark: 解释数据流的生命周期 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/explain_data_stream_lifecycle)
+    - :heavy_check_mark: 获取数据流生命周期统计信息 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/get_data_stream_lifecycle_state)
+    - :heavy_check_mark: 下采样 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/downsample)
   - :heavy_check_mark: 文档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/)
     - :heavy_check_mark: 读写 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/replication)
     - :heavy_check_mark: 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/docs_index)
