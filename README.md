@@ -882,7 +882,7 @@ npm run docs:dev
     - cat thread pool
     - cat trained model
     - cat transforms
-  - Cluster APIs
+  - :heavy_check_mark: 集群API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rest_apis/cluster_apis)
     - Cluster allocation explain
     - Cluster get settings
     - Cluster health

@@ -153,6 +153,13 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: '集群 API',
+          link: { type: 'doc', id: "rest_apis/cluster_apis/cluster_apis" },
+          items: [
+          ]
+        },
+        {
+          type: 'category',
           label: '数据流 API',
           link: { type: 'doc', id: "rest_apis/data_stream_apis/data_stream_apis" },
           items: [
