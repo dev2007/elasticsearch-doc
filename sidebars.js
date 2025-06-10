@@ -156,6 +156,7 @@ const sidebars = {
           label: '集群 API',
           link: { type: 'doc', id: "rest_apis/cluster_apis/cluster_apis" },
           items: [
+            "rest_apis/cluster_apis/cluster_allocation_explain"
           ]
         },
         {
