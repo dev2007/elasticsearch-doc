@@ -893,8 +893,8 @@ npm run docs:dev
     - cat trained model
     - cat transforms
   - :heavy_check_mark: 集群API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rest_apis/cluster_apis)
-    - Cluster allocation explain
-    - Cluster get settings
+    - :heavy_check_mark: 集群分配解释 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_allocation_explain)
+    - :heavy_check_mark: 集群获取设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_get_setting)
     - Cluster health
     - Cluster reroute
     - Cluster state
