@@ -2,7 +2,7 @@
 
 ![license](https://img.shields.io/badge/license-CC--BY--NC-%2321BAB5)
 
-## 注意❗
+## 注意 ❗
 
 目前发现新版本官方文档结构和内容发生了大调整，计划在当前版本内容翻译完成后，调整文档目录结构。
 
@@ -10,7 +10,7 @@
 
 1. 继续翻译 8.x 版本的文档内容
 1. 完成后，将已完成内容将放到**历史**目录下
-2. 翻译官方 9.x 版本文档内容作为主要内容
+1. 翻译官方 9.x 版本文档内容作为主要内容
 
 ## 目录
 
@@ -20,7 +20,6 @@
 - [感谢与支持](#感谢与支持)
 - [公众号](#微信公众号)
 - [翻译进度](#文档列表及进度)
-
 
 ## 翻译目标及说明
 
@@ -60,21 +59,22 @@
 
 ### 赞赏榜
 
-> 感谢赞赏和点击广告的朋友，你们的支持可能让我继续坚持下去。域名我已经买了10年了。
+> 感谢赞赏和点击广告的朋友，你们的支持可能让我继续坚持下去。域名我已经买了 10 年了。
 
-|昵称|时间|赞赏|留言|
-|--|--|--|--|
-|leorn****|2024.10.30 01:16|￥10.24|--|
-|土豆****|2024.06.26 20:28|￥10.24|--|
-|o_****|2024.05.11 09:46|￥2.33|**感谢翻译**|
-|小f****|2024.04.03 16:25|￥2.33|--|
-|【未知】|2024.03.29 08:27|￥6.66|--|
-|【未知】|2024.03.20 09:57|￥6.66|**感谢大佬解救英语苦手**|
-|【未知】|2023.09.18 20：36|￥6.66|**加油**|
-|逃****|2023.04.15 10:43|￥0.50|--|
-|gr****|2022.07.17 10:22|￥6.66|--|
-|55****|2022.03.03 19:21|￥1.00|--|
-|zs****|2022.03.03 15:43|￥1.00|--|
+| 昵称          | 时间              | 赞赏     | 留言                     |
+| ------------- | ----------------- | -------- | ------------------------ |
+| biw\*\*       | 2025.07.01 11:42  | ￥ 6.66  | **感谢翻译**             |
+| leorn\*\*\*\* | 2024.10.30 01:16  | ￥ 10.24 | --                       |
+| 土豆\*\*\*\*  | 2024.06.26 20:28  | ￥ 10.24 | --                       |
+| o\_\*\*\*\*   | 2024.05.11 09:46  | ￥ 2.33  | **感谢翻译**             |
+| 小 f\*\*\*\*  | 2024.04.03 16:25  | ￥ 2.33  | --                       |
+| 【未知】      | 2024.03.29 08:27  | ￥ 6.66  | --                       |
+| 【未知】      | 2024.03.20 09:57  | ￥ 6.66  | **感谢大佬解救英语苦手** |
+| 【未知】      | 2023.09.18 20：36 | ￥ 6.66  | **加油**                 |
+| 逃\*\*\*\*    | 2023.04.15 10:43  | ￥ 0.50  | --                       |
+| gr\*\*\*\*    | 2022.07.17 10:22  | ￥ 6.66  | --                       |
+| 55\*\*\*\*    | 2022.03.03 19:21  | ￥ 1.00  | --                       |
+| zs\*\*\*\*    | 2022.03.03 15:43  | ￥ 1.00  | --                       |
 
 ## 微信公众号
 
@@ -115,7 +115,7 @@ npm run docs:dev
   - :heavy_check_mark: 启动并运行 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/getting_started/install.html)
   - :heavy_check_mark: 索引一些文档 [:link:](https://elasticsearch.bookhub.tech/getting_started/docs_index.html)
   - :heavy_check_mark: 开始搜索 [:link:](https://elasticsearch.bookhub.tech/getting_started/search.html)
-  - :heavy_check_mark: 使用聚合分析结果  [:link:](https://elasticsearch.bookhub.tech/getting_started/aggregations.html)
+  - :heavy_check_mark: 使用聚合分析结果 [:link:](https://elasticsearch.bookhub.tech/getting_started/aggregations.html)
   - :heavy_check_mark: 何去何从 [:link:](https://elasticsearch.bookhub.tech/getting_started/nextstep.html)
 - :heavy_check_mark: 设置 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/)
   - :heavy_check_mark: 安装 Elasticsearch [:link:](https://elasticsearch.bookhub.tech/set_up_elasticsearch/installing_elasticsearch/)
@@ -211,10 +211,10 @@ npm run docs:dev
     - :heavy_check_mark: 索引级分片分配过滤 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/shard_allocation_filtering.html)
     - :heavy_check_mark: 当节点离开时延迟分配 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/delaying_allocation.html)
     - :heavy_check_mark: 索引恢复优先级 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/index_recovery_prioritization.html)
-    - :heavy_check_mark: 每节点分片总数  [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/total_shards_per_node.html)
+    - :heavy_check_mark: 每节点分片总数 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/total_shards_per_node.html)
     - :heavy_check_mark: 索引级数据层分配过滤 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/data_tier_allocation_filtering.html)
   - :heavy_check_mark: 索引块 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_blocks.html)
-  - :heavy_check_mark: 映射器  [:link:](https://elasticsearch.bookhub.tech/index_modules/mapper.html)
+  - :heavy_check_mark: 映射器 [:link:](https://elasticsearch.bookhub.tech/index_modules/mapper.html)
   - Merge
   - Similarity module
   - Slow Log
@@ -892,10 +892,10 @@ npm run docs:dev
     - cat thread pool
     - cat trained model
     - cat transforms
-  - :heavy_check_mark: 集群API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rest_apis/cluster_apis)
+  - :heavy_check_mark: 集群 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rest_apis/cluster_apis)
     - :heavy_check_mark: 集群分配解释 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_allocation_explain)
-    - :heavy_check_mark: 集群获取设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_get_setting)
-    - Cluster health
+    - :heavy_check_mark: 集群获取设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_get_settings)
+    - :heavy_check_mark: 集群健康 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_health)
     - Cluster reroute
     - Cluster state
     - Cluster stats
