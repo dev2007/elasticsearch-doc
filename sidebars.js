@@ -174,6 +174,7 @@ const sidebars = {
             "rest_apis/cluster_apis/cluster_allocation_explain",
             "rest_apis/cluster_apis/cluster_get_settings",
             "rest_apis/cluster_apis/cluster_health",
+            "rest_apis/cluster_apis/health",
           ],
         },
         {
