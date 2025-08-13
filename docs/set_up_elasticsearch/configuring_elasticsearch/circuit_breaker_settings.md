@@ -78,7 +78,7 @@ Elasticsearch 包含多个断路器，用于防止操作导致 OutOfMemoryError�
 
   （[动态](/set_up_elasticsearch/configuring_elasticsearch#集群和节点设置类型)）限制在特定间隔内允许编译的唯一动态脚本的数量。默认为 `150/5m`，即每 5 分钟 150 次。
 
-如果集群定期达到给定的 `max_compilation_rate`，则脚本缓存可能大小不足，请使用[节点统计](/rest_apis/cluster_apis/nodes_stats)检查最近缓存收回的数量、 `script.cache_evictions_history` 和编译 `script.compilations_hiology`。如果最近有大量缓存收回或编译，脚本缓存可能大小不足，请考虑通过设置 `script.cache.max_size` 将脚本缓存的大小加倍。
+如果集群定期达到给定的 `max_compilation_rate`，则脚本缓存可能大小不足，请使用[节点统计](/rest_apis/cluster_apis/nodes_stats)检查最近缓存收回的数量、 `script.cache_evictions_history` 和编译 `script.compilations_history`。如果最近有大量缓存收回或编译，脚本缓存可能大小不足，请考虑通过设置 `script.cache.max_size` 将脚本缓存的大小加倍。
 
 有关详细信息，参阅[脚本](/scripting/how_to_write_scripts/)文档的“首选参数”部分。
 
