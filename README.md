@@ -897,7 +897,7 @@ npm run docs:dev
     - :heavy_check_mark: 集群获取设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_get_settings)
     - :heavy_check_mark: 集群健康 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_health)
     - :heavy_check_mark: 健康 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/health)
-    - Cluster reroute
+    - :heavy_check_mark: 集群重路由 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_reroute)
     - Cluster state
     - Cluster stats
     - Cluster update settings

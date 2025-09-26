@@ -175,6 +175,7 @@ const sidebars = {
             "rest_apis/cluster_apis/cluster_get_settings",
             "rest_apis/cluster_apis/cluster_health",
             "rest_apis/cluster_apis/health",
+            "rest_apis/cluster_apis/cluster_reroute",
           ],
         },
         {
