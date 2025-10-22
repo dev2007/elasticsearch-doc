@@ -900,7 +900,7 @@ npm run docs:dev
     - :heavy_check_mark: 健康 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/health)
     - :heavy_check_mark: 集群重路由 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_reroute)
     - :heavy_check_mark: 集群状态 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_state)
-    - Cluster stats
+    - :heavy_check_mark: 集群统计 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_stats)
     - Cluster update settings
     - Nodes feature usage
     - Nodes hot threads
