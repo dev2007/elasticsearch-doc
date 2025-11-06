@@ -901,7 +901,7 @@ npm run docs:dev
     - :heavy_check_mark: 集群重路由 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_reroute)
     - :heavy_check_mark: 集群状态 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_state)
     - :heavy_check_mark: 集群统计 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_stats)
-    - Cluster update settings
+    - :heavy_check_mark: 集群更新设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_update_settings)
     - Nodes feature usage
     - Nodes hot threads
     - Nodes info
