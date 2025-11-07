@@ -9,8 +9,8 @@
 后续计划如下：
 
 1. 继续翻译 8.x 版本的文档内容
-1. 完成后，将已完成内容将放到**历史**目录下
-1. 翻译官方 9.x 版本文档内容作为主要内容
+2. 完成后，将已完成内容将放到**历史**目录下
+3. 翻译官方 9.x 版本文档内容作为主要内容
 
 ## 目录
 
@@ -27,7 +27,7 @@
 
 从官方 7.11 文档开始，翻译为中文，并发布在网站。
 
-由于官方版本更新比较快(当前为 **8.16**)，文档虽然是基于 7.11 开始翻译，但实际翻译时，都是翻译当前的最新版本文档。
+由于官方版本更新比较快(当前为 **8.18**)，文档虽然是基于 7.11 开始翻译，但实际翻译时，都是翻译当前的最新版本文档。
 
 ### 计划
 
@@ -902,7 +902,7 @@ npm run docs:dev
     - :heavy_check_mark: 集群状态 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_state)
     - :heavy_check_mark: 集群统计 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_stats)
     - :heavy_check_mark: 集群更新设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_update_settings)
-    - Nodes feature usage
+    - :heavy_check_mark: 节点功能使用情况 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/nodes_feature_usage)
     - Nodes hot threads
     - Nodes info
     - Nodes reload secure settings
