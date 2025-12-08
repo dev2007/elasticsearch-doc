@@ -12,7 +12,7 @@
 
 ## 描述
 
-使您能够编写文档更新脚本。脚本可以更新、删除或跳过修改文档。更新 API 还支持传递部分文档，并将其合并到现有文档中。要完全替换现有文档，请使用[索引 API](/rest_apis/document_apis/docs_index)。
+使你能够编写文档更新脚本。脚本可以更新、删除或跳过修改文档。更新 API 还支持传递部分文档，并将其合并到现有文档中。要完全替换现有文档，请使用[索引 API](/rest_apis/document_apis/docs_index)。
 
 此操作：
 
@@ -27,41 +27,41 @@
 ## 路径参数
 
 - `<index>`
-    (必需，字符串）目标索引的名称。默认情况下，如果索引不存在，则会自动创建。有关详细信息，请参阅[自动创建数据流和索引](/rest_apis/document_apis/docs_index#自动创建数据流和索引)。
+  (必需，字符串）目标索引的名称。默认情况下，如果索引不存在，则会自动创建。有关详细信息，请参阅[自动创建数据流和索引](/rest_apis/document_apis/docs_index#自动创建数据流和索引)。
 - `<_id>`
-    (字符串）要更新文档的唯一标识符。
+  (字符串）要更新文档的唯一标识符。
 
 ## 查询参数
 
 - `if_seq_no`
-    (可选，整数）只有当文档具有此序列号时才执行操作。请参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
+  (可选，整数）只有当文档具有此序列号时才执行操作。请参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
 - `if_primary_term`
-    (可选，整数）只有在文档具有该主要术语时才执行操作。请参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
+  (可选，整数）只有在文档具有该主要术语时才执行操作。请参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
 - `lang`
-    (可选，字符串）脚本语言。默认：`painless`。
+  (可选，字符串）脚本语言。默认：`painless`。
 - `require_alias`
-    (可选，布尔）如果为 `true`，则目标地址必须是[索引别名](/aliases)。默认为 `false`。
+  (可选，布尔）如果为 `true`，则目标地址必须是[索引别名](/aliases)。默认为 `false`。
 - `refresh`
-    (可选，枚举）如果为 `true`，Elasticsearch 会刷新受影响的分片，使该操作在搜索中可见；如果为 `wait_for`，则等待刷新，使该操作在搜索中可见；如果为 `false`，则不刷新。有效值：`true`、`false`、`wait_for`。默认值：`false`。
+  (可选，枚举）如果为 `true`，Elasticsearch 会刷新受影响的分片，使该操作在搜索中可见；如果为 `wait_for`，则等待刷新，使该操作在搜索中可见；如果为 `false`，则不刷新。有效值：`true`、`false`、`wait_for`。默认值：`false`。
 - `retry_on_conflict`
-    (可选，整数）指定当冲突发生时，操作应重试多少次。默认值：`0`。
+  (可选，整数）指定当冲突发生时，操作应重试多少次。默认值：`0`。
 - `routing`
-    (可选，字符串）用于将操作路由到特定分区的自定义值。
+  (可选，字符串）用于将操作路由到特定分区的自定义值。
 - `_source`
-    (可选，列表）设置为 `false` 可禁用源检索（默认值：`true`）。您还可以指定一个以逗号分隔的列表，其中包含您要检索的字段。
+  (可选，列表）设置为 `false` 可禁用源检索（默认值：`true`）。你还可以指定一个以逗号分隔的列表，其中包含你要检索的字段。
 - `_source_excludes`
-    (可选，列表）指定要排除的源字段。
+  (可选，列表）指定要排除的源字段。
 - `_source_includes`
-    (可选，列表）指定要检索的源字段。
+  (可选，列表）指定要检索的源字段。
 - `timeout`
-    (可选，[时间单位](/rest_apis/api_convention/common_options.html#时间单位)）下列操作的等待时间：
-    - [动态映射](/mapping/dynamic_mapping)更新
-    - [等待活动分片](/rest_apis/document_apis/docs_index#活动分片)
-        默认为 `1m`（一分钟）。这可保证 Elasticsearch 在失败前至少等待超时时间。实际等待时间可能会更长，尤其是发生多次等待时。
+  (可选，[时间单位](/rest_apis/api_convention/common_options.html#时间单位)）下列操作的等待时间：
+  - [动态映射](/mapping/dynamic_mapping)更新
+  - [等待活动分片](/rest_apis/document_apis/docs_index#活动分片)
+    默认为 `1m`（一分钟）。这可保证 Elasticsearch 在失败前至少等待超时时间。实际等待时间可能会更长，尤其是发生多次等待时。
 - `wait_for_active_shards`
-    (可选，字符串）继续操作前必须激活的分片副本数量。设置为全部或任何正整数，最多不超过索引中的分片总数（`number_of_replicas+1`）。默认值：`1`，主分区。
+  (可选，字符串）继续操作前必须激活的分片副本数量。设置为全部或任何正整数，最多不超过索引中的分片总数（`number_of_replicas+1`）。默认值：`1`，主分区。
 
-    参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)。
+  参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)。
 
 ## 示例
 
@@ -90,7 +90,7 @@ POST test/_update/1
 }
 ```
 
-同样，您也可以使用更新脚本将标签添加到标签列表中（这只是一个列表，因此即使标签存在也会被添加）：
+同样，你也可以使用更新脚本将标签添加到标签列表中（这只是一个列表，因此即使标签存在也会被添加）：
 
 ```bash
 POST test/_update/1
@@ -105,7 +105,7 @@ POST test/_update/1
 }
 ```
 
-您还可以从标签列表中移除一个标签。`remove` 标签的无感函数会获取要移除元素的数组索引。为避免可能出现的运行时错误，首先要确保标签存在。如果列表中包含重复的标签，脚本只会删除其中一个。
+你还可以从标签列表中移除一个标签。`remove` 标签的无感函数会获取要移除元素的数组索引。为避免可能出现的运行时错误，首先要确保标签存在。如果列表中包含重复的标签，脚本只会删除其中一个。
 
 ```bash
 POST test/_update/1
@@ -120,7 +120,7 @@ POST test/_update/1
 }
 ```
 
-您还可以添加或删除文档中的字段。例如，该脚本添加了 `new_field` 字段：
+你还可以添加或删除文档中的字段。例如，该脚本添加了 `new_field` 字段：
 
 ```bash
 POST test/_update/1
@@ -147,7 +147,7 @@ POST test/_update/1
 }
 ```
 
-您也可以更改脚本中执行的操作，而不是更新文档。例如，如果 `tags` 字段包含 `green`，该请求将删除文档，否则什么也不做（`noop`）：
+你也可以更改脚本中执行的操作，而不是更新文档。例如，如果 `tags` 字段包含 `green`，该请求将删除文档，否则什么也不做（`noop`）：
 
 ```bash
 POST test/_update/1
@@ -208,7 +208,7 @@ POST test/_update/1
 }
 ```
 
-您可以通过设置 `"detect_noop": false` 来禁用此行为：
+你可以通过设置 `"detect_noop": false` 来禁用此行为：
 
 ```bash
 POST test/_update/1
@@ -266,7 +266,7 @@ POST test/_update/1
 
 ### 文档作为更新插入
 
-您可以将 `doc_as_upsert` 设为 `true`，使用 `doc` 的内容作为 `upsert` 值，而不是发送部分 `doc` 和 `upsert` doc：
+你可以将 `doc_as_upsert` 设为 `true`，使用 `doc` 的内容作为 `upsert` 值，而不是发送部分 `doc` 和 `upsert` doc：
 
 ```bash
 POST test/_update/1

@@ -26,11 +26,11 @@ GET /_nodes/<node_id>/usage/<metric>
 
 ## 先决条件
 
-- 如果启用了 Elasticsearch 安全功能，您必须拥有 `monitor` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)才能使用此 API。
+- 如果启用了 Elasticsearch 安全功能，你必须拥有 `monitor` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)才能使用此 API。
 
 ## 描述
 
-集群节点使用情况 API 允许您检索每个节点功能使用情况的信息。所有节点选择选项的说明请参见[此处](/rest_apis/cluster_apis)。
+集群节点使用情况 API 允许你检索每个节点功能使用情况的信息。所有节点选择选项的说明请参见[此处](/rest_apis/cluster_apis)。
 
 ## 路径参数
 

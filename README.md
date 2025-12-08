@@ -903,7 +903,7 @@ npm run docs:dev
     - :heavy_check_mark: 集群统计 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_stats)
     - :heavy_check_mark: 集群更新设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_update_settings)
     - :heavy_check_mark: 节点功能使用情况 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/nodes_feature_usage)
-    - Nodes hot threads
+    - :heavy_check_mark: 节点热门线程 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/nodes_host_trheads)
     - Nodes info
     - Nodes reload secure settings
     - Nodes stats

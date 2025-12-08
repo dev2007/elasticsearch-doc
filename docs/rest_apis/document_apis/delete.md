@@ -12,7 +12,7 @@
 
 ## 说明
 
-你可以用 `DELETE` 从索引中删除文档。您必须指定索引名称和文档 ID。
+你可以用 `DELETE` 从索引中删除文档。你必须指定索引名称和文档 ID。
 
 :::tip 注意
 不能直接向数据流发送删除请求。要删除数据流中的文档，必须以包含该文档的备用索引为目标。参阅[更新或删除备用索引中的文档](/data_streams/use_a_data_stream#更新或删除备份索引中的文档)。
@@ -67,30 +67,30 @@ DELETE /my-index-000001/_doc/1?timeout=5m
 ## 路径参数
 
 - `<index>`
-    （必需，字符串）目标索引的名称。
+  （必需，字符串）目标索引的名称。
 - `<_id>`
-    （必需，字符串）文档的唯一标识符。
+  （必需，字符串）文档的唯一标识符。
 
 ## 查询参数
 
 - `if_seq_no`
-    (可选，整数） 只有当文档具有此序列号时才执行操作。参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
+  (可选，整数） 只有当文档具有此序列号时才执行操作。参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
 - `if_primary_term`
-    (可选，整数） 只有当文档具有此序列号时才执行操作。参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
+  (可选，整数） 只有当文档具有此序列号时才执行操作。参阅[乐观并发控制](/rest_apis/document_apis/docs_index#乐观并发控制)。
 - `refresh`
-    (可选，枚举）如果为 `true`，Elasticsearch 会刷新受影响的分片，使该操作在搜索中可见；如果为 `wait_for`，则等待刷新，使该操作在搜索中可见；如果为 `false`，则不刷新。有效值：`true`、`false`、`wait_for`。默认值：`false`。
+  (可选，枚举）如果为 `true`，Elasticsearch 会刷新受影响的分片，使该操作在搜索中可见；如果为 `wait_for`，则等待刷新，使该操作在搜索中可见；如果为 `false`，则不刷新。有效值：`true`、`false`、`wait_for`。默认值：`false`。
 - `routing`
-    (可选，字符串） 用于将操作路由到特定分区的自定义值。
+  (可选，字符串） 用于将操作路由到特定分区的自定义值。
 - `timeout`
-    (可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）[等待活动分片](/rest_apis/document_apis/docs_index#活动分片)的时间。默认为 `1m`（一分钟）。
+  (可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)）[等待活动分片](/rest_apis/document_apis/docs_index#活动分片)的时间。默认为 `1m`（一分钟）。
 - `version`
-    (可选，整数）用于并发控制的明确版本号。指定的版本必须与文档的当前版本一致，请求才能成功。
+  (可选，整数）用于并发控制的明确版本号。指定的版本必须与文档的当前版本一致，请求才能成功。
 - `version_type`
-    (可选，枚举） 特定版本类型：`external`、`external_gte`。
+  (可选，枚举） 特定版本类型：`external`、`external_gte`。
 - `wait_for_active_shards`
-    (可选，字符串） 进行操作前必须激活的分片副本数量。设置为全部或任何正整数，最多不超过索引中的分片总数（`number_of_replicas+1`）。默认值：`1`，主分区。
+  (可选，字符串） 进行操作前必须激活的分片副本数量。设置为全部或任何正整数，最多不超过索引中的分片总数（`number_of_replicas+1`）。默认值：`1`，主分区。
 
-    参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)
+  参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)
 
 ## 示例
 

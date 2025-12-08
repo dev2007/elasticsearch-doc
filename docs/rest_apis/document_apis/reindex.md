@@ -5,7 +5,7 @@
 源文件可以是任何现有索引、别名或数据流。目的地必须与源不同。例如，不能将数据流重新编入索引。
 
 :::danger 重要
-重新索引要求 [_source](/mapping/metadata_fields/_source) 启用源文件中的所有文档。
+重新索引要求 [\_source](/mapping/metadata_fields/_source) 启用源文件中的所有文档。
 
 在调用 `_reindex` 之前，应根据需要对目标进行配置。重索引不会复制源文件或其关联模板中的设置。
 
@@ -31,10 +31,10 @@ POST _reindex
 ## 前置条件
 
 - 如果启用了 Elasticsearch 安全功能，则必须拥有以下安全权限：
-    - 用于源数据流、索引或索引别名的 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
-     - 用于目标数据流、索引或索引别名的 `write` 索引权限。
-     - 要通过重索引 API 请求自动创建数据流或索引，您必须拥有目标数据流、索引或别名的 `auto_configure`、`create_index` 或 `manage` 索引权限。
-     - 如果从远程集群重索引，则 `source.remote.user` 必须拥有 `monitor` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges.html#集群权限)和 `read` 源数据流、索引或别名的索引权限。
+  - 用于源数据流、索引或索引别名的 `read` [索引权限](/secure_the_elastic_statck/user_authorization/security_privileges#索引权限)。
+  - 用于目标数据流、索引或索引别名的 `write` 索引权限。
+  - 要通过重索引 API 请求自动创建数据流或索引，你必须拥有目标数据流、索引或别名的 `auto_configure`、`create_index` 或 `manage` 索引权限。
+  - 如果从远程集群重索引，则 `source.remote.user` 必须拥有 `monitor` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges.html#集群权限)和 `read` 源数据流、索引或别名的索引权限。
 - 如果从远程集群重索引，必须在 `elasticsearch.yml` 的 `reindex.remote.whitelist` 设置中明确允许远程主机。参阅[从远程重索引](#从远程重索引)。
 - 自动创建数据流需要启用数据流的匹配索引模板。参阅[设置数据流](/data_streams/set_up_a_data_stream)。
 
@@ -42,7 +42,7 @@ POST _reindex
 
 从源索引中提取[文档源](/mapping/metadata_fields/_source)，并将文档索引到目标索引中。你可以将所有文档复制到目标索引，也可以重新索引文档的一个子集。
 
-与 [_update_by_query](/rest_apis/document_apis/update_by_query) 一样，`_reindex` 也会获取源的快照，但其目标必须**不同**，因此不太可能发生版本冲突。`dest` 元素可以像索引 API 一样进行配置，以控制乐观并发控制。省略 `version_type` 或将其设置为 `internal` 会导致 Elasticsearch 盲目地将文档转储到目标中，并覆盖任何碰巧具有相同 ID 的文档。
+与 [\_update_by_query](/rest_apis/document_apis/update_by_query) 一样，`_reindex` 也会获取源的快照，但其目标必须**不同**，因此不太可能发生版本冲突。`dest` 元素可以像索引 API 一样进行配置，以控制乐观并发控制。省略 `version_type` 或将其设置为 `internal` 会导致 Elasticsearch 盲目地将文档转储到目标中，并覆盖任何碰巧具有相同 ID 的文档。
 
 将 `version_type` 设置为 `external` 会导致 Elasticsearch 保留源文件中的版本，创建任何丢失的文档，并更新目标文件中版本比源文件中版本旧的文档。
 
@@ -155,9 +155,9 @@ POST my-new-index-000001/_search?size=0&filter_path=hits.total
 ```json
 {
   "hits": {
-    "total" : {
-        "value": 120,
-        "relation": "eq"
+    "total": {
+      "value": 120,
+      "relation": "eq"
     }
   }
 }
@@ -190,9 +190,9 @@ POST my-new-index-000001/_search?size=0&filter_path=hits.total
 ```json
 {
   "hits": {
-    "total" : {
-        "value": 120,
-        "relation": "eq"
+    "total": {
+      "value": 120,
+      "relation": "eq"
     }
   }
 }
@@ -201,7 +201,8 @@ POST my-new-index-000001/_search?size=0&filter_path=hits.total
 将 `slices` 设置为 `auto`，Elasticsearch 就可以选择要使用的切片数量。此设置将在一定限制内对每个分片使用一个切片。如果有多个来源，它会根据分片数量最少的索引或后备索引来选择切片数量。
 
 在 `_reindex` 中添加切片只是将上一节中使用的手动流程自动化，创建子请求，这意味着它有一些怪异之处：
-- 您可以在任务 API 中看到这些请求。这些子请求是带 `slices` 请求任务的“子”任务。
+
+- 你可以在任务 API 中看到这些请求。这些子请求是带 `slices` 请求任务的“子”任务。
 - 获取带 `slices` 请求的任务状态只包含已完成切片的状态。
 - 这些子任务可单独处理，如取消和重新节流。
 - 重新节流 `slices` 请求会按比例重新加速未完成的子请求。
@@ -209,7 +210,6 @@ POST my-new-index-000001/_search?size=0&filter_path=hits.total
 - 由于 `slices` 的特性，每个子请求不会得到完全平均的文件。所有文件都会被处理，但有些切片可能比其他切片大。预计较大的切片分布会更均匀。
 - `slices` 请求的 `requests_per_second` 和 `max_docs` 等参数会按比例分配给每个子请求。结合上面关于分布不均的观点，你应该得出结论：使用带 `slices` 的 `max_docs` 可能不会导致精确的 `max_docs` 文档被重索引。
 - 每个子请求获得的源快照略有不同，尽管这些快照都是在大致相同的时间获取的。
-
 
 #### 选择切片数量
 
@@ -226,11 +226,11 @@ POST my-new-index-000001/_search?size=0&filter_path=hits.total
 默认情况下，如果 `_reindex` 看到一个带有路由的文档，那么除非脚本更改，否则路由将被保留。你可以在目标请求中设置路由来更改路由：
 
 - `keep`
-    将为每个匹配发送的批量请求上的路由设置为匹配上的路由。这是默认值。
+  将为每个匹配发送的批量请求上的路由设置为匹配上的路由。这是默认值。
 - `discard`
-    将为每个匹配发送的批量请求的路由设置为空。
+  将为每个匹配发送的批量请求的路由设置为空。
 - `=<文本>`
-    将为每个匹配发送的批量请求的路由设置为 = 后面的所有文本。
+  将为每个匹配发送的批量请求的路由设置为 = 后面的所有文本。
 
 例如，你可以使用以下请求将 `source` 的公司名称为 `cat` 的所有文件复制到 `dest`，并将路由设置为 `cat`。
 
@@ -252,7 +252,7 @@ POST _reindex
 }
 ```
 
-默认情况下，`_reindex` 使用的滚动批次为 `1000`。您可以使用 `source` 元素中的 `size` 字段更改批次大小：
+默认情况下，`_reindex` 使用的滚动批次为 `1000`。你可以使用 `source` 元素中的 `size` 字段更改批次大小：
 
 ```bash
 POST _reindex
@@ -289,34 +289,34 @@ POST _reindex
 
 - `refresh`
 
-    (可选，布尔值）如果为 `true`，Elasticsearch 会刷新受影响的分片，使操作在搜索中可见。默认为 `false`。
+  (可选，布尔值）如果为 `true`，Elasticsearch 会刷新受影响的分片，使操作在搜索中可见。默认为 `false`。
 
 - `timeout`
 
-    (可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)） 每个更新请求等待以下操作的周期：
+  (可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)） 每个更新请求等待以下操作的周期：
 
-    - [自动创建索引](/rest_apis/document_apis/docs_index#自动创建数据流和索引)
-    - [动态映射](/mapping/dynamic_mapping)更新
-    - [等待活动分片](/rest_apis/document_apis/docs_index#活动分片)
+  - [自动创建索引](/rest_apis/document_apis/docs_index#自动创建数据流和索引)
+  - [动态映射](/mapping/dynamic_mapping)更新
+  - [等待活动分片](/rest_apis/document_apis/docs_index#活动分片)
 
-    默认为 `1m`（一分钟）。这保证 Elasticsearch 在失败前至少等待超时时间。实际等待时间可能会更长，尤其是发生多次等待时。
+  默认为 `1m`（一分钟）。这保证 Elasticsearch 在失败前至少等待超时时间。实际等待时间可能会更长，尤其是发生多次等待时。
 
 - `wait_for_active_shards`
-    (可选，字符串） 进行操作前必须激活的分片副本数量。设置为 `all` 或任何正整数，最多不超过索引中的分片总数（`number_of_replicas+1`）。默认值：`1`，主分区。
+  (可选，字符串） 进行操作前必须激活的分片副本数量。设置为 `all` 或任何正整数，最多不超过索引中的分片总数（`number_of_replicas+1`）。默认值：`1`，主分区。
 
-    参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)。
+  参阅[活动分片](/rest_apis/document_apis/docs_index#活动分片)。
 
 - `wait_for_completion`
 
-    (可选，布尔） 如果为 `true`，则请求会阻塞，直到操作完成。默认为 `true`。
+  (可选，布尔） 如果为 `true`，则请求会阻塞，直到操作完成。默认为 `true`。
 
 - `requests_per_second`
 
-    (可选，整数）该请求的节流阀，单位为每秒子请求数。默认为 `-1`（无节流）。
+  (可选，整数）该请求的节流阀，单位为每秒子请求数。默认为 `-1`（无节流）。
 
 - `require_alias`
 
-    （可选，布尔值）如果为 `true`，则目标必须是[索引别名](/aliases)。默认为`false`。
+  （可选，布尔值）如果为 `true`，则目标必须是[索引别名](/aliases)。默认为`false`。
 
 - `scroll`
 
@@ -324,174 +324,174 @@ POST _reindex
 
 - `slices`
 
-    (可选，整数）该任务应划分的子任务数。默认为  `1`，表示任务不被分割成子任务。
+  (可选，整数）该任务应划分的子任务数。默认为 `1`，表示任务不被分割成子任务。
 
 - `max_docs`
 
-    (可选，整数）要处理的最大文件数。默认为所有文档。当设置的值小于或等于 `scroll_size` 时，将不会使用滚动来检索操作结果。
+  (可选，整数）要处理的最大文件数。默认为所有文档。当设置的值小于或等于 `scroll_size` 时，将不会使用滚动来检索操作结果。
 
 ## 请求体
 
 - `conflicts`
 
-    (可选，字符串） 如果查询更新遇到版本冲突，将如何处理：`abort` 或 `proceed`。默认为 `abort`。
+  (可选，字符串） 如果查询更新遇到版本冲突，将如何处理：`abort` 或 `proceed`。默认为 `abort`。
 
 - `max_docs`
 
-    (可选，整数）要重新索引的最大文档数。如果 `conflicts` 等于 `proceed`，重索引会尝试重新索引比 `max_docs` 更多的源文档，直到它成功地将 `max_docs` 文档索引到目标中，或索引完源查询中的所有文档。
+  (可选，整数）要重新索引的最大文档数。如果 `conflicts` 等于 `proceed`，重索引会尝试重新索引比 `max_docs` 更多的源文档，直到它成功地将 `max_docs` 文档索引到目标中，或索引完源查询中的所有文档。
 
 - `source`
 
-    - `index`
+  - `index`
 
-        (必填，字符串）要复制的数据流、索引或别名的名称。也接受逗号分隔的列表，以便从多个来源重新索引。
+    (必填，字符串）要复制的数据流、索引或别名的名称。也接受逗号分隔的列表，以便从多个来源重新索引。
 
-    - `query`
-    
-        (可选，[查询对象](/query_dsl/query_dsl)）使用 Query DSL 指定要删除的文档。
+  - `query`
 
-    - `remote`
+    (可选，[查询对象](/query_dsl/query_dsl)）使用 Query DSL 指定要删除的文档。
 
-        - `host`
+  - `remote`
 
-            (可选，字符串）要从 Elasticsearch 编制索引的远程实例的 URL。从远程建立索引时必须使用。
+    - `host`
 
-        - `username`
+      (可选，字符串）要从 Elasticsearch 编制索引的远程实例的 URL。从远程建立索引时必须使用。
 
-            (可选，字符串） 用于远程主机身份验证的用户名。
+    - `username`
 
-        - `password`
+      (可选，字符串） 用于远程主机身份验证的用户名。
 
-            (可选，字符串） 用于远程主机身份验证的密码。
+    - `password`
 
-        - `socket_timeout`
+      (可选，字符串） 用于远程主机身份验证的密码。
 
-            (可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)） 远程套接字读取超时。默认为 30 秒。
+    - `socket_timeout`
 
-        - `connect_timeout`
+      (可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)） 远程套接字读取超时。默认为 30 秒。
 
-            (可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)） 远程连接超时。默认为 30 秒。
+    - `connect_timeout`
 
-        - `headers`
+      (可选，[时间单位](/rest_apis/api_convention/common_options#时间单位)） 远程连接超时。默认为 30 秒。
 
-            (可选，对象）包含请求标头的对象。
+    - `headers`
 
-    - `size`
+      (可选，对象）包含请求标头的对象。
 
-        （可选，整数） 每个批次要索引的文档数。在远程索引时使用，以确保批次适合堆上缓冲区（默认最大为 100 MB）。
+  - `size`
 
-    - `slice`
+    （可选，整数） 每个批次要索引的文档数。在远程索引时使用，以确保批次适合堆上缓冲区（默认最大为 100 MB）。
 
-        - `id`
+  - `slice`
 
-            (可选，整数）用于[手动切片](#手动切片)的切片 ID。
+    - `id`
 
-        - `max`
+      (可选，整数）用于[手动切片](#手动切片)的切片 ID。
 
-            (可选，整数）切片总数。
+    - `max`
 
-    - `sort`
+      (可选，整数）切片总数。
 
-      (可选，列表）以逗号分隔的 `<字段>:<方向>` 对列表，索引前按其排序。与 `max_docs` 结合使用可控制重新索引哪些文档。
+  - `sort`
 
-    :::caution 警告
-    **7.6 弃用**
-    重新索引中的排序已被弃用。在重索引中排序永远不能保证按顺序索引文档，而且会阻碍重索引的进一步发展，如弹性和性能改进。如果与 `max_docs` 结合使用，请考虑使用查询过滤器。
-    :::
+    (可选，列表）以逗号分隔的 `<字段>:<方向>` 对列表，索引前按其排序。与 `max_docs` 结合使用可控制重新索引哪些文档。
 
-    - `_source`
+  :::caution 警告
+  **7.6 弃用**
+  重新索引中的排序已被弃用。在重索引中排序永远不能保证按顺序索引文档，而且会阻碍重索引的进一步发展，如弹性和性能改进。如果与 `max_docs` 结合使用，请考虑使用查询过滤器。
+  :::
 
-        (可选，字符串）如果为 `true`，则重新索引所有源字段。如果设置为列表，则会重新索引所选字段。默认为 `true`。
+  - `_source`
+
+    (可选，字符串）如果为 `true`，则重新索引所有源字段。如果设置为列表，则会重新索引所选字段。默认为 `true`。
 
 - `dest`
 
-    - `index`
+  - `index`
 
-        (必填，字符串） 复制到的数据流、索引或索引别名的名称。
+    (必填，字符串） 复制到的数据流、索引或索引别名的名称。
 
-    - `version_type`
+  - `version_type`
 
-        (可选，枚举）索引操作要使用的版本。有效值：`internal`、`external`、`external_gt`、`external_gte`。更多信息，参阅[版本类型](/rest_apis/document_apis/docs_index.html#版本类型)。
+    (可选，枚举）索引操作要使用的版本。有效值：`internal`、`external`、`external_gt`、`external_gte`。更多信息，参阅[版本类型](/rest_apis/document_apis/docs_index.html#版本类型)。
 
-    - `op_type`
+  - `op_type`
 
-        (可选，枚举）设置为 `create` 时，只对尚未存在的文档建立索引（即不存在时创建）。有效值：`index`、`create`。默认为 `index`。
+    (可选，枚举）设置为 `create` 时，只对尚未存在的文档建立索引（即不存在时创建）。有效值：`index`、`create`。默认为 `index`。
 
-    :::danger 重要
-    要重新索引到数据流目标，参数必须为 `create`。
-    :::
+  :::danger 重要
+  要重新索引到数据流目标，参数必须为 `create`。
+  :::
 
-    - `pipeline`
+  - `pipeline`
 
-        (可选，字符串）要使用的管道名称。
+    (可选，字符串）要使用的管道名称。
 
 - `script`
 
-    - `source`
+  - `source`
 
-        (可选，字符串）重新索引时要运行的更新文档源或元数据的脚本。
+    (可选，字符串）重新索引时要运行的更新文档源或元数据的脚本。
 
-    - `lang`
+  - `lang`
 
-        (可选，枚举）脚本语言：`painless`、`expression`、`mustache`、`java`。更多信息，参阅[脚本](/scripting)。
+    (可选，枚举）脚本语言：`painless`、`expression`、`mustache`、`java`。更多信息，参阅[脚本](/scripting)。
 
 ## 响应体
 
 - `took`
 
-    (整数）全部操作花的总毫秒。
+  (整数）全部操作花的总毫秒。
 
 - `timed_out`
 
-    (布尔值) 如果在重新索引过程中执行的任何请求超时，该标志将被设置为 `true`。
+  (布尔值) 如果在重新索引过程中执行的任何请求超时，该标志将被设置为 `true`。
 
 - `total`
 
-    (整数）成功处理的文件数。
+  (整数）成功处理的文件数。
 
 - `updated`
 
-    (整数）成功更新的文档数，即在重新索引更新之前，具有相同 ID 的文档已经存在。
+  (整数）成功更新的文档数，即在重新索引更新之前，具有相同 ID 的文档已经存在。
 
 - `created`
 
-    (整数）成功创建的文件数。
+  (整数）成功创建的文件数。
 
 - `deleted`
 
-    (整数）成功删除的文件数。
+  (整数）成功删除的文件数。
 
 - `batches`
 
-    (整数）通过重新索引拉回的滚动响应数。
+  (整数）通过重新索引拉回的滚动响应数。
 
 - `noops`
 
-    (整数）由于用于重新索引的脚本为 `ctx.op` 返回了 `noop` 值而被忽略的文件数。
+  (整数）由于用于重新索引的脚本为 `ctx.op` 返回了 `noop` 值而被忽略的文件数。
 
 - `version_conflicts`
 
-    (整数）重新索引遇到的版本冲突的数量。
+  (整数）重新索引遇到的版本冲突的数量。
 
 - `retries`
 
-    (整数） 重索引尝试重试的次数，`bulk` 是重试批量操作的次数，`search` 是重试搜索操作的次数。
+  (整数） 重索引尝试重试的次数，`bulk` 是重试批量操作的次数，`search` 是重试搜索操作的次数。
 
 - `throttled_millis`
 
-    (整数）为符合 `requests_per_second` 要求而等待的毫秒数。
+  (整数）为符合 `requests_per_second` 要求而等待的毫秒数。
 
 - `requests_per_second`
 
-    (整数）重新索引期间每秒有效执行的请求数。
+  (整数）重新索引期间每秒有效执行的请求数。
 
 - `throttled_until_millis`
 
-    (整数）在 `_reindex` 响应中，该字段应始终等于零。它只有在使用[任务 API](/rest_apis/cluster_apis/task_management) 时才有意义，因为它表示下一次再次执行节流请求的时间（以毫秒为单位，从Epoch 开始），以符合 `requests_per_second` 的要求。
+  (整数）在 `_reindex` 响应中，该字段应始终等于零。它只有在使用[任务 API](/rest_apis/cluster_apis/task_management) 时才有意义，因为它表示下一次再次执行节流请求的时间（以毫秒为单位，从 Epoch 开始），以符合 `requests_per_second` 的要求。
 
 - `failures`
 
-    (数组)失败数组，表示在处理过程中出现了无法恢复的错误。如果该数组非空，则请求会因为这些故障而中止。重新索引是通过批次实现的，任何故障都会导致整个流程中止，但当前批次中的所有故障都会被收集到数组中。可以使用 `conflicts` 选项来防止重新索引因版本冲突而中止。
+  (数组)失败数组，表示在处理过程中出现了无法恢复的错误。如果该数组非空，则请求会因为这些故障而中止。重新索引是通过批次实现的，任何故障都会导致整个流程中止，但当前批次中的所有故障都会被收集到数组中。可以使用 `conflicts` 选项来防止重新索引因版本冲突而中止。
 
 ## 示例
 
@@ -573,7 +573,6 @@ POST _reindex
 ### 重索引以更改字段名称
 
 `_reindex` 可以用来建立一个带有重命名字段的索引副本。假设你创建了一个包含如下文档的索引：
-
 
 ```bash
 POST my-index-000001/_doc/1?refresh
@@ -677,7 +676,7 @@ POST _reindex
     "query": {
       "function_score" : {
         "random_score" : {},
-        "min_score" : 0.9    
+        "min_score" : 0.9
       }
     }
   },
@@ -714,11 +713,11 @@ POST _reindex
 
 - `noop`
 
-    如果脚本认为不需要在目标中索引文档，则设置 `ctx.op = "noop"`。[响应体](#响应体)中的 `noop` 计数器将报告无操作。
+  如果脚本认为不需要在目标中索引文档，则设置 `ctx.op = "noop"`。[响应体](#响应体)中的 `noop` 计数器将报告无操作。
 
 - `delete`
 
-    如果脚本认为必须从目的地删除文档，请设置 `ctx.op = "delete"`。删除情况将在响应体中的已删除计数器中报告。
+  如果脚本认为必须从目的地删除文档，请设置 `ctx.op = "delete"`。删除情况将在响应体中的已删除计数器中报告。
 
 将 `ctx.op` 设置为任何其他值都会返回错误，设置 `ctx` 中的任何其他字段也是如此。
 
@@ -861,64 +860,64 @@ POST _reindex
 
 - `reindex.ssl.certificate_authorities`
 
-    应受信任的 PEM 编码证书文件的路径列表。不能同时指定 `reindex.ssl.certificate_authorities` 和 `reindex.ssl.truststore.path`。
+  应受信任的 PEM 编码证书文件的路径列表。不能同时指定 `reindex.ssl.certificate_authorities` 和 `reindex.ssl.truststore.path`。
 
 - `reindex.ssl.truststore.path`
 
-    包含要信任的证书的 Java 密钥存储文件的路径。密钥存储可以是 “JKS” 或 “PKCS#12” 格式。不能同时指定 `reindex.ssl.certificate_authorities` 和 `reindex.ssl.truststore.path`。
+  包含要信任的证书的 Java 密钥存储文件的路径。密钥存储可以是 “JKS” 或 “PKCS#12” 格式。不能同时指定 `reindex.ssl.certificate_authorities` 和 `reindex.ssl.truststore.path`。
 
 - `reindex.ssl.truststore.password`
 
-    信任库的密码（`reindex.ssl.truststore.path`）。[~~7.17.0~~]请使用 `reindex.ssl.truststore.secure_password` 代替。此设置不能与 `reindex.ssl.truststore.secure_password` 同时使用。
+  信任库的密码（`reindex.ssl.truststore.path`）。[~~7.17.0~~]请使用 `reindex.ssl.truststore.secure_password` 代替。此设置不能与 `reindex.ssl.truststore.secure_password` 同时使用。
 
 - `reindex.ssl.truststore.secure_password`（[安全](/set_up_elasticsearch/configuring_elasticsearch/secure_setting.html)）
-    
-    信任存储（`reindex.ssl.truststore.path`）的密码。此设置不能与 `reindex.ssl.truststore.password` 一起使用。
+
+  信任存储（`reindex.ssl.truststore.path`）的密码。此设置不能与 `reindex.ssl.truststore.password` 一起使用。
 
 - `reindex.ssl.truststore.type`
 
-    信任存储的类型（`reindex.ssl.truststore.path`）。必须是 `jks` 或 `PKCS12`。如果信任存储路径以 “.p12”、“.pfx” 或 “pkcs12” 结尾，则默认设置为 `PKCS12`。否则，默认为 `jks`。
+  信任存储的类型（`reindex.ssl.truststore.path`）。必须是 `jks` 或 `PKCS12`。如果信任存储路径以 “.p12”、“.pfx” 或 “pkcs12” 结尾，则默认设置为 `PKCS12`。否则，默认为 `jks`。
 
 - `reindex.ssl.verification_mode`
 
-    指示验证类型，以防止中间人攻击和证书伪造。可选择 `full`（验证主机名和证书路径）、`certificate`（验证证书路径，但不验证主机名）或 `none`（不执行验证--在生产环境中强烈不建议这样做）。默认为 `full`。
+  指示验证类型，以防止中间人攻击和证书伪造。可选择 `full`（验证主机名和证书路径）、`certificate`（验证证书路径，但不验证主机名）或 `none`（不执行验证--在生产环境中强烈不建议这样做）。默认为 `full`。
 
 - `reindex.ssl.certificate`
 
-    指定用于 HTTP 客户端身份验证的 PEM 编码证书（或证书链）的路径（如果远程集群需要），此设置要求同时设置 reindex.ssl.key。不能同时指定 `reindex.ssl.certificate` 和 `reindex.ssl.keystore.path`。
+  指定用于 HTTP 客户端身份验证的 PEM 编码证书（或证书链）的路径（如果远程集群需要），此设置要求同时设置 reindex.ssl.key。不能同时指定 `reindex.ssl.certificate` 和 `reindex.ssl.keystore.path`。
 
 - `reindex.ssl.key`
 
-    指定与用于客户端身份验证的证书（`reindex.ssl.certificate`）相关的 PEM 编码私钥的路径。不能同时指定 `reindex.ssl.key` 和 `reindex.ssl.keystore.path`。
+  指定与用于客户端身份验证的证书（`reindex.ssl.certificate`）相关的 PEM 编码私钥的路径。不能同时指定 `reindex.ssl.key` 和 `reindex.ssl.keystore.path`。
 
 - `reindex.ssl.key_passphrase`
-    如果 PEM 编码私钥（reindex.ssl.key）已加密，则指定用于解密的口令。[~~7.17.0~~]请优先使用 reindex.ssl.secure_key_passphrase。不能与 reindex.ssl.secure_key_passphrase 一起使用。
+  如果 PEM 编码私钥（reindex.ssl.key）已加密，则指定用于解密的口令。[~~7.17.0~~]请优先使用 reindex.ssl.secure_key_passphrase。不能与 reindex.ssl.secure_key_passphrase 一起使用。
 
 - `reindex.ssl.secure_key_passphrase`（[安全](/set_up_elasticsearch/configuring_elasticsearch/secure_setting.html)）
 
-    指定用于解密 PEM 编码私钥（`reindex.ssl.key`）（如果已加密）的口令。不能与 reindex.ssl.key_passphrase 一起使用。
+  指定用于解密 PEM 编码私钥（`reindex.ssl.key`）（如果已加密）的口令。不能与 reindex.ssl.key_passphrase 一起使用。
 
 - `reindex.ssl.keystore.path`
 
-    指定包含用于 HTTP 客户端身份验证的私钥和证书的密钥库路径（如果远程群集需要）。该密钥库可以是 "JKS "或 "PKCS#12 "格式。不能同时指定 reindex.ssl.key 和 reindex.ssl.keystore.path。
+  指定包含用于 HTTP 客户端身份验证的私钥和证书的密钥库路径（如果远程群集需要）。该密钥库可以是 "JKS "或 "PKCS#12 "格式。不能同时指定 reindex.ssl.key 和 reindex.ssl.keystore.path。
 
 - `reindex.ssl.keystore.type`
 
-    密钥存储的类型（`reindex.ssl.keystore.path`）。必须是 jks 或 PKCS12。如果密钥库路径以".p12"、".pfx "或 "pkcs12 "结尾，则默认为 PKCS12。否则，默认为 jks。
+  密钥存储的类型（`reindex.ssl.keystore.path`）。必须是 jks 或 PKCS12。如果密钥库路径以".p12"、".pfx "或 "pkcs12 "结尾，则默认为 PKCS12。否则，默认为 jks。
 
 - `reindex.ssl.keystore.password`
-    密钥存储的密码（`reindex.ssl.keystore.path`）。[~~7.17.0~~]请使用 `reindex.ssl.keystore.secure_password` 代替。此设置不能与 `reindex.ssl.keystore.secure_password` 同时使用。
+  密钥存储的密码（`reindex.ssl.keystore.path`）。[~~7.17.0~~]请使用 `reindex.ssl.keystore.secure_password` 代替。此设置不能与 `reindex.ssl.keystore.secure_password` 同时使用。
 
 - `reindex.ssl.keystore.secure_password`（[安全](/set_up_elasticsearch/configuring_elasticsearch/secure_setting.html)）
 
-    密钥存储的密码（`reindex.ssl.keystore.path`）。此设置不能与 `reindex.ssl.keystore.password` 一起使用。
+  密钥存储的密码（`reindex.ssl.keystore.path`）。此设置不能与 `reindex.ssl.keystore.password` 一起使用。
 
 - `reindex.ssl.keystore.key_password`
 
-    密钥存储（`reindex.ssl.keystore.path`）中密钥的密码。默认为密钥库密码。[~~7.17.0~~]请使用 `reindex.ssl.keystore.secure_key_password` 代替。此设置不能与 `reindex.ssl.keystore.secure_key_password` 同时使用。
+  密钥存储（`reindex.ssl.keystore.path`）中密钥的密码。默认为密钥库密码。[~~7.17.0~~]请使用 `reindex.ssl.keystore.secure_key_password` 代替。此设置不能与 `reindex.ssl.keystore.secure_key_password` 同时使用。
 
 - `reindex.ssl.keystore.secure_key_password`（[安全](/set_up_elasticsearch/configuring_elasticsearch/secure_setting.html)）
 
-    密钥存储（`reindex.ssl.keystore.path`）中密钥的密码。默认为密钥库密码。此设置不能与 `reindex.ssl.keystore.key_password` 一起使用。
+  密钥存储（`reindex.ssl.keystore.path`）中密钥的密码。默认为密钥库密码。此设置不能与 `reindex.ssl.keystore.key_password` 一起使用。
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html)

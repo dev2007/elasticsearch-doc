@@ -43,39 +43,40 @@ GET /_mget
 ## 路径参数
 
 - `<index>`
-    (可选，字符串） 当指定 `ids` 时或 `docs` 数组中的文档未指定索引时，用于检索文档的索引名称。
+  (可选，字符串） 当指定 `ids` 时或 `docs` 数组中的文档未指定索引时，用于检索文档的索引名称。
 
 ## 查询参数
 
 - `preference`
-    (可选，字符串） 指定应在哪个节点或分片上执行操作。默认为随机。
+  (可选，字符串） 指定应在哪个节点或分片上执行操作。默认为随机。
 - `realtime`
-    (可选，布尔） 如果为 `true`，则表示请求是实时的，而不是近实时的。默认为 `true`。参阅[实时](/rest_apis/document_apis/docs_get.html#实时)。
+  (可选，布尔） 如果为 `true`，则表示请求是实时的，而不是近实时的。默认为 `true`。参阅[实时](/rest_apis/document_apis/docs_get.html#实时)。
 - `refresh`
-    (可选，布尔） 如果为 `true`，请求会在检索文档前刷新相关分区。默认为 `false`。
+  (可选，布尔） 如果为 `true`，请求会在检索文档前刷新相关分区。默认为 `false`。
 - `routing`
-    (可选，字符串） 用于将操作路由到特定分区的自定义值。
+  (可选，字符串） 用于将操作路由到特定分区的自定义值。
 - `stored_fields`
-    (可选，布尔） 如果为 `true`，则检索存储在索引中的文档字段，而不是文档 `_source`。默认为 `false`。
+  (可选，布尔） 如果为 `true`，则检索存储在索引中的文档字段，而不是文档 `_source`。默认为 `false`。
 - `_source`
-    (可选，字符串）返回 `_source` 字段与否的真或假，或者要返回的字段列表。
+  (可选，字符串）返回 `_source` 字段与否的真或假，或者要返回的字段列表。
 - `_source_excludes`
-    (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，用于从响应中排除。
+  (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，用于从响应中排除。
 
-    也可以使用该参数从 `_source_includes` 查询参数指定的子集中排除字段。
+  也可以使用该参数从 `_source_includes` 查询参数指定的子集中排除字段。
 
-    如果 `_source` 参数为 `false`，该参数将被忽略。
+  如果 `_source` 参数为 `false`，该参数将被忽略。
+
 - `_source_includes`
-    (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，包含在响应中。
+  (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，包含在响应中。
 
-    如果指定了该参数，则只返回这些源字段。你可以使用 `_source_excludes` 查询参数从该子集中排除字段。
+  如果指定了该参数，则只返回这些源字段。你可以使用 `_source_excludes` 查询参数从该子集中排除字段。
 
-    如果 `_source` 参数为 `false`，该参数将被忽略。
+  如果 `_source` 参数为 `false`，该参数将被忽略。
 
 ## 请求体
 
 - `docs`
-  (可选，数组）要检索的文档。如果请求 URI 中未指明索引，则为必填项。您可以为每个文档指定以下属性：
+  (可选，数组）要检索的文档。如果请求 URI 中未指明索引，则为必填项。你可以为每个文档指定以下属性：
 
   - `_id`
     (必填，字符串）唯一的文档 ID。
