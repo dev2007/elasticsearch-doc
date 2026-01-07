@@ -180,7 +180,8 @@ const sidebars = {
             "rest_apis/cluster_apis/cluster_stats",
             "rest_apis/cluster_apis/cluster_update_settings",
             "rest_apis/cluster_apis/nodes_feature_usage",
-            "rest_apis/cluster_apis/nodes_host_trheads",
+            "rest_apis/cluster_apis/nodes_hot_threads",
+            "rest_apis/cluster_apis/nodes_info",
           ],
         },
         {

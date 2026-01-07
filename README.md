@@ -63,6 +63,7 @@
 
 | 昵称          | 时间              | 赞赏     | 留言                     |
 | ------------- | ----------------- | -------- | ------------------------ |
+| 望岳\*\*\*\*  | 2026.01.06 20:13  | ￥ 10.24 | **保持更新，加油 💪**    |
 | 【未知】      | 2025.10.01 21:30  | ￥ 10.24 | **666**                  |
 | biw\*\*       | 2025.07.01 11:42  | ￥ 6.66  | **感谢翻译**             |
 | leorn\*\*\*\* | 2024.10.30 01:16  | ￥ 10.24 | --                       |
@@ -894,17 +895,17 @@ npm run docs:dev
     - cat trained model
     - cat transforms
   - :heavy_check_mark: 集群 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rest_apis/cluster_apis)
-    - :heavy_check_mark: 集群分配解释 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_allocation_explain)
-    - :heavy_check_mark: 集群获取设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_get_settings)
-    - :heavy_check_mark: 集群健康 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_health)
-    - :heavy_check_mark: 健康 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/health)
-    - :heavy_check_mark: 集群重路由 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_reroute)
-    - :heavy_check_mark: 集群状态 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_state)
-    - :heavy_check_mark: 集群统计 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_stats)
-    - :heavy_check_mark: 集群更新设置 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/cluster_update_settings)
-    - :heavy_check_mark: 节点功能使用情况 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/nodes_feature_usage)
-    - :heavy_check_mark: 节点热门线程 API [:link:](https://elasticsearch.bookhub.techrest_apis/cluster_apis/nodes_host_trheads)
-    - Nodes info
+    - :heavy_check_mark: 集群分配解释 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_allocation_explain)
+    - :heavy_check_mark: 集群获取设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_get_settings)
+    - :heavy_check_mark: 集群健康 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_health)
+    - :heavy_check_mark: 健康 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/health)
+    - :heavy_check_mark: 集群重路由 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_reroute)
+    - :heavy_check_mark: 集群状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_state)
+    - :heavy_check_mark: 集群统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_stats)
+    - :heavy_check_mark: 集群更新设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_update_settings)
+    - :heavy_check_mark: 节点功能使用情况 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_feature_usage)
+    - :heavy_check_mark: 节点热门线程 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_hot_threads)
+    - :heavy_check_mark: 节点信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_info)
     - Nodes reload secure settings
     - Nodes stats
     - Pending cluster tasks
