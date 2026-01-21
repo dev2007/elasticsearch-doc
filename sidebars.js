@@ -182,6 +182,7 @@ const sidebars = {
             "rest_apis/cluster_apis/nodes_feature_usage",
             "rest_apis/cluster_apis/nodes_hot_threads",
             "rest_apis/cluster_apis/nodes_info",
+            "rest_apis/cluster_apis/prevalidate_node_removal",
           ],
         },
         {

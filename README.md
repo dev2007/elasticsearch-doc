@@ -906,7 +906,7 @@ npm run docs:dev
     - :heavy_check_mark: 节点功能使用情况 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_feature_usage)
     - :heavy_check_mark: 节点热门线程 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_hot_threads)
     - :heavy_check_mark: 节点信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_info)
-    - Nodes reload secure settings
+    - :heavy_check_mark: 节点信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/prevalidate_node_removal)
     - Nodes stats
     - Pending cluster tasks
     - Remote cluster info
