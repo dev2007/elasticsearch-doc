@@ -89,8 +89,8 @@ const config = {
             position: "right",
           },
           {
-            href: "https://docs.bookhub.tech",
-            label: "中文文档",
+            href: "https://dowel.mortnon.tech/",
+            label: "翻译工具",
             position: "right",
           },
           {
@@ -116,8 +116,8 @@ const config = {
                 href: "https://www.bookhub.tech",
               },
               {
-                label: "中文文档",
-                href: "https://docs.bookhub.tech",
+                label: "Dowel AI  工具",
+                href: "https://docs.https://dowel.mortnon.tech/.tech",
               },
             ],
           },
