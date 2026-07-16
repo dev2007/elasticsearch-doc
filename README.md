@@ -909,6 +909,7 @@ npm run docs:dev
     - :heavy_check_mark: 节点移除预验证 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/prevalidate_node_removal)
     - :heavy_check_mark: 节点重新加载安全设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_reload_secure_settings)
     - :heavy_check_mark: 节点统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_stats)
+    - :heavy_check_mark: 集群信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_info)
     - Pending cluster tasks
     - Remote cluster info
     - Task management
