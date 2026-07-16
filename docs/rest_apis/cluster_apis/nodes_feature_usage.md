@@ -24,7 +24,7 @@ GET /_nodes/usage/<metric>
 GET /_nodes/<node_id>/usage/<metric>
 ```
 
-## 先决条件
+## 前置条件
 
 - 如果启用了 Elasticsearch 安全功能，你必须拥有 `monitor` 或 `manage` [集群权限](/secure_the_elastic_statck/user_authorization/security_privileges#集群权限)才能使用此 API。
 

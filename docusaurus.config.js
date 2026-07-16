@@ -89,11 +89,6 @@ const config = {
             position: "right",
           },
           {
-            href: "https://dowel.mortnon.tech/",
-            label: "翻译工具",
-            position: "right",
-          },
-          {
             href: "https://github.com/dev2007/elasticsearch-doc",
             position: "right",
             className: "header-github-link",
