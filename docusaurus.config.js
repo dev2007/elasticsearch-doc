@@ -85,8 +85,8 @@ const config = {
         items: [
           {
             href: "https://www.bookhub.tech",
-            label: "BookHub 首页",
             position: "right",
+            className: "header-bookhub-link",
           },
           {
             href: "https://github.com/dev2007/elasticsearch-doc",
@@ -109,11 +109,7 @@ const config = {
               {
                 label: "首页",
                 href: "https://www.bookhub.tech",
-              },
-              {
-                label: "Dowel AI  工具",
-                href: "https://docs.https://dowel.mortnon.tech/.tech",
-              },
+              }
             ],
           },
           {
