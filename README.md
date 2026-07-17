@@ -910,10 +910,15 @@ npm run docs:dev
     - :heavy_check_mark: 节点重新加载安全设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_reload_secure_settings)
     - :heavy_check_mark: 节点统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/nodes_stats)
     - :heavy_check_mark: 集群信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_info)
-    - Pending cluster tasks
-    - Remote cluster info
-    - Task management
-    - Voting configuration exclusions
+    - :heavy_check_mark: 待处理集群任务 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/pending_cluster_tasks)
+    - :heavy_check_mark: 远程集群信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/remote_cluster_info)
+    - :heavy_check_mark: 任务管理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/task_management)
+    - :heavy_check_mark: 投票配置排除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/voting_configuration_exclusions)
+    - :heavy_check_mark: 创建或更新期望节点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/update_desired_nodes)
+    - :heavy_check_mark: 获取期望节点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/get_desired_nodes)
+    - :heavy_check_mark: 删除期望节点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/delete_desired_nodes)
+    - :heavy_check_mark: 获取期望平衡 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/get_desired_balance)
+    - :heavy_check_mark: 重置期望平衡 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/reset_desired_balance)
   - Cross-cluster replication APIs
     - Get CCR stats
     - Create follower
