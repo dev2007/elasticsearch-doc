@@ -880,21 +880,21 @@ npm run docs:dev
     - :heavy_check_mark: cat 字段数据 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_fielddata)
     - :heavy_check_mark: cat 健康 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_health)
     - :heavy_check_mark: cat 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_indices)
-    - cat master
-    - cat nodeattrs
-    - cat nodes
-    - cat pending tasks
-    - cat plugins
-    - cat recovery
-    - cat repositories
-    - cat segments
-    - cat shards
-    - cat snapshots
-    - cat task management
-    - cat templates
-    - cat thread pool
-    - cat trained model
-    - cat transforms
+    - :heavy_check_mark: cat 主节点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_master)
+    - :heavy_check_mark: cat 节点属性 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_nodeattrs)
+    - :heavy_check_mark: cat 节点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_nodes)
+    - :heavy_check_mark: cat 待处理任务 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_pending_tasks)
+    - :heavy_check_mark: cat 插件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_plugins)
+    - :heavy_check_mark: cat 恢复 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_recovery)
+    - :heavy_check_mark: cat 仓库 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_repositories)
+    - :heavy_check_mark: cat 段 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_segments)
+    - :heavy_check_mark: cat 分片 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_shards)
+    - :heavy_check_mark: cat 快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_snapshots)
+    - :heavy_check_mark: cat 任务管理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_tasks)
+    - :heavy_check_mark: cat 模板 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_templates)
+    - :heavy_check_mark: cat 线程池 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_thread_pool)
+    - :heavy_check_mark: cat 训练模型 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_trained_model)
+    - :heavy_check_mark: cat 转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_transforms)
   - :heavy_check_mark: 集群 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rest_apis/cluster_apis)
     - :heavy_check_mark: 集群分配解释 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_allocation_explain)
     - :heavy_check_mark: 集群获取设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/cluster_get_settings)
