@@ -168,6 +168,26 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "紧凑和对齐文本（CAT）API",
+          link: {
+            type: "doc",
+            id: "rest_apis/compact_and_aligned_text_apis/compact_and_aligned_text_apis",
+          },
+          items: [
+            "rest_apis/compact_and_aligned_text_apis/cat_alias",
+            "rest_apis/compact_and_aligned_text_apis/cat_allocation",
+            "rest_apis/compact_and_aligned_text_apis/cat_anomaly_detectors",
+            "rest_apis/compact_and_aligned_text_apis/cat_component_templates",
+            "rest_apis/compact_and_aligned_text_apis/cat_count",
+            "rest_apis/compact_and_aligned_text_apis/cat_data_frame_analytics",
+            "rest_apis/compact_and_aligned_text_apis/cat_datafeeds",
+            "rest_apis/compact_and_aligned_text_apis/cat_fielddata",
+            "rest_apis/compact_and_aligned_text_apis/cat_health",
+            "rest_apis/compact_and_aligned_text_apis/cat_indices",
+          ],
+        },
+        {
+          type: "category",
           label: "集群 API",
           link: { type: "doc", id: "rest_apis/cluster_apis/cluster_apis" },
           items: [

@@ -870,15 +870,16 @@ npm run docs:dev
     - :heavy_check_mark: 列出分析集合 [:link:](https://elasticsearch.bookhub.tech/rest_apis/behavioral_analytics_apis/list_analytics_collections)
     - :heavy_check_mark: 将事件发布到分析集合 [:link:](https://elasticsearch.bookhub.tech/rest_apis/behavioral_analytics_apis/post_analytics_collection_event)
   - Compact and aligned text (CAT) APIs
-    - cat aliases
-    - cat allocation
-    - cat anomaly detectors
-    - cat count
-    - cat data frame analytics
-    - cat datafeeds
-    - cat fielddata
-    - cat health
-    - cat indices
+    - :heavy_check_mark: cat 别名 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_alias)
+    - :heavy_check_mark: cat 分配 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_allocation)
+    - :heavy_check_mark: cat 异常检测器 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_anomaly_detectors)
+    - :heavy_check_mark: cat 组件模板 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_component_templates)
+    - :heavy_check_mark: cat 计数 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_count)
+    - :heavy_check_mark: cat 数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_data_frame_analytics)
+    - :heavy_check_mark: cat 数据馈送 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_datafeeds)
+    - :heavy_check_mark: cat 字段数据 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_fielddata)
+    - :heavy_check_mark: cat 健康 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_health)
+    - :heavy_check_mark: cat 索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/compact_and_aligned_text_apis/cat_indices)
     - cat master
     - cat nodeattrs
     - cat nodes

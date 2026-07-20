@@ -120,7 +120,7 @@ PUT _cluster/settings
 }
 ```
 
-你可以使用 [cat 分配 API](/rest_apis/cat_apis/cat_allocation) 跟踪数据迁移的进度。如果一些分片没有迁移，那么[集群分配解释 API](/rest_apis/cluster_apis/cluster_allocation_explain) 将帮助你确定原因。
+你可以使用 [cat 分配 API](/rest_apis/compact_and_aligned_text_apis/cat_allocation) 跟踪数据迁移的进度。如果一些分片没有迁移，那么[集群分配解释 API](/rest_apis/cluster_apis/cluster_allocation_explain) 将帮助你确定原因。
 
 3. 按照[滚动重启过程](/set_up_elasticsearch/full_cluster_restart_and_rolling_restart#滚动重启)中的步骤操作，直到关闭目标节点。
 
