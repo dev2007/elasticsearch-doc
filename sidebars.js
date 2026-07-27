@@ -203,6 +203,29 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "跨集群复制 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/cross_cluster_replication_apis/cross_cluster_replication_apis",
+          },
+          items: [
+            "rest_apis/cross_cluster_replication_apis/get_ccr_stats",
+            "rest_apis/cross_cluster_replication_apis/create_follower",
+            "rest_apis/cross_cluster_replication_apis/pause_follower",
+            "rest_apis/cross_cluster_replication_apis/resume_follower",
+            "rest_apis/cross_cluster_replication_apis/unfollow",
+            "rest_apis/cross_cluster_replication_apis/forget_follower",
+            "rest_apis/cross_cluster_replication_apis/get_follower_stats",
+            "rest_apis/cross_cluster_replication_apis/get_follower_info",
+            "rest_apis/cross_cluster_replication_apis/create_auto_follow_pattern",
+            "rest_apis/cross_cluster_replication_apis/delete_auto_follow_pattern",
+            "rest_apis/cross_cluster_replication_apis/get_auto_follow_pattern",
+            "rest_apis/cross_cluster_replication_apis/pause_auto_follow_pattern",
+            "rest_apis/cross_cluster_replication_apis/resume_auto_follow_pattern",
+          ],
+        },
+        {
+          type: "category",
           label: "集群 API",
           link: { type: "doc", id: "rest_apis/cluster_apis/cluster_apis" },
           items: [

@@ -920,20 +920,20 @@ npm run docs:dev
     - :heavy_check_mark: 删除期望节点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/delete_desired_nodes)
     - :heavy_check_mark: 获取期望平衡 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/get_desired_balance)
     - :heavy_check_mark: 重置期望平衡 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cluster_apis/reset_desired_balance)
-  - Cross-cluster replication APIs
-    - Get CCR stats
-    - Create follower
-    - Pause follower
-    - Resume follower
-    - Unfollow
-    - Forget follower
-    - Get follower stats
-    - Get follower info
-    - Create auto-follow pattern
-    - Delete auto-follow pattern
-    - Get auto-follow pattern
-    - Pause auto-follow pattern
-    - Resume auto-follow pattern
+  - :heavy_check_mark: 跨集群复制 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/cross_cluster_replication_apis)
+    - :heavy_check_mark: 获取 CCR 统计信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/get_ccr_stats)
+    - :heavy_check_mark: 创建关注者 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/create_follower)
+    - :heavy_check_mark: 暂停关注者 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/pause_follower)
+    - :heavy_check_mark: 恢复关注者 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/resume_follower)
+    - :heavy_check_mark: 取消关注 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/unfollow)
+    - :heavy_check_mark: 遗忘关注者 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/forget_follower)
+    - :heavy_check_mark: 获取关注者统计信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/get_follower_stats)
+    - :heavy_check_mark: 获取关注者信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/get_follower_info)
+    - :heavy_check_mark: 创建自动关注模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/create_auto_follow_pattern)
+    - :heavy_check_mark: 删除自动关注模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/delete_auto_follow_pattern)
+    - :heavy_check_mark: 获取自动关注模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/get_auto_follow_pattern)
+    - :heavy_check_mark: 暂停自动关注模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/pause_auto_follow_pattern)
+    - :heavy_check_mark: 恢复自动关注模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/cross_cluster_replication_apis/resume_auto_follow_pattern)
   - :heavy_check_mark: 数据流 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/)
     - :heavy_check_mark: 创建数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/create_data_stream)
     - :heavy_check_mark: 删除数据流 [:link:](https://elasticsearch.bookhub.tech/rest_apis/data_stream_apis/delete_data_stream)
