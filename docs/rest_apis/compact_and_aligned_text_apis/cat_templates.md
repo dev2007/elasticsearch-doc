@@ -78,3 +78,6 @@ my-template-0 [te*]          500           []
 my-template-1 [tea*]         501           []
 my-template-2 [teak*]        502   7       []
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-templates.html)

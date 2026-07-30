@@ -29,3 +29,6 @@
 - [获取自动关注模式](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/ccr-get-auto-follow-pattern.html)
 - [暂停自动关注模式](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/ccr-pause-auto-follow-pattern.html)
 - [恢复自动关注模式](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/ccr-resume-auto-follow-pattern.html)
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/ccr-apis.html)

@@ -160,3 +160,6 @@ API 返回以下响应：
   }
 ]
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-transforms.html)

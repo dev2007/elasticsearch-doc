@@ -241,3 +241,6 @@ my-index-000001 0 r STARTED    3014 31.1mb 192.168.56.30 bGG90GE
 my-index-000001 0 r STARTED    3014 31.1mb 192.168.56.20 I8hydUG
 my-index-000001 0 r UNASSIGNED ALLOCATION_FAILED
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-shards.html)

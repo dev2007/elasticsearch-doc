@@ -76,3 +76,6 @@ insertOrder timeInQueue priority source
        1690       787ms HIGH     update-mapping [foo][t]
        1691       773ms HIGH     update-mapping [foo][t]
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-pending-tasks.html)

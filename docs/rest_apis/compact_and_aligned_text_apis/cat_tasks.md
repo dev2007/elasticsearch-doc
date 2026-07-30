@@ -87,3 +87,6 @@ action                         task_id                    parent_task_id        
 cluster:monitor/tasks/lists[n] oTUltX4IQMOUUVeiohTt8A:124 oTUltX4IQMOUUVeiohTt8A:123 direct    1458585884904 01:48:24  44.1micros   127.0.0.1:9300 oTUltX4IQMOUUVeiohTt8A
 cluster:monitor/tasks/lists    oTUltX4IQMOUUVeiohTt8A:123 -                          transport 1458585884904 01:48:24  186.2micros  127.0.0.1:9300 oTUltX4IQMOUUVeiohTt8A
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-tasks.html)

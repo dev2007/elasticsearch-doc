@@ -238,3 +238,6 @@ API 返回以下结果：
   ]
 }
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/ccr-get-follow-stats.html)

@@ -104,3 +104,6 @@ index shard prirep ip        segment generation docs.count docs.deleted size siz
 test  0     p      127.0.0.1 _0               0          1            0  3kb           0 false     true       9.12.1   true
 test1 0     p      127.0.0.1 _0               0          1            0  3kb           0 false     true       9.12.1   true
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-segments.html)

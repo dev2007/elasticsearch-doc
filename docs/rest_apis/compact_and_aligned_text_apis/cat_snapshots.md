@@ -106,3 +106,6 @@ id     repository status start_epoch start_time end_epoch  end_time duration ind
 snap1  repo1      FAILED 1445616705  18:11:45   1445616978 18:16:18     4.6m       1                 4             1            5
 snap2  repo1      SUCCESS 1445634298  23:04:58   1445634672 23:11:12     6.2m       2                10             0           10
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-snapshots.html)

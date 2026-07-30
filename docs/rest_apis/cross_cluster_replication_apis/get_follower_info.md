@@ -153,3 +153,6 @@ GET /follower_index/_ccr/info
   ]
 }
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/ccr-get-follow-info.html)

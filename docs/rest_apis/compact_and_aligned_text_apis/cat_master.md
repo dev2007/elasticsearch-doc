@@ -78,3 +78,6 @@ Ntgn2DcuTjGuXlhKDUD4vA 192.168.56.30 H5dfFeA
 [3] 19:16:37 [SUCCESS] es1.vm
 Ntgn2DcuTjGuXlhKDUD4vA 192.168.56.30 H5dfFeA
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-master.html)

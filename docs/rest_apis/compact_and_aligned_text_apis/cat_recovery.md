@@ -180,3 +180,6 @@ API 返回以下响应，恢复类型为 `snapshot`：
 i               s t      ty       st    rep     snap   f  fp   b     bp
 my-index-000001 0 1978ms snapshot done  my-repo snap-1 79 8.0% 12086 9.0%
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-recovery.html)

@@ -79,3 +79,6 @@ U7321H6 mapper-murmur3          8.18.8 The Mapper Murmur3 plugin allows to compu
 U7321H6 mapper-size             8.18.8 The Mapper Size plugin allows document to record their uncompressed size at index time.
 U7321H6 store-smb               8.18.8 The Store SMB plugin adds support for SMB stores.
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-plugins.html)

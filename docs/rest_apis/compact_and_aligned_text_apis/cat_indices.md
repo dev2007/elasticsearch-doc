@@ -125,3 +125,6 @@ health status index            uuid                   pri rep docs.count docs.de
 yellow open   my-index-000001  u8FNjxh8Rfy_awN11oDKYQ   1   1       1200            0     88.1kb         88.1kb       88.1kb
 green  open   my-index-000002  nYFWZEO7TUiOjLQXBaYJpA   1   0          0            0       260b           260b         260b
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-indices.html)

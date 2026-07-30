@@ -170,3 +170,6 @@ API 返回以下结果：
   "index_following_started" : true
 }
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/ccr-put-follow.html)

@@ -131,3 +131,6 @@ elasticsearch green           1         1      1   1    0    0        0         
 ```
 
 在此示例中，恢复大约耗时六分钟，从 18:24:06 到 18:30:06。如果此恢复过程耗时数小时，你可以继续监控 UNASSIGNED 分片的数量，该数量应逐渐下降。如果 UNASSIGNED 分片数量保持不变，则表明集群恢复存在问题。
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-health.html)

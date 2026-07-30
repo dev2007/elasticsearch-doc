@@ -112,3 +112,6 @@ datafeed-low_request_rate     stopped 1457         3
 datafeed-response_code_rates  stopped 1460         18
 datafeed-url_scanning         stopped 1460         18
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-datafeeds.html)

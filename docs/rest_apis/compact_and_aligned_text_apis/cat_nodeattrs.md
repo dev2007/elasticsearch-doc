@@ -102,3 +102,6 @@ name    pid   attr     value
 node-0 19566 testattr test
 ...
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-nodeattrs.html)

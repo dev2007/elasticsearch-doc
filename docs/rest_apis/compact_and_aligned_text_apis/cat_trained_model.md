@@ -90,3 +90,6 @@ ddddd-1580216177138              _xpack 196        PLATINUM 2020-01-28T12:56:17.
 flight-regress-1580215685537     _xpack 102        PLATINUM 2020-01-28T12:48:05.537Z 8.0.0
 lang_ident_model_1               _xpack 39629      BASIC    2019-12-05T12:28:34.594Z 7.6.0
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-trained-model.html)

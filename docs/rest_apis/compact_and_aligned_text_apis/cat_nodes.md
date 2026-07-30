@@ -196,3 +196,6 @@ API 返回以下响应：
 id   ip        port  v         m
 veJR 127.0.0.1 59938 8.18.8 *
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-nodes.html)

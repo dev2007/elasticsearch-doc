@@ -127,3 +127,6 @@ API 返回以下响应：
 id                     name    active rejected completed
 0EWUhXeBQtaVGlexUeVwMg generic      0        0        70
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-thread-pool.html)

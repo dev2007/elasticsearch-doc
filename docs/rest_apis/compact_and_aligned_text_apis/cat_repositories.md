@@ -67,3 +67,6 @@ id    type
 repo1   fs
 repo2   s3
 ```
+
+
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cat-repositories.html)
