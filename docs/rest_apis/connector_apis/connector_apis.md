@@ -23,19 +23,19 @@
 
 使用以下 API 管理连接器：
 
-- [创建连接器](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/create-connector-api.html) **[beta]**
-- [删除连接器](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/delete-connector-api.html) **[beta]**
-- [获取连接器](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/get-connector-api.html) **[beta]**
-- [列出连接器](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/list-connector-api.html) **[beta]**
-- [更新连接器 API 密钥 ID](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-api-key-id-api.html) **[beta]**
-- [更新连接器配置](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-configuration-api.html) **[beta]**
-- [更新连接器功能](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-features-api.html) **[beta]**
-- [更新连接器过滤](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-filtering-api.html) **[beta]**
-- [更新连接器索引名称](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-index-name-api.html) **[beta]**
-- [更新连接器名称和描述](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-name-description-api.html) **[beta]**
-- [更新连接器管道](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-pipeline-api.html) **[beta]**
-- [更新连接器调度](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-scheduling-api.html) **[beta]**
-- [更新连接器服务类型](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-service-type-api.html) **[beta]**
+- [创建连接器](./create_connector) **[beta]**
+- [删除连接器](./delete_connector) **[beta]**
+- [获取连接器](./get_connector) **[beta]**
+- [列出连接器](./list_connector) **[beta]**
+- [更新连接器 API 密钥 ID](./update_connector_api_key_id) **[beta]**
+- [更新连接器配置](./update_connector_configuration) **[beta]**
+- [更新连接器功能](./update_connector_features) **[beta]**
+- [更新连接器过滤](./update_connector_filtering) **[beta]**
+- [更新连接器索引名称](./update_connector_index_name) **[beta]**
+- [更新连接器名称和描述](./update_connector_name_description) **[beta]**
+- [更新连接器管道](./update_connector_pipeline) **[beta]**
+- [更新连接器调度](./update_connector_scheduling) **[beta]**
+- [更新连接器服务类型](./update_connector_service_type) **[beta]**
 
 :::warning 警告
 此功能处于测试版（beta），可能会发生变化。其设计和代码不如正式发布（GA）功能成熟，按"原样"提供，不附带任何保证。测试版功能不受正式 GA 功能的支持 SLA 约束。
@@ -47,11 +47,11 @@
 
 使用以下 API 管理同步作业：
 
-- [创建连接器同步作业](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/create-connector-sync-job-api.html) **[beta]**
-- [取消连接器同步作业](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/cancel-connector-sync-job-api.html) **[beta]**
-- [删除连接器同步作业](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/delete-connector-sync-job-api.html) **[beta]**
-- [获取连接器同步作业](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/get-connector-sync-job-api.html) **[beta]**
-- [列出连接器同步作业](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/list-connector-sync-jobs-api.html) **[beta]**
+- [创建连接器同步作业](./create_connector_sync_job) **[beta]**
+- [取消连接器同步作业](./cancel_connector_sync_job) **[beta]**
+- [删除连接器同步作业](./delete_connector_sync_job) **[beta]**
+- [获取连接器同步作业](./get_connector_sync_job) **[beta]**
+- [列出连接器同步作业](./list_connector_sync_jobs) **[beta]**
 
 :::warning 警告
 此功能处于测试版（beta），可能会发生变化。其设计和代码不如正式发布（GA）功能成熟，按"原样"提供，不附带任何保证。测试版功能不受正式 GA 功能的支持 SLA 约束。
@@ -69,10 +69,10 @@
 
 ### 连接器服务 API
 
-- [连接器签到](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/check-in-connector-api.html) **[preview]**
-- [更新连接器错误](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-error-api.html) **[preview]**
-- [更新连接器上次同步统计信息](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-last-sync-api.html) **[preview]**
-- [更新连接器状态](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/update-connector-status-api.html) **[preview]**
+- [连接器签到](./check_in_connector) **[preview]**
+- [更新连接器错误](./update_connector_error) **[preview]**
+- [更新连接器上次同步统计信息](./update_connector_last_sync) **[preview]**
+- [更新连接器状态](./update_connector_status) **[preview]**
 
 :::warning 警告
 此功能处于技术预览版，可能会在未来的版本中更改或移除。Elastic 将努力修复任何问题，但技术预览版功能不受正式 GA 功能的支持 SLA 约束。
@@ -80,10 +80,10 @@
 
 ### 同步作业服务 API
 
-- [连接器同步作业签到](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/check-in-connector-sync-job-api.html) **[preview]**
-- [认领连接器同步作业](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/claim-connector-sync-job-api.html) **[preview]**
-- [设置连接器同步作业错误](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/set-connector-sync-job-error-api.html) **[preview]**
-- [设置连接器同步作业统计信息](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/set-connector-sync-job-stats-api.html) **[preview]**
+- [连接器同步作业签到](./check_in_connector_sync_job) **[preview]**
+- [认领连接器同步作业](./claim_connector_sync_job) **[preview]**
+- [设置连接器同步作业错误](./set_connector_sync_job_error) **[preview]**
+- [设置连接器同步作业统计信息](./set_connector_sync_job_stats) **[preview]**
 
 :::warning 警告
 此功能处于技术预览版，可能会在未来的版本中更改或移除。Elastic 将努力修复任何问题，但技术预览版功能不受正式 GA 功能的支持 SLA 约束。

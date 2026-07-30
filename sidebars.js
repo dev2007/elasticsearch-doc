@@ -337,6 +337,21 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "富化 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/enrich_apis/enrich_apis",
+          },
+          items: [
+            "rest_apis/enrich_apis/put_enrich_policy",
+            "rest_apis/enrich_apis/delete_enrich_policy",
+            "rest_apis/enrich_apis/get_enrich_policy",
+            "rest_apis/enrich_apis/execute_enrich_policy",
+            "rest_apis/enrich_apis/enrich_stats",
+          ],
+        },
+        {
+          type: "category",
           label: "索引 API",
           link: { type: "doc", id: "rest_apis/index_apis/index_apis" },
           items: [

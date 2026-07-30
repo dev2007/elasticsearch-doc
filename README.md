@@ -990,12 +990,12 @@ npm run docs:dev
     - :heavy_check_mark: 多词向量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/multi_termvectors)
     - :heavy_check_mark: ?refresh [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/refresh)
     - :heavy_check_mark: 乐观并发控制 [:link:](https://elasticsearch.bookhub.tech/rest_apis/document_apis/optimistic_concurrency_control)
-  - Enrich APIs
-    - Put enrich policy
-    - Delete enrich policy
-    - Get enrich policy
-    - Execute enrich policy
-    - Enrich stats
+  - :heavy_check_mark: 富化 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/enrich_apis)
+    - :heavy_check_mark: 创建富化策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/put_enrich_policy)
+    - :heavy_check_mark: 删除富化策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/delete_enrich_policy)
+    - :heavy_check_mark: 获取富化策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/get_enrich_policy)
+    - :heavy_check_mark: 执行富化策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/execute_enrich_policy)
+    - :heavy_check_mark: 富化统计信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/enrich_stats)
   - Graph explore API
   - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/)
     - :heavy_check_mark: 别名存在 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/alias_exists.html)
