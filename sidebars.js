@@ -381,6 +381,18 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "特性 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/features_apis/features_apis",
+          },
+          items: [
+            "rest_apis/features_apis/get_features",
+            "rest_apis/features_apis/reset_features",
+          ],
+        },
+        {
+          type: "category",
           label: "索引 API",
           link: { type: "doc", id: "rest_apis/index_apis/index_apis" },
           items: [
