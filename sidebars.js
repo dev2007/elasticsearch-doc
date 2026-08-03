@@ -366,6 +366,21 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "ES|QL API",
+          link: {
+            type: "doc",
+            id: "rest_apis/esql_apis/esql_apis",
+          },
+          items: [
+            "rest_apis/esql_apis/esql_query",
+            "rest_apis/esql_apis/esql_async_query",
+            "rest_apis/esql_apis/esql_async_query_get",
+            "rest_apis/esql_apis/esql_async_query_delete",
+            "rest_apis/esql_apis/esql_async_query_stop",
+          ],
+        },
+        {
+          type: "category",
           label: "索引 API",
           link: { type: "doc", id: "rest_apis/index_apis/index_apis" },
           items: [

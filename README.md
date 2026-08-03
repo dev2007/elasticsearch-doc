@@ -1001,6 +1001,12 @@ npm run docs:dev
     - :heavy_check_mark: 获取异步 EQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/eql_qpis/get_async_eql_search)
     - :heavy_check_mark: 获取异步 EQL 搜索状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/eql_qpis/get_async_eql_status)
     - :heavy_check_mark: 删除异步 EQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/eql_qpis/delete_async_eql_search)
+  - :heavy_check_mark: ES|QL API [:link:](https://elasticsearch.bookhub.tech/rest_apis/esql_apis/esql_apis)
+    - :heavy_check_mark: ES|QL 查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/esql_apis/esql_query)
+    - :heavy_check_mark: ES|QL 异步查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/esql_apis/esql_async_query)
+    - :heavy_check_mark: ES|QL 异步查询获取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/esql_apis/esql_async_query_get)
+    - :heavy_check_mark: ES|QL 异步查询删除 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/esql_apis/esql_async_query_delete)
+    - :heavy_check_mark: ES|QL 异步查询停止 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/esql_apis/esql_async_query_stop)
   - Graph explore API
   - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/)
     - :heavy_check_mark: 别名存在 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/alias_exists.html)
