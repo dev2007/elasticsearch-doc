@@ -352,6 +352,20 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "EQL API",
+          link: {
+            type: "doc",
+            id: "rest_apis/eql_qpis/eql_qpis",
+          },
+          items: [
+            "rest_apis/eql_qpis/delete_async_eql_search",
+            "rest_apis/eql_qpis/eql_search",
+            "rest_apis/eql_qpis/get_async_eql_search",
+            "rest_apis/eql_qpis/get_async_eql_status",
+          ],
+        },
+        {
+          type: "category",
           label: "索引 API",
           link: { type: "doc", id: "rest_apis/index_apis/index_apis" },
           items: [

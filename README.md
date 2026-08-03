@@ -996,6 +996,11 @@ npm run docs:dev
     - :heavy_check_mark: 获取富化策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/get_enrich_policy)
     - :heavy_check_mark: 执行富化策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/execute_enrich_policy)
     - :heavy_check_mark: 富化统计信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/enrich_apis/enrich_stats)
+  - :heavy_check_mark: EQL API [:link:](https://elasticsearch.bookhub.tech/rest_apis/eql_qpis/eql_qpis)
+    - :heavy_check_mark: EQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/eql_qpis/eql_search)
+    - :heavy_check_mark: 获取异步 EQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/eql_qpis/get_async_eql_search)
+    - :heavy_check_mark: 获取异步 EQL 搜索状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/eql_qpis/get_async_eql_status)
+    - :heavy_check_mark: 删除异步 EQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/eql_qpis/delete_async_eql_search)
   - Graph explore API
   - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/)
     - :heavy_check_mark: 别名存在 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/alias_exists.html)
@@ -1164,9 +1169,6 @@ npm run docs:dev
     - :heavy_check_mark: 搜索分片 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/search_shards.html)
     - :heavy_check_mark: 建议器 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/suggesters.html)
     - :heavy_check_mark: 多重搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/multi_search.html)
-    - EQL search
-    - Get async EQL search
-    - Delete async EQL search
     - Count
     - :heavy_check_mark: 验证 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/validate.html)
     - :heavy_check_mark: 词语枚举 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/terms_enum.html)
