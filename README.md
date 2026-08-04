@@ -1010,6 +1010,10 @@ npm run docs:dev
   - :heavy_check_mark: 特性 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/features_apis/features_apis)
     - :heavy_check_mark: 获取特性 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/features_apis/get_features)
     - :heavy_check_mark: 重置特性 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/features_apis/reset_features)
+  - :heavy_check_mark: Fleet API [:link:](https://elasticsearch.bookhub.tech/rest_apis/fleet_apis/fleet_apis)
+    - :heavy_check_mark: 获取全局检查点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/fleet_apis/get_global_checkpoints)
+    - :heavy_check_mark: Fleet 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/fleet_apis/fleet_search)
+    - :heavy_check_mark: Fleet 批量搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/fleet_apis/fleet_multi_search)
   - Graph explore API
   - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/)
     - :heavy_check_mark: 别名存在 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/alias_exists.html)

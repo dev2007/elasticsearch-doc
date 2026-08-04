@@ -393,6 +393,19 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "Fleet API",
+          link: {
+            type: "doc",
+            id: "rest_apis/fleet_apis/fleet_apis",
+          },
+          items: [
+            "rest_apis/fleet_apis/get_global_checkpoints",
+            "rest_apis/fleet_apis/fleet_search",
+            "rest_apis/fleet_apis/fleet_multi_search",
+          ],
+        },
+        {
+          type: "category",
           label: "索引 API",
           link: { type: "doc", id: "rest_apis/index_apis/index_apis" },
           items: [
