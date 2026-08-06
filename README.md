@@ -1014,7 +1014,7 @@ npm run docs:dev
     - :heavy_check_mark: 获取全局检查点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/fleet_apis/get_global_checkpoints)
     - :heavy_check_mark: Fleet 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/fleet_apis/fleet_search)
     - :heavy_check_mark: Fleet 批量搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/fleet_apis/fleet_multi_search)
-  - Graph explore API
+  - :heavy_check_mark: 图探索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/graph_explore_apis/graph_explore_api)
   - :heavy_check_mark: 索引相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/)
     - :heavy_check_mark: 别名存在 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/alias_exists.html)
     - :heavy_check_mark: 别名 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/aliases.html)
@@ -1068,17 +1068,18 @@ npm run docs:dev
     - :heavy_check_mark: 解冻索引 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/unfreeze_index.html)
     - :heavy_check_mark: 更新索引设置 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/update_index_settings.html)
     - :heavy_check_mark: 更新映射 [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_apis/update_mapping.html)
-  - Index lifecycle management APIs
-    - Create policy
-    - Get policy
-    - Delete policy
-    - Move to step
-    - Remove policy
-    - Retry policy
-    - Get index lifecycle management status
-    - Explain lifecycle
-    - Start index lifecycle management
-    - Stop index lifecycle management
+  - :heavy_check_mark: 索引生命周期管理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/index_lifecycle_management_api)
+    - :heavy_check_mark: 创建生命周期策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/put_lifecycle)
+    - :heavy_check_mark: 获取生命周期策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/get_lifecycle)
+    - :heavy_check_mark: 删除生命周期策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/delete_lifecycle)
+    - :heavy_check_mark: 将索引移动到指定步骤 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/move_to_step)
+    - :heavy_check_mark: 从索引移除策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/remove_policy)
+    - :heavy_check_mark: 重试策略执行 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/retry_policy)
+    - :heavy_check_mark: 获取 ILM 操作模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/get_status)
+    - :heavy_check_mark: 解释生命周期 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/explain_lifecycle)
+    - :heavy_check_mark: 启动 ILM API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/start)
+    - :heavy_check_mark: 停止 ILM API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/stop)
+    - :heavy_check_mark: 迁移到数据层路由 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/migrate_to_data_tiers)
   - Ingest APIs
     - Put pipeline
     - Get pipeline

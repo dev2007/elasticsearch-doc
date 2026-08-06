@@ -404,6 +404,7 @@ const sidebars = {
             "rest_apis/fleet_apis/fleet_multi_search",
           ],
         },
+        "rest_apis/graph_explore_apis/graph_explore_api",
         {
           type: "category",
           label: "索引 API",
@@ -455,6 +456,27 @@ const sidebars = {
             "rest_apis/index_apis/unfreeze_index",
             "rest_apis/index_apis/update_index_settings",
             "rest_apis/index_apis/update_mapping",
+          ],
+        },
+        {
+          type: "category",
+          label: "索引生命周期管理 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/index_lifecycle_management_api/index_lifecycle_management_api",
+          },
+          items: [
+            "rest_apis/index_lifecycle_management_api/put_lifecycle",
+            "rest_apis/index_lifecycle_management_api/get_lifecycle",
+            "rest_apis/index_lifecycle_management_api/delete_lifecycle",
+            "rest_apis/index_lifecycle_management_api/move_to_step",
+            "rest_apis/index_lifecycle_management_api/remove_policy",
+            "rest_apis/index_lifecycle_management_api/retry_policy",
+            "rest_apis/index_lifecycle_management_api/get_status",
+            "rest_apis/index_lifecycle_management_api/explain_lifecycle",
+            "rest_apis/index_lifecycle_management_api/start",
+            "rest_apis/index_lifecycle_management_api/stop",
+            "rest_apis/index_lifecycle_management_api/migrate_to_data_tiers",
           ],
         },
         {
