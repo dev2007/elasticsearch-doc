@@ -1080,6 +1080,14 @@ npm run docs:dev
     - :heavy_check_mark: 启动 ILM API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/start)
     - :heavy_check_mark: 停止 ILM API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/stop)
     - :heavy_check_mark: 迁移到数据层路由 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/index_lifecycle_management_api/migrate_to_data_tiers)
+  - :heavy_check_mark: 推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/inference_apis)
+    - :heavy_check_mark: 删除推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/delete_inference)
+    - :heavy_check_mark: 获取推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/get_inference)
+    - :heavy_check_mark: 执行推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/perform_inference)
+    - :heavy_check_mark: 创建推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/create_inference)
+    - :heavy_check_mark: 流式推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/stream_inference)
+    - :heavy_check_mark: 聊天补全推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/chat_completion_inference)
+    - :heavy_check_mark: 更新推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/update_inference)
   - Ingest APIs
     - Put pipeline
     - Get pipeline
