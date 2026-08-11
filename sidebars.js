@@ -512,6 +512,7 @@ const sidebars = {
             "rest_apis/inference_apis/inference_provider_watsonx_ai",
           ],
         },
+        "rest_apis/info_apis/info_api",
         {
           type: "category",
           label: "搜索相关 API",

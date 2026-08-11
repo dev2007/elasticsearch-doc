@@ -1093,7 +1093,7 @@ npm run docs:dev
     - Get pipeline
     - Delete pipeline
     - Simulate pipeline
-  - Info API
+  - :heavy_check_mark: 信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/info_apis/info_api)
   - Licensing APIs
     - Delete license
     - Get license
