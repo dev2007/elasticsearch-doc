@@ -515,6 +515,25 @@ const sidebars = {
         "rest_apis/info_apis/info_api",
         {
           type: "category",
+          label: "摄取 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/ingest_apis/ingest_apis",
+          },
+          items: [
+            "rest_apis/ingest_apis/put_pipeline",
+            "rest_apis/ingest_apis/get_pipeline",
+            "rest_apis/ingest_apis/delete_pipeline",
+            "rest_apis/ingest_apis/simulate_pipeline",
+            "rest_apis/ingest_apis/simulate_ingest",
+            "rest_apis/ingest_apis/geoip_stats",
+            "rest_apis/ingest_apis/put_ip_location_database",
+            "rest_apis/ingest_apis/get_ip_location_database",
+            "rest_apis/ingest_apis/delete_ip_location_database",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [

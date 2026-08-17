@@ -1088,11 +1088,16 @@ npm run docs:dev
     - :heavy_check_mark: 流式推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/stream_inference)
     - :heavy_check_mark: 聊天补全推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/chat_completion_inference)
     - :heavy_check_mark: 更新推理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/inference_apis/update_inference)
-  - Ingest APIs
-    - Put pipeline
-    - Get pipeline
-    - Delete pipeline
-    - Simulate pipeline
+  - :heavy_check_mark: 摄取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/ingest_apis)
+    - :heavy_check_mark: 创建或更新管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/put_pipeline)
+    - :heavy_check_mark: 获取管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/get_pipeline)
+    - :heavy_check_mark: 删除管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/delete_pipeline)
+    - :heavy_check_mark: 模拟管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/simulate_pipeline)
+    - :heavy_check_mark: 模拟摄取 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/simulate_ingest)
+    - :heavy_check_mark: GeoIP 统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/geoip_stats)
+    - :heavy_check_mark: 创建或更新 IP 地理位置数据库配置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/put_ip_location_database)
+    - :heavy_check_mark: 获取 IP 地理位置数据库配置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/get_ip_location_database)
+    - :heavy_check_mark: 删除 IP 地理位置数据库配置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/delete_ip_location_database)
   - :heavy_check_mark: 信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/info_apis/info_api)
   - Licensing APIs
     - Delete license
