@@ -534,6 +534,23 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "许可证 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/licensing_apis/licensing_apis",
+          },
+          items: [
+            "rest_apis/licensing_apis/delete_license",
+            "rest_apis/licensing_apis/get_license",
+            "rest_apis/licensing_apis/get_trial_status",
+            "rest_apis/licensing_apis/start_trial",
+            "rest_apis/licensing_apis/get_basic_status",
+            "rest_apis/licensing_apis/start_basic",
+            "rest_apis/licensing_apis/update_license",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [

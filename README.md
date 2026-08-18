@@ -1099,14 +1099,14 @@ npm run docs:dev
     - :heavy_check_mark: 获取 IP 地理位置数据库配置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/get_ip_location_database)
     - :heavy_check_mark: 删除 IP 地理位置数据库配置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ingest_apis/delete_ip_location_database)
   - :heavy_check_mark: 信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/info_apis/info_api)
-  - Licensing APIs
-    - Delete license
-    - Get license
-    - Get trial status
-    - Start trial
-    - Get basic status
-    - Start basic
-    - Update license
+  - :heavy_check_mark: 许可证 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/licensing_apis)
+    - :heavy_check_mark: 删除许可证 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/delete_license)
+    - :heavy_check_mark: 获取许可证 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/get_license)
+    - :heavy_check_mark: 获取试用状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/get_trial_status)
+    - :heavy_check_mark: 启动试用 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/start_trial)
+    - :heavy_check_mark: 获取基础版状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/get_basic_status)
+    - :heavy_check_mark: 启动基础版 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/start_basic)
+    - :heavy_check_mark: 更新许可证 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/update_license)
   - Machine learning anomaly detection APIs
     - Add events to calendar
     - Add jobs to calendar
