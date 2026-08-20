@@ -551,6 +551,19 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "Logstash API",
+          link: {
+            type: "doc",
+            id: "rest_apis/logstash_apis/logstash_apis",
+          },
+          items: [
+            "rest_apis/logstash_apis/put_pipeline",
+            "rest_apis/logstash_apis/get_pipeline",
+            "rest_apis/logstash_apis/delete_pipeline",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [

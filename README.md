@@ -1107,6 +1107,10 @@ npm run docs:dev
     - :heavy_check_mark: 获取基础版状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/get_basic_status)
     - :heavy_check_mark: 启动基础版 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/start_basic)
     - :heavy_check_mark: 更新许可证 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/licensing_apis/update_license)
+  - :heavy_check_mark: Logstash API [:link:](https://elasticsearch.bookhub.tech/rest_apis/logstash_apis/logstash_apis)
+    - :heavy_check_mark: 创建或更新 Logstash 管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/logstash_apis/put_pipeline)
+    - :heavy_check_mark: 获取 Logstash 管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/logstash_apis/get_pipeline)
+    - :heavy_check_mark: 删除 Logstash 管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/logstash_apis/delete_pipeline)
   - Machine learning anomaly detection APIs
     - Add events to calendar
     - Add jobs to calendar
