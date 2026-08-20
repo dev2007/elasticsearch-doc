@@ -1111,6 +1111,10 @@ npm run docs:dev
     - :heavy_check_mark: 创建或更新 Logstash 管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/logstash_apis/put_pipeline)
     - :heavy_check_mark: 获取 Logstash 管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/logstash_apis/get_pipeline)
     - :heavy_check_mark: 删除 Logstash 管道 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/logstash_apis/delete_pipeline)
+  - :heavy_check_mark: 机器学习 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_apis/ml_apis)
+    - :heavy_check_mark: 获取机器学习信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_apis/get_info)
+    - :heavy_check_mark: 获取机器学习内存统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_apis/get_memory)
+    - :heavy_check_mark: 设置升级模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_apis/set_upgrade_mode)
   - Machine learning anomaly detection APIs
     - Add events to calendar
     - Add jobs to calendar

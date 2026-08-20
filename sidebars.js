@@ -564,6 +564,19 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "机器学习 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/ml_apis/ml_apis",
+          },
+          items: [
+            "rest_apis/ml_apis/get_info",
+            "rest_apis/ml_apis/get_memory",
+            "rest_apis/ml_apis/set_upgrade_mode",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [
