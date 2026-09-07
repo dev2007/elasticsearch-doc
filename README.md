@@ -1115,53 +1115,55 @@ npm run docs:dev
     - :heavy_check_mark: 获取机器学习信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_apis/get_info)
     - :heavy_check_mark: 获取机器学习内存统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_apis/get_memory)
     - :heavy_check_mark: 设置升级模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_apis/set_upgrade_mode)
-  - Machine learning anomaly detection APIs
-    - Add events to calendar
-    - Add jobs to calendar
-    - Close jobs
-    - Create jobs
-    - Create calendars
-    - Create datafeeds
-    - Create filters
-    - Delete calendars
-    - Delete datafeeds
-    - Delete events from calendar
-    - Delete filters
-    - Delete forecasts
-    - Delete jobs
-    - Delete jobs from calendar
-    - Delete model snapshots
-    - Delete expired data
-    - Estimate model memory
+  - :heavy_check_mark: 机器学习异常检测 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/ml_ad_apis)
+    - :heavy_check_mark: 向日历添加计划事件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/post_calendar_event)
+    - :heavy_check_mark: 向日历添加异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/put_calendar_job)
+    - :heavy_check_mark: 关闭异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/close_job)
+    - :heavy_check_mark: 创建作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/put_job)
+    - :heavy_check_mark: 创建日历 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/put_calendar)
+    - :heavy_check_mark: 创建数据源 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/put_datafeed)
+    - :heavy_check_mark: 创建过滤器 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/put_filter)
+    - :heavy_check_mark: 删除日历 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_calendar)
+    - :heavy_check_mark: 删除数据源 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_datafeed)
+    - :heavy_check_mark: 从日历删除计划事件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_calendar_event)
+    - :heavy_check_mark: 删除过滤器 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_filter)
+    - :heavy_check_mark: 删除预测 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_forecast)
+    - :heavy_check_mark: 删除异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_job)
+    - :heavy_check_mark: 从日历删除异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_calendar_job)
+    - :heavy_check_mark: 删除模型快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_snapshot)
+    - :heavy_check_mark: 删除过期数据 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/delete_expired_data)
+    - :heavy_check_mark: 估算模型内存 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/estimate_model_memory)
     - Find file structure
-    - Flush jobs
-    - Forecast jobs
-    - Get buckets
-    - Get calendars
-    - Get categories
-    - Get datafeeds
+    - :heavy_check_mark: 刷新作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/flush_job)
+    - :heavy_check_mark: 创建预测 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/forecast)
+    - :heavy_check_mark: 获取桶 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_bucket)
+    - :heavy_check_mark: 获取日历 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_calendar)
+    - :heavy_check_mark: 获取类别 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_category)
+    - :heavy_check_mark: 获取数据源 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_datafeed)
     - Get datafeed statistics
-    - Get influencers
-    - Get jobs
-    - Get job statistics
+    - :heavy_check_mark: 获取影响因素 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_influencer)
+    - :heavy_check_mark: 获取异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_job)
+    - :heavy_check_mark: 获取异常检测作业统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_job_stats)
     - Get machine learning info
-    - Get model snapshots
-    - Get overall buckets
-    - Get scheduled events
-    - Get filters
-    - Get records
-    - Open jobs
-    - Post data to jobs
-    - Preview datafeeds
-    - Revert model snapshots
+    - :heavy_check_mark: 获取模型快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_snapshot)
+    - :heavy_check_mark: 获取模型快照升级统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_snapshot_upgrade_stats)
+    - :heavy_check_mark: 获取总体桶 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_overall_buckets)
+    - :heavy_check_mark: 获取计划事件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_calendar_event)
+    - :heavy_check_mark: 获取过滤器 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_filter)
+    - :heavy_check_mark: 获取记录 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/get_record)
+    - :heavy_check_mark: 打开异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/open_job)
+    - :heavy_check_mark: 向作业推送数据 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/post_data)
+    - :heavy_check_mark: 预览数据源 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/preview_datafeed)
+    - :heavy_check_mark: 重置异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/reset_job)
+    - :heavy_check_mark: 回滚模型快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/revert_snapshot)
     - Set upgrade mode
-    - Start datafeeds
-    - Stop datafeeds
-    - Update datafeeds
-    - Update filters
-    - Update jobs
-    - Update model snapshots
-    - Upgrade model snapshots
+    - :heavy_check_mark: 启动数据源 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/start_datafeed)
+    - :heavy_check_mark: 停止数据源 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/stop_datafeed)
+    - :heavy_check_mark: 更新数据源 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/update_datafeed)
+    - :heavy_check_mark: 更新过滤器 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/update_filter)
+    - :heavy_check_mark: 更新异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/update_job)
+    - :heavy_check_mark: 更新模型快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/update_snapshot)
+    - :heavy_check_mark: 升级模型快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/upgrade_snapshot)
   - Machine learning data frame analytics APIs
     - Create data frame analytics jobs
     - Create trained models
