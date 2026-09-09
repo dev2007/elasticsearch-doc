@@ -1164,20 +1164,21 @@ npm run docs:dev
     - :heavy_check_mark: 更新异常检测作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/update_job)
     - :heavy_check_mark: 更新模型快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/update_snapshot)
     - :heavy_check_mark: 升级模型快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/upgrade_snapshot)
-  - Machine learning data frame analytics APIs
-    - Create data frame analytics jobs
+  - :heavy_check_mark: 机器学习数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/ml_df_analytics_apis)
+    - :heavy_check_mark: 创建数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/put_dfanalytics)
     - Create trained models
-    - Update data frame analytics jobs
-    - Delete data frame analytics jobs
+    - :heavy_check_mark: 更新数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/update_dfanalytics)
+    - :heavy_check_mark: 删除数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/delete_dfanalytics)
     - Delete trained models
-    - Evaluate data frame analytics
-    - Explain data frame analytics
-    - Get data frame analytics jobs
-    - Get data frame analytics jobs stats
+    - :heavy_check_mark: 评估数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/evaluate_dfanalytics)
+    - :heavy_check_mark: 解释数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/explain_dfanalytics)
+    - :heavy_check_mark: 获取数据帧分析作业信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/get_dfanalytics)
+    - :heavy_check_mark: 获取数据帧分析作业统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/get_dfanalytics_stats)
     - Get trained models
     - Get trained models stats
-    - Start data frame analytics jobs
-    - Stop data frame analytics jobs
+    - :heavy_check_mark: 预览数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/preview_dfanalytics)
+    - :heavy_check_mark: 启动数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/start_dfanalytics)
+    - :heavy_check_mark: 停止数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/stop_dfanalytics)
   - Migration APIs
     - Deprecation info
   - Reload search analyzers API

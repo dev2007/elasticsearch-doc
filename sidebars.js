@@ -631,6 +631,26 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "机器学习数据帧分析 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/ml_df_analytics_apis/ml_df_analytics_apis",
+          },
+          items: [
+            "rest_apis/ml_df_analytics_apis/put_dfanalytics",
+            "rest_apis/ml_df_analytics_apis/delete_dfanalytics",
+            "rest_apis/ml_df_analytics_apis/evaluate_dfanalytics",
+            "rest_apis/ml_df_analytics_apis/explain_dfanalytics",
+            "rest_apis/ml_df_analytics_apis/get_dfanalytics",
+            "rest_apis/ml_df_analytics_apis/get_dfanalytics_stats",
+            "rest_apis/ml_df_analytics_apis/preview_dfanalytics",
+            "rest_apis/ml_df_analytics_apis/start_dfanalytics",
+            "rest_apis/ml_df_analytics_apis/stop_dfanalytics",
+            "rest_apis/ml_df_analytics_apis/update_dfanalytics",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [
