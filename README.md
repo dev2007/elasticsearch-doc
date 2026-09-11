@@ -1166,19 +1166,29 @@ npm run docs:dev
     - :heavy_check_mark: 升级模型快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_ad_apis/upgrade_snapshot)
   - :heavy_check_mark: 机器学习数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/ml_df_analytics_apis)
     - :heavy_check_mark: 创建数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/put_dfanalytics)
-    - Create trained models
     - :heavy_check_mark: 更新数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/update_dfanalytics)
     - :heavy_check_mark: 删除数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/delete_dfanalytics)
-    - Delete trained models
     - :heavy_check_mark: 评估数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/evaluate_dfanalytics)
     - :heavy_check_mark: 解释数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/explain_dfanalytics)
     - :heavy_check_mark: 获取数据帧分析作业信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/get_dfanalytics)
     - :heavy_check_mark: 获取数据帧分析作业统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/get_dfanalytics_stats)
-    - Get trained models
-    - Get trained models stats
     - :heavy_check_mark: 预览数据帧分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/preview_dfanalytics)
     - :heavy_check_mark: 启动数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/start_dfanalytics)
     - :heavy_check_mark: 停止数据帧分析作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_df_analytics_apis/stop_dfanalytics)
+  - :heavy_check_mark: 机器学习训练模型 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/ml_trained_model_apis)
+    - :heavy_check_mark: 清除训练模型部署缓存 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/clear_deployment_cache)
+    - :heavy_check_mark: 创建训练模型 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/put_trained_models)
+    - :heavy_check_mark: 创建训练模型定义部分 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/put_trained_model_definition_part)
+    - :heavy_check_mark: 创建训练模型词表 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/put_trained_model_vocabulary)
+    - :heavy_check_mark: 创建或更新训练模型别名 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/put_trained_model_aliases)
+    - :heavy_check_mark: 删除训练模型 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/delete_trained_models)
+    - :heavy_check_mark: 删除训练模型别名 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/delete_trained_model_aliases)
+    - :heavy_check_mark: 获取训练模型 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/get_trained_models)
+    - :heavy_check_mark: 获取训练模型统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/get_trained_models_stats)
+    - :heavy_check_mark: 推理训练模型 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/infer_trained_model)
+    - :heavy_check_mark: 启动训练模型部署 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/start_trained_model_deployment)
+    - :heavy_check_mark: 停止训练模型部署 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/stop_trained_model_deployment)
+    - :heavy_check_mark: 更新训练模型部署 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/update_trained_model_deployment)
   - Migration APIs
     - Deprecation info
   - Reload search analyzers API

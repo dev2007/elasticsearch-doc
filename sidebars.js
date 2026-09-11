@@ -651,6 +651,29 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "机器学习训练模型 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/ml_trained_model_apis/ml_trained_model_apis",
+          },
+          items: [
+            "rest_apis/ml_trained_model_apis/clear_deployment_cache",
+            "rest_apis/ml_trained_model_apis/put_trained_model_aliases",
+            "rest_apis/ml_trained_model_apis/put_trained_model_definition_part",
+            "rest_apis/ml_trained_model_apis/put_trained_models",
+            "rest_apis/ml_trained_model_apis/put_trained_model_vocabulary",
+            "rest_apis/ml_trained_model_apis/delete_trained_model_aliases",
+            "rest_apis/ml_trained_model_apis/delete_trained_models",
+            "rest_apis/ml_trained_model_apis/get_trained_models",
+            "rest_apis/ml_trained_model_apis/get_trained_models_stats",
+            "rest_apis/ml_trained_model_apis/infer_trained_model",
+            "rest_apis/ml_trained_model_apis/start_trained_model_deployment",
+            "rest_apis/ml_trained_model_apis/stop_trained_model_deployment",
+            "rest_apis/ml_trained_model_apis/update_trained_model_deployment",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [
