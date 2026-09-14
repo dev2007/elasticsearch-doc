@@ -1189,8 +1189,13 @@ npm run docs:dev
     - :heavy_check_mark: 启动训练模型部署 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/start_trained_model_deployment)
     - :heavy_check_mark: 停止训练模型部署 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/stop_trained_model_deployment)
     - :heavy_check_mark: 更新训练模型部署 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/ml_trained_model_apis/update_trained_model_deployment)
-  - Migration APIs
-    - Deprecation info
+  - :heavy_check_mark: 迁移 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/migration_apis)
+    - :heavy_check_mark: 弃用信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/deprecation_info)
+    - :heavy_check_mark: 特性迁移 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/feature_migration)
+    - :heavy_check_mark: 重新索引数据流 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/reindex_data_stream)
+    - :heavy_check_mark: 重新索引数据流状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/reindex_data_stream_status)
+    - :heavy_check_mark: 重新索引数据流取消 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/reindex_data_stream_cancel)
+    - :heavy_check_mark: 从源创建索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/create_index_from_source)
   - Reload search analyzers API
   - Repositories metering APIs
     - Get repositories metering information

@@ -674,6 +674,22 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "迁移 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/migration_apis/migration_apis",
+          },
+          items: [
+            "rest_apis/migration_apis/deprecation_info",
+            "rest_apis/migration_apis/feature_migration",
+            "rest_apis/migration_apis/reindex_data_stream",
+            "rest_apis/migration_apis/reindex_data_stream_status",
+            "rest_apis/migration_apis/reindex_data_stream_cancel",
+            "rest_apis/migration_apis/create_index_from_source",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [
