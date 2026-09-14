@@ -690,6 +690,19 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "节点生命周期 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/node_lifecycle_apis/node_lifecycle_apis",
+          },
+          items: [
+            "rest_apis/node_lifecycle_apis/put_shutdown",
+            "rest_apis/node_lifecycle_apis/get_shutdown",
+            "rest_apis/node_lifecycle_apis/delete_shutdown",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [

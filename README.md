@@ -1196,6 +1196,10 @@ npm run docs:dev
     - :heavy_check_mark: 重新索引数据流状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/reindex_data_stream_status)
     - :heavy_check_mark: 重新索引数据流取消 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/reindex_data_stream_cancel)
     - :heavy_check_mark: 从源创建索引 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/migration_apis/create_index_from_source)
+  - :heavy_check_mark: 节点生命周期 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/node_lifecycle_apis/node_lifecycle_apis)
+    - :heavy_check_mark: 添加关闭 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/node_lifecycle_apis/put_shutdown)
+    - :heavy_check_mark: 获取关闭 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/node_lifecycle_apis/get_shutdown)
+    - :heavy_check_mark: 删除关闭 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/node_lifecycle_apis/delete_shutdown)
   - Reload search analyzers API
   - Repositories metering APIs
     - Get repositories metering information
