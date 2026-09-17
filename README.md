@@ -1200,6 +1200,15 @@ npm run docs:dev
     - :heavy_check_mark: 添加关闭 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/node_lifecycle_apis/put_shutdown)
     - :heavy_check_mark: 获取关闭 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/node_lifecycle_apis/get_shutdown)
     - :heavy_check_mark: 删除关闭 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/node_lifecycle_apis/delete_shutdown)
+  - :heavy_check_mark: 查询规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/query_rules_apis)
+    - :heavy_check_mark: 创建或更新查询规则集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/put_query_ruleset)
+    - :heavy_check_mark: 获取查询规则集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/get_query_ruleset)
+    - :heavy_check_mark: 列出查询规则集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/list_query_rulesets)
+    - :heavy_check_mark: 删除查询规则集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/delete_query_ruleset)
+    - :heavy_check_mark: 创建或更新查询规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/put_query_rule)
+    - :heavy_check_mark: 获取查询规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/get_query_rule)
+    - :heavy_check_mark: 删除查询规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/delete_query_rule)
+    - :heavy_check_mark: 测试查询规则集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/test_query_ruleset)
   - Reload search analyzers API
   - Repositories metering APIs
     - Get repositories metering information

@@ -703,6 +703,24 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "查询规则 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/query_rules_apis/query_rules_apis",
+          },
+          items: [
+            "rest_apis/query_rules_apis/put_query_ruleset",
+            "rest_apis/query_rules_apis/get_query_ruleset",
+            "rest_apis/query_rules_apis/list_query_rulesets",
+            "rest_apis/query_rules_apis/delete_query_ruleset",
+            "rest_apis/query_rules_apis/put_query_rule",
+            "rest_apis/query_rules_apis/get_query_rule",
+            "rest_apis/query_rules_apis/delete_query_rule",
+            "rest_apis/query_rules_apis/test_query_ruleset",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [
