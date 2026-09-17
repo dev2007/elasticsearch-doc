@@ -722,6 +722,18 @@ const sidebars = {
         "rest_apis/reload_analyzers_apis/reload_search_analyzers",
         {
           type: "category",
+          label: "仓库计量 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/repositories_metering_apis/repositories_metering_apis",
+          },
+          items: [
+            "rest_apis/repositories_metering_apis/get_repositories_metering",
+            "rest_apis/repositories_metering_apis/clear_repositories_metering_archive",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [

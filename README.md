@@ -1210,9 +1210,9 @@ npm run docs:dev
     - :heavy_check_mark: 删除查询规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/delete_query_rule)
     - :heavy_check_mark: 测试查询规则集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/test_query_ruleset)
   - :heavy_check_mark: 重新加载搜索分析器 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/reload_analyzers_apis/reload_search_analyzers)
-  - Repositories metering APIs
-    - Get repositories metering information
-    - Clear repositories metering archive
+  - :heavy_check_mark: 仓库计量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/repositories_metering_apis/repositories_metering_apis)
+    - :heavy_check_mark: 获取仓库计量信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/repositories_metering_apis/get_repositories_metering)
+    - :heavy_check_mark: 清除仓库计量归档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/repositories_metering_apis/clear_repositories_metering_archive)
   - Rollup APIs
     - Create rollup jobs
     - Delete rollup jobs
