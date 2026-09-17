@@ -1222,6 +1222,7 @@ npm run docs:dev
     - :heavy_check_mark: Rollup 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/search)
     - :heavy_check_mark: 启动 rollup 作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/start_job)
     - :heavy_check_mark: 停止 rollup 作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/stop_job)
+  - :heavy_check_mark: 根 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/root_apis/root_api)
   - :heavy_check_mark: 搜索相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/)
     - :heavy_check_mark: 搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/search.html)
     - :heavy_check_mark: 异步搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/async_search.html)

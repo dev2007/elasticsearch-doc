@@ -750,6 +750,7 @@ const sidebars = {
             "rest_apis/rollup_apis/stop_job",
           ],
         },
+        "rest_apis/root_apis/root_api",
         {
           type: "category",
           label: "搜索相关 API",
