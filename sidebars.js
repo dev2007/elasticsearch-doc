@@ -719,6 +719,7 @@ const sidebars = {
             "rest_apis/query_rules_apis/test_query_ruleset",
           ],
         },
+        "rest_apis/reload_analyzers_apis/reload_search_analyzers",
         {
           type: "category",
           label: "搜索相关 API",

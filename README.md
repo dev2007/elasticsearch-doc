@@ -1209,7 +1209,7 @@ npm run docs:dev
     - :heavy_check_mark: 获取查询规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/get_query_rule)
     - :heavy_check_mark: 删除查询规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/delete_query_rule)
     - :heavy_check_mark: 测试查询规则集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/query_rules_apis/test_query_ruleset)
-  - Reload search analyzers API
+  - :heavy_check_mark: 重新加载搜索分析器 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/reload_analyzers_apis/reload_search_analyzers)
   - Repositories metering APIs
     - Get repositories metering information
     - Clear repositories metering archive
