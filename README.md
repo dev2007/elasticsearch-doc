@@ -1213,15 +1213,15 @@ npm run docs:dev
   - :heavy_check_mark: 仓库计量 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/repositories_metering_apis/repositories_metering_apis)
     - :heavy_check_mark: 获取仓库计量信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/repositories_metering_apis/get_repositories_metering)
     - :heavy_check_mark: 清除仓库计量归档 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/repositories_metering_apis/clear_repositories_metering_archive)
-  - Rollup APIs
-    - Create rollup jobs
-    - Delete rollup jobs
-    - Get job
-    - Get rollup caps
-    - Get rollup index caps
-    - Rollup search
-    - Start rollup jobs
-    - Stop rollup jobs
+  - :heavy_check_mark: Rollup API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/rollup_apis)
+    - :heavy_check_mark: 创建 rollup 作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/put_job)
+    - :heavy_check_mark: 删除 rollup 作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/delete_job)
+    - :heavy_check_mark: 获取 rollup 作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/get_job)
+    - :heavy_check_mark: 获取 rollup 能力 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/get_rollup_caps)
+    - :heavy_check_mark: 获取 rollup 索引能力 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/get_rollup_index_caps)
+    - :heavy_check_mark: Rollup 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/search)
+    - :heavy_check_mark: 启动 rollup 作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/start_job)
+    - :heavy_check_mark: 停止 rollup 作业 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/rollup_apis/stop_job)
   - :heavy_check_mark: 搜索相关 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/)
     - :heavy_check_mark: 搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/search.html)
     - :heavy_check_mark: 异步搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/async_search.html)

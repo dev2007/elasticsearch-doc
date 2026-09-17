@@ -734,6 +734,24 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "Rollup API",
+          link: {
+            type: "doc",
+            id: "rest_apis/rollup_apis/rollup_apis",
+          },
+          items: [
+            "rest_apis/rollup_apis/put_job",
+            "rest_apis/rollup_apis/delete_job",
+            "rest_apis/rollup_apis/get_job",
+            "rest_apis/rollup_apis/get_rollup_caps",
+            "rest_apis/rollup_apis/get_rollup_index_caps",
+            "rest_apis/rollup_apis/search",
+            "rest_apis/rollup_apis/start_job",
+            "rest_apis/rollup_apis/stop_job",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [
