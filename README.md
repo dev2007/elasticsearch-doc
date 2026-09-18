@@ -1246,6 +1246,13 @@ npm run docs:dev
     - :heavy_check_mark: 矢量块搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/vector_tile_search.html)
   - Searchable snapshots APIs
     - Mount snapshot
+  - :heavy_check_mark: 脚本 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/script_apis)
+    - :heavy_check_mark: 获取脚本上下文 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/get_script_contexts)
+    - :heavy_check_mark: 获取脚本语言 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/get_script_languages)
+    - :heavy_check_mark: 创建或更新存储脚本 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/put_stored_script)
+    - :heavy_check_mark: 获取存储脚本 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/get_stored_script)
+    - :heavy_check_mark: 删除存储脚本 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/delete_stored_script)
+    - Painless execute API
   - Security APIs
     - Authenticate
     - Change passwords

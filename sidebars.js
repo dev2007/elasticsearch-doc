@@ -753,6 +753,21 @@ const sidebars = {
         "rest_apis/root_apis/root_api",
         {
           type: "category",
+          label: "脚本 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/script_apis/script_apis",
+          },
+          items: [
+            "rest_apis/script_apis/put_stored_script",
+            "rest_apis/script_apis/get_stored_script",
+            "rest_apis/script_apis/delete_stored_script",
+            "rest_apis/script_apis/get_script_contexts",
+            "rest_apis/script_apis/get_script_languages",
+          ],
+        },
+        {
+          type: "category",
           label: "搜索相关 API",
           link: { type: "doc", id: "rest_apis/search_apis/search_apis" },
           items: [
