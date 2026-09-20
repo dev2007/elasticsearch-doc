@@ -1244,6 +1244,13 @@ npm run docs:dev
     - :heavy_check_mark: 字段能力 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/field_capabilities.html)
     - :heavy_check_mark: 排序评估 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/ranking_evaluation.html)
     - :heavy_check_mark: 矢量块搜索 [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_apis/vector_tile_search.html)
+  - :heavy_check_mark: 搜索应用 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/search_application_apis)
+    - :heavy_check_mark: 创建或更新搜索应用 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/put_search_application)
+    - :heavy_check_mark: 获取搜索应用 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/get_search_application)
+    - :heavy_check_mark: 列出搜索应用 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/list_search_applications)
+    - :heavy_check_mark: 删除搜索应用 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/delete_search_application)
+    - :heavy_check_mark: 搜索应用搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/search)
+    - :heavy_check_mark: 渲染搜索应用查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/render_query)
   - Searchable snapshots APIs
     - Mount snapshot
   - :heavy_check_mark: 脚本 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/script_apis)

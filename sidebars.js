@@ -792,6 +792,22 @@ const sidebars = {
             "rest_apis/search_apis/vector_tile_search",
           ],
         },
+        {
+          type: "category",
+          label: "搜索应用 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/search_application_apis/search_application_apis",
+          },
+          items: [
+            "rest_apis/search_application_apis/put_search_application",
+            "rest_apis/search_application_apis/get_search_application",
+            "rest_apis/search_application_apis/list_search_applications",
+            "rest_apis/search_application_apis/delete_search_application",
+            "rest_apis/search_application_apis/search",
+            "rest_apis/search_application_apis/render_query",
+          ],
+        },
       ],
     },
   ],
