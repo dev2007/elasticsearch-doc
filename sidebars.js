@@ -808,6 +808,20 @@ const sidebars = {
             "rest_apis/search_application_apis/render_query",
           ],
         },
+        {
+          type: "category",
+          label: "可搜索快照 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/searchable_snapshots_apis/searchable_snapshots_apis",
+          },
+          items: [
+            "rest_apis/searchable_snapshots_apis/mount_snapshot",
+            "rest_apis/searchable_snapshots_apis/cache_stats",
+            "rest_apis/searchable_snapshots_apis/stats",
+            "rest_apis/searchable_snapshots_apis/clear_cache",
+          ],
+        },
       ],
     },
   ],

@@ -1251,8 +1251,11 @@ npm run docs:dev
     - :heavy_check_mark: 删除搜索应用 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/delete_search_application)
     - :heavy_check_mark: 搜索应用搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/search)
     - :heavy_check_mark: 渲染搜索应用查询 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/search_application_apis/render_query)
-  - Searchable snapshots APIs
-    - Mount snapshot
+  - :heavy_check_mark: 可搜索快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/searchable_snapshots_apis/searchable_snapshots_apis)
+    - :heavy_check_mark: 挂载快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/searchable_snapshots_apis/mount_snapshot)
+    - :heavy_check_mark: 缓存统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/searchable_snapshots_apis/cache_stats)
+    - :heavy_check_mark: 可搜索快照统计 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/searchable_snapshots_apis/stats)
+    - :heavy_check_mark: 清除缓存 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/searchable_snapshots_apis/clear_cache)
   - :heavy_check_mark: 脚本 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/script_apis)
     - :heavy_check_mark: 获取脚本上下文 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/get_script_contexts)
     - :heavy_check_mark: 获取脚本语言 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/get_script_languages)
