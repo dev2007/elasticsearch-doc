@@ -1263,45 +1263,73 @@ npm run docs:dev
     - :heavy_check_mark: 获取存储脚本 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/get_stored_script)
     - :heavy_check_mark: 删除存储脚本 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/script_apis/delete_stored_script)
     - Painless execute API
-  - Security APIs
-    - Authenticate
-    - Change passwords
-    - Clear cache
-    - Clear roles cache
-    - Clear privileges cache
-    - Clear API key cache
-    - Create API keys
-    - Create or update application privileges
-    - Create or update role mappings
-    - Create or update roles
-    - Create or update users
-    - Delegate PKI authentication
-    - Delete application privileges
-    - Delete role mappings
-    - Delete roles
-    - Delete users
-    - Disable users
-    - Enable users
-    - Get API key information
-    - Get application privileges
-    - Get builtin privileges
-    - Get role mappings
-    - Get roles
-    - Get token
-    - Get users
-    - Grant API keys
+  - :heavy_check_mark: 安全 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/security_apis)
+    - :heavy_check_mark: 验证 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/authenticate)
+    - :heavy_check_mark: 更改密码 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/change_password)
+    - :heavy_check_mark: 清除缓存 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/clear_cache)
+    - :heavy_check_mark: 清除角色缓存 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/clear_role_cache)
+    - :heavy_check_mark: 清除权限缓存 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/clear_privilege_cache)
+    - :heavy_check_mark: 清除 API 密钥缓存 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/clear_api_key_cache)
+    - :heavy_check_mark: 清除服务账户令牌缓存 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/clear_service_token_caches)
+    - :heavy_check_mark: 创建 API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/create_api_key)
+    - :heavy_check_mark: 创建或更新应用程序权限 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/put_privileges)
+    - :heavy_check_mark: 创建或更新角色映射 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/put_role_mapping)
+    - :heavy_check_mark: 创建或更新角色 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/put_role)
+    - :heavy_check_mark: 批量创建或更新角色 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/bulk_put_role)
+    - :heavy_check_mark: 批量删除角色 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/bulk_delete_role)
+    - :heavy_check_mark: 创建或更新用户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/put_user)
+    - :heavy_check_mark: 创建服务账户令牌 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/create_service_token)
+    - :heavy_check_mark: 删除服务账户令牌 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/delete_service_token)
+    - :heavy_check_mark: 委托 PKI 验证 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/delegate_pki_authentication)
+    - :heavy_check_mark: 删除应用程序权限 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/delete_privileges)
+    - :heavy_check_mark: 删除角色映射 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/delete_role_mapping)
+    - :heavy_check_mark: 删除角色 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/delete_role)
+    - :heavy_check_mark: 删除用户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/delete_user)
+    - :heavy_check_mark: 禁用用户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/disable_user)
+    - :heavy_check_mark: 启用用户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/enable_user)
+    - :heavy_check_mark: 注册新 Kibana 实例 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/enroll_kibana)
+    - :heavy_check_mark: 注册新节点 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/enroll_node)
+    - :heavy_check_mark: 获取 API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_api_key)
+    - :heavy_check_mark: 获取应用程序权限 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_privileges)
+    - :heavy_check_mark: 获取内置权限 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_builtin_privileges)
+    - :heavy_check_mark: 获取角色映射 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_role_mapping)
+    - :heavy_check_mark: 获取角色 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_role)
+    - :heavy_check_mark: 查询角色 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/query_role)
+    - :heavy_check_mark: 获取服务账户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_service_accounts)
+    - :heavy_check_mark: 获取服务账户凭据 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_service_credentials)
+    - :heavy_check_mark: 获取安全设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_security_index_settings)
+    - :heavy_check_mark: 获取令牌 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_token)
+    - :heavy_check_mark: 获取用户权限 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_user_privileges)
+    - :heavy_check_mark: 获取用户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_user)
+    - :heavy_check_mark: 授予 REST API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/grant_api_key)
+    - :heavy_check_mark: 更新 REST API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/update_api_key)
+    - :heavy_check_mark: 更新安全设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/update_security_index_settings)
+    - :heavy_check_mark: 批量更新 REST API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/bulk_update_api_keys)
+    - :heavy_check_mark: 是否具有权限 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/has_privileges)
     - Has privileges
-    - Invalidate API key
-    - Invalidate token
-    - OpenID Connect prepare authentication
-    - OpenID Connect authenticate
-    - OpenID Connect logout
-    - SAML prepare authentication
-    - SAML authenticate
-    - SAML logout
-    - SAML invalidate
-    - SAML service provider metadata
-    - SSL certificate
+    - :heavy_check_mark: 使 REST API 密钥失效 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/invalidate_api_key)
+    - :heavy_check_mark: 使令牌失效 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/invalidate_token)
+    - :heavy_check_mark: OpenID Connect 准备验证请求 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/oidc_prepare_authentication)
+    - :heavy_check_mark: OpenID Connect 提交验证响应 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/oidc_authenticate)
+    - :heavy_check_mark: OpenID Connect 注销已验证用户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/oidc_logout)
+    - :heavy_check_mark: 查询 API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/query_api_key)
+    - :heavy_check_mark: 查询用户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/query_user)
+    - :heavy_check_mark: SAML 准备验证请求 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/saml_prepare_authentication)
+    - :heavy_check_mark: SAML 提交验证响应 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/saml_authenticate)
+    - :heavy_check_mark: SAML 注销已验证用户 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/saml_logout)
+    - :heavy_check_mark: SAML 使失效 API（提交来自 IdP 的注销请求）[:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/saml_invalidate)
+    - :heavy_check_mark: SAML 完成注销 API（验证来自 IdP 的注销响应）[:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/saml_complete_logout)
+    - :heavy_check_mark: 生成 SAML 元数据 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/saml_sp_metadata)
+    - :heavy_check_mark: SSL 证书 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/ssl)
+    - :heavy_check_mark: 激活用户配置文件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/activate_user_profile)
+    - :heavy_check_mark: 禁用用户配置文件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/disable_user_profile)
+    - :heavy_check_mark: 启用用户配置文件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/enable_user_profile)
+    - :heavy_check_mark: 获取用户配置文件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/get_user_profile)
+    - :heavy_check_mark: 建议用户配置文件 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/suggest_user_profile)
+    - :heavy_check_mark: 更新用户配置文件数据 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/update_user_profile_data)
+    - :heavy_check_mark: 用户配置文件是否具有权限 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/has_privileges_user_profile)
+    - :heavy_check_mark: 创建跨集群 API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/create_cross_cluster_api_key)
+    - :heavy_check_mark: 更新跨集群 API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/update_cross_cluster_api_key)
   - Snapshot and restore APIs
     - Put snapshot repository
     - Verify snapshot repository
