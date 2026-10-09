@@ -1330,18 +1330,20 @@ npm run docs:dev
     - :heavy_check_mark: 用户配置文件是否具有权限 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/has_privileges_user_profile)
     - :heavy_check_mark: 创建跨集群 API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/create_cross_cluster_api_key)
     - :heavy_check_mark: 更新跨集群 API 密钥 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/security_apis/update_cross_cluster_api_key)
-  - Snapshot and restore APIs
-    - Put snapshot repository
-    - Verify snapshot repository
-    - Get snapshot repository
-    - Delete snapshot repository
-    - Clean up snapshot repository
-    - Clone snapshot
-    - Create snapshot
-    - Get snapshot
-    - Get snapshot status
-    - Restore snapshot
-    - Delete snapshot
+  - :heavy_check_mark: 快照和恢复 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/snapshot_and_restore_apis)
+    - :heavy_check_mark: 创建或更新快照仓库 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/put_snapshot_repo)
+    - :heavy_check_mark: 验证快照仓库 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/verify_snapshot_repo)
+    - :heavy_check_mark: 仓库分析 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/repo_analysis)
+    - :heavy_check_mark: 验证仓库完整性 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/verify_repo_integrity)
+    - :heavy_check_mark: 获取快照仓库 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/get_snapshot_repo)
+    - :heavy_check_mark: 删除快照仓库 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/delete_snapshot_repo)
+    - :heavy_check_mark: 清理快照仓库 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/cleanup_snapshot_repo)
+    - :heavy_check_mark: 克隆快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/clone_snapshot)
+    - :heavy_check_mark: 创建快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/create_snapshot)
+    - :heavy_check_mark: 获取快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/get_snapshot)
+    - :heavy_check_mark: 获取快照状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/get_snapshot_status)
+    - :heavy_check_mark: 恢复快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/restore_snapshot)
+    - :heavy_check_mark: 删除快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/delete_snapshot)
   - Snapshot lifecycle management APIs
     - Put policy
     - Get policy
