@@ -1344,17 +1344,24 @@ npm run docs:dev
     - :heavy_check_mark: 获取快照状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/get_snapshot_status)
     - :heavy_check_mark: 恢复快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/restore_snapshot)
     - :heavy_check_mark: 删除快照 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_and_restore_apis/delete_snapshot)
-  - Snapshot lifecycle management APIs
-    - Put policy
-    - Get policy
-    - Delete policy
-    - Execute snapshot lifecycle policy
-    - Execute snapshot retention policy
-    - Get snapshot lifecycle management status
-    - Get snapshot lifecycle stats
-    - Start snapshot lifecycle management
-    - Stop snapshot lifecycle management
-  - Transform APIs
+  - :heavy_check_mark: 快照生命周期管理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/snapshot_lifecycle_management_apis)
+    - :heavy_check_mark: 创建或更新快照生命周期策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/put_slm_policy)
+    - :heavy_check_mark: 获取快照生命周期策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/get_slm_policy)
+    - :heavy_check_mark: 删除快照生命周期策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/delete_slm_policy)
+    - :heavy_check_mark: 执行快照生命周期策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/execute_slm_policy)
+    - :heavy_check_mark: 执行快照保留策略 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/execute_snapshot_retention_policy)
+    - :heavy_check_mark: 获取快照生命周期管理状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/slm_status)
+    - :heavy_check_mark: 获取快照生命周期统计信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/slm_stats)
+    - :heavy_check_mark: 启动快照生命周期管理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/start_slm)
+    - :heavy_check_mark: 停止快照生命周期管理 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/snapshot_lifecycle_management_apis/stop_slm)
+  - :heavy_check_mark: SQL API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/sql_apis)
+    - :heavy_check_mark: SQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/sql_search)
+    - :heavy_check_mark: 清除 SQL 游标 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/sql_clear_cursor)
+
+    - :heavy_check_mark: 获取异步 SQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/get_async_sql_search)
+    - :heavy_check_mark: 获取异步 SQL 搜索状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/get_async_sql_search_status)
+    - :heavy_check_mark: 删除异步 SQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/delete_async_sql_search)
+    - :heavy_check_mark: SQL 转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/sql_translate)
     - Create transform
     - Delete transform
     - Get transforms
