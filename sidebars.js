@@ -972,6 +972,20 @@ const sidebars = {
             "rest_apis/synonyms_apis/delete_synonym_rule",
           ],
         },
+        {
+          type: "category",
+          label: "文本结构 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/text_structure_apis/text_structure_apis",
+          },
+          items: [
+            "rest_apis/text_structure_apis/find_field_structure",
+            "rest_apis/text_structure_apis/find_message_structure",
+            "rest_apis/text_structure_apis/find_text_structure",
+            "rest_apis/text_structure_apis/test_grok_pattern",
+          ],
+        },
       ],
     },
   ],

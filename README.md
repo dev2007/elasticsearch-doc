@@ -1370,6 +1370,12 @@ npm run docs:dev
     - :heavy_check_mark: 创建或更新同义词规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/put_synonym_rule)
     - :heavy_check_mark: 获取同义词规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/get_synonym_rule)
     - :heavy_check_mark: 删除同义词规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/delete_synonym_rule)
+  - :heavy_check_mark: 文本结构 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/text_structure_apis/text_structure_apis)
+    - 获取字段结构 API
+    - :heavy_check_mark: 获取消息结构 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/text_structure_apis/find_message_structure)
+    - :heavy_check_mark: 获取文本结构 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/text_structure_apis/find_text_structure)
+    - :heavy_check_mark: 测试 Grok 模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/text_structure_apis/test_grok_pattern)
+  - Transform APIs
     - Create transform
     - Delete transform
     - Get transforms
