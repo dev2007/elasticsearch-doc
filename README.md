@@ -1362,6 +1362,14 @@ npm run docs:dev
     - :heavy_check_mark: 获取异步 SQL 搜索状态 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/get_async_sql_search_status)
     - :heavy_check_mark: 删除异步 SQL 搜索 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/delete_async_sql_search)
     - :heavy_check_mark: SQL 转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/sql_apis/sql_translate)
+  - :heavy_check_mark: 同义词 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/synonyms_apis)
+    - 创建或更新同义词集 API
+    - :heavy_check_mark: 获取同义词集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/get_synonyms_set)
+    - :heavy_check_mark: 列出同义词集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/get_synonyms_sets)
+    - :heavy_check_mark: 删除同义词集 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/delete_synonyms_set)
+    - :heavy_check_mark: 创建或更新同义词规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/put_synonym_rule)
+    - :heavy_check_mark: 获取同义词规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/get_synonym_rule)
+    - :heavy_check_mark: 删除同义词规则 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/synonyms_apis/delete_synonym_rule)
     - Create transform
     - Delete transform
     - Get transforms

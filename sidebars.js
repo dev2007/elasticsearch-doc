@@ -955,6 +955,23 @@ const sidebars = {
             "rest_apis/sql_apis/sql_translate",
           ],
         },
+        {
+          type: "category",
+          label: "同义词 API",
+          link: {
+            type: "doc",
+            id: "rest_apis/synonyms_apis/synonyms_apis",
+          },
+          items: [
+            "rest_apis/synonyms_apis/put_synonyms_set",
+            "rest_apis/synonyms_apis/get_synonyms_set",
+            "rest_apis/synonyms_apis/get_synonyms_sets",
+            "rest_apis/synonyms_apis/delete_synonyms_set",
+            "rest_apis/synonyms_apis/put_synonym_rule",
+            "rest_apis/synonyms_apis/get_synonym_rule",
+            "rest_apis/synonyms_apis/delete_synonym_rule",
+          ],
+        },
       ],
     },
   ],
