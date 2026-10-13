@@ -1387,19 +1387,21 @@ npm run docs:dev
     - :heavy_check_mark: 停止转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/stop_transform)
     - :heavy_check_mark: 更新转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/update_transform)
     - :heavy_check_mark: 升级转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/upgrade_transforms)
-  - Usage API
-  - Watcher APIs
-    - Ack watch
-    - Activate watch
-    - Deactivate watch
-    - Delete watch
-    - Execute watch
-    - Get watch
-    - Get Watcher stats
-    - Query watches
-    - Put watch
-    - Start watch service
-    - Stop watch service
+  - :heavy_check_mark: 使用情况 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/usage_apis/usage_api)
+  - :heavy_check_mark: Watcher API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_apis)
+    - :heavy_check_mark: 创建或更新 watch API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/put_watch)
+    - :heavy_check_mark: 获取 watch API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/get_watch)
+    - :heavy_check_mark: 查询 watch API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/query_watches)
+    - :heavy_check_mark: 删除 watch API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/delete_watch)
+    - :heavy_check_mark: 执行 watch API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/execute_watch)
+    - :heavy_check_mark: 确认 watch API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/ack_watch)
+    - :heavy_check_mark: 激活 watch API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/activate_watch)
+    - :heavy_check_mark: 停用 watch API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/deactivate_watch)
+    - :heavy_check_mark: 更新 Watcher 设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_update_settings)
+    - :heavy_check_mark: 获取 Watcher 设置 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_get_settings)
+    - :heavy_check_mark: 获取 Watcher 统计信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_stats)
+    - :heavy_check_mark: 停止 watch 服务 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_stop)
+    - :heavy_check_mark: 启动 watch 服务 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_start)
   - Definitions
     - Role mapping resources
   - Migration guide
