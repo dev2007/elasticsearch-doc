@@ -1375,15 +1375,18 @@ npm run docs:dev
     - :heavy_check_mark: 获取消息结构 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/text_structure_apis/find_message_structure)
     - :heavy_check_mark: 获取文本结构 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/text_structure_apis/find_text_structure)
     - :heavy_check_mark: 测试 Grok 模式 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/text_structure_apis/test_grok_pattern)
-  - Transform APIs
-    - Create transform
-    - Delete transform
-    - Get transforms
-    - Get transform statistics
-    - Preview transform
-    - Start transform
-    - Stop transforms
-    - Update transform
+  - :heavy_check_mark: 转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/transform_apis)
+    - :heavy_check_mark: 创建转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/put_transform)
+    - :heavy_check_mark: 删除转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/delete_transform)
+    - :heavy_check_mark: 获取转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/get_transform)
+    - :heavy_check_mark: 获取转换统计信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/get_transform_stats)
+    - :heavy_check_mark: 预览转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/preview_transform)
+    - :heavy_check_mark: 重置转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/reset_transform)
+    - :heavy_check_mark: 立即调度转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/schedule_now_transform)
+    - :heavy_check_mark: 启动转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/start_transform)
+    - :heavy_check_mark: 停止转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/stop_transform)
+    - :heavy_check_mark: 更新转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/update_transform)
+    - :heavy_check_mark: 升级转换 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/transform_apis/upgrade_transforms)
   - Usage API
   - Watcher APIs
     - Ack watch
