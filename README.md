@@ -1402,7 +1402,7 @@ npm run docs:dev
     - :heavy_check_mark: 获取 Watcher 统计信息 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_stats)
     - :heavy_check_mark: 停止 watch 服务 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_stop)
     - :heavy_check_mark: 启动 watch 服务 API [:link:](https://elasticsearch.bookhub.tech/rest_apis/watcher_apis/watcher_start)
-  - Definitions
-    - Role mapping resources
+  - :heavy_check_mark: 定义 [:link:](https://elasticsearch.bookhub.tech/rest_apis/api_definitions)
+    - :heavy_check_mark: 角色映射资源 [:link:](https://elasticsearch.bookhub.tech/rest_apis/role_mapping_resources)
   - Migration guide
   - Dependencies and versions

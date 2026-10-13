@@ -1039,6 +1039,16 @@ const sidebars = {
             "rest_apis/watcher_apis/watcher_stop",
           ],
         },
+        {
+          type: "category",
+          label: "定义",
+          items: [
+            {
+              type: "doc",
+              id: "rest_apis/role_mapping_resources",
+            },
+          ],
+        },
       ],
     },
   ],
