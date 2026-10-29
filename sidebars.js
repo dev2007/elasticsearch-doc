@@ -236,6 +236,34 @@ const sidebars = {
         },
         "index_modules/index_blocks",
         "index_modules/mapper",
+        "index_modules/merge",
+        "index_modules/similarity",
+        "index_modules/slow_log",
+        {
+          type: "category",
+          label: "存储",
+          link: {
+            type: "doc",
+            id: "index_modules/store",
+          },
+          items: [
+            "index_modules/store_preload",
+          ],
+        },
+        "index_modules/translog",
+        "index_modules/history_retention",
+        {
+          type: "category",
+          label: "索引排序",
+          link: {
+            type: "doc",
+            id: "index_modules/index_sorting",
+          },
+          items: [
+            "index_modules/index_sorting_conjunctions",
+          ],
+        },
+        "index_modules/indexing_pressure",
       ],
     },
     {

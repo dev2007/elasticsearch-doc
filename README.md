@@ -287,6 +287,16 @@ npm run docs:dev
     - :heavy_check_mark: 索引级数据层分配过滤 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_shard_allocation/data_tier_allocation_filtering.html)
   - :heavy_check_mark: 索引块 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_blocks.html)
   - :heavy_check_mark: 映射器 [:link:](https://elasticsearch.bookhub.tech/index_modules/mapper.html)
+    - :heavy_check_mark: 合并 [:link:](https://elasticsearch.bookhub.tech/index_modules/merge.html)
+    - :heavy_check_mark: 相似性 [:link:](https://elasticsearch.bookhub.tech/index_modules/similarity.html)
+    - :heavy_check_mark: 慢日志 [:link:](https://elasticsearch.bookhub.tech/index_modules/slow_log.html)
+    - :heavy_check_mark: 存储 [:link:](https://elasticsearch.bookhub.tech/index_modules/store.html)
+    - :heavy_check_mark: 将数据预加载到文件系统缓存 [:link:](https://elasticsearch.bookhub.tech/index_modules/store_preload.html)
+    - :heavy_check_mark: 事务日志 [:link:](https://elasticsearch.bookhub.tech/index_modules/translog.html)
+    - :heavy_check_mark: 历史保留 [:link:](https://elasticsearch.bookhub.tech/index_modules/history_retention.html)
+    - :heavy_check_mark: 索引排序 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_sorting.html)
+    - :heavy_check_mark: 使用索引排序加速合取查询 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_sorting_conjunctions.html)
+    - :heavy_check_mark: 索引压力 [:link:](https://elasticsearch.bookhub.tech/index_modules/indexing_pressure.html)
   - Merge
   - Similarity module
   - Slow Log
