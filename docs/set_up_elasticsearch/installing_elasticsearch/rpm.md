@@ -242,4 +242,4 @@ RPM 包将配置文件、日志和数据目录放在基于 RPM 系统的适当�
 - 配置[重要的 Elasticsearch 设置](/set_up_elasticsearch/important_es_config)。
 - 配置[重要的系统设置](/set_up_elasticsearch/important_system_config)。
 
-> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html)
+> [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/8.18/rpm.html)

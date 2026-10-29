@@ -21,7 +21,7 @@ sidebar_position: 70
 
 - `discovery.type`
 
-  ([静态](/set_up_elasticsearch/configuring_elasticsearch))指定 Elasticsearch 是否应形成多节点集群。默认为多节点，这意味着 Elasticsearch 在形成集群时发现其他节点，并允许其他节点稍后加入集群。如果设置为 `single-node`，Elasticsearch 将形成一个单节点集群，并抑制 `cluster.publish.timeout` 设置的超时。有关何时可以使用此设置的详细信息，请参阅[单节点发现](/set_up_elasticsearch/bootstrap_checks/)。
+  ([静态](/set_up_elasticsearch/configuring_elasticsearch))指定 Elasticsearch 是否应形成多节点集群。默认为多节点，这意味着 Elasticsearch 在形成集群时发现其他节点，并允许其他节点稍后加入集群。如果设置为 `single-node`，Elasticsearch 将形成一个单节点集群，并抑制 `cluster.publish.timeout` 设置的超时。有关何时可以使用此设置的详细信息，请参阅[单节点发现](/set_up_elasticsearch/bootstrap_checks/bootstrap_checks)。
 
 - `cluster.initial_master_nodes`
 
