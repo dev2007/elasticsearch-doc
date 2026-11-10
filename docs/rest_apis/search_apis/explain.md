@@ -78,14 +78,14 @@ GET /my-index-000001/_explain/0
   （可选，字符串）是否返回 `_source` 字段或字段列表。
 
 - `_source_excludes`
-  （可选，字符串）逗号分隔的从响应中排除的[源字段](/mapping/metadata_fields/_source-field)。
+  （可选，字符串）逗号分隔的从响应中排除的[源字段](/mapping/metadata_fields/source)。
 
   你还可以使用此参数从 `_source_includes` 查询参数中指定的子集中排除字段。
 
   如果 `_source` 参数为 `false`，此参数会被忽略。
 
 - `_source_includes`
-  （可选，字符串）逗号分隔的响应中要包含的[源字段](/mapping/metadata_fields/_source-field)。
+  （可选，字符串）逗号分隔的响应中要包含的[源字段](/mapping/metadata_fields/source)。
 
   如果此参数指定，只有这些源字段会返回。你可以使用 `_source_excludes` 查询参数从该子集中排除字段。
 

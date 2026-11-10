@@ -4,7 +4,7 @@
 **7.0.0 废弃** 类型不推荐，且后续会被移除。参阅[移除映射类型](/mapping/removal_of_mapping_types)。
 :::
 
-检查[映射类型](/mapping/metadata_fields/_type_field)是否存在。
+检查映射类型是否存在。
 
 ```bash
 HEAD my-index-000001/_mapping/message

@@ -25,7 +25,7 @@ GET my-index/_mvt/my-geo-field/15/5271/12710
   为了搜索远程集群，使用语法 `<cluster>:<target>`。参阅[跨集群搜索](/search_your_data/seach_cross_clusters)。
 
 - `<field>`
-  （必需，字符串）包含要返回的地理空间值的字段。必须是 [`geo_point`](/mapping/field_data_types/geopoint) 或 [`geo_shape`](/mapping/field_data_types/geosharp) 字段。该字段必须启用[文档值](/mapping/mapping_parameters/doc_values)。不能是嵌套字段。
+  （必需，字符串）包含要返回的地理空间值的字段。必须是 [`geo_point`](/mapping/field_data_types/geo_point) 或 [`geo_shape`](/mapping/field_data_types/geo_shape) 字段。该字段必须启用[文档值](/mapping/mapping_parameters/doc_values)。不能是嵌套字段。
 
   :::note 提示
   矢量分片本身不支持几何体集合。对于字段 `geo_shape` 中的 `geometrycollection` 值，API 为集合的每个元素返回一个 `hits` 层特征。这种行为在未来的版本中可能会改变。
@@ -246,8 +246,8 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
       （可选，布尔值）如果为 `true`，`hits` 和 `aggs` 层将包含表示原始特征的建议标签位置的其他点特征。
 
       - `Point` 和 `MultiPoint` 特征将选择其中一个点。
-      - `Polygon` 和 `MultiPolygon` 特征将生成一个单点，即质心（如果位于多边形内），或从[有序三角形树](/mapping/field_data_types/geoshape#索引方法)中选择的多边形内的另一个点。
-      - `LineString` 特征同样将提供从[三角形树](/mapping/field_data_types/geoshape#索引方法)中选择的大致中心点。
+      - `Polygon` 和 `MultiPolygon` 特征将生成一个单点，即质心（如果位于多边形内），或从[有序三角形树](/mapping/field_data_types/geo_shape)中选择的多边形内的另一个点。
+      - `LineString` 特征同样将提供从[三角形树](/mapping/field_data_types/geo_shape)中选择的大致中心点。
       - 聚合结果将为每个聚合桶提供一个中心点。
 
       原始特征的所有属性也将复制到新的标签特征。此外，使用标签 `_mvt_label_position` 可以区分新功能。
@@ -291,7 +291,7 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
 
   （可选，字符串或对象数组）要在 `hits` 层中返回的字段。支持通配符（*）。
 
-  此参数不支持具有[数组值](/mapping/field_data_types/arrays)的字段。具有数组值的字段可能返回不一致的结果。
+  此参数不支持具有[数组值](/mapping/field_data_types/array)的字段。具有数组值的字段可能返回不一致的结果。
 
   可以将数组中的字段指定为字符串或对象。
 
@@ -305,7 +305,7 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
 
       （可选，字符串）日期和地理空间字段的格式。其他字段数据类型不支持此参数。
 
-      [`date`](/mapping/field_data_types/date) 和 [`date_nanos`](/mapping/field_data_types/date_nanoseconds) 字段接受[日期格式](/mapping/mapping_parameters/format)。[`geo_point`](/mapping/field_data_types/geopoint) 和 [`geo_shape`](/mapping/field_data_types/geoshape) 字段接受：
+      [`date`](/mapping/field_data_types/date) 和 [`date_nanos`](/mapping/field_data_types/date_nanos) 字段接受[日期格式](/mapping/mapping_parameters/format)。[`geo_point`](/mapping/field_data_types/geo_point) 和 [`geo_shape`](/mapping/field_data_types/geo_shape) 字段接受：
 
       - `geojson`（默认）
 
@@ -488,8 +488,8 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
   （可选，布尔值）如果为 `true`，`hits` 和 `aggs` 层将包含表示原始特征的建议标签位置的其他点特征。
 
   - `Point` 和 `MultiPoint` 特征将选择其中一个点。
-  - `Polygon` 和 `MultiPolygon` 特征将生成一个单点，即质心（如果位于多边形内），或从[有序三角形树](/mapping/field_data_types/geoshape#索引方法)中选择的多边形内的另一个点。
-  - `LineString` 特征同样将提供从[三角形树](/mapping/field_data_types/geoshape#索引方法)中选择的大致中心点。
+  - `Polygon` 和 `MultiPolygon` 特征将生成一个单点，即质心（如果位于多边形内），或从[有序三角形树](/mapping/field_data_types/geo_shape)中选择的多边形内的另一个点。
+  - `LineString` 特征同样将提供从[三角形树](/mapping/field_data_types/geo_shape)中选择的大致中心点。
   - 聚合结果将为每个聚合桶提供一个中心点。
 
   原始特征的所有属性也将复制到新的标签特征。此外，使用标签 `_mvt_label_position` 可以区分新功能。

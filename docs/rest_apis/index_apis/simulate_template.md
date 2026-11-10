@@ -103,12 +103,12 @@ POST /_index_template/_simulate/template_1
             （可选，字符串）用于将搜索操作路由到特定分片的值。如果指定，这将覆盖搜索操作的 `routing` 值。
     - `mappings`
 
-      （可选，[映射对象](/mapping/mapping)）索引中字段的映射。如果指定，此映射可以包括：
+      （可选，[映射对象](/mapping/)）索引中字段的映射。如果指定，此映射可以包括：
       - 字段名字
-      - [字段数据类型](/mapping/filed_data_types/filed_data_types)
-      - [映射参数](/mapping/mapping_parameters/mapping_parameters)
+      - [字段数据类型](/mapping/field_data_types)
+      - [映射参数](/mapping/mapping_parameters)
 
-      参阅[映射](/mapping/mapping)。
+      参阅[映射](/mapping/)。
 
 - `version`
 
@@ -176,12 +176,12 @@ POST /_index_template/_simulate/template_1
 
     - `mappings`
 
-      （可选，[映射对象](/mapping/mapping)）索引中字段的映射。如果指定，此映射可以包括：
+      （可选，[映射对象](/mapping/)）索引中字段的映射。如果指定，此映射可以包括：
       - 字段名字
-      - [字段数据类型](/mapping/filed_data_types/filed_data_types)
-      - [映射参数](/mapping/mapping_parameters/mapping_parameters)
+      - [字段数据类型](/mapping/field_data_types)
+      - [映射参数](/mapping/mapping_parameters)
 
-      参阅[映射](/mapping/mapping)。
+      参阅[映射](/mapping/)。
 
       如果不应用映射，响应中将会忽略。
 

@@ -64,7 +64,7 @@ PUT my-index-000001
 
 ### `index.routing_partition_size`
 
-自定义路由值可以路由到的分片数量。默认值为 1，只能在索引创建时设置。此值必须小于 `index.number_of_routing_shards`，除非 `index.number_of_routing_shards` 的值也是 1。更多关于此设置的用法参阅[路由到索引分区](/mapping/metadata/_routing#路由到索引分区)。
+自定义路由值可以路由到的分片数量。默认值为 1，只能在索引创建时设置。此值必须小于 `index.number_of_routing_shards`，除非 `index.number_of_routing_shards` 的值也是 1。更多关于此设置的用法参阅[路由到索引分区](/mapping/metadata_fields/routing)。
 
 ### `index.soft_deletes.enabled`
 

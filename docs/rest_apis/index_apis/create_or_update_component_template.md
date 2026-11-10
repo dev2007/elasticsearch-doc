@@ -1,6 +1,6 @@
 # 创建或更新组件模板 API
 
-创建或更新组件模板。组件模板是构造[索引模板](/index_templates/index_templates)的构建块，用于指定索引[映射](/mapping/mapping)、[设置](/index_modules)和[别名](/aliases)。
+创建或更新组件模板。组件模板是构造[索引模板](/index_templates/index_templates)的构建块，用于指定索引[映射](/mapping/)、[设置](/index_modules)和[别名](/aliases)。
 
 ```bash
 PUT _component_template/template_1
@@ -111,12 +111,12 @@ PUT _component_template/template_1
               （可选，字符串）用于将搜索操作路由到特定分片的值。如果指定，这将覆盖搜索操作的 `routing` 值。
     - `mappings`
 
-      （可选，[映射对象](/mapping/mapping)）索引中字段的映射。如果指定，此映射可以包括：
+      （可选，[映射对象](/mapping/)）索引中字段的映射。如果指定，此映射可以包括：
       - 字段名字
-      - [字段数据类型](/mapping/filed_data_types/filed_data_types)
-      - [映射参数](/mapping/mapping_parameters/mapping_parameters)
+      - [字段数据类型](/mapping/field_data_types)
+      - [映射参数](/mapping/mapping_parameters)
 
-      参阅[映射](/mapping/mapping)。
+      参阅[映射](/mapping/)。
     - `settings`
       （可选，[索引设置对象](/index_modules#索引设置)）索引配置选项。参阅[索引设置](/index_modules#索引设置)。
 - `version`

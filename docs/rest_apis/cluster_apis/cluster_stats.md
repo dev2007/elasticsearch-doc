@@ -197,7 +197,7 @@ GET /_cluster/stats/nodes/<node_filter>
         - `index_writer_memory_in_bytes`：（整数）分配给所选节点的所有分片的所有索引写入器使用的内存总量（字节）。
         - `version_map_memory`：（[字节单位](/rest_apis/api_convention/common_options#字节大小单位)）分配给所选节点的所有分片的所有版本映射使用的内存总量。
         - `version_map_memory_in_bytes`：（整数）分配给所选节点的所有分片的所有版本映射使用的内存总量（字节）。
-        - `fixed_bit_set`：（[字节单位](/rest_apis/api_convention/common_options#字节大小单位)）分配给所选节点的所有分片的固定位集使用的内存总量。固定位集用于嵌套对象字段类型和[联接](/mapping/filed_data_types/join)字段的类型过滤器。
+        - `fixed_bit_set`：（[字节单位](/rest_apis/api_convention/common_options#字节大小单位)）分配给所选节点的所有分片的固定位集使用的内存总量。固定位集用于嵌套对象字段类型和[联接](/mapping/field_data_types/join)字段的类型过滤器。
         - `fixed_bit_set_memory_in_bytes`：（整数）分配给所选节点的所有分片的固定位集使用的内存总量（字节）。
         - `max_unsafe_auto_id_timestamp`：（整数）最近重试的索引请求的[Unix 时间戳](https://en.wikipedia.org/wiki/Unix_time)，以毫秒为单位。
         - `file_sizes`：（对象）此对象未由集群统计 API 填充。要获取段文件信息，请使用[节点统计 API](/rest_apis/cluster_apis/nodes_stats)。
@@ -230,7 +230,7 @@ GET /_cluster/stats/nodes/<node_filter>
       - `source_total`：（整数）脚本对\_source 的总访问次数。
       - `doc_max`：（整数）单个字段脚本对 doc_values 的最大访问次数。
       - `doc_total`：（整数）脚本对 doc_values 的总访问次数。
-      - `runtime_field_types`：（对象数组）包含有关所选节点中使用的[运行时字段数据类型](/mapping/runtime_fields/map_a_runtime_field)的统计信息。
+      - `runtime_field_types`：（对象数组）包含有关所选节点中使用的[运行时字段数据类型](/mapping/runtime_fields/map_runtime_field)的统计信息。
       - `name`：（字符串）所选节点中使用的字段数据类型。
       - `count`：（整数）所选节点中映射到该运行时字段数据类型的运行时字段数量。
       - `index_count`：（整数）所选节点中包含该运行时字段数据类型映射的索引数量。

@@ -297,134 +297,130 @@ npm run docs:dev
     - :heavy_check_mark: 索引排序 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_sorting.html)
     - :heavy_check_mark: 使用索引排序加速合取查询 [:link:](https://elasticsearch.bookhub.tech/index_modules/index_sorting_conjunctions.html)
     - :heavy_check_mark: 索引压力 [:link:](https://elasticsearch.bookhub.tech/index_modules/indexing_pressure.html)
-  - Merge
-  - Similarity module
-  - Slow Log
-  - Store
-    - Preloading data into the file system cache
-  - Translog
-  - History retention
-  - Index Sorting
-    - Use index sorting to speed up conjunctions
-  - Indexing pressure
-- Mapping
-  - Dynamic mapping
-    - Dynamic field mapping
-    - Dynamic templates
-  - Explicit mapping
-  - Runtime fields
-    - Map a runtime field
-    - Define runtime fields in a search request
-    - Override field values at query time
-    - Retrieve a runtime field
-    - Explore your data with runtime fields
-  - Field data types
-    - Aggregate metric
-    - Alias
-    - Arrays
-    - Binary
-    - Boolean
-    - Date
-    - Date nanoseconds
-    - Dense vector
-    - Flattened
-    - Geo-point
-    - Geo-shape
-    - Histogram
-    - IP
-    - Join
-    - Keyword
-    - Nested
-    - Numeric
-    - Object
-    - Percolator
-    - Point
-    - Range
-    - Rank feature
-    - Rank features
-    - Search-as-you-type
-    - Shape
-    - Sparse vector
-    - Text
-    - Token count
-    - Unsigned long
-    - Version
-  - Metadata fields
-    - `_doc_count` field
-    - `_field_names` field
-    - `_ignored` field
-    - `_id` field
-    - `_index` field
-    - `_meta` field
-    - `_routing` field
-    - `_source` field
+- :heavy_check_mark: 映射 [:link:](https://elasticsearch.bookhub.tech/mapping/)
+  - :heavy_check_mark: 动态映射 [:link:](https://elasticsearch.bookhub.tech/mapping/dynamic_mapping.html)
+    - :heavy_check_mark: 动态字段映射 [:link:](https://elasticsearch.bookhub.tech/mapping/dynamic_field_mapping.html)
+    - :heavy_check_mark: 动态模板 [:link:](https://elasticsearch.bookhub.tech/mapping/dynamic_template.html)
+  - :heavy_check_mark: 显式映射 [:link:](https://elasticsearch.bookhub.tech/mapping/explicit_mapping.html)
+  - :heavy_check_mark: 运行时字段 [:link:](https://elasticsearch.bookhub.tech/mapping/runtime.html)
+    - :heavy_check_mark: 映射运行时字段 [:link:](https://elasticsearch.bookhub.tech/mapping/runtime_fields/map_runtime_field.html)
+    - :heavy_check_mark: 在搜索请求中定义运行时字段 [:link:](https://elasticsearch.bookhub.tech/mapping/runtime_fields/define_runtime_fields_in_a_search_request.html)
+    - :heavy_check_mark: 查询时覆盖字段值 [:link:](https://elasticsearch.bookhub.tech/mapping/runtime_fields/override_field_values_at_query_time.html)
+    - :heavy_check_mark: 检索运行时字段 [:link:](https://elasticsearch.bookhub.tech/mapping/runtime_fields/retrieve_a_runtime_field.html)
+    - :heavy_check_mark: 索引运行时字段 [:link:](https://elasticsearch.bookhub.tech/mapping/runtime_fields/index_a_runtime_field.html)
+    - :heavy_check_mark: 使用运行时字段探索你的数据 [:link:](https://elasticsearch.bookhub.tech/mapping/runtime_fields/explore_your_data_with_runtime_fields.html)
+  - :heavy_check_mark: 字段数据类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types.html)
+    - :heavy_check_mark: aggregate_metric_double 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/aggregate_metric_double.html)
+    - :heavy_check_mark: alias 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/alias.html)
+    - :heavy_check_mark: 数组 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/array.html)
+    - :heavy_check_mark: binary 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/binary.html)
+    - :heavy_check_mark: boolean 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/boolean.html)
+    - :heavy_check_mark: completion 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/completion.html)
+    - :heavy_check_mark: date 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/date.html)
+    - :heavy_check_mark: date_nanos 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/date_nanos.html)
+    - :heavy_check_mark: dense_vector 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/dense_vector.html)
+    - :heavy_check_mark: flattened 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/flattened.html)
+    - :heavy_check_mark: geo_point 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/geo_point.html)
+    - :heavy_check_mark: geo_shape 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/geo_shape.html)
+    - :heavy_check_mark: histogram 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/histogram.html)
+    - :heavy_check_mark: ip 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/ip.html)
+    - :heavy_check_mark: join 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/join.html)
+    - :heavy_check_mark: keyword 类型族 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/keyword.html)
+    - :heavy_check_mark: nested 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/nested.html)
+    - :heavy_check_mark: numeric 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/numeric.html)
+    - :heavy_check_mark: object 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/object.html)
+    - Passthrough object
+    - :heavy_check_mark: percolator 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/percolator.html)
+    - :heavy_check_mark: point 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/point.html)
+    - :heavy_check_mark: range 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/range.html)
+    - :heavy_check_mark: rank_feature 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/rank_feature.html)
+    - :heavy_check_mark: rank_features 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/rank_features.html)
+    - :heavy_check_mark: search_as_you_type 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/search_as_you_type.html)
+    - Semantic text
+    - :heavy_check_mark: shape 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/shape.html)
+    - :heavy_check_mark: sparse_vector 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/sparse_vector.html)
+    - :heavy_check_mark: text 类型族 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/text.html)
+    - :heavy_check_mark: token_count 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/token_count.html)
+    - :heavy_check_mark: unsigned_long 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/unsigned_long.html)
+    - :heavy_check_mark: version 字段类型 [:link:](https://elasticsearch.bookhub.tech/mapping/field_data_types/version.html)
+  - :heavy_check_mark: 元数据字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields.html)
+    - :heavy_check_mark: _doc_count 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/doc_count.html)
+    - :heavy_check_mark: _field_names 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/field_names.html)
+    - :heavy_check_mark: _ignored 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/ignored.html)
+    - :heavy_check_mark: _id 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/id.html)
+    - :heavy_check_mark: _index 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/index.html)
+    - :heavy_check_mark: _meta 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/meta.html)
+    - :heavy_check_mark: _routing 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/routing.html)
+    - :heavy_check_mark: _source 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/source.html)
     - `_type` field
-  - Mapping parameters
-    - `analyzer`
+    - :heavy_check_mark: _tier 字段 [:link:](https://elasticsearch.bookhub.tech/mapping/metadata_fields/tier.html)
+  - :heavy_check_mark: 映射参数 [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters.html)
+    - :heavy_check_mark: analyzer [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/analyzer.html)
     - `boost`
-    - `coerce`
-    - `copy_to`
-    - `doc_values`
-    - `dynamic`
-    - `eager_global_ordinals`
-    - `enabled`
-    - `format`
-    - `ignore_above`
-    - `ignore_malformed`
-    - `index`
-    - `index_options`
-    - `index_phrases`
-    - `index_prefixes`
-    - `meta`
-    - `fields`
-    - `normalizer`
-    - `norms`
-    - `null_value`
-    - `position_increment_gap`
-    - `properties`
-    - `search_analyzer`
-    - `similarity`
-    - `store`
-    - `term_vector`
-  - Mapping limit settings
-  - Removal of mapping types
-- Text analysis
-  - Overview
-  - Concepts
-    - Anatomy of an analyzer
-    - Index and search analysis
-    - Stemming
-    - Token graphs
-  - Configure text analysis
-    - Test an analyzer
-    - Configuring built-in analyzers
-    - Create a custom analyzer
-    - Specify an analyzer
-  - Built-in analyzer reference
-    - Fingerprint
-    - Keyword
-    - Language
-    - Pattern
-    - Simple
-    - Standard
-    - Stop
-    - Whitespace
-  - Tokenizer reference
-    - Character group
-    - Classic
-    - Edge n-gram
-    - Keyword
-    - Letter
-    - Lowercase
-    - N-gram
-    - Path hierarchy
-    - Pattern
-    - Simple pattern
-    - Simple pattern split
-    - Standard
-    - Thai
-    - UAX URL email
-    - Whitespace
+    - :heavy_check_mark: coerce [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/coerce.html)
+    - :heavy_check_mark: copy_to [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/copy_to.html)
+    - :heavy_check_mark: doc_values [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/doc_values.html)
+    - :heavy_check_mark: dynamic [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/dynamic.html)
+    - :heavy_check_mark: eager_global_ordinals [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/eager_global_ordinals.html)
+    - :heavy_check_mark: enabled [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/enabled.html)
+    - :heavy_check_mark: format [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/format.html)
+    - :heavy_check_mark: ignore_above [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/ignore_above.html)
+    - :heavy_check_mark: ignore_malformed [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/ignore_malformed.html)
+    - :heavy_check_mark: index [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/index.html)
+    - :heavy_check_mark: index_options [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/index_options.html)
+    - :heavy_check_mark: index_phrases [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/index_phrases.html)
+    - :heavy_check_mark: index_prefixes [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/index_prefixes.html)
+    - :heavy_check_mark: meta [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/meta.html)
+    - :heavy_check_mark: fields [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/fields.html)
+    - :heavy_check_mark: normalizer [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/normalizer.html)
+    - :heavy_check_mark: norms [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/norms.html)
+    - :heavy_check_mark: null_value [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/null_value.html)
+    - :heavy_check_mark: position_increment_gap [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/position_increment_gap.html)
+    - :heavy_check_mark: properties [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/properties.html)
+    - :heavy_check_mark: search_analyzer [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/search_analyzer.html)
+    - :heavy_check_mark: similarity [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/similarity.html)
+    - :heavy_check_mark: store [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/store.html)
+    - :heavy_check_mark: subobjects [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/subobjects.html)
+    - :heavy_check_mark: term_vector [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_parameters/term_vector.html)
+  - :heavy_check_mark: 映射限制设置 [:link:](https://elasticsearch.bookhub.tech/mapping/mapping_limit_settings.html)
+  - :heavy_check_mark: 移除映射类型 [:link:](https://elasticsearch.bookhub.tech/mapping/removal_of_mapping_types.html)
+- :heavy_check_mark: 文本分析 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis.html)
+  - :heavy_check_mark: 概述 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_overview.html)
+  - :heavy_check_mark: 概念 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_concepts.html)
+    - :heavy_check_mark: 分析器的剖析 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analyzer_anatomy.html)
+    - :heavy_check_mark: 索引与搜索分析 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_index_search_time.html)
+    - :heavy_check_mark: 词干提取 [:link:](https://elasticsearch.bookhub.tech/text_analysis/stemming.html)
+    - :heavy_check_mark: 词元图 [:link:](https://elasticsearch.bookhub.tech/text_analysis/token_graphs.html)
+  - :heavy_check_mark: 配置文本分析 [:link:](https://elasticsearch.bookhub.tech/text_analysis/configure_text_analysis.html)
+    - :heavy_check_mark: 测试分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/test_analyzer.html)
+    - :heavy_check_mark: 配置内置分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/configuring_analyzers.html)
+    - :heavy_check_mark: 创建自定义分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_custom_analyzer.html)
+    - :heavy_check_mark: 指定分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/specify_analyzer.html)
+  - :heavy_check_mark: 内置分析器参考 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_analyzers.html)
+    - :heavy_check_mark: Fingerprint [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_fingerprint_analyzer.html)
+    - :heavy_check_mark: Keyword [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_keyword_analyzer.html)
+    - :heavy_check_mark: 语言分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_lang_analyzer.html)
+    - :heavy_check_mark: Pattern [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_pattern_analyzer.html)
+    - :heavy_check_mark: simple 分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_simple_analyzer.html)
+    - :heavy_check_mark: 标准分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_standard_analyzer.html)
+    - :heavy_check_mark: stop 分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_stop_analyzer.html)
+    - :heavy_check_mark: whitespace 分析器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_whitespace_analyzer.html)
+  - :heavy_check_mark: 分词器参考 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_tokenizers.html)
+    - :heavy_check_mark: Character group [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_chargroup_tokenizer.html)
+    - :heavy_check_mark: Classic [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_classic_tokenizer.html)
+    - :heavy_check_mark: Edge n-gram [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_edgengram_tokenizer.html)
+    - :heavy_check_mark: Keyword [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_keyword_tokenizer.html)
+    - :heavy_check_mark: Letter [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_letter_tokenizer.html)
+    - :heavy_check_mark: Lowercase [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_lowercase_tokenizer.html)
+    - :heavy_check_mark: N-gram [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_ngram_tokenizer.html)
+    - :heavy_check_mark: Path hierarchy [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_pathhierarchy_tokenizer.html)
+    - :heavy_check_mark: Pattern [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_pattern_tokenizer.html)
+    - :heavy_check_mark: Simple pattern [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_simplepattern_tokenizer.html)
+    - :heavy_check_mark: Simple pattern split [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_simplepatternsplit_tokenizer.html)
+    - :heavy_check_mark: Standard [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_standard_tokenizer.html)
+    - :heavy_check_mark: Thai [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_thai_tokenizer.html)
+    - :heavy_check_mark: UAX URL email [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_uaxurlemail_tokenizer.html)
+    - :heavy_check_mark: Whitespace [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_whitespace_tokenizer.html)
   - Token filter reference
     - Apostrophe
     - ASCII folding
@@ -474,11 +470,11 @@ npm run docs:dev
     - Uppercase
     - Word delimiter
     - Word delimiter graph
-  - Character filters reference
-    - HTML strip
-    - Mapping
-    - Pattern replace
-  - Normalizers
+  - :heavy_check_mark: 字符过滤器参考 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_char_filters.html)
+    - :heavy_check_mark: HTML strip [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_htmlstrip_charfilter.html)
+    - :heavy_check_mark: Mapping [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_mapping_charfilter.html)
+    - :heavy_check_mark: Pattern replace [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_pattern_replace_charfilter.html)
+  - :heavy_check_mark: 规范化器 [:link:](https://elasticsearch.bookhub.tech/text_analysis/analysis_normalizers.html)
 - Index templates
   - Simulate multi-component templates
 - Data streams
@@ -570,7 +566,6 @@ npm run docs:dev
     - Geo-distance
     - Geo-polygon
     - Geo-shape
-  - Shape queries
     - Shape
   - Joining queries
     - Nested

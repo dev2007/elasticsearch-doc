@@ -222,7 +222,7 @@ GET /my-index-000001/_search
 
 - `_source`
 
-  （可选）指示为匹配文档返回的[源字段](/mapping/metadata_fields/_source-field)。这些字段将在搜索响应的属性 `hits._source` 中返回。默认为 `true`。
+  （可选）指示为匹配文档返回的[源字段](/mapping/metadata_fields/source)。这些字段将在搜索响应的属性 `hits._source` 中返回。默认为 `true`。
 
   - `_source` 有效值
 
@@ -240,7 +240,7 @@ GET /my-index-000001/_search
 
 - `_source_excludes`
 
-  （可选，字符串）逗号分隔的从响应中排除的[源字段](/mapping/metadata_fields/_source-field)。
+  （可选，字符串）逗号分隔的从响应中排除的[源字段](/mapping/metadata_fields/source)。
 
   你还可以使用此参数从 `_source_includes` 查询参数中指定的子集中排除字段。
 
@@ -248,7 +248,7 @@ GET /my-index-000001/_search
 
 - `_source_includes`
 
-  （可选，字符串）逗号分隔的响应中要包含的[源字段](/mapping/metadata_fields/_source-field)。
+  （可选，字符串）逗号分隔的响应中要包含的[源字段](/mapping/metadata_fields/source)。
 
   如果此参数指定，只有这些源字段会返回。你可以使用 `_source_excludes` 查询参数从该子集中排除字段。
 
@@ -354,7 +354,7 @@ GET /my-index-000001/_search
 
       （可选，字符串）日期和地理空间字段的格式。其他字段数据类型不支持此参数。
 
-      [`date`](/mapping/field_data_types/date) 和 [`date_nanos`](/mapping/field_data_types/date_nanoseconds) 字段接受[日期格式](/mapping/mapping_parameters/format)。[`geo_point`](/mapping/field_data_types/geopoint) 和 [`geo_shape`](/mapping/field_data_types/geoshape) 字段接受：
+      [`date`](/mapping/field_data_types/date) 和 [`date_nanos`](/mapping/field_data_types/date_nanos) 字段接受[日期格式](/mapping/mapping_parameters/format)。[`geo_point`](/mapping/field_data_types/geo_point) 和 [`geo_shape`](/mapping/field_data_types/geo_shape) 字段接受：
 
       - `geojson`（默认）
 
@@ -475,7 +475,7 @@ GET /my-index-000001/_search
 
 - `_source`
 
-  （可选）指示为匹配文档返回的[源字段](/mapping/metadata_fields/_source-field)。这些字段将在搜索响应的属性 `hits._source` 中返回。默认为 `true`。
+  （可选）指示为匹配文档返回的[源字段](/mapping/metadata_fields/source)。这些字段将在搜索响应的属性 `hits._source` 中返回。默认为 `true`。
 
   - `_source` 有效值
 

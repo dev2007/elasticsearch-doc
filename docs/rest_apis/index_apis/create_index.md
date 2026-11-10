@@ -60,13 +60,13 @@ PUT /my-index-000001
 （可选，[别名对象](/rest_apis/index_apis/bulk_index_alias)）包含索引的索引别名。参阅[批量索引别名](/rest_apis/index_apis/bulk_index_alias)。
 
 - `mappings`
-（可选，[映射对象](/mapping/mapping)）索引中字段映射。如果指定，映射可以包含：
+（可选，[映射对象](/mapping/)）索引中字段映射。如果指定，映射可以包含：
 
 1. 字段名字
 2. [字段数据类型](/mapping/field_data_types)
-3. [映射参数](/mapping/mapping_parameters/mapping_parameters)
+3. [映射参数](/mapping/mapping_parameters)
 
-参阅[映射](/mapping/mapping)
+参阅[映射](/mapping/)
 
 - `settings`
 （可选，[索引设置对象](/index_modules#索引设置)）索引的配置选项。参阅[索引设置](/index_modules#索引设置)

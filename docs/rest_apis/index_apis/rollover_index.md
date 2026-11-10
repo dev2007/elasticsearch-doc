@@ -140,13 +140,13 @@ POST my-data-stream/_rollover
 
 - `mappings`
 
-  （可选，[映射对象](/mapping/mapping)）索引中字段映射。如果指定，映射可以包含：
+  （可选，[映射对象](/mapping/)）索引中字段映射。如果指定，映射可以包含：
 
   1. 字段名字
   2. [字段数据类型](/mapping/field_data_types)
-  3. [映射参数](/mapping/mapping_parameters/mapping_parameters)
+  3. [映射参数](/mapping/mapping_parameters)
 
-  参阅[映射](/mapping/mapping)
+  参阅[映射](/mapping/)
 
   数据流不支持这个参数。
 

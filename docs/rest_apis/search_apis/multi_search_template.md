@@ -110,7 +110,7 @@ GET my-index/_msearch/template
     （可选，布尔值）如果为 `true`，请求缓存可用于此搜索。默认为索引级设置。参阅[分片请求缓存设置](/set_up_elasticsearch/configuring_elasticsearch/shard_request_cache_setttings)。
 
   - `routing`
-    （可选，字符串）用于搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/_routing_field)。
+    （可选，字符串）用于搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/routing)。
 
   - `search_type`
     （可选，字符串）指示在对返回的文档进行评分时是否应使用全局词语和文档频率。

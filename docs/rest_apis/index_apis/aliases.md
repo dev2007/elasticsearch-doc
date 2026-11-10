@@ -117,13 +117,13 @@ Elasticsearch 中的 API 在处理指定索引时接受一个索引名，在适�
 
   - `index_routing`
 
-  （可选，字符串）用于别名索引操作的自定义[路由值](/mapping/metadata_fields/_routing_field)。
+  （可选，字符串）用于别名索引操作的自定义[路由值](/mapping/metadata_fields/routing)。
 
   参阅[路由](/rest_apis/index_apis/aliases#路由)获取示例。
 
   - `search_routing`
 
-  （可选，字符串）用于别名搜索操作的自定义[路由值](/mapping/metadata_fields/_routing_field)。
+  （可选，字符串）用于别名搜索操作的自定义[路由值](/mapping/metadata_fields/routing)。
 
   参阅[路由](/rest_apis/index_apis/aliases#路由)获取示例。
 

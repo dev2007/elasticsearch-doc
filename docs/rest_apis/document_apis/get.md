@@ -108,14 +108,14 @@ GET my-index-000001/_doc/2?routing=user1
 - `_source`
   (可选，字符串）返回 `_source` 字段与否的真或假，或者要返回的字段列表。
 - `_source_excludes`
-  (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，用于从响应中排除。
+  (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/source)列表，用于从响应中排除。
 
   也可以使用该参数从 `_source_includes` 查询参数指定的子集中排除字段。
 
   如果 `_source` 参数为 `false`，该参数将被忽略。
 
 - `_source_includes`
-  (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，包含在响应中。
+  (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/source)列表，包含在响应中。
 
   如果指定了该参数，则只返回这些源字段。你可以使用 `_source_excludes` 查询参数从该子集中排除字段。
 
@@ -210,7 +210,7 @@ GET my-index-000001/_source/1
 GET my-index-000001/_source/1/?_source_includes=*.id&_source_excludes=entities
 ```
 
-你可以使用 HEAD 和 `_source` 端点来有效地测试文档 `_source` 是否存在。如果在[映射](/mapping/metadata_fields/_source_field)中禁用了文档源，则文档源不可用。
+你可以使用 HEAD 和 `_source` 端点来有效地测试文档 `_source` 是否存在。如果在[映射](/mapping/metadata_fields/source)中禁用了文档源，则文档源不可用。
 
 ```bash
 HEAD my-index-000001/_source/1

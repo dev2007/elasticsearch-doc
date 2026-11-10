@@ -1,6 +1,6 @@
 # 创建或更新索引模板 API
 
-创建或更新一个索引模板。索引模板定义了可以自动用于新索引的[设置](/index_modules#索引设置)、[映射](/mapping/mapping)和[别名](/rest_apis/index_apis/aliases)。
+创建或更新一个索引模板。索引模板定义了可以自动用于新索引的[设置](/index_modules#索引设置)、[映射](/mapping/)和[别名](/rest_apis/index_apis/aliases)。
 
 ```bash
 PUT /_index_template/template_1
@@ -126,12 +126,12 @@ Elasticsearch 基于通配符模式来匹配索引名字，将模板应用于相
             （可选，字符串）用于将搜索操作路由到特定分片的值。如果指定，这将覆盖搜索操作的 `routing` 值。
     - `mappings`
 
-      （可选，[映射对象](/mapping/mapping)）索引中字段的映射。如果指定，此映射可以包括：
+      （可选，[映射对象](/mapping/)）索引中字段的映射。如果指定，此映射可以包括：
       - 字段名字
-      - [字段数据类型](/mapping/filed_data_types/filed_data_types)
-      - [映射参数](/mapping/mapping_parameters/mapping_parameters)
+      - [字段数据类型](/mapping/field_data_types)
+      - [映射参数](/mapping/mapping_parameters)
 
-      参阅[映射](/mapping/mapping)。
+      参阅[映射](/mapping/)。
 
     - `settings`
       （可选，[索引设置对象](/index_modules#索引设置)）索引的配置索引。参阅[索引设置](/index_modules#索引设置)。

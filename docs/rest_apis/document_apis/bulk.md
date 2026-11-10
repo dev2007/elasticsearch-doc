@@ -178,14 +178,14 @@ $ curl -s -H "Content-Type: application/x-ndjson" -XPOST localhost:9200/_bulk --
 
 - `_source_excludes`
 
-    (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，用于从响应中排除。
+    (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/source)列表，用于从响应中排除。
 
     也可以使用该参数从 `_source_includes` 查询参数指定的子集中排除字段。
 
     如果 `_source` 参数为 `false`，该参数将被忽略。
 - `_source_includes`
 
-    (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/_source_field)列表，包含在响应中。
+    (可选，字符串）以逗号分隔的[源字段](/mapping/metadata_fields/source)列表，包含在响应中。
 
     如果指定了该参数，则只返回这些源字段。你可以使用 `_source_excludes` 查询参数从该子集中排除字段。
 

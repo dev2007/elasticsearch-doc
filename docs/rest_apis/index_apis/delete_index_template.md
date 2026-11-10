@@ -18,7 +18,7 @@ DELETE /_index_template/my-index-template
 
 ## 描述
 
-使用删除索引模板 API 去删除一个或多个索引模板。索引模板定义了可以自动用于新索引的[设置](/index_modules#索引设置)、[映射](/mapping/mapping)和[别名](/rest_apis/index_apis/aliases)。
+使用删除索引模板 API 去删除一个或多个索引模板。索引模板定义了可以自动用于新索引的[设置](/index_modules#索引设置)、[映射](/mapping/)和[别名](/rest_apis/index_apis/aliases)。
 
 ## 路径参数
 

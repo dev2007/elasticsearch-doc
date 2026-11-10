@@ -65,7 +65,7 @@ GET /my-index-000001/_segments
 
 - `num_docs`
 
-  （整数值）Lucene 报告的文档数。这将排除已删除的文档，并将所有[嵌套文档](/mapping/fiedl_data_types/nested)与其父文档分开计数。它还排除了最近编制索引但不属于某个段的文档。
+  （整数值）Lucene 报告的文档数。这将排除已删除的文档，并将所有[嵌套文档](/mapping/field_data_types/nested)与其父文档分开计数。它还排除了最近编制索引但不属于某个段的文档。
 
 - `deleted_docs`
 

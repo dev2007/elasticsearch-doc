@@ -5,7 +5,7 @@
 源文件可以是任何现有索引、别名或数据流。目的地必须与源不同。例如，不能将数据流重新编入索引。
 
 :::danger 重要
-重新索引要求 [\_source](/mapping/metadata_fields/_source) 启用源文件中的所有文档。
+重新索引要求 [\_source](/mapping/metadata_fields/source) 启用源文件中的所有文档。
 
 在调用 `_reindex` 之前，应根据需要对目标进行配置。重索引不会复制源文件或其关联模板中的设置。
 
@@ -40,7 +40,7 @@ POST _reindex
 
 ## 描述
 
-从源索引中提取[文档源](/mapping/metadata_fields/_source)，并将文档索引到目标索引中。你可以将所有文档复制到目标索引，也可以重新索引文档的一个子集。
+从源索引中提取[文档源](/mapping/metadata_fields/source)，并将文档索引到目标索引中。你可以将所有文档复制到目标索引，也可以重新索引文档的一个子集。
 
 与 [\_update_by_query](/rest_apis/document_apis/update_by_query) 一样，`_reindex` 也会获取源的快照，但其目标必须**不同**，因此不太可能发生版本冲突。`dest` 元素可以像索引 API 一样进行配置，以控制乐观并发控制。省略 `version_type` 或将其设置为 `internal` 会导致 Elasticsearch 盲目地将文档转储到目标中，并覆盖任何碰巧具有相同 ID 的文档。
 

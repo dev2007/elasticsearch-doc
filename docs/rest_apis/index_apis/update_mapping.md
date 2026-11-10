@@ -78,11 +78,11 @@ PUT /my-index-000001/_mapping
 ## 请求体
 
 - `properties`
-（必需，[映射对象](/mapping/mapping)）字段的映射。对新字段，映射可以包含：
+（必需，[映射对象](/mapping/)）字段的映射。对新字段，映射可以包含：
 
 1. 字段名字
 2. [字段数据类型](/mapping/field_data_types)
-3. [映射参数](/mapping/mapping_parameters/mapping_parameters)
+3. [映射参数](/mapping/mapping_parameters)
 
 对已有字段，参阅 [变更已有字段的映射](/rest_apis/index_apis/update_mapping#变更已有字段的映射)。
 
@@ -96,7 +96,7 @@ PUT /my-index-000001/_mapping
 PUT /publications
 ```
 
-以下更新映射 API 请求，为索引 `publications` 添加了一个名为 `title` 的[文本（text）](/mapping/field_data_type/text)字段。
+以下更新映射 API 请求，为索引 `publications` 添加了一个名为 `title` 的[文本（text）](/mapping/field_data_types/text)字段。
 
 ```bash
 PUT /publications/_mapping
@@ -177,7 +177,7 @@ PUT /my-index-000001/_mapping
 
 为了观察如何运作，试试以下例子。
 
-通过[创建索引](/rest_apis/index_apis/create_index) API 创建一个索引，带有名为 `city` 的[文本（text）](/mapping/field_data_type/text)字段。
+通过[创建索引](/rest_apis/index_apis/create_index) API 创建一个索引，带有名为 `city` 的[文本（text）](/mapping/field_data_types/text)字段。
 
 ```bash
 PUT /my-index-000001
@@ -214,7 +214,7 @@ PUT /my-index-000001/_mapping
 
 ### 变更现有字段支持的映射参数
 
-每个[映射参数](/mapping/mapping_parameters/mapping_parameters)的文档指示是否可以使用更新映射 API 为现有字段更新它。例如，你可以使用更新映射 API 来更新 [`ignore_above`](/mapping/mapping_parameters/ignore_above) 参数。
+每个[映射参数](/mapping/mapping_parameters)的文档指示是否可以使用更新映射 API 为现有字段更新它。例如，你可以使用更新映射 API 来更新 [`ignore_above`](/mapping/mapping_parameters/ignore_above) 参数。
 
 为了观察如何运作，试试以下例子。
 
@@ -250,7 +250,7 @@ PUT /my-index-000001/_mapping
 
 ### 变更已有字段的映射
 
-除了支持[映射参数](/mapping/mapping_parameters/mapping_parameters)，你不能变更已有字段的映射或字段类型。变更已有字段可能导致已被索引的数据无效。
+除了支持[映射参数](/mapping/mapping_parameters)，你不能变更已有字段的映射或字段类型。变更已有字段可能导致已被索引的数据无效。
 
 如果你需要变更在数据流备份索引中字段映射，参阅[为数据流变更映射和设置](/data_streams/change_mappings_and_settings_for_a_data_stream)。
 

@@ -31,7 +31,7 @@ GET my-index/_knn_search
 
 ## 描述
 
-kNN 搜索 API 在 [`dense_vector`](/mapping/dense_vector) 字段上执行 k-最近邻（kNN）搜索。给定一个查询向量，它会找到 `k` 个最接近的向量，并将这些文档作为搜索结果返回。
+kNN 搜索 API 在 [`dense_vector`](/mapping/field_data_types/dense_vector) 字段上执行 k-最近邻（kNN）搜索。给定一个查询向量，它会找到 `k` 个最接近的向量，并将这些文档作为搜索结果返回。
 
 Elasticsearch 使用 [HNSW 算法](https://arxiv.org/abs/1603.09320)来支持高效的 kNN 搜索。与大多数 kNN 算法一样，HNSW 是一种近似方法，它牺牲了结果的准确性以提高搜索速度。这意味着返回的结果并不总是真正的 `k` 近邻。
 
@@ -61,7 +61,7 @@ Elasticsearch 使用 [HNSW 算法](https://arxiv.org/abs/1603.09320)来支持高
 
     - `field`
 
-      （必需，字符串）要搜索的向量字段的名称。必须是[启用索引的 dense_vector](/mapping/dense_vector#kNN-搜索的索引向量)。
+      （必需，字符串）要搜索的向量字段的名称。必须是[启用索引的 dense_vector](/mapping/field_data_types/dense_vector)。
 
     - `query_vector`
 
@@ -111,7 +111,7 @@ Elasticsearch 使用 [HNSW 算法](https://arxiv.org/abs/1603.09320)来支持高
 
       （可选，字符串）日期和地理空间字段的格式。其他字段数据类型不支持此参数。
 
-      [`date`](/mapping/field_data_types/date) 和 [`date_nanos`](/mapping/field_data_types/date_nanoseconds) 字段接受[日期格式](/mapping/mapping_parameters/format)。[`geo_point`](/mapping/field_data_types/geopoint) 和 [`geo_shape`](/mapping/field_data_types/geoshape) 字段接受：
+      [`date`](/mapping/field_data_types/date) 和 [`date_nanos`](/mapping/field_data_types/date_nanos) 字段接受[日期格式](/mapping/mapping_parameters/format)。[`geo_point`](/mapping/field_data_types/geo_point) 和 [`geo_shape`](/mapping/field_data_types/geo_shape) 字段接受：
 
       - `geojson`（默认）
 
@@ -144,7 +144,7 @@ Elasticsearch 使用 [HNSW 算法](https://arxiv.org/abs/1603.09320)来支持高
 
 - `_source`
 
-  （可选）指示为匹配文档返回的[源字段](/mapping/metadata_fields/_source-field)。这些字段将在搜索响应的属性 `hits._source` 中返回。默认为 `true`。
+  （可选）指示为匹配文档返回的[源字段](/mapping/metadata_fields/source)。这些字段将在搜索响应的属性 `hits._source` 中返回。默认为 `true`。
 
   - `_source` 有效值
 
@@ -170,7 +170,7 @@ Elasticsearch 使用 [HNSW 算法](https://arxiv.org/abs/1603.09320)来支持高
 
 kNN 搜索响应的结构与[搜索 API 响应](/rest_apis/search_apis/search#响应体)的结构完全相同。但是，某些部分对 kNN 搜索有特定的含义：
 
-- [文档 _score](/rest_apis/search_apis/search#响应体)由查询和文档向量之间的相似性决定。参阅[相似性](/mapping/dense_vector#稠密向量场的参数)。
+- [文档 _score](/rest_apis/search_apis/search#响应体)由查询和文档向量之间的相似性决定。参阅[相似性](/mapping/field_data_types/dense_vector)。
 
 - `hits.total` 对象包含考虑的最近邻候选总数，即 `num_candidates * num_shards`。`hits.total.relation` 总是 `eq`，表示精确的值。 
 

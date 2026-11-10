@@ -97,7 +97,7 @@ body\n
   (可选，布尔值)指示是否 `hits.total` 应在搜索响应中呈现为整数或对象。默认为 `false`，返回一个对象。
 
 - `routing`
-  （可选，字符串）用于将搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/_routing-field)。
+  （可选，字符串）用于将搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/routing)。
 
 - `search_type`
   （可选，字符串）如何为[相关性评分](/query_dsl/query_and_filter_context#相关性评分)计算[分布式词语频率](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)。
@@ -158,7 +158,7 @@ body\n
       （可选，布尔值）如果为 `true`，请求缓存可用于此搜索。默认为索引级设置。参阅[分片请求缓存设置](/set_up_elasticsearch/configuring_elasticsearch/shard_request_cache_setttings.html)。
 
     - `routing`
-      （可选，字符串）用于将搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/_routing-field.html)。
+      （可选，字符串）用于将搜索操作路由到特定分片的自定义[路由值](/mapping/metadata_fields/routing)。
 
     - `search_type`
       （可选，字符串）指示在对返回的文档进行评分时是否应使用全局术语和文档频率。

@@ -24,7 +24,7 @@ GET /_field_caps?fields=rating
 
 字段能力 API 在多个索引中返回有关字段功能的信息。
 
-字段能力 API 像任何其他字段一样返回[运行时字段](/mapping/runtime_fields/runtime_fields)。例如，具有 `keyword` 类型的运行时字段将作为属于 `keyword` 族的任何其他字段返回。
+字段能力 API 像任何其他字段一样返回[运行时字段](/mapping/runtime)。例如，具有 `keyword` 类型的运行时字段将作为属于 `keyword` 族的任何其他字段返回。
 
 ## 路径参数
 
@@ -92,7 +92,7 @@ GET /_field_caps?fields=rating
   （可选，[查询对象](/query_dsl/query_dsl)）如果提供的查询重写为在每个分片上 `match_none`，则允许筛选索引。
 
 - `runtime_mappings`
-  （可选，对象）在请求中定义临时[运行时字段](/mapping/define_runtime_fields_in_a_search_request)，类似于在[搜索请求](/rest_apis/search_apis/search)中执行的方式。这些字段仅作为查询的一部分存在，并且优先于在索引映射中使用相同名称定义的字段。
+  （可选，对象）在请求中定义临时[运行时字段](/mapping/runtime_fields/define_runtime_fields_in_a_search_request)，类似于在[搜索请求](/rest_apis/search_apis/search)中执行的方式。这些字段仅作为查询的一部分存在，并且优先于在索引映射中使用相同名称定义的字段。
 
 ## 响应体
 
