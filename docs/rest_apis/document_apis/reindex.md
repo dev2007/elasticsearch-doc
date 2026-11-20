@@ -270,7 +270,7 @@ POST _reindex
 
 ### 使用摄取管道重索引
 
-重索引也可以使用[摄取管道](/ingest_pipelines)功能，方法是像这样指定一个 `pipeline`：
+重索引也可以使用[摄取管道](/ingest_pipelines/ingest_pipelines)功能，方法是像这样指定一个 `pipeline`：
 
 ```bash
 POST _reindex

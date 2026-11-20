@@ -304,7 +304,7 @@ POST my-index-000001/_update_by_query
 
 ### 使用录入管道更新文档
 
-通过查询更新可以通过指定管道使用[摄取管道](/ingest_pipelines)功能：
+通过查询更新可以通过指定管道使用[摄取管道](/ingest_pipelines/ingest_pipelines)功能：
 
 ```bash
 PUT _ingest/pipeline/set-foo

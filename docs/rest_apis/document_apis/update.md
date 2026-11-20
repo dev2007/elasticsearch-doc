@@ -279,7 +279,7 @@ POST test/_update/1
 ```
 
 :::note 提示
-不支持将[摄入管道](/ingest)与 `doc_as_upsert` 结合使用。
+不支持将[摄取管道](/ingest_pipelines/ingest_pipelines)与 `doc_as_upsert` 结合使用。
 :::
 
 > [原文链接](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html)
