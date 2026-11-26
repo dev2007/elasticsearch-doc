@@ -432,7 +432,7 @@ API 以 UTF-8 编码的 JSON 形式返回错误。
 
 - `query`
 
-  （可选，对象）[查询 DSL 对象](/query_dsl/query_dsl)用于搜索过滤文档。
+  （可选，对象）[查询 DSL 对象](/query_dsl/)用于搜索过滤文档。
 
 - `runtime_mappings`
 

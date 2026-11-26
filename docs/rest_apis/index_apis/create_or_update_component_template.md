@@ -93,7 +93,7 @@ PUT _component_template/template_1
           - `<alias>` 属性
             - `filter`
 
-              （可选，[查询 DSL 对象](/query_dsl/query_dsl)）用于限制别名查询时可以访问的文档。
+              （可选，[查询 DSL 对象](/query_dsl/)）用于限制别名查询时可以访问的文档。
             - `index_routing`
 
               （可选，字符串）用于将索引操作路由到特定分片的值。如果指定，这将覆盖索引操作的路由值。

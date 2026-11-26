@@ -24,7 +24,7 @@ GET my-index-000001/_validate/query?q=user.id:kimchy
   （可选，字符串）用于限制请求的，逗号分隔的数据流、索引。也支持通配符表达式（*）。为了搜索所有数据流和索引，忽略此参数或使用 `*` 或 `_all`。
 
 - `query`
-  （可选，[查询对象](/query_dsl/query_dsl)）使用 [Query DSL](/query_dsl/query_dsl) 定义搜索定义。
+  （可选，[查询对象](/query_dsl/)）使用 [Query DSL](/query_dsl/) 定义搜索定义。
 
 ## 查询参数
 

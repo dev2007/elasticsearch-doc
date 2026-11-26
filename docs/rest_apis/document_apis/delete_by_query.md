@@ -199,7 +199,7 @@ wait_time = target_time - write_time = 2 seconds - .5 seconds = 1.5 seconds
 ## 请求体
 
 - `query`
-  (可选，[查询对象](/query_dsl/query_dsl)）使用[Query DSL](/query_dsl/query_dsl) 指定要删除的文档。
+  (可选，[查询对象](/query_dsl/)）使用[Query DSL](/query_dsl/) 指定要删除的文档。
 
 ## 响应体
 

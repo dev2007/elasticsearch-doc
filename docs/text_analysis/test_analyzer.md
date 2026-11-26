@@ -1,6 +1,6 @@
 # 测试分析器
 
-[`analyze` API](/rest_apis/indices_apis/analyze) 是查看分析器产出的词项的宝贵工具。可以在请求中内联指定一个内置分析器：
+[`analyze` API](/rest_apis/index_apis/analyze) 是查看分析器产出的词项的宝贵工具。可以在请求中内联指定一个内置分析器：
 
 ```bash
 POST _analyze

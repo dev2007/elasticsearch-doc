@@ -94,7 +94,7 @@ GET /my-index-000001/_explain/0
 ## 请求体
 
 - `query`
-  （可选，[查询对象](/query_dsl/query_dsl)）使用 [Query DSL](/query_dsl/query_dsl) 定义搜索定义。
+  （可选，[查询对象](/query_dsl/)）使用 [Query DSL](/query_dsl/) 定义搜索定义。
 
 ### 示例
 

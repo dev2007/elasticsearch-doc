@@ -22,7 +22,7 @@ POST _analyze
 
 你可以将 `keyword` 分词器与词元过滤器组合，以规范化结构化数据，例如产品 ID 或电子邮件地址。
 
-例如，以下 [`analyze` API](/rest_apis/indices_apis/analyze) 请求使用 `keyword` 分词器和 [`lowercase`](/text_analysis/analysis_lowercase_tokenfilter) 过滤器将电子邮件地址转换为小写。
+例如，以下 [`analyze` API](/rest_apis/index_apis/analyze) 请求使用 `keyword` 分词器和 [`lowercase`](/text_analysis/analysis_lowercase_tokenfilter) 过滤器将电子邮件地址转换为小写。
 
 ```bash
 POST _analyze

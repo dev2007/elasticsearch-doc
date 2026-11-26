@@ -348,7 +348,7 @@ POST _reindex
 
   - `query`
 
-    (可选，[查询对象](/query_dsl/query_dsl)）使用 Query DSL 指定要删除的文档。
+    (可选，[查询对象](/query_dsl/)）使用 Query DSL 指定要删除的文档。
 
   - `remote`
 

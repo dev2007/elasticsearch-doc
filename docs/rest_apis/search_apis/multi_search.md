@@ -178,7 +178,7 @@ body\n
       （可选，[聚合对象](/aggregations/aggregations)）你希望在搜索过程中运行的聚合。参见[聚合](/aggregations/aggregations)。
 
     - `query`
-      （可选，[查询 DSL 对象](/query_dsl/query_dsl)）你希望在搜索过程中运行的查询。与此查询匹配的命中将在响应中返回。
+      （可选，[查询 DSL 对象](/query_dsl/)）你希望在搜索过程中运行的查询。与此查询匹配的命中将在响应中返回。
 
     - `from`
       （可选，整数）返回命中的起始偏移量。默认为 `0`。
